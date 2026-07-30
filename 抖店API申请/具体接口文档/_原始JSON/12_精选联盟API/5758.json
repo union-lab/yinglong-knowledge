@@ -1,0 +1,537 @@
+{
+  "code": 0,
+  "data": {
+    "CustomerError": {
+      "ErrCode": 0,
+      "ErrMsg": ""
+    },
+    "article": {
+      "content": "{\"request\":{\"publicParam\":[{\"requestName\":\"method\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"buyin.promotionStrategyList\",\"description\":\"调用的API接口名称\"},{\"requestName\":\"app_key\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"6839996111118329223\",\"description\":\"应用创建完成后被分配的key\"},{\"requestName\":\"access_token\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"edae7c30-8386-443b-88a1-031111596fdd\",\"description\":\"用于调用 API 的 access_token\",\"hiddenForInterfaceName\":[\"/token/create\"]},{\"requestName\":\"param_json\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"{cid:12,page:1}\",\"description\":\"标准json类型，里面是业务参数按照参数名的字符串大小排序具体参数值，参考每个接口的参数表\"},{\"requestName\":\"timestamp\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2020-09-15 14:48:13\",\"description\":\"时间戳，格式为yyyy-MM-dd HH:mm:ss，时区为GMT+8，例如：2016-01-01 12:00:00\"},{\"requestName\":\"v\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2\",\"description\":\"API协议版本，当前版本为2\"},{\"requestName\":\"sign\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"796559d40beb08a1a1113c456c5c5a62\",\"description\":\"输入参数签名结果，签名算法参照 [API调用指南](https://op.jinritemai.com/docs/guide-docs/10/23)\"},{\"requestName\":\"sign_method\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"hmac-sha256\",\"description\":\"签名算法类型推荐使用hmac-sha256后续会下线md5（不传则默认为\\\"md5\\\"）1. md5:表示用md5算法加密字符串 2. hmac-sha256:表示用hmac_sha_256算法加密字符串\"}],\"requestParam\":[{\"requestName\":\"product_id\",\"toName\":\"product_id\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"123456789\",\"description\":\"商品ID，和strategy_id二选一传入，不可同时传也不可同时不传。\"},{\"requestName\":\"kol_buyin_ids\",\"toName\":\"kol_buyin_ids\",\"mustNeed\":false,\"type\":3,\"subType\":1,\"style\":1,\"example\":\"7098765432\",\"description\":\"根据buyin_id搜索\",\"cipherTextType\":1},{\"requestName\":\"status\",\"toName\":\"status\",\"mustNeed\":true,\"type\":1,\"style\":1,\"example\":\"0\",\"description\":\"状态 0：全部 1：生效中 2：已结束 3：已失效\"},{\"requestName\":\"valid_kol_filter\",\"toName\":\"valid_kol_filter\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1\",\"description\":\"生效达人范围 1：全部达人 2：指定达人 3：条件圈选\"},{\"requestName\":\"cos_type\",\"toName\":\"cos_type\",\"mustNeed\":false,\"type\":7,\"style\":1,\"example\":\"1\",\"description\":\"佣金规则 1：固定佣金 2：阶梯佣金\"},{\"requestName\":\"end_time_filter\",\"toName\":\"end_time_filter\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1\",\"description\":\"结束时间 1：1天内，2：3天内，3：7天内\"},{\"requestName\":\"cos_range_filter\",\"toName\":\"cos_range_filter\",\"mustNeed\":false,\"type\":5,\"style\":1,\"example\":\"\",\"description\":\"佣金率范围\",\"cipherTextType\":1,\"children\":[{\"requestName\":\"type\",\"toName\":\"type\",\"mustNeed\":true,\"type\":1,\"style\":1,\"example\":\"0\",\"description\":\"0：区间；1：大于上限；2：小于下限；3：不限\"},{\"requestName\":\"low\",\"toName\":\"low\",\"mustNeed\":true,\"type\":1,\"style\":1,\"example\":\"50\",\"description\":\"20%传20\"},{\"requestName\":\"up\",\"toName\":\"up\",\"mustNeed\":true,\"type\":1,\"style\":1,\"example\":\"45\",\"description\":\"20%传20\"}]},{\"requestName\":\"strategy_id\",\"toName\":\"strategy_id\",\"mustNeed\":false,\"type\":3,\"subType\":2,\"style\":1,\"example\":\"7654321\",\"description\":\"策略id，和product_id二选一传入，不可同时传也不可同时不传。\",\"cipherTextType\":1},{\"requestName\":\"page\",\"toName\":\"page\",\"mustNeed\":true,\"type\":1,\"style\":1,\"example\":\"1\",\"description\":\"分页\"},{\"requestName\":\"page_size\",\"toName\":\"page_size\",\"mustNeed\":true,\"type\":1,\"style\":1,\"example\":\"20\",\"description\":\"分页大小\"}]},\"response\":{\"responseData\":[{\"responseName\":\"data\",\"fromName\":\"data\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"策略列表\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"strategy_id\",\"fromName\":\"strategy_id\",\"type\":2,\"example\":\"7654321\",\"description\":\"策略id\"},{\"responseName\":\"status\",\"fromName\":\"status\",\"type\":1,\"example\":\"1\",\"description\":\"状态 1：生效中 2：已结束 3：已失效\"},{\"responseName\":\"end_time_tip\",\"fromName\":\"end_time_tip\",\"type\":1,\"example\":\"1\",\"description\":\"结束时间提示 1：1天内，2：3天内，3：7天内\"},{\"responseName\":\"valid_kol_info\",\"fromName\":\"valid_kol_info\",\"type\":5,\"example\":\"\",\"description\":\"生效达人信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"valid_kol_range\",\"fromName\":\"valid_kol_range\",\"type\":1,\"example\":\"1\",\"description\":\"生效达人范围 1：全部达人 2：指定达人 3：条件圈选 4：专属指定达人\"},{\"responseName\":\"kol_infos\",\"fromName\":\"kol_infos\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"指定达人列表，只返回三个达人\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"buyin_id\",\"fromName\":\"buyin_id\",\"type\":1,\"example\":\"70987654321\",\"description\":\"百应ID\"},{\"responseName\":\"avatar_url\",\"fromName\":\"avatar_url\",\"type\":2,\"example\":\"http://alliance.jinritemai.com/\",\"description\":\"达人头像\"},{\"responseName\":\"account_name\",\"fromName\":\"account_name\",\"type\":2,\"example\":\"测试达人\",\"description\":\"达人昵称\"},{\"responseName\":\"add_time\",\"fromName\":\"add_time\",\"type\":2,\"example\":\"2020-05-19 00:00:00\",\"description\":\"添加时间\"}]},{\"responseName\":\"kol_num\",\"fromName\":\"kol_num\",\"type\":1,\"example\":\"3\",\"description\":\"指定达人数量\"}]},{\"responseName\":\"cos_info\",\"fromName\":\"cos_info\",\"type\":5,\"example\":\"\",\"description\":\"佣金信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"cos_type\",\"fromName\":\"cos_type\",\"type\":7,\"example\":\"1\",\"description\":\"佣金规则 1：固定佣金 2：阶梯佣金\"},{\"responseName\":\"cos_ratio\",\"fromName\":\"cos_ratio\",\"type\":5,\"example\":\"\",\"description\":\"生效佣金率\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"cos_ratio\",\"fromName\":\"cos_ratio\",\"type\":1,\"example\":\"30\",\"description\":\"佣金率 如果是阶梯佣金 存第一阶梯的佣金率\"},{\"responseName\":\"ladder_bar\",\"fromName\":\"ladder_bar\",\"type\":1,\"example\":\"30\",\"description\":\"阶梯佣金率门槛 非阶梯为0\"},{\"responseName\":\"ladder_cos_ratio\",\"fromName\":\"ladder_cos_ratio\",\"type\":1,\"example\":\"60\",\"description\":\"阶梯佣金率 非阶梯为0\"}]},{\"responseName\":\"cos_ratio_sug\",\"fromName\":\"cos_ratio_sug\",\"type\":2,\"example\":\"60\",\"description\":\"商品建议佣金率\"},{\"responseName\":\"similar_prd_count\",\"fromName\":\"similar_prd_count\",\"type\":2,\"example\":\"5\",\"description\":\"同叶子类目同品牌等级商品个数\"},{\"responseName\":\"feature_cos_ratio\",\"fromName\":\"feature_cos_ratio\",\"type\":5,\"example\":\"\",\"description\":\"修改佣金率未来佣金率\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"cos_ratio\",\"fromName\":\"cos_ratio\",\"type\":1,\"example\":\"39\",\"description\":\"佣金率 如果是阶梯佣金 存第一阶梯的佣金率\"},{\"responseName\":\"ladder_bar\",\"fromName\":\"ladder_bar\",\"type\":1,\"example\":\"45\",\"description\":\"阶梯佣金率门槛 非阶梯为0\"},{\"responseName\":\"ladder_cos_ratio\",\"fromName\":\"ladder_cos_ratio\",\"type\":1,\"example\":\"45\",\"description\":\"阶梯佣金率 非阶梯为0\"}]},{\"responseName\":\"cos_valid_time\",\"fromName\":\"cos_valid_time\",\"type\":2,\"example\":\"2020-05-19 00:00:00\",\"description\":\"修改佣金率未来佣金率生效时间\"},{\"responseName\":\"higer_priority_cos_ratio\",\"fromName\":\"higer_priority_cos_ratio\",\"type\":9,\"example\":\"70\",\"description\":\"更高优佣金率\"},{\"responseName\":\"cos_ratio_level\",\"fromName\":\"cos_ratio_level\",\"type\":8,\"mapKeyType\":2,\"mapValueType\":2,\"example\":\"{\\\"30\\\":5}\",\"description\":\"商品佣金率及所处竞争力百分位，key为佣金率\",\"securityLevel\":\"R1\"}]},{\"responseName\":\"start_time\",\"fromName\":\"start_time\",\"type\":2,\"example\":\"2020-05-19 00:00:00\",\"description\":\"开始时间 2020-05-19 00:00:00\"},{\"responseName\":\"end_time\",\"fromName\":\"end_time\",\"type\":2,\"example\":\"2020-05-19 00:00:00\",\"description\":\"结束时间 2020-05-19 00:00:00\"}]},{\"responseName\":\"total\",\"fromName\":\"total\",\"type\":1,\"example\":\"30\",\"description\":\"总数\"}]},\"demo\":{\"requestDemo\":{\"curl\":{\"reqUrl\":\"https://openapi-fxg.jinritemai.com/yunc/cloudCreateOutboundOrder?app_key=your_appkey_here\\u0026method=yunc.cloudCreateOutboundOrder\\u0026access_token=your_accesstoken_here\\u0026param_json={}\\u0026timestamp=2018-06-19%2016:06:59\\u0026v=2\\u0026sign=your_sign_here\"},\"java\":{\"code\":\"BuyinPromotionStrategyListRequest request = new BuyinPromotionStrategyListRequest();\\nBuyinPromotionStrategyListParam param = request.getParam();\\nparam.setProductId(\\\"123456789\\\");\\nparam.setKolBuyinIds(7098765432);\\nparam.setStatus(0L);\\nparam.setValidKolFilter(1L);\\nparam.setCosType(1);\\nparam.setEndTimeFilter(1L);\\nparam.setStrategyId(7654321);\\nparam.setPage(1L);\\nparam.setPageSize(20L);\\nBuyinPromotionStrategyListResponse response = request.execute(accessToken);\\n\"},\"php\":{\"code\":\"$request = new BuyinPromotionStrategyListRequest();\\n$param = new BuyinPromotionStrategyListParam();\\n$request-\\u003esetParam($param);\\n$param-\\u003eproduct_id = \\\"123456789\\\";\\n$param-\\u003ekol_buyin_ids = 7098765432;\\n$param-\\u003estatus = 0;\\n$param-\\u003evalid_kol_filter = 1;\\n$param-\\u003ecos_type = 1;\\n$param-\\u003eend_time_filter = 1;\\n$param-\\u003estrategy_id = 7654321;\\n$param-\\u003epage = 1;\\n$param-\\u003epage_size = 20;\\n$response = $request-\\u003eexecute(accessToken);\\n\"},\"python\":{\"code\":\"request = BuyinPromotionStrategyListRequest()\\nparam = request.getParams()\\nparam.product_id = \\\"123456789\\\"\\nparam.kol_buyin_ids = 7098765432\\nparam.status = 0\\nparam.valid_kol_filter = 1\\nparam.cos_type = 1\\nparam.end_time_filter = 1\\nparam.strategy_id = 7654321\\nparam.page = 1\\nparam.page_size = 20\\nresponse = request.execute(accessToken)\\n\"},\"go\":{\"code\":\"request := buyin_promotionStrategyList_request.New()\\nparam := request.GetParams()\\nparam.ProductId = \\\"123456789\\\"\\nparam.KolBuyinIds = 7098765432\\nparam.Status = 0\\nparam.ValidKolFilter = 1\\nparam.CosType = 1\\nparam.EndTimeFilter = 1\\nparam.StrategyId = 7654321\\nparam.Page = 1\\nparam.PageSize = 20\\nresponse := request.Execute(accessToken)\\n\"},\"dotNetCore\":{\"code\":\"var request = new BuyinPromotionStrategyListRequest();\\nvar param = request.BuildParam();\\nparam.ProductId = \\\"123456789\\\";\\nparam.KolBuyinIds = 7098765432;\\nparam.Status = 0;\\nparam.ValidKolFilter = 1;\\nparam.CosType = 1;\\nparam.EndTimeFilter = 1;\\nparam.StrategyId = 7654321;\\nparam.Page = 1;\\nparam.PageSize = 20;\\nvar response = request.Execute\\u003cBuyinPromotionStrategyListResponse\\u003e(accessToken);\\n\"},\"js\":{}},\"responseDemo\":{\"responseSuccess\":{\"data\":{\"data\":\"\"},\"code\":10000,\"msg\":\"success\",\"sub_code\":\"\",\"sub_msg\":\"\"},\"responseError\":{\"sub_code\":\"\",\"sub_msg\":\"\"}}},\"error\":{\"errCodeList\":[{\"msg\":\"success\",\"code\":10000},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"无效page\",\"subCode\":\"isv.parameter-invalid:4141\",\"solution\":\"无效page\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"最多支持20个buyinId\",\"subCode\":\"isv.parameter-invalid:4372\",\"solution\":\"最多支持20个buyinId\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"无效百应ID\",\"subCode\":\"isv.parameter-invalid:4173\",\"solution\":\"无效百应ID\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"服务打瞌睡了，请稍后再试\",\"subCode\":\"isv.business-failed:256\",\"solution\":\"服务打瞌睡了，请稍后再试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"-4100:商品不属于该店铺\",\"subCode\":\"isv.business-failed:-4100\",\"solution\":\"-4100:商品不属于该店铺\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"-4102:商品无推广\",\"subCode\":\"isv.business-failed:-4102\",\"solution\":\"-4102:商品无推广\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"-1:参数错误\",\"subCode\":\"isv.business-failed:-1\",\"solution\":\"-1:参数错误\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"-1025:服务打瞌睡了\",\"subCode\":\"isv.business-failed:-1025\",\"solution\":\"-1025:服务打瞌睡了\"}]}}",
+      "info": {
+        "AuditedTime": "",
+        "access": false,
+        "apiChargeType": 0,
+        "apiLimitLevel": 1,
+        "apiLimitValue": 5000,
+        "apiSpiMsgNames": [],
+        "articleOutId": 1569,
+        "auditStatus": 401,
+        "auth": {
+          "categoryList": [],
+          "groupName": "",
+          "packageName": "",
+          "packageType": 0
+        },
+        "authSubject": "[3]",
+        "authSubjectIdList": [
+          "店铺"
+        ],
+        "auths": [
+          {
+            "categoryList": [
+              "联盟自研",
+              "撮合服务商",
+              "团长自研",
+              "联盟机构工具型",
+              "联盟机构自用型",
+              "联盟机构自研"
+            ],
+            "groupName": "精选联盟",
+            "packageName": "精选联盟商品推广",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "商家后台系统",
+              "AI智能客服-微应用",
+              "商品优化分析",
+              "电商ERP",
+              "商品基础工具"
+            ],
+            "groupName": "商品",
+            "packageName": "渠道商品管理",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "商家商品推广",
+              "店铺管理"
+            ],
+            "groupName": "精选联盟",
+            "packageName": "商家联盟推广",
+            "packageType": 1
+          }
+        ],
+        "commitAuditTime": "",
+        "contentType": 1,
+        "createTime": 1701067393,
+        "description": "支持商家通过接口对已经开启推广的商品，查询商品配置的策略",
+        "dirId": 61,
+        "dirLabels": [],
+        "dirName": "精选联盟API",
+        "docLabels": [],
+        "extra": {},
+        "finalStatus": 1,
+        "flag": 0,
+        "id": 5758,
+        "isTop": false,
+        "note": "",
+        "pv": 2683,
+        "reOnline": true,
+        "status": 1,
+        "subtitle": "支持商家通过接口对已经开启推广的商品，查询商品配置的策略",
+        "title": "/buyin/promotionStrategyList",
+        "updateTime": 1701067392,
+        "url": "",
+        "userList": [],
+        "userSceneDesc": "商品策略列表查询",
+        "version": "V1.03"
+      },
+      "tagNameMap": {
+        "25": "优惠券基础数据",
+        "26": "用户优惠券数据",
+        "28": "其他字段",
+        "29": "通用字段",
+        "30": "物流公司信息",
+        "31": "订单基础信息",
+        "32": "地址基础信息",
+        "33": "寄件人地址信息",
+        "34": "寄件人联系信息",
+        "35": "物流增值服务",
+        "36": "回单寄回地址",
+        "37": "收件人地址",
+        "38": "收件人信息",
+        "39": "商品基础信息",
+        "40": "商品重量体积信息",
+        "41": "快递配置规则",
+        "42": "订单备注",
+        "43": "仓库基础信息",
+        "44": "店铺基础信息",
+        "45": "小程序基础信息",
+        "46": "订单来源分析",
+        "47": "买家留言 ",
+        "48": "商家备注",
+        "49": "订单金额信息",
+        "50": "商品金额信息",
+        "51": "营销活动金额信息",
+        "52": "营销活动基础信息",
+        "53": "精选联盟",
+        "54": "跨境海淘",
+        "55": "库存基础信息",
+        "56": "售后基础信息",
+        "57": "电子卡券",
+        "58": "赠品",
+        "59": "组合（组套）商品",
+        "60": "虚拟商品",
+        "61": "定金预售",
+        "62": "懂车帝购车信息",
+        "63": "用户特征标签",
+        "64": "物流信息",
+        "65": "证件信息",
+        "66": "C2B定制",
+        "67": "买家基础信息",
+        "68": "买家敏感信息",
+        "69": "场景包测试标签a",
+        "70": "场景包测试标签b",
+        "71": "商家快递网点信息",
+        "72": "商品类目信息",
+        "73": "短信基础字段",
+        "74": "售后文案",
+        "75": "插旗信息",
+        "76": "售后金额信息",
+        "77": "风控信息",
+        "78": "换货基础信息",
+        "79": "售后标签",
+        "80": "门店基础信息",
+        "81": "售后商家备注信息",
+        "82": "达人样品订单",
+        "83": "即时零售订单接单状态",
+        "85": "换货和补寄信息",
+        "86": "物流异常风控",
+        "87": "商家售后地址信息",
+        "88": "售后仲裁",
+        "89": "买家退货物流信息",
+        "90": "补寄场景",
+        "91": "售后价保",
+        "92": "售后数据分析",
+        "93": "售后协商记录",
+        "94": "废弃字段",
+        "95": "商品尺码模板",
+        "96": "商品标题前缀",
+        "97": "商品参考价凭证",
+        "98": "商品资质信息",
+        "99": "商品限购信息",
+        "100": "特殊日期延迟发货",
+        "101": "商品销量",
+        "102": "店铺地址库",
+        "103": "即时零售商品基础信息",
+        "104": "解密基础字段",
+        "105": "解密虚拟号",
+        "106": "解密明文信息",
+        "107": "解密手机号明文",
+        "108": "解密姓名信息",
+        "109": "解密地址信息",
+        "110": "解密身份证信息",
+        "111": "查询改地址开关",
+        "112": "用户店铺关注信息",
+        "113": "店铺会话统计数据",
+        "114": "飞鸽会话统计数据",
+        "115": "飞鸽客服基础信息",
+        "116": "飞鸽会话信息",
+        "117": "飞鸽客服登录日志",
+        "118": "飞鸽客服接待统计信息",
+        "119": "飞鸽会话消息基础信息",
+        "120": "视频信息",
+        "121": "商品卖点信息",
+        "122": "授权基础信息",
+        "123": "商品价格信息",
+        "124": "商品分佣信息",
+        "125": "联盟分佣信息",
+        "126": "商品评价信息",
+        "127": "评价基础信息",
+        "128": "评价结果数据",
+        "129": "店铺体验分",
+        "130": "评价内容信息",
+        "131": "订单extra"
+      }
+    },
+    "errConfigList": [
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302630",
+        "errDesc": "货品不存在",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "货品信息校验不通过，按提示修改"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "100100",
+        "errDesc": "承运商不存在",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "根据提示修改，请检查快递编码"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1002",
+        "errDesc": "1002:Redis加锁失败",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "并发推送出库单失败，请重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302604",
+        "errDesc": "62302604:获取lo失败",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302625",
+        "errDesc": "62302625:接收订单异常，商家未入驻",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商家未入驻云仓，请检查是否开通云仓服务"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "500",
+        "errDesc": "500:500",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1001",
+        "errDesc": "1001:并发处理失败",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "并发处理失败，请重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302628",
+        "errDesc": "62302628:快递不可达，无推荐快递",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "快递不可达，请联系买家"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302605",
+        "errDesc": "62302605:构建物流订单失败",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请稍后重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62301121",
+        "errDesc": "62301121:重复接单",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请检查订单信息"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302635",
+        "errDesc": "62302635:库存不足",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请检查库存信息"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302633",
+        "errDesc": "62302633:并发推送erp单据失败，请重新下发",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请重新下发！"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302601",
+        "errDesc": "62302601:调用库存中心失败",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请重试！"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1249",
+        "errDesc": "1249:该订单已存在，无需重复下发",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "无需重复下发！"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302632",
+        "errDesc": "62302632:该单号已存在，请换一个手工单号重新下发",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "该单号已存在，请换一个手工单号重新下发"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "999999",
+        "errDesc": "999999:下游RPC超时",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请重试！"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1103",
+        "errDesc": "1103:请求内部服务超时",
+        "errTypeDesc": "",
+        "errTypeId": 9,
+        "onlineValue": {},
+        "solutionDesc": "请重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "-20001",
+        "errDesc": "-20001:没有足够的预占产能释放",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "没有足够的预占产能释放"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1003",
+        "errDesc": "1003:请求内部服务异常,请重试",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302606",
+        "errDesc": "62302606:构建物流履行单失败",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "构建物流履行单失败"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1271",
+        "errDesc": "1271:手工单号重复，请更换",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "手工单号重复，请更换"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1200",
+        "errDesc": "1200:标准化地址异常",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "标准化地址异常"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1252",
+        "errDesc": "1252:仓快递配置信息不存在",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "仓快递配置信息不存在"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1401",
+        "errDesc": "1401:规则查询缓存失败",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "规则查询缓存失败"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "-1",
+        "errDesc": "-1:请求详情列表（index=0）目的地-节点信息-省编码不能为空，请检查！",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请求详情列表（index=0）目的地-节点信息-省编码不能为空，请检查！"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1100",
+        "errDesc": "1100:查询店铺与货主绑定关系失败，请重试！",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "查询店铺与货主绑定关系失败，请重试！"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1253",
+        "errDesc": "1253:货主和店铺绑定关系不存在，请在scm进行货主和店铺关系绑定后重推数据！",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "货主和店铺绑定关系不存在，请在scm进行货主和店铺关系绑定后重推数据！"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60001",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "60001",
+          "errDesc": "60001:库存不足,无法出库,货品编码以及预占数量详情:货品编码:7589838778936688922,预占数量:1"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1411",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "1411",
+          "errDesc": "1411:分单失败：班次规则不存在，请检查该仓的班次规则!"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1509",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "1509",
+          "errDesc": "1509:账户余额不足，请至云仓商家工作台充值后重试"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1267",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "1267",
+          "errDesc": "1267:货品信息未推送至云仓，请先推送货品信息至云仓后再重推订单！"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "-500",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "-500",
+          "errDesc": "-500:-500"
+        },
+        "solutionDesc": ""
+      }
+    ]
+  },
+  "msg": ""
+}

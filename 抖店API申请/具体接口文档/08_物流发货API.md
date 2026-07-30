@@ -1,0 +1,79 @@
+# 物流发货API 具体接口索引
+
+> 官方目录：<https://op.jinritemai.com/docs/api-docs/16/8212>  
+> 本地归档日期：2026-07-14  
+> 当前目录可见接口：71 个。
+
+| 序号 | 接口路径 | 中文说明 | 版本 | 官方更新时间 | 本地文档 | 官方文档 |
+|---:|---|---|---|---|---|---|
+| 1 | /order/checkPreDelivery | 查询商家/订单是否可用预发货 | V1.01 | 2026/4/22 | [查看](./08_物流发货API/08212_order_checkPreDelivery.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/8212) |
+| 2 | /order/reportPreDeliveryOrder | 上报预发货订单 | V1.01 | 2026/4/22 | [查看](./08_物流发货API/08213_order_reportPreDeliveryOrder.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/8213) |
+| 3 | /logistics/terminalRouteData | 末端操作数据回传 | V1.06 | 2026/1/30 | [查看](./08_物流发货API/02363_logistics_terminalRouteData.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2363) |
+| 4 | /logistics/getRecommendedAndDeliveryExpressByOrder | 查询订单维度快递可达及推荐服务 | V1.01 | 2026/1/13 | [查看](./08_物流发货API/02856_logistics_getRecommendedAndDeliveryExpressByOrder.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2856) |
+| 5 | /power/updateCollectTime | 物流商推送改约时间 | V3.01 | 2026/1/6 | [查看](./08_物流发货API/01627_power_updateCollectTime.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1627) |
+| 6 | /order/logisticsAdd | 订单发货接口 | V2.14 | 2025/8/20 | [查看](./08_物流发货API/00718_order_logisticsAdd.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/718) |
+| 7 | /logistics/resourceAbilityServiceArea | 服务商能力的服务范围同步 | V2.02 | 2025/5/9 | [查看](./08_物流发货API/02147_logistics_resourceAbilityServiceArea.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2147) |
+| 8 | /power/isByteDancePackage | 末端服务字节面单信息查询（仅用于兼容老物流网关） | V3.01 | 2025/4/17 | [查看](./08_物流发货API/01558_power_isByteDancePackage.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1558) |
+| 9 | /freightTemplate/update | 更新运费模板 | V5.01 | 2025/3/17 | [查看](./08_物流发货API/01662_freightTemplate_update.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1662) |
+| 10 | /freightTemplate/create | 创建运费模板 | V6.01 | 2025/3/13 | [查看](./08_物流发货API/01661_freightTemplate_create.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1661) |
+| 11 | /freightTemplate/detail | 获取运费模板详情 | V4.01 | 2025/3/11 | [查看](./08_物流发货API/02157_freightTemplate_detail.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2157) |
+| 12 | /order/logisticsAddMultiPack | 一单多包发货接口（不适用于即时零售业务） | V4.14 | 2025/1/22 | [查看](./08_物流发货API/00562_order_logisticsAddMultiPack.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/562) |
+| 13 | /order/logisticsAddSinglePack | 支持多个订单发同一个物流包裹（不适用于即时零售业务） | V2.12 | 2025/1/22 | [查看](./08_物流发货API/00563_order_logisticsAddSinglePack.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/563) |
+| 14 | /instantShopping/getStoreAutoCallRider | 查询自动呼叫运力配置 | V1.01 | 2025/1/2 | [查看](./08_物流发货API/07189_instantShopping_getStoreAutoCallRider.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/7189) |
+| 15 | /instantShopping/GetCallRecord | 查询骑手-用户通话记录 | V1.01 | 2024/12/17 | [查看](./08_物流发货API/07155_instantShopping_GetCallRecord.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/7155) |
+| 16 | /instantShopping/distribution/notifyDeliveryStatus | 抖音侧订单状态变更回调 | V1.01 | 2024/6/14 | [查看](./08_物流发货API/06585_instantShopping_distribution_notifyDeliveryStatus.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/6585) |
+| 17 | /instantShopping/distribution/exceptionReport | 骑手上报异常 | V1.01 | 2024/6/14 | [查看](./08_物流发货API/06584_instantShopping_distribution_exceptionReport.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/6584) |
+| 18 | /logistics/terminalCancelOrder | 物流商取消 | V2.02 | 2024/3/1 | [查看](./08_物流发货API/02032_logistics_terminalCancelOrder.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2032) |
+| 19 | /logistics/sendByteDanceMessage | 短信代发 | V1.01 | 2024/2/21 | [查看](./08_物流发货API/02462_logistics_sendByteDanceMessage.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2462) |
+| 20 | /logistics/updateTerminalOrder | 末端订单状态推送 | V4.01 | 2024/1/4 | [查看](./08_物流发货API/02016_logistics_updateTerminalOrder.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2016) |
+| 21 | /superm/getShipmentInfo | 运力配送状态查询接口 | V1.02 | 2023/9/19 | [查看](./08_物流发货API/02743_superm_getShipmentInfo.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2743) |
+| 22 | /superm/setStoreAutoCallRider | 新增自动呼叫运力配置 | V1.01 | 2023/9/15 | [查看](./08_物流发货API/02800_superm_setStoreAutoCallRider.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2800) |
+| 23 | /superm/getDispatcherInfo | 运力呼叫询价/取消呼叫询价（正向） | V1.01 | 2023/9/15 | [查看](./08_物流发货API/02740_superm_getDispatcherInfo.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2740) |
+| 24 | /logistics/getDistrict | 四级地址查询接口 | V2.01 | 2023/9/15 | [查看](./08_物流发货API/02905_logistics_getDistrict.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2905) |
+| 25 | /order/uploadextrapackage | 订单额外运单信息上传接口 | V1.06 | 2023/7/11 | [查看](./08_物流发货API/04182_order_uploadextrapackage.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/4182) |
+| 26 | /crossBorder/orderOperate | 服务商回传仓储 | V12.01 | 2023/5/19 | [查看](./08_物流发货API/00526_crossBorder_orderOperate.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/526) |
+| 27 | /order/logisticsCompanyList | 获取快递公司列表 | V2.03 | 2023/5/18 | [查看](./08_物流发货API/00541_order_logisticsCompanyList.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/541) |
+| 28 | /logistics/ind/orderStatusPush | 订单状态回传 | V1.03 | 2023/4/24 | [查看](./08_物流发货API/02456_logistics_ind_orderStatusPush.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2456) |
+| 29 | /logistics/operatorAppointmentEventRequest | 服务商预约事件 | V1.01 | 2023/4/12 | [查看](./08_物流发货API/02920_logistics_operatorAppointmentEventRequest.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2920) |
+| 30 | /power/netsiteUpdate | 网点信息更新（仅用于兼容老物流网关） | V3.02 | 2023/3/20 | [查看](./08_物流发货API/01471_power_netsiteUpdate.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1471) |
+| 31 | /power/verifyFetchCode | 取件码核销（仅用于兼容老物流网关） | V1.02 | 2022/12/27 | [查看](./08_物流发货API/01478_power_verifyFetchCode.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1478) |
+| 32 | /power/queryPaymentStatus | 逆向支付信息查询 | V2.01 | 2022/12/26 | [查看](./08_物流发货API/01774_power_queryPaymentStatus.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1774) |
+| 33 | /dutyFree/orderOperate | 海南项目服务商回传实操节点 | V2.01 | 2022/12/14 | [查看](./08_物流发货API/01850_dutyFree_orderOperate.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1850) |
+| 34 | /power/HandleVirtualTelConnect | 虚拟号服务商回传虚拟号接通事件 | V2.01 | 2022/12/9 | [查看](./08_物流发货API/02011_power_HandleVirtualTelConnect.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2011) |
+| 35 | /power/virtualServicePushCallRecord | 虚拟号服务商通话记录回传（仅用于兼容老物流网关） | V2.01 | 2022/12/9 | [查看](./08_物流发货API/01920_power_virtualServicePushCallRecord.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1920) |
+| 36 | /order/logisticsEditByPack | 更新一单多包/合单发货物流信息 | V3.05 | 2022/12/5 | [查看](./08_物流发货API/00539_order_logisticsEditByPack.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/539) |
+| 37 | /order/logisticsEdit | 更新整单发货物流信息 | V3.05 | 2022/12/5 | [查看](./08_物流发货API/00390_order_logisticsEdit.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/390) |
+| 38 | /power/homeDeliveryCallback | 送货上门履约结果推送（仅用于兼容老物流网关） | V1.02 | 2022/11/8 | [查看](./08_物流发货API/01573_power_homeDeliveryCallback.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1573) |
+| 39 | /logistics/ind/aoi/push | 门店入驻后，自动/手动向承运商同步门店信息 | V1.01 | 2022/11/2 | [查看](./08_物流发货API/02455_logistics_ind_aoi_push.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2455) |
+| 40 | /address/getProvince | 获取四级地址全量省份信息 | V1.02 | 2022/8/8 | [查看](./08_物流发货API/01848_address_getProvince.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1848) |
+| 41 | /address/getAreasByProvince | 根据省获取全量四级地址 | V2.02 | 2022/8/8 | [查看](./08_物流发货API/01844_address_getAreasByProvince.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1844) |
+| 42 | /freightTemplate/list | 获取运费模板列表 | V2.02 | 2021/6/4 | [查看](./08_物流发货API/00565_freightTemplate_list.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/565) |
+| 43 | /crossborder/orderCustomClearance | 服务商回告清关状态 | V2.01 | 2021/5/18 | [查看](./08_物流发货API/00527_crossborder_orderCustomClearance.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/527) |
+| 44 | /crossborder/orderLogisticsTrace | 服务商回传国际干线作业节点 | V1.03 | 2021/5/18 | [查看](./08_物流发货API/00528_crossborder_orderLogisticsTrace.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/528) |
+| 45 | /logistics/customTemplateList | 查询商家自定义区域数据 | V1.03 | 2021/6/23 | [查看](./08_物流发货API/00549_logistics_customTemplateList.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/549) |
+| 46 | /crossBorder/orderConfirm | 服务商接单 | V1.01 | 2021/4/23 | [查看](./08_物流发货API/00401_crossBorder_orderConfirm.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/401) |
+| 47 | /power/expressSendMessage | 快递短信代发接口（仅用于兼容老物流网关） | V1.02 | 2022/1/12 | [查看](./08_物流发货API/01615_power_expressSendMessage.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1615) |
+| 48 | /power/courierStationUpdate | 末端资源更新（仅用于兼容老物流网关） | V1.02 | 2021/12/27 | [查看](./08_物流发货API/01572_power_courierStationUpdate.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1572) |
+| 49 | /power/decryptByteDanceMobile | 末端服务异常单数据解密接口（仅用于兼容老物流网关） | V1.02 | 2021/12/27 | [查看](./08_物流发货API/01571_power_decryptByteDanceMobile.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1571) |
+| 50 | /power/notifyRelationTicket | 物流商关联工单推送（仅用于兼容老物流网关） | V1.02 | 2021/12/27 | [查看](./08_物流发货API/01560_power_notifyRelationTicket.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1560) |
+| 51 | /power/sendByteDanceMessage | 末端服务短信待发（仅用于兼容老物流网关） | V1.02 | 2021/12/27 | [查看](./08_物流发货API/01559_power_sendByteDanceMessage.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1559) |
+| 52 | /power/batchCallback | batchCallback接口（仅用于兼容老物流网关） | V1.02 | 2021/12/17 | [查看](./08_物流发货API/01548_power_batchCallback.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1548) |
+| 53 | /power/ebillAccountCharge | 面单余额充值/撤销（仅用于兼容老物流网关） | V1.04 | 2021/11/24 | [查看](./08_物流发货API/01489_power_ebillAccountCharge.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1489) |
+| 54 | /power/updateInterceptionInfo | 拦截成功退回结果回传接口（仅用于兼容老物流网关） | V1.02 | 2021/11/24 | [查看](./08_物流发货API/01480_power_updateInterceptionInfo.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1480) |
+| 55 | /power/register | 订阅物流（仅用于兼容老物流网关） | V1.02 | 2021/11/24 | [查看](./08_物流发货API/01475_power_register.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1475) |
+| 56 | /power/pushNetCodeMapList | 段码配置数据 | V1.02 | 2022/1/21 | [查看](./08_物流发货API/01637_power_pushNetCodeMapList.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1637) |
+| 57 | /power/pickupCodeCallback | 末端服务商回传取件码（仅用于兼容老物流网关） | V2.02 | 2022/4/27 | [查看](./08_物流发货API/01793_power_pickupCodeCallback.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/1793) |
+| 58 | /logistics/merchant/updateCalendar | 商家上传上门自取日历 | V1.01 | 2025/12/16 | [查看](./08_物流发货API/07952_logistics_merchant_updateCalendar.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/7952) |
+| 59 | /logistics/merchant/confirmUpdateResult | 确认更新结果 | V1.01 | 2025/12/16 | [查看](./08_物流发货API/07951_logistics_merchant_confirmUpdateResult.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/7951) |
+| 60 | /promise/SaveTemplate | 创建时效规则 | V1.01 | 2025/6/5 | [查看](./08_物流发货API/07496_promise_SaveTemplate.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/7496) |
+| 61 | /instantShopping/setStoreAutoCallRider | 新增自动呼叫运力配置 | V1.01 | 2025/1/2 | [查看](./08_物流发货API/07190_instantShopping_setStoreAutoCallRider.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/7190) |
+| 62 | /order/queryOrderLogistics | 查询订单包裹物流 | V1.01 | 2024/12/23 | [查看](./08_物流发货API/07170_order_queryOrderLogistics.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/7170) |
+| 63 | /instantShopping/notifyPickingStatus | 回传商家拣货状态 | V1.03 | 2024/4/10 | [查看](./08_物流发货API/06394_instantShopping_notifyPickingStatus.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/6394) |
+| 64 | /freightTemplate/delete | 删除运费模板 | V1.01 | 2024/2/27 | [查看](./08_物流发货API/06200_freightTemplate_delete.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/6200) |
+| 65 | /instantShopping/cancelDelivery | 平台运力取消 | V1.02 | 2023/9/20 | [查看](./08_物流发货API/04778_instantShopping_cancelDelivery.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/4778) |
+| 66 | /instantShopping/getDeliveryListByOrderId | 商家查询抖音配送信息。 | V1.01 | 2023/9/20 | [查看](./08_物流发货API/04776_instantShopping_getDeliveryListByOrderId.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/4776) |
+| 67 | /order/queryLogisticsCompanyList | 查询当前商家、订单可用物流公司列表 | V1.01 | 2023/5/18 | [查看](./08_物流发货API/03845_order_queryLogisticsCompanyList.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/3845) |
+| 68 | /logistics/QueryRecycleCateByLevelForPaging | 回收服务商查询字节回收类目 | V1.01 | 2023/4/17 | [查看](./08_物流发货API/03579_logistics_QueryRecycleCateByLevelForPaging.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/3579) |
+| 69 | /superm/cancelPlatformPickUp | 运力取消（逆向） | V1.01 | 2022/11/10 | [查看](./08_物流发货API/02742_superm_cancelPlatformPickUp.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2742) |
+| 70 | /logistics/pushPickupCode | 末端服务商推送取件码信息 | V1.01 | 2022/10/31 | [查看](./08_物流发货API/02671_logistics_pushPickupCode.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2671) |
+| 71 | /crossBorder/receiveReceiptOfCustomsWayBill | 快递服务商将运单申报的回执回告至平台 | V2.01 | 2022/6/17 | [查看](./08_物流发货API/02020_crossBorder_receiveReceiptOfCustomsWayBill.md) | [官方](https://op.jinritemai.com/docs/api-docs/16/2020) |

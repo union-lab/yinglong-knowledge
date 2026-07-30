@@ -1,0 +1,404 @@
+{
+  "code": 0,
+  "data": {
+    "CustomerError": {
+      "ErrCode": 0,
+      "ErrMsg": ""
+    },
+    "RelevanceFAQs": [
+      {
+        "articleId": 1779,
+        "dirId": 89,
+        "title": "调用解密接口报错“您的环境存在安全风险，请稍后再试”？"
+      },
+      {
+        "articleId": 2672,
+        "dirId": 89,
+        "title": "调用解密接口/order/batchDecrypt报错“请停止非必要的解密，12小时内自动恢复”？"
+      },
+      {
+        "articleId": 3365,
+        "dirId": 89,
+        "title": "调用解密接口，报错：“基于消费者隐私保护，该订单状态禁止查看”，如何解决？"
+      },
+      {
+        "articleId": 7093,
+        "dirId": 89,
+        "title": "/order/batchdecrypt接口sub_code返回isv.business-failed:300001的异常解决策略"
+      },
+      {
+        "articleId": 4507,
+        "dirId": 89,
+        "title": "调用批量解密接口解密订单，调用次数和解密额度是如何计算的？"
+      },
+      {
+        "articleId": 3539,
+        "dirId": 89,
+        "title": "调用解密接口：/order/batchDecrypt，报错: 批量解密存在部分失败，如何解决？"
+      },
+      {
+        "articleId": 3675,
+        "dirId": 96,
+        "title": "调用解密接口报错“非抖店云容器环境下，不允许访问此API”"
+      },
+      {
+        "articleId": 3021,
+        "dirId": 89,
+        "title": "调用解密接口：order/batchDecrypt，该接口有调用次数限制吗？地址能解析到，手机号解析不到是什么情况？ 调用次数和商家后台查询客户联系方式是共享次数的吗？"
+      },
+      {
+        "articleId": 3650,
+        "dirId": 89,
+        "title": "调用解密接口/order/batchDecrypt报错\"msg\":\"请求来源非法，当前接口只能在特定来源下访问\"，\"sub_msg\":\"非抖店云容器环境下，不允许访问此API\""
+      },
+      {
+        "articleId": 4012,
+        "dirId": 89,
+        "title": "抖店订单解密接口报错FAQ汇总指南"
+      },
+      {
+        "articleId": 4503,
+        "dirId": 89,
+        "title": "调用解密接口/order/batchDecrypt报错 \"请关注额度使用情况，稍后再试\" ？"
+      },
+      {
+        "articleId": 3545,
+        "dirId": 89,
+        "title": "批量解密接口和批量脱敏接口这两个接口有什么区别？"
+      },
+      {
+        "articleId": 5309,
+        "dirId": 89,
+        "title": "关于解密接口：/order/batchDecrypt解密调用问题，有没有方式控制返回虚拟号还是真实手机号？"
+      },
+      {
+        "articleId": 6194,
+        "dirId": 89,
+        "title": "订单解密迁移到抖店云后如何解密，可以只迁入这个接口吗？"
+      },
+      {
+        "articleId": 3213,
+        "dirId": 89,
+        "title": "关于批量解密接口中的字段：account_id ，字段描述：服务商账号体系中，商户的账户ID，这个ID是什么？"
+      },
+      {
+        "articleId": 4909,
+        "dirId": 1254,
+        "title": "为什么我从云外部调用云内的解密操作后，虽然云内解密成功，但我没有收到解密的参数返回？"
+      },
+      {
+        "articleId": 4810,
+        "dirId": 1254,
+        "title": "服务迁移云上后，还会有解密额度限制吗？可以先放开解密限制吗？"
+      },
+      {
+        "articleId": 5942,
+        "dirId": 89,
+        "title": "解密订单，报错：当前解密需要鉴定店铺与authId的从属关系, authId 和 orderId无法完成映射，如何解决？"
+      },
+      {
+        "articleId": 6353,
+        "dirId": 89,
+        "title": "批量解密接口返回虚拟号码，如何获取明文？"
+      },
+      {
+        "articleId": 6222,
+        "dirId": 89,
+        "title": "自研商家是否可以通过【批量解密】接口获取全量订单的虚拟号或者明文手机号？是否还会有解密次数限制？"
+      },
+      {
+        "articleId": 5166,
+        "dirId": 89,
+        "title": "为什么解密用户信息时，部分订单提示解密错误，并且返回“您当天的查看额度已用完，请明日再看”，但后续订单依然正常解密？"
+      },
+      {
+        "articleId": 3970,
+        "dirId": 89,
+        "title": "调用解密接口：/order/batchDecrypt，解密返回异常，报错：解密数据产生错误，kms解密错误，请确认密文信息，如何解决？"
+      },
+      {
+        "articleId": 5423,
+        "dirId": 89,
+        "title": "关于批量解密接口，没有找到入参is_virtual_tel这个字段，是默认拿掉还是默认解密后是虚拟号？"
+      },
+      {
+        "articleId": 5014,
+        "dirId": 89,
+        "title": "为什么我刚下单的已支付号卡订单调用解密接口会报错：“基于消费者隐私保护，该订单状态禁止查看”?"
+      },
+      {
+        "articleId": 3524,
+        "dirId": 89,
+        "title": "调用解密接口：order/batchDecrypt，报错block，如何解决？"
+      },
+      {
+        "articleId": 5231,
+        "dirId": 89,
+        "title": "使用前端SDK查看订单的敏感数据会不会消耗每天的解密额度?"
+      },
+      {
+        "articleId": 5695,
+        "dirId": 89,
+        "title": "调用批量解密接口，报错: 批量解密错误，请重试，如何解决？"
+      },
+      {
+        "articleId": 5971,
+        "dirId": 1263,
+        "title": "对接电子面单后，订单解密接口还能获取到买家明文信息吗？"
+      },
+      {
+        "articleId": 5102,
+        "dirId": 1254,
+        "title": "抖店云内调用订单解密服务为何报错'java.net.SocketTimeoutException: connect timed out'?"
+      },
+      {
+        "articleId": 5383,
+        "dirId": 45,
+        "title": "可通过什么渠道联系到抖店运营协助商家开通后台的解密权限？"
+      },
+      {
+        "articleId": 5507,
+        "dirId": 89,
+        "title": "抖店3C的商品订单入云后支持解密吗？"
+      },
+      {
+        "articleId": 7139,
+        "dirId": 89,
+        "title": "order/batchDecrypt报错\"err_msg\": BizStatusCode:[20004] BizStatusMessage:[非法参数]"
+      },
+      {
+        "articleId": 6291,
+        "dirId": 89,
+        "title": "订单收货人解密接口报错：/order/batchDecrypt，报错按照特定字符拆分之后的数组长度低于最短长度，如何解决？"
+      },
+      {
+        "articleId": 5216,
+        "dirId": 89,
+        "title": "调用解密接口，报错当前isv解密权限已被商家主账号关闭，如何解决？"
+      },
+      {
+        "articleId": 6317,
+        "dirId": 89,
+        "title": "应用未完成平台安全验收解密功能已禁用怎么处理？"
+      },
+      {
+        "articleId": 5002,
+        "dirId": 89,
+        "title": "解密报错：履约请使用懂车帝安装履约应用，如何解决？"
+      }
+    ],
+    "article": {
+      "content": "{\"request\":{\"publicParam\":[{\"requestName\":\"method\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"order.batchDecrypt\",\"description\":\"调用的API接口名称\"},{\"requestName\":\"app_key\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"6839996111118329223\",\"description\":\"应用创建完成后被分配的key\"},{\"requestName\":\"access_token\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"edae7c30-8386-443b-88a1-031111596fdd\",\"description\":\"用于调用 API 的 access_token\",\"hiddenForInterfaceName\":[\"/token/create\"]},{\"requestName\":\"param_json\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"{cid:12,page:1}\",\"description\":\"标准json类型，里面是业务参数按照参数名的字符串大小排序具体参数值，参考每个接口的参数表\"},{\"requestName\":\"timestamp\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2020-09-15 14:48:13\",\"description\":\"时间戳，格式为yyyy-MM-dd HH:mm:ss，时区为GMT+8，例如：2016-01-01 12:00:00\"},{\"requestName\":\"v\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2\",\"description\":\"API协议版本，当前版本为2\"},{\"requestName\":\"sign\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"796559d40beb08a1a1113c456c5c5a62\",\"description\":\"输入参数签名结果，签名算法参照 [API调用指南](https://op.jinritemai.com/docs/guide-docs/10/23)\"},{\"requestName\":\"sign_method\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"hmac-sha256\",\"description\":\"签名算法类型推荐使用hmac-sha256后续会下线md5（不传则默认为\\\"md5\\\"）1. md5:表示用md5算法加密字符串 2. hmac-sha256:表示用hmac_sha_256算法加密字符串\"}],\"requestParam\":[{\"requestName\":\"cipher_infos\",\"toName\":\"cipherInfos\",\"mustNeed\":true,\"type\":3,\"subType\":5,\"style\":1,\"example\":\"\",\"description\":\"待解密值集合，最大支持一次解密50条。待解密的密文列表示例，入参结构{\\\"cipher_infos\\\":[{\\\"auth_id”:”订单号”,”cipher_text”:”待解密值”},{“auth_id”:”订单号”,”cipher_text”:”待解密值”}]}\",\"cipherTextType\":1,\"children\":[{\"requestName\":\"auth_id\",\"toName\":\"orderId\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"4933609365066313446\",\"description\":\"正向解密使用订单号，逆向退款解密使用售后单号\",\"cipherTextType\":1},{\"requestName\":\"cipher_text\",\"toName\":\"cipherText\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"$c0qBj0QrZm9qae50eoBTInPj8PWvCjUyafxWt5cELI0=$pExhpmm6cJ5VuSkvduc3QrdA4THYUZjuoENdITyvkWbRm44PiY8HsHWEXzxQ77kBM7xzNMxoLzfIUnxxxJ/P6uautZu7FjzmjUAkXvbFWlM+*CgkIARCtHCABKAESPgo82qRAg0QjFELjtKxb8xUtm1YUGo6/9spO0OEG2j7RCutuqWHOYJpEdvPZIqsirv5F4byTrHMVDwn+9Bz4GgA=$1$$,#ML3B#0BB1W4adLHYf+1s8VI3eLeeK0Kq0kc8zLLZ0B9WFvKWLZHIU5mf2HF23PCR+z0aYj7R7CCv6DymAy8Mzpa+olZkPYr1PoWmJ*CgkIARCtHCABKAESPgo8YToGx4Xhzb2dDxYMRP1ZEDGC+8STVmEMRed/naetKeJTUXwnWv0P3lgEgPPP/UFHZ2LTzUKIX2ticBvHGgA=#1##\",\"description\":\"待解密值\",\"cipherTextType\":1}]},{\"requestName\":\"account_id\",\"toName\":\"accountId\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"dy1001\",\"description\":\"服务商账号体系中，商户的账户ID，每个ISV下需要保证唯一，可选格式:独立生成的账户唯一标识\",\"cipherTextType\":1},{\"requestName\":\"account_type\",\"toName\":\"accountType\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"main_account\",\"description\":\"商户的账户ID类型；服务商账号中的主-main_account；子账号-sub_account；\",\"cipherTextType\":1},{\"requestName\":\"need_virtual_phone\",\"toName\":\"needVirtualPhone\",\"type\":1,\"style\":1,\"example\":\"0\",\"description\":\"仅代拍场景下使用该字段，不传或传入0：表示使用代拍虚拟号逻辑，1：表示不使用代拍虚拟号逻辑\",\"cipherTextType\":1}]},\"response\":{\"responseData\":[{\"responseName\":\"decrypt_infos\",\"fromName\":\"decryptInfos\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"解密列表\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"auth_id\",\"fromName\":\"orderId\",\"type\":2,\"example\":\"4933609365066313446\",\"description\":\"业务标识；解密抖音官方密文数据使用订单号即可。如果开发者使用【/order/batchEncrypt】加密接口自定义auth_id值，需要传自己定义的标识。\",\"securityLevel\":\"R1\",\"tagId\":104},{\"responseName\":\"cipher_text\",\"fromName\":\"cipherText\",\"type\":2,\"example\":\"$c0qBj0QrZm9qae50eoBTInPj8PWvCjUyafxWt5cELI0=$pExhpmm6cJ5VuSkvduc3QrdA4THYUZjuoENdITyvkWbRm44PiY8HsHWEXzxQ77kBM7xzNMxoLzfIUnxxxJ/P6uautZu7FjzmjUAkXvbFWlM+*CgkIARCtHCABKAESPgo82qRAg0QjFELjtKxb8xUtm1YUGo6/9spO0OEG2j7RCutuqWHOYJpEdvPZIqsirv5F4byTrHMVDwn+9Bz4GgA=$1$$,#ML3B#0BB1W4adLHYf+1s8VI3eLeeK0Kq0kc8zLLZ0B9WFvKWLZHIU5mf2HF23PCR+z0aYj7R7CCv6DymAy8Mzpa+olZkPYr1PoWmJ*CgkIARCtHCABKAESPgo8YToGx4Xhzb2dDxYMRP1ZEDGC+8STVmEMRed/naetKeJTUXwnWv0P3lgEgPPP/UFHZ2LTzUKIX2ticBvHGgA=#1##\",\"description\":\"密文值，具体内容参考[数据安全加密对接文档](https://op.jinritemai.com/docs/guide-docs/56/589)\",\"securityLevel\":\"R1\",\"tagId\":104},{\"responseName\":\"decrypt_text\",\"fromName\":\"decryptText\",\"type\":2,\"example\":\"12317428564\",\"description\":\"解密后明文信息；手机号场景下规则：当is_virtual_tel=fasle时，decrypt_text返回值明文手机号，当is_virtual_tel=true时，并且解密入参是手机号时，decrypt_text返回值为虚拟号主机(phone_no_a)-虚拟号分机号(phone_no_b)的拼接值，返回示例值：”18400913965-7576”\",\"securityLevel\":\"R1\",\"tagId\":106},{\"responseName\":\"err_no\",\"fromName\":\"errNo\",\"type\":1,\"example\":\"300003\",\"description\":\"错误码\",\"securityLevel\":\"R1\",\"tagId\":29},{\"responseName\":\"err_msg\",\"fromName\":\"errMsg\",\"type\":2,\"example\":\"解密失败：当前密文不属于信封加密的数据\",\"description\":\"错误描述\",\"securityLevel\":\"R1\",\"tagId\":29},{\"responseName\":\"data_type\",\"fromName\":\"dataType\",\"type\":1,\"example\":\"1\",\"description\":\"加密类型 1、 地址加密类型 2、 姓名加密类型 3、 手机号加密类型 4、身份证类型 5、手机号加密类型(不会返回虚拟号)\",\"tagId\":104},{\"responseName\":\"is_virtual_tel\",\"fromName\":\"isVirtualTel\",\"type\":4,\"example\":\"false\",\"description\":\"手机号描述；false-真实手机号，true-虚拟手机号\",\"securityLevel\":\"R1\",\"tagId\":105},{\"responseName\":\"expire_time\",\"fromName\":\"expireTime\",\"type\":1,\"example\":\"1653396024\",\"description\":\"虚拟号过期时间（商家自有呼叫中心记录，在到期后还需要则再次请求获取）\",\"securityLevel\":\"R1\",\"tagId\":105},{\"responseName\":\"phone_no_a\",\"fromName\":\"phoneNoA\",\"type\":2,\"example\":\"12317428564\",\"description\":\"虚拟号主机号；当is_virtual_tel=true时，有值返回，当is_virtual_tel=fasle时，返回为空；\",\"securityLevel\":\"R1\",\"tagId\":105},{\"responseName\":\"phone_no_b\",\"fromName\":\"phoneNoB\",\"type\":2,\"example\":\"5643\",\"description\":\"虚拟号分机号；当is_virtual_tel=true时，有值返回，当is_virtual_tel=fasle时，返回为空；\",\"securityLevel\":\"R1\",\"tagId\":105}]},{\"responseName\":\"custom_err\",\"fromName\":\"CustomErr\",\"type\":5,\"example\":\"\",\"description\":\"业务错误\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"err_code\",\"fromName\":\"ErrCode\",\"type\":1,\"example\":\"8000\",\"description\":\"错误码\",\"securityLevel\":\"R1\",\"tagId\":29},{\"responseName\":\"err_msg\",\"fromName\":\"ErrMsg\",\"type\":2,\"example\":\"解密失败：批量解密存在部分失败\",\"description\":\"错误内容描述\",\"securityLevel\":\"R1\",\"tagId\":29}]}]},\"demo\":{\"requestDemo\":{\"curl\":{\"reqUrl\":\"https://openapi-fxg.jinritemai.com?app_key=your_appkey_here\\u0026method=\\u0026access_token=your_accesstoken_here\\u0026param_json={}\\u0026timestamp=2018-06-19%2016:06:59\\u0026v=2\\u0026sign=your_sign_here\"},\"java\":{\"code\":\"OrderBatchDecryptRequest request = new OrderBatchDecryptRequest();\\nOrderBatchDecryptParam param = request.getParam();\\nparam.setAccountId(\\\"dy1001\\\");\\nparam.setAccountType(\\\"main_account\\\");\\nparam.setNeedVirtualPhone(0L);\\nOrderBatchDecryptResponse response = request.execute(accessToken);\\n\"},\"php\":{\"code\":\"$request = new OrderBatchDecryptRequest();\\n$param = new OrderBatchDecryptParam();\\n$request-\\u003esetParam($param);\\n$param-\\u003eaccount_id = \\\"dy1001\\\";\\n$param-\\u003eaccount_type = \\\"main_account\\\";\\n$param-\\u003eneed_virtual_phone = 0;\\n$response = $request-\\u003eexecute(accessToken);\\n\"},\"python\":{\"code\":\"request = OrderBatchDecryptRequest()\\nparam = request.getParams()\\nparam.account_id = \\\"dy1001\\\"\\nparam.account_type = \\\"main_account\\\"\\nparam.need_virtual_phone = 0\\nresponse = request.execute(accessToken)\\n\"},\"go\":{\"code\":\"request := order_batchDecrypt_request.New()\\nparam := request.GetParams()\\nparam.AccountId = \\\"dy1001\\\"\\nparam.AccountType = \\\"main_account\\\"\\nparam.NeedVirtualPhone = 0\\nresponse := request.Execute(accessToken)\\n\"},\"dotNetCore\":{\"code\":\"var request = new OrderBatchDecryptRequest();\\nvar param = request.BuildParam();\\nparam.AccountId = \\\"dy1001\\\";\\nparam.AccountType = \\\"main_account\\\";\\nparam.NeedVirtualPhone = 0;\\nvar response = request.Execute\\u003cOrderBatchDecryptResponse\\u003e(accessToken);\\n\"},\"js\":{}},\"responseDemo\":{\"responseSuccess\":{\"code\":10000,\"msg\":\"success\",\"sub_code\":\"\",\"sub_msg\":\"\"},\"responseError\":{\"sub_code\":\"\",\"sub_msg\":\"\"}}},\"error\":{\"errCodeList\":[{\"msg\":\"success\",\"code\":10000},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"业务处理失败,详情请看sub_msg\",\"subCode\":\"isv.business-failed:300003\",\"solution\":\"无\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"300008:解密接口存在部分失败\",\"subCode\":\"isv.business-failed:300008\",\"solution\":\"无\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"300001:解密错误: 批量解密存在部分失败\",\"subCode\":\"isv.business-failed:300001\",\"solution\":\"无\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"300007:解密错误: 批量解密存在部分失败\",\"subCode\":\"isv.business-failed:300007\",\"solution\":\"300007:解密错误: 批量解密存在部分失败\"}]}}",
+      "info": {
+        "AuditedTime": "",
+        "access": false,
+        "apiChargeType": 2,
+        "apiLimitLevel": 1,
+        "apiLimitValue": 1500,
+        "apiSpiMsgNames": [],
+        "articleOutId": 427,
+        "auditStatus": 401,
+        "auth": {
+          "categoryList": [],
+          "groupName": "",
+          "packageName": "",
+          "packageType": 0
+        },
+        "authSubject": "[3]",
+        "authSubjectIdList": [
+          "店铺",
+          "物流商"
+        ],
+        "auths": [
+          {
+            "categoryList": [
+              "物流连接平台"
+            ],
+            "groupName": "物流连接平台",
+            "packageName": "消费者敏感数据解密-物流连接平台",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "内部测类目",
+              "任务玩法",
+              "强管控微应用",
+              "内部测试",
+              "订单管理",
+              "电商ERP"
+            ],
+            "groupName": "订单",
+            "packageName": "订单管理",
+            "packageType": 10
+          },
+          {
+            "categoryList": [
+              "卡券商工具",
+              "到家外卖云打印",
+              "到家外卖订单配送",
+              "到家外卖ERP",
+              "打单发货-微应用",
+              "到家外卖商家自研",
+              "教育服务",
+              "商家后台系统",
+              "到店安装",
+              "即时零售订单配送",
+              "即时零售ebill订单管理（临时）",
+              "即时零售ERP",
+              "虚拟充值",
+              "即时零售商家自研",
+              "订单管理",
+              "商品供应链",
+              "电商ERP"
+            ],
+            "groupName": "订单",
+            "packageName": "消费者敏感数据解密",
+            "packageType": 1
+          }
+        ],
+        "commitAuditTime": "",
+        "contentType": 1,
+        "createTime": -62135596800,
+        "defaultApiAndAppLimitLevel": 1,
+        "defaultApiAndAppLimitValue": 100,
+        "description": "1、接口支持解密在文档字段有“密文”红色标识字段值：收件人电话收件人姓名；详细地址；账号值；证件号；证件姓名\n2、不支持解密doudian_open_id字段加密用户ID串\n3、最大支持一次解密50条数据\n4、cipher_infos字段待解密的密文列表示例，\n入参结构{\"cipher_infos\":[{\"auth_id”:”订单号”,”cipher_text”:”待解密值”},{“auth_id”:”订单号”,”cipher_text”:”待解密值”}]}\n入参示例{\"cipher_infos\":[{\"auth_id\":\"4933609365066313446\",\"cipher_text\":\"#ML3B#0BB1W4adLHYf+1s8VI3eLeeK0Kq0kc8A=#1##\"},\n{\"auth_id\":\"4933609365066313446\",\"cipher_text\":\"#IuxSQE5bRVX8PJCWnZJoMf62ZFoLqBrE0vhkDX1Ua3tAA1IdkoaJ1R#1##\"}]}\n5、decrypt_text响应参数手机号场景下：当is_virtual_tel=fasle时，decrypt_text返回值明文手机号，当is_virtual_tel=true时，并且解密入参是手机号时，decrypt_text返回值为虚拟号主机(phone_no_a)-虚拟号分机号(phone_no_b)的拼接值，返回示例值：”18400913965-7576”",
+        "dirId": 15,
+        "dirLabels": [],
+        "dirName": "订单API",
+        "docLabels": [],
+        "extra": {
+          "creator": "",
+          "feishuDocUrl": "",
+          "mailDocUrl": "",
+          "mailPicUrl": "",
+          "mailTag": 0,
+          "noticeAuditUrl": "",
+          "ticketUrl": ""
+        },
+        "finalStatus": 1,
+        "flag": 0,
+        "id": 982,
+        "isTop": false,
+        "note": "",
+        "pv": 36237,
+        "reOnline": true,
+        "status": 1,
+        "subtitle": "1、接口支持解密在文档字段有“密文”红色标识字段值：收件人电话收件人姓名；详细地址；账号值；证件号；证件姓名\n2、不支持解密doudian_open_id字段加密用户ID串\n3、最大支持一次解密50条数据\n4、cipher_infos字段待解密的密文列表示",
+        "title": "/order/batchDecrypt",
+        "updateTime": 1703504311,
+        "url": "",
+        "userList": [],
+        "userSceneDesc": "批量解密接口",
+        "version": "V6.15"
+      },
+      "tagNameMap": {
+        "25": "优惠券基础数据",
+        "26": "用户优惠券数据",
+        "28": "其他字段",
+        "29": "通用字段",
+        "30": "物流公司信息",
+        "31": "订单基础信息",
+        "32": "地址基础信息",
+        "33": "寄件人地址信息",
+        "34": "寄件人联系信息",
+        "35": "物流增值服务",
+        "36": "回单寄回地址",
+        "37": "收件人地址",
+        "38": "收件人信息",
+        "39": "商品基础信息",
+        "40": "商品重量体积信息",
+        "41": "快递配置规则",
+        "42": "订单备注",
+        "43": "仓库基础信息",
+        "44": "店铺基础信息",
+        "45": "小程序基础信息",
+        "46": "订单来源分析",
+        "47": "买家留言 ",
+        "48": "商家备注",
+        "49": "订单金额信息",
+        "50": "商品金额信息",
+        "51": "营销活动金额信息",
+        "52": "营销活动基础信息",
+        "53": "精选联盟",
+        "54": "跨境海淘",
+        "55": "库存基础信息",
+        "56": "售后基础信息",
+        "57": "电子卡券",
+        "58": "赠品",
+        "59": "组合（组套）商品",
+        "60": "虚拟商品",
+        "61": "定金预售",
+        "62": "懂车帝购车信息",
+        "63": "用户特征标签",
+        "64": "物流信息",
+        "65": "证件信息",
+        "66": "C2B定制",
+        "67": "买家基础信息",
+        "68": "买家敏感信息",
+        "69": "场景包测试标签a",
+        "70": "场景包测试标签b",
+        "71": "商家快递网点信息",
+        "72": "商品类目信息",
+        "73": "短信基础字段",
+        "74": "售后文案",
+        "75": "插旗信息",
+        "76": "售后金额信息",
+        "77": "风控信息",
+        "78": "换货基础信息",
+        "79": "售后标签",
+        "80": "门店基础信息",
+        "81": "售后商家备注信息",
+        "82": "达人样品订单",
+        "83": "即时零售订单接单状态",
+        "85": "换货和补寄信息",
+        "86": "物流异常风控",
+        "87": "商家售后地址信息",
+        "88": "售后仲裁",
+        "89": "买家退货物流信息",
+        "90": "补寄场景",
+        "91": "售后价保",
+        "92": "售后数据分析",
+        "93": "售后协商记录",
+        "94": "废弃字段",
+        "95": "商品尺码模板",
+        "96": "商品标题前缀",
+        "97": "商品参考价凭证",
+        "98": "商品资质信息",
+        "99": "商品限购信息",
+        "100": "特殊日期延迟发货",
+        "101": "商品销量",
+        "102": "店铺地址库",
+        "103": "即时零售商品基础信息",
+        "104": "解密基础字段",
+        "105": "解密虚拟号",
+        "106": "解密明文信息",
+        "107": "解密手机号明文",
+        "108": "解密姓名信息",
+        "109": "解密地址信息",
+        "110": "解密身份证信息",
+        "111": "查询改地址开关",
+        "112": "用户店铺关注信息",
+        "113": "店铺会话统计数据",
+        "114": "飞鸽会话统计数据",
+        "115": "飞鸽客服基础信息",
+        "116": "飞鸽会话信息",
+        "117": "飞鸽客服登录日志",
+        "118": "飞鸽客服接待统计信息",
+        "119": "飞鸽会话消息基础信息",
+        "120": "视频信息",
+        "121": "商品卖点信息",
+        "122": "授权基础信息",
+        "123": "商品价格信息",
+        "124": "商品分佣信息",
+        "125": "联盟分佣信息",
+        "126": "商品评价信息",
+        "127": "评价基础信息",
+        "128": "评价结果数据",
+        "129": "店铺体验分",
+        "130": "评价内容信息",
+        "131": "订单extra"
+      }
+    }
+  },
+  "msg": ""
+}

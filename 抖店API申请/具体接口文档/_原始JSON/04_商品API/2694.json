@@ -1,0 +1,1202 @@
+{
+  "code": 0,
+  "data": {
+    "CustomerError": {
+      "ErrCode": 0,
+      "ErrMsg": ""
+    },
+    "article": {
+      "content": "{\"request\":{\"publicParam\":[{\"requestName\":\"method\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"product.partialEdit\",\"description\":\"调用的API接口名称\"},{\"requestName\":\"app_key\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"6839996111118329223\",\"description\":\"应用创建完成后被分配的key\"},{\"requestName\":\"access_token\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"edae7c30-8386-443b-88a1-031111596fdd\",\"description\":\"用于调用 API 的 access_token\",\"hiddenForInterfaceName\":[\"/token/create\"]},{\"requestName\":\"param_json\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"{cid:12,page:1}\",\"description\":\"标准json类型，里面是业务参数按照参数名的字符串大小排序具体参数值，参考每个接口的参数表\"},{\"requestName\":\"timestamp\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2020-09-15 14:48:13\",\"description\":\"时间戳，格式为yyyy-MM-dd HH:mm:ss，时区为GMT+8，例如：2016-01-01 12:00:00\"},{\"requestName\":\"v\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2\",\"description\":\"API协议版本，当前版本为2\"},{\"requestName\":\"sign\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"796559d40beb08a1a1113c456c5c5a62\",\"description\":\"输入参数签名结果，签名算法参照 [API调用指南](https://op.jinritemai.com/docs/guide-docs/10/23)\"},{\"requestName\":\"sign_method\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"hmac-sha256\",\"description\":\"签名算法类型推荐使用hmac-sha256后续会下线md5（不传则默认为\\\"md5\\\"）1. md5:表示用md5算法加密字符串 2. hmac-sha256:表示用hmac_sha_256算法加密字符串\"}],\"requestParam\":[{\"requestName\":\"product_id\",\"toName\":\"product_id\",\"mustNeed\":true,\"type\":1,\"style\":1,\"example\":\"31314511114124151\",\"description\":\"商品id\",\"cipherTextType\":1,\"timeConvert\":6},{\"requestName\":\"name\",\"toName\":\"name\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"半身裙111\",\"description\":\"商品名称\",\"cipherTextType\":1},{\"requestName\":\"shop_category\",\"toName\":\"shop_category\",\"mustNeed\":false,\"type\":5,\"style\":1,\"example\":\"\",\"description\":\"店铺分类参数\",\"cipherTextType\":1,\"children\":[{\"requestName\":\"leaf_category_ids\",\"toName\":\"leaf_category_ids\",\"mustNeed\":false,\"type\":3,\"subType\":1,\"style\":1,\"example\":\"[7184320140241125691,\\n            7184320140241142075,\\n            7184320198915129659,\\n            7184320198915146043]\",\"description\":\"店铺叶子分类id，为[]表示清空商品店铺分类。【已废弃，请使用店铺装修侧，/shop/marketCategoryOpsProd 接口修改商品装修分类】\",\"cipherTextType\":1}]},{\"requestName\":\"short_product_name\",\"toName\":\"short_product_name\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"aaa\",\"description\":\"商品短标题\",\"cipherTextType\":1},{\"requestName\":\"title_info\",\"toName\":\"title_info\",\"mustNeed\":false,\"type\":5,\"style\":1,\"example\":\"\",\"description\":\"标题前缀，可通过/product/getRecommendName接口获取\",\"cipherTextType\":1,\"children\":[{\"requestName\":\"prefix\",\"toName\":\"prefix\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"钛钢木质耳饰\",\"description\":\"通过/product/getRecommendName接口推荐的商品标题前缀（注意系统根据类目属性生成前缀字符串时，末尾可能有一个空格）\",\"cipherTextType\":1},{\"requestName\":\"suffix\",\"toName\":\"suffix\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"36.9度\",\"description\":\"通过/product/getRecommendName接口推荐的商品标题后缀（注意系统根据类目属性生成后缀字符串时，前面可能有一个空格）\",\"cipherTextType\":1}]},{\"requestName\":\"outer_product_id\",\"toName\":\"outer_product_id\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"bbb\",\"description\":\"商品外部编码\",\"cipherTextType\":1},{\"requestName\":\"delivery_time_info\",\"toName\":\"delivery_time_info\",\"mustNeed\":false,\"type\":5,\"style\":1,\"example\":\"\",\"description\":\"商品发货时间信息，当前仅支持sku维度发货时效更新，仅限现货发货模式。\",\"cipherTextType\":1,\"children\":[{\"requestName\":\"sku_ship_times\",\"toName\":\"sku_delivery_times\",\"mustNeed\":false,\"type\":3,\"subType\":5,\"style\":1,\"example\":\"\",\"description\":\"sku发货时间，注意该参数仅在现货发货模式且开启sku发货时效时有效，如果发货模式不符合要求则会校验报错。 发货时间和 commit_code 可分别单独更新，也可一起更新。多sku更新时，保证同时成功或失败。如果传入的skuId在商品下不存在，或者skuId存在重复，将报错。\",\"cipherTextType\":1,\"children\":[{\"requestName\":\"ship_time_type\",\"toName\":\"delivery_time_type\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1\",\"description\":\"1 相对时间 ships in x days，2 固定日期 fixed date。更新ship_time时必传。\",\"cipherTextType\":1,\"isHidden\":0},{\"requestName\":\"commit_code\",\"toName\":\"apple_commit_code\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"3000\",\"description\":\"commit code\",\"cipherTextType\":1,\"isHidden\":0},{\"requestName\":\"ship_time\",\"toName\":\"delivery_delay_day\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"2\",\"description\":\"发货时间，如果是相对时间，填写数据 X。如果是固定日期，填写格式为yyyy-MM-dd，例如 \\\"2025-09-01\\\"。格式不正确或者时间校验不通过，将报错。\",\"cipherTextType\":1,\"isHidden\":0},{\"requestName\":\"sku_id\",\"toName\":\"sku_id\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"3508769879052802\",\"description\":\"skuId\",\"cipherTextType\":1,\"isHidden\":0}],\"isHidden\":0}],\"isHidden\":0}]},\"response\":{},\"demo\":{\"requestDemo\":{\"curl\":{\"reqUrl\":\"https://openapi-fxg.jinritemai.com/order/logisticsAddMultiPack?app_key=your_appkey_here\\u0026method=order.logisticsAddMultiPack\\u0026access_token=your_accesstoken_here\\u0026param_json={}\\u0026timestamp=2018-06-19%2016:06:59\\u0026v=2\\u0026sign=your_sign_here\"},\"java\":{\"code\":\"ProductPartialEditRequest request = new ProductPartialEditRequest();\\nProductPartialEditParam param = request.getParam();\\nparam.setProductId(31314511114124151L);\\nparam.setName(\\\"半身裙111\\\");\\nparam.setShortProductName(\\\"aaa\\\");\\nparam.setOuterProductId(\\\"bbb\\\");\\nProductPartialEditResponse response = request.execute(accessToken);\\n\"},\"php\":{\"code\":\"$request = new ProductPartialEditRequest();\\n$param = new ProductPartialEditParam();\\n$request-\\u003esetParam($param);\\n$param-\\u003eproduct_id = 31314511114124151;\\n$param-\\u003ename = \\\"半身裙111\\\";\\n$param-\\u003eshort_product_name = \\\"aaa\\\";\\n$param-\\u003eouter_product_id = \\\"bbb\\\";\\n$response = $request-\\u003eexecute(accessToken);\\n\"},\"python\":{\"code\":\"request = ProductPartialEditRequest()\\nparam = request.getParams()\\nparam.product_id = 31314511114124151\\nparam.name = \\\"半身裙111\\\"\\nparam.short_product_name = \\\"aaa\\\"\\nparam.outer_product_id = \\\"bbb\\\"\\nresponse = request.execute(accessToken)\\n\"},\"go\":{\"code\":\"request := product_partialEdit_request.New()\\nparam := request.GetParams()\\nparam.ProductId = 31314511114124151\\nparam.Name = \\\"半身裙111\\\"\\nparam.ShortProductName = \\\"aaa\\\"\\nparam.OuterProductId = \\\"bbb\\\"\\nresponse := request.Execute(accessToken)\\n\"},\"dotNetCore\":{\"code\":\"var request = new ProductPartialEditRequest();\\nvar param = request.BuildParam();\\nparam.ProductId = 31314511114124151;\\nparam.Name = \\\"半身裙111\\\";\\nparam.ShortProductName = \\\"aaa\\\";\\nparam.OuterProductId = \\\"bbb\\\";\\nvar response = request.Execute\\u003cProductPartialEditResponse\\u003e(accessToken);\\n\"},\"js\":{}},\"responseDemo\":{\"responseSuccess\":{\"data\":{\"pack_list\":[{\"logistics_code\":\"111111111111111\",\"pack_id\":\"4705288465508532862\",\"shipped_order_info\":[{\"shipped_item_ids\":\"[\\\"123123\\\"]\",\"shipped_num\":\"1\",\"shipped_order_id\":\"123123\"}]}]},\"code\":10000,\"msg\":\"success\",\"sub_code\":\"\",\"sub_msg\":\"\"},\"responseError\":{\"sub_code\":\"\",\"sub_msg\":\"\"}}},\"error\":{\"errCodeList\":[{\"msg\":\"success\",\"code\":10000},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"非法参数\",\"subCode\":\"isv.parameter-invalid:2010004\",\"solution\":\"请检查参数后重试\"},{\"msg\":\"触发限流，请稍后重试\",\"code\":60000,\"subMsg\":\"更新商品太频繁，操作失败请重试\",\"subCode\":\"isp.traffic-limited:2010067\",\"solution\":\"稍后重试\"},{\"msg\":\"缺少必选参数\",\"code\":40002,\"subMsg\":\"缺少参数\",\"subCode\":\"isv.missing-parameter:2010003\",\"solution\":\"重新进入页面进行补充\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"该商品在审核中\",\"subCode\":\"isv.business-failed:2010041\",\"solution\":\"不允许编辑\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"该商品已删除\",\"subCode\":\"isv.business-failed:2010042\",\"solution\":\"不允许编辑\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"该商品已封禁\",\"subCode\":\"isv.business-failed:2010043\",\"solution\":\"不允许编辑\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"系统错误\",\"subCode\":\"isp.service-error:2010001\",\"solution\":\"稍后重试\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"请求超时\",\"subCode\":\"isp.service-error:2010002\",\"solution\":\"稍后重试\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"无访问权限\",\"subCode\":\"isv.parameter-invalid:2010005\",\"solution\":\"核对后重试\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"编辑商品失败\",\"subCode\":\"isv.parameter-invalid:2010011\",\"solution\":\"稍后重试\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"保存商品失败\",\"subCode\":\"isp.service-error:2010012\",\"solution\":\"稍后重试\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"读取失败\",\"subCode\":\"isp.service-error:2010013\",\"solution\":\"稍后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"商品状态错误\",\"subCode\":\"isv.business-failed:2010022\",\"solution\":\"检查状态后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"商品正在参加活动\",\"subCode\":\"isv.business-failed:2010045\",\"solution\":\"暂不支持修改\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"获取类目信息失败\",\"subCode\":\"isp.service-error:2010201\",\"solution\":\"重试\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"获取类目配置失败\",\"subCode\":\"isp.service-error:2010202\",\"solution\":\"重试\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"查询品牌库失败\",\"subCode\":\"isp.service-error:2010206\",\"solution\":\"重试\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"查询商家资质失败\",\"subCode\":\"isp.service-error:2010207\",\"solution\":\"查询商家资质失败，请重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010501:商品标题未明确描述商品品名，请重新填写\",\"subCode\":\"isv.business-failed:2010501\",\"solution\":\"商品标题未明确描述商品品名，请重新填写\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010326:因为店铺受到处罚，限制发品，更多请到商家后台奖惩中心查看\",\"subCode\":\"isv.business-failed:2010326\",\"solution\":\"因为店铺受到处罚，限制发品，更多请到商家后台奖惩中心查看\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010316:该类目需要支持7天无理由退货\",\"subCode\":\"isv.business-failed:2010316\",\"solution\":\"因为店铺受到处罚，限制发品，更多请到商家后台奖惩中心查看\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110214003:分组操作失败：category_id(7209859568560554243)不存在,请核查\",\"subCode\":\"isv.business-failed:110214003\",\"solution\":\"110214003:分组操作失败：category_id(7209859568560554243)不存在,请核查\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110101150:商品标题最长不能超过30个汉字（60个字符）\",\"subCode\":\"isv.business-failed:110101150\",\"solution\":\"110101150:商品标题最长不能超过30个汉字（60个字符）\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010102:系统检测审核不通过，内容未做修改，请修改后提交审核\",\"subCode\":\"isv.business-failed:2010102\",\"solution\":\"2010102:系统检测审核不通过，内容未做修改，请修改后提交审核\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010058:商品不存在\",\"subCode\":\"isv.business-failed:2010058\",\"solution\":\"2010058:商品不存在\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110102123:open侧暂不允许设置分销商品\",\"subCode\":\"isv.business-failed:110102123\",\"solution\":\"110102123:open侧暂不允许设置分销商品\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010320:品牌必填，请重新选择品牌\",\"subCode\":\"isv.business-failed:2010320\",\"solution\":\"2010320:品牌必填，请重新选择品牌\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010318:当前商品选择的品牌信息已过期，请更新品牌资质信息，或更换商品品牌后，再提交商品发布。\",\"subCode\":\"isv.business-failed:2010318\",\"solution\":\"2010318:当前商品选择的品牌信息已过期，请更新品牌资质信息，或更换商品品牌后，再提交商品发布。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110270180:校验预售发货信息失败暂不支持该发货模式\",\"subCode\":\"isv.business-failed:110270180\",\"solution\":\"110270180:校验预售发货信息失败暂不支持该发货模式\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010329:当前店铺类型下, 使用/品牌，需要去资质中心上传品牌资质。去上传\\u003ehttps://zjsms.com/NEvh47E/\",\"subCode\":\"isv.business-failed:2010329\",\"solution\":\"2010329:当前店铺类型下, 使用/品牌，需要去资质中心上传品牌资质。去上传\\u003ehttps://zjsms.com/NEvh47E/\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110102129:当前商品仅支持在百应后台编辑\",\"subCode\":\"isv.business-failed:110102129\",\"solution\":\"110102129:当前商品仅支持在百应后台编辑\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110101145:“商品标题”不可含有换行符\",\"subCode\":\"isv.business-failed:110101145\",\"solution\":\"110101145:“商品标题”不可含有换行符\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110330102:请修改“售后服务“，该类目已不再支持该售后政策\",\"subCode\":\"isv.business-failed:110330102\",\"solution\":\"110330102:请修改“售后服务“，该类目已不再支持该售后政策\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110370101:商品属性[面料成分含量]填写格式不正确，不支持发布\",\"subCode\":\"isv.business-failed:110370101\",\"solution\":\"110370101:商品属性[面料成分含量]填写格式不正确，不支持发布\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110260145:当前选择的货品(7428984621309657395)不存在，请重新选择货品完成商货品绑定，或删除货品取消绑定，维护商品库存信息。\",\"subCode\":\"isv.business-failed:110260145\",\"solution\":\"110260145:当前选择的货品(7428984621309657395)不存在，请重新选择货品完成商货品绑定，或删除货品取消绑定，维护商品库存信息。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010339:存在审批中素材(主图视频)，请等待审批\",\"subCode\":\"isv.business-failed:2010339\",\"solution\":\"2010339:存在审批中素材(主图视频)，请等待审批\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110405001:该商品商详页描述（含标题、主图和商品详情）与属性栏选择的材质不一致，请修改。规则详见https://school.jinritemai.com/doudian/web/question/50\",\"subCode\":\"isv.business-failed:110405001\",\"solution\":\"110405001:该商品商详页描述（含标题、主图和商品详情）与属性栏选择的材质不一致，请修改。规则详见https://school.jinritemai.com/doudian/web/question/50\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110101131:短标题必须在4~12个字\",\"subCode\":\"isv.business-failed:110101131\",\"solution\":\"110101131:短标题必须在4~12个字\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110102120:无法直接通过该接口创建或编辑有价券类商品\",\"subCode\":\"isv.business-failed:110102120\",\"solution\":\"110102120:无法直接通过该接口创建或编辑有价券类商品\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110270179:校验预售发货信息失败发货时间配置不满足要求\",\"subCode\":\"isv.business-failed:110270179\",\"solution\":\"110270179:校验预售发货信息失败发货时间配置不满足要求\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110270110:运费模板不存在\",\"subCode\":\"isv.business-failed:110270110\",\"solution\":\"110270110:运费模板不存在\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010063:为保障消费者权益，“0元入驻”试运营期间的商家店铺会进行发品数量的限制，商品已达上限，暂不支持添加商品，您可通过【抖店-资金-店铺保证金】缴纳保证金至足额后继续此操作，相关详情可查阅《抖音电商“0元入驻”试运营规范》。\",\"subCode\":\"isv.business-failed:2010063\",\"solution\":\"2010063:为保障消费者权益，“0元入驻”试运营期间的商家店铺会进行发品数量的限制，商品已达上限，暂不支持添加商品，您可通过【抖店-资金-店铺保证金】缴纳保证金至足额后继续此操作，相关详情可查阅《抖音电商“0元入驻”试运营规范》。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110290001:请上传食品生产许可证\",\"subCode\":\"isv.business-failed:110290001\",\"solution\":\"110290001:请上传食品生产许可证\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010055:因服务器升级，商品价格展示可能异常，请修改价格后重试\",\"subCode\":\"isv.business-failed:2010055\",\"solution\":\"2010055:因服务器升级，商品价格展示可能异常，请修改价格后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110250121:尺码表需包含所有规格中的尺码，请补充尺码\",\"subCode\":\"isv.business-failed:110250121\",\"solution\":\"110250121:尺码表需包含所有规格中的尺码，请补充尺码\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110270139:商品关联未结束的限时特卖活动，仅支持现货发货模式和阶梯发货模式\",\"subCode\":\"isv.business-failed:110270139\",\"solution\":\"110270139:商品关联未结束的限时特卖活动，仅支持现货发货模式和阶梯发货模式\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110240102:库存数量支持范围：0-10000000\",\"subCode\":\"isv.business-failed:110240102\",\"solution\":\"110240102:库存数量支持范围：0-10000000\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110250118:尺码模板不支持当前类目\",\"subCode\":\"isv.business-failed:110250118\",\"solution\":\"110250118:尺码模板不支持当前类目\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110270152:校验预售发货信息失败预售结束时间小于当前时间\",\"subCode\":\"isv.business-failed:110270152\",\"solution\":\"110270152:校验预售发货信息失败预售结束时间小于当前时间\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110220210:commit code不合法\",\"subCode\":\"isv.business-failed:110220210\",\"solution\":\"110220210:commit code不合法\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110360101：品牌不存在或者未审核通过\",\"subCode\":\"isv.business-failed:110360101\",\"solution\":\"110360101：品牌不存在或者未审核通过\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110201001：未查询到该类目\",\"subCode\":\"isv.business-failed:110201001\",\"solution\":\"110201001：未查询到该类目\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110101267：商品草稿删除失败，请重试\",\"subCode\":\"isv.business-failed:110101267\",\"solution\":\"110101267：商品草稿删除失败，请重试\"}]}}",
+      "info": {
+        "AuditedTime": "",
+        "access": false,
+        "apiChargeType": 1,
+        "apiLimitLevel": 1,
+        "apiLimitValue": 400,
+        "apiSpiMsgNames": [],
+        "articleOutId": 991,
+        "auditStatus": 401,
+        "auth": {
+          "categoryList": [],
+          "groupName": "",
+          "packageName": "",
+          "packageType": 0
+        },
+        "authSubject": "[3]",
+        "authSubjectIdList": [
+          "店铺"
+        ],
+        "auths": [
+          {
+            "categoryList": [
+              "微应用-标题优化",
+              "商品图文-微应用",
+              "创新应用大赛_微应用",
+              "AI拼图-微应用",
+              "自研微组件",
+              "搭配购-微应用",
+              "微应用-商详海报",
+              "自研微组件-直播复盘",
+              "直播间AI导购",
+              "直播间导购-微应用"
+            ],
+            "groupName": "商品",
+            "packageName": "微应用商品编辑",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "即时零售ebill订单管理（临时）",
+              "即时零售ERP",
+              "即时零售商家自研"
+            ],
+            "groupName": "小时达",
+            "packageName": "抖超小时达",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "创新应用"
+            ],
+            "groupName": "创新应用",
+            "packageName": "商品优化（创新应用）",
+            "packageType": 1
+          },
+          {
+            "categoryList": [],
+            "groupName": "商品",
+            "packageName": "商品编辑（D）",
+            "packageType": 1
+          }
+        ],
+        "commitAuditTime": "",
+        "contentType": 1,
+        "createTime": -62135596800,
+        "defaultApiAndAppLimitLevel": 1,
+        "defaultApiAndAppLimitValue": 200,
+        "description": "新增sku维度时效设置能力",
+        "dirId": 14,
+        "dirLabels": [],
+        "dirName": "商品API",
+        "docLabels": [],
+        "extra": {
+          "creator": "",
+          "feishuDocUrl": "",
+          "mailDocUrl": "",
+          "mailPicUrl": "",
+          "mailTag": 0,
+          "noticeAuditUrl": "",
+          "ticketUrl": ""
+        },
+        "finalStatus": 1,
+        "flag": 0,
+        "id": 2694,
+        "isTop": false,
+        "note": "",
+        "pv": 1795,
+        "reOnline": true,
+        "status": 1,
+        "subtitle": "新增sku维度时效设置能力",
+        "title": "/product/partialEdit",
+        "updateTime": 1753950957,
+        "url": "",
+        "userList": [],
+        "userSceneDesc": "部分编辑商品信息",
+        "version": "V1.07"
+      },
+      "tagNameMap": {
+        "25": "优惠券基础数据",
+        "26": "用户优惠券数据",
+        "28": "其他字段",
+        "29": "通用字段",
+        "30": "物流公司信息",
+        "31": "订单基础信息",
+        "32": "地址基础信息",
+        "33": "寄件人地址信息",
+        "34": "寄件人联系信息",
+        "35": "物流增值服务",
+        "36": "回单寄回地址",
+        "37": "收件人地址",
+        "38": "收件人信息",
+        "39": "商品基础信息",
+        "40": "商品重量体积信息",
+        "41": "快递配置规则",
+        "42": "订单备注",
+        "43": "仓库基础信息",
+        "44": "店铺基础信息",
+        "45": "小程序基础信息",
+        "46": "订单来源分析",
+        "47": "买家留言 ",
+        "48": "商家备注",
+        "49": "订单金额信息",
+        "50": "商品金额信息",
+        "51": "营销活动金额信息",
+        "52": "营销活动基础信息",
+        "53": "精选联盟",
+        "54": "跨境海淘",
+        "55": "库存基础信息",
+        "56": "售后基础信息",
+        "57": "电子卡券",
+        "58": "赠品",
+        "59": "组合（组套）商品",
+        "60": "虚拟商品",
+        "61": "定金预售",
+        "62": "懂车帝购车信息",
+        "63": "用户特征标签",
+        "64": "物流信息",
+        "65": "证件信息",
+        "66": "C2B定制",
+        "67": "买家基础信息",
+        "68": "买家敏感信息",
+        "69": "场景包测试标签a",
+        "70": "场景包测试标签b",
+        "71": "商家快递网点信息",
+        "72": "商品类目信息",
+        "73": "短信基础字段",
+        "74": "售后文案",
+        "75": "插旗信息",
+        "76": "售后金额信息",
+        "77": "风控信息",
+        "78": "换货基础信息",
+        "79": "售后标签",
+        "80": "门店基础信息",
+        "81": "售后商家备注信息",
+        "82": "达人样品订单",
+        "83": "即时零售订单接单状态",
+        "85": "换货和补寄信息",
+        "86": "物流异常风控",
+        "87": "商家售后地址信息",
+        "88": "售后仲裁",
+        "89": "买家退货物流信息",
+        "90": "补寄场景",
+        "91": "售后价保",
+        "92": "售后数据分析",
+        "93": "售后协商记录",
+        "94": "废弃字段",
+        "95": "商品尺码模板",
+        "96": "商品标题前缀",
+        "97": "商品参考价凭证",
+        "98": "商品资质信息",
+        "99": "商品限购信息",
+        "100": "特殊日期延迟发货",
+        "101": "商品销量",
+        "102": "店铺地址库",
+        "103": "即时零售商品基础信息",
+        "104": "解密基础字段",
+        "105": "解密虚拟号",
+        "106": "解密明文信息",
+        "107": "解密手机号明文",
+        "108": "解密姓名信息",
+        "109": "解密地址信息",
+        "110": "解密身份证信息",
+        "111": "查询改地址开关",
+        "112": "用户店铺关注信息",
+        "113": "店铺会话统计数据",
+        "114": "飞鸽会话统计数据",
+        "115": "飞鸽客服基础信息",
+        "116": "飞鸽会话信息",
+        "117": "飞鸽客服登录日志",
+        "118": "飞鸽客服接待统计信息",
+        "119": "飞鸽会话消息基础信息",
+        "120": "视频信息",
+        "121": "商品卖点信息",
+        "122": "授权基础信息",
+        "123": "商品价格信息",
+        "124": "商品分佣信息",
+        "125": "联盟分佣信息",
+        "126": "商品评价信息",
+        "127": "评价基础信息",
+        "128": "评价结果数据",
+        "129": "店铺体验分",
+        "130": "评价内容信息",
+        "131": "订单extra"
+      }
+    },
+    "errConfigList": [
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "9999",
+        "errDesc": "系统异常，请联系相关人员处理。",
+        "errTypeDesc": "",
+        "errTypeId": 2,
+        "onlineValue": {},
+        "solutionDesc": "ISV开发者可以联系抖店相关运营或开发人员进行排查和解决，需要提供以下基本信息之一: 订单号或者请求的LogId;"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "10005",
+        "errDesc": "系统繁忙，请稍后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 2,
+        "onlineValue": {},
+        "solutionDesc": "1、商家重新点击发货按钮重试；2、如果多次重试不能解决问题，可以联系抖店相关运营或开发人员进行排查和解决，需要提供以下基本信息之一: 订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "10009",
+        "errDesc": "系统繁忙，请稍后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 2,
+        "onlineValue": {},
+        "solutionDesc": "1、商家重新点击发货按钮重试；2、如果多次重试不能解决问题，可以联系抖店相关运营或开发人员进行排查和解决，需要提供以下基本信息之一: 订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "10018",
+        "errDesc": "校验物流信息失败，请稍后重试",
+        "errTypeDesc": "",
+        "errTypeId": 2,
+        "onlineValue": {},
+        "solutionDesc": "1、商家重新点击发货按钮重试；2、如果多次重试不能解决问题，可以联系抖店相关运营或开发人员进行排查和解决，需要提供以下基本信息之一: 订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "20003",
+        "errDesc": "系统异常，请稍后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 2,
+        "onlineValue": {},
+        "solutionDesc": "1、商家重新点击发货按钮重试；2、如果多次重试不能解决问题，可以联系抖店相关运营或开发人员进行排查和解决，需要提供以下基本信息之一: 订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "50002",
+        "errDesc": "系统异常，请联系相关人员解决。",
+        "errTypeDesc": "",
+        "errTypeId": 2,
+        "onlineValue": {},
+        "solutionDesc": "ISV开发者可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一: 订单号或者请求的LogId;"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "50029",
+        "errDesc": "店铺ID非法，不允许小于等于0。",
+        "errTypeDesc": "",
+        "errTypeId": 4,
+        "onlineValue": {},
+        "solutionDesc": "ISV接入方式错误，调整输入的店铺ID参数，重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "50049",
+        "errDesc": "订单号不能为空或者格式错误。",
+        "errTypeDesc": "",
+        "errTypeId": 4,
+        "onlineValue": {},
+        "solutionDesc": "ISV调整输入的订单ID参数，重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "50050",
+        "errDesc": "发货请求id不能为空，请检查requestId",
+        "errTypeDesc": "",
+        "errTypeId": 3,
+        "onlineValue": {},
+        "solutionDesc": "ISV调整输入的requestId参数，重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60016",
+        "errDesc": "商品单单号为空或者格式错误",
+        "errTypeDesc": "",
+        "errTypeId": 4,
+        "onlineValue": {},
+        "solutionDesc": "1、商家仔细检查商品单号格式是否正确，修改后重新操作；2、如果商家确定无误，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一: 订单号或者LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60017",
+        "errDesc": "物流单号不符合规则",
+        "errTypeDesc": "",
+        "errTypeId": 4,
+        "onlineValue": {},
+        "solutionDesc": "1、商家仔细检查物流单号格式是否正确、和物流公司是否匹配，修改后重新操作；2、如果商家确定无误，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一: 订单号或者LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60018",
+        "errDesc": "暂不支持该物流公司或物流商已失效，请检查。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、商家自行检查使用的物流公司编码是否符合平台规则；2、如果商家确定无误，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一: 订单号或者LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "600111",
+        "errDesc": "暂不支持本类订单发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、ISV自查拉单、用户对订单的筛选是否符合要求；2、- 如果无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60021",
+        "errDesc": "订单已取消，禁止发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、ISV开发者先自行排查系统对接是否有问题；2、商家需要立即检查该订单是否已经实际线下寄出包裹，如果已经寄出，需要对物流商下达拦截操作；3、商家能否调整发货的流程，先在系统推进订单到已发货状态后再实际操作发货；4、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一: 订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60022",
+        "errDesc": "该订单为货到付款订单，不允许发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、线上已经取消货到付款的支付方式，因此该错误码代表抖店内部系统异常，直接联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60024",
+        "errDesc": "该订单不可自行操作发货，请联系跨境服务商进行操作。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商家对返回该错误类型的订单，需要联系跨境服务商操作发货，商家无发货权限。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60026",
+        "errDesc": "该订单不支持使用其它物流进行发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、商家换用正常的物流商进行发货；2、商家可以联系平台运营，对使用其他物流添加白名单。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60027",
+        "errDesc": "该店铺无默认售后地址，请前往抖店PC端「订单-发货管理-物流工具-地址库管理」设置后再操作发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商家前往抖店PC端「订单-发货管理-物流工具-地址库管理」设置默认售后地址后再操作发货。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60028",
+        "errDesc": "发货地址ID不允许小于0。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、ISV自查接入的地址参数是否小于0；2、- 如果无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60032",
+        "errDesc": "发货订单数最多支持400单，请重新选择。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "引导商家减少选中的订单数量，重试。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60033",
+        "errDesc": "订单不存在，请仔细检查后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、ISV和商家仔细检查对应的订单号是否存在，是否是本店铺的订单；2、如果无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60036",
+        "errDesc": "发货信息为空。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "需要ISV仔细确认要发货的订单信息后，重试。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60040",
+        "errDesc": "发货订单中有退款申请需要处理，请先处理。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商家需要对返回该错误的订单检查售后信息，可以进行如下操作: 1、拒绝售前申请后重新发货；2、 - 发货选项中传递发货优先，可以优先拒绝售后；3、商家同意售前申请退款，取消对该订单的发货操作。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60046",
+        "errDesc": "序列号长度不能超过30位字符。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商家检查序列号是否符合正确，修改后重试。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60047",
+        "errDesc": "该订单补贴商品的序列号已经上传，请重新填写。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商家更换新的序列号，重试。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60051",
+        "errDesc": "上传序列号失败，请重试。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "ISV重试，如果多次重试仍无法解决问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60057",
+        "errDesc": "暂不支持本类订单发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、ISV自查拉单、用户对订单的筛选是否符合要求；2、如果无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60062",
+        "errDesc": "手机序列号仅支持填写15～17位数字。",
+        "errTypeDesc": "",
+        "errTypeId": 4,
+        "onlineValue": {},
+        "solutionDesc": "商家仔细检查自己填写的手机序列号长度是否在15~17位之间。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60069",
+        "errDesc": "该发货方式不支持质检类订单发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商家需要到商家后台质检类订单发货操作栏操作发货。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60070",
+        "errDesc": "当前发货异常，请检查发货地址。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商家修改手动输入的发货地址后重试。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60071",
+        "errDesc": "当前发货地址存在异常，请前往抖店PC端「订单-发货管理-物流工具-地址库管理」修改后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "当前发货地址存在异常，请前往抖店PC端「订单-发货管理-物流工具-地址库管理」修改后重试。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60072",
+        "errDesc": "该店铺无默认发货地址，请前往抖店PC端「订单-发货管理-物流工具-地址库管理」设置后再操作发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商家前往抖店PC端「订单-发货管理-物流工具-地址库管理」设置默认发货地址后再操作发货。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60101",
+        "errDesc": "非本店铺订单，操作失败。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商家需要仔细检查对应的订单是否属于当前店铺，确认之后进行重试。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60106",
+        "errDesc": "系统繁忙，请稍后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、商家多重试几次；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60107",
+        "errDesc": "暂不支持该类型订单发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "虚拟、教育等类型订单不支持发货。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60108",
+        "errDesc": "暂不支持该类型订单发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "该发货方式不支持回收、寄卖、仅收款类订单发货。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60109",
+        "errDesc": "订单正在风控审核中，风控审核时效1~2小时，请等待订单变为“备货中”状态后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、ISV开发者先自行排查系统对接是否有问题；2、商家需要立即检查该订单是否已经实际线下寄出包裹，如果已经寄出，需要对物流商下达拦截操作；3、商家能否调整发货的流程，先在系统推进订单到已发货状态后再实际操作发货；4、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60110",
+        "errDesc": "订单已发货，不允许再次执行发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "取消对该订单的发货。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60113",
+        "errDesc": "订单已完结，禁止发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "取消对该订单的发货。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60114",
+        "errDesc": "系统繁忙，请稍后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60116",
+        "errDesc": "不支持平台仓订单发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商家取消对该订单的发货。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60118",
+        "errDesc": "订单售后信息异常，请稍后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、商家重试；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60068",
+        "errDesc": "该订单已售前退款成功，不能发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、商家需要立即检查该订单是否已经实际线下寄出包裹，如果已经寄出，需要对物流商下达拦截操作；2、商家能否调整发货的流程，先在系统推进订单到已发货状态后再实际操作发货。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60120",
+        "errDesc": "订单正在售后中，请确认后发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、商家需要立即检查该订单是否已经实际线下寄出包裹，如果已经寄出，需要对物流商下达拦截操作；2、商家能否调整发货的流程，先在系统推进订单到已发货状态后再实际操作发货。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60121",
+        "errDesc": "系统繁忙，请稍后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、商家重试；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60122",
+        "errDesc": "该跨境订单状态暂不允许发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "服务商没有对跨境订单回传信息，商家无法对跨境订单发货。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60123",
+        "errDesc": "当前订单为供应链订单，商家无权自发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商家对供应链订单操作发货，供应链订单只能通过供应链链路发货。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60124",
+        "errDesc": "系统繁忙，请稍后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "查询根据该物流单号猜想的物流公司错误，商家重试。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60125",
+        "errDesc": "系统繁忙，请稍后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、校验其他物流订单数据异常，商家重试；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60126",
+        "errDesc": "暂不支持使用寻梦同城物流发货，请重新选择物流公司或联系平台客服申请使用。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商家使用“寻梦同城”物流操作发货，但是商家并不在“寻梦同城”物流的白名单内，解决方案如下: 1、商家换用正常的物流商发货；2、商家联系平台客服申请使用“寻梦同城”物流商。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60127",
+        "errDesc": "物流单号校验不通过，请仔细检查后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、仔细检查对应的物流单号是否正确，修改后重试；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60128",
+        "errDesc": "物流公司与系统智能检测不一致。物流公司可能为:(具体根据猜想得到的物流公司名称)，若确认无误可继续发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、商家仔细检查对应的物流单号、物流公司是否正确，修改后重试；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60131",
+        "errDesc": "发货订单包含状态为“待用户填写定制信息”的定制商品订单，此类订单需用户填写定制信息后才能发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商家对定制商品订单发货，但是C端该定制订单并没有填写定制信息，需要联系消费者填写定制信息后才能够发货。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60132",
+        "errDesc": "系统异常，请稍后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、商家重试；2、联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60137",
+        "errDesc": "订单未支付，禁止发货。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、仔细检查订单状态；2、ISV需要重新拉取订单信息，确保和抖店系统的数据保持一致；3、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "70005",
+        "errDesc": "拒绝售后失败，请检查该单的售后处理流程后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、商家根据返回的错误文案检查订单是否存在售后流程，处理售后单；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "70011",
+        "errDesc": "发货失败，请稍后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、商家根据返回的错误文案检查订单检查订单并进行相应处理；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "70016",
+        "errDesc": "系统繁忙，请稍后重试。",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "1、如果商家直接输入的发货地址，需要商家仔细检查自己的输入地址是否正确、是否符合平台要求；2、如果商家使用平台地址库管理的地址，需要检查下地址库是否存在该地址、地址库对该地址是否提示存在异常。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "80007",
+        "errDesc": "系统错误，请稍后重试或者联系客服人员解决。",
+        "errTypeDesc": "",
+        "errTypeId": 2,
+        "onlineValue": {},
+        "solutionDesc": "1、可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "99997",
+        "errDesc": "网络超时，请重试。",
+        "errTypeDesc": "",
+        "errTypeId": 2,
+        "onlineValue": {},
+        "solutionDesc": "请重试。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "99998",
+        "errDesc": "请输入正确的参数，仔细检查输入参数是否为空或联系抖店人员排查。",
+        "errTypeDesc": "",
+        "errTypeId": 2,
+        "onlineValue": {},
+        "solutionDesc": "1、ISV自查接入的参数是否为空；2、如果无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "99999",
+        "errDesc": "未知异常，请联系客服人员处理。",
+        "errTypeDesc": "",
+        "errTypeId": 2,
+        "onlineValue": {},
+        "solutionDesc": "系统发生BUG，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求LogId。"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60102",
+        "errDesc": "60102:商品单不存在，请仔细检查后重试",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商品单不存在，请仔细检查后重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "8888",
+        "errDesc": "8888:系统繁忙，请稍后重试",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "系统繁忙，请稍后重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60080",
+        "errDesc": "60080:商品的发货数量不允许小于0",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商品的发货数量不允许小于0"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60011",
+        "errDesc": "60011:物流公司编码不允许为空",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "物流公司编码不允许为空"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "70009",
+        "errDesc": "70009:系统繁忙，请稍后重试",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "系统繁忙，请稍后重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60105",
+        "errDesc": "60105:非组合商品订单不应在组合商品发货参数中传递商品信息",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "非组合商品订单不应在组合商品发货参数中传递商品信息"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "70023",
+        "errDesc": "70023:已发货，请检查订单状态",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "已发货，请检查订单状态"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "70020",
+        "errDesc": "70020:运单号收件人电话及地址与该订单收件人电话及地址均不一致，请核实后更新快递单号",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "运单号收件人电话及地址与该订单收件人电话及地址均不一致，请核实后更新快递单号"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "120032",
+        "errDesc": "120032:售后请求并发，请稍后重试",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "系统繁忙，请稍后重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60079",
+        "errDesc": "60079:商品ID格式错误，请仔细检查后重试",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商品ID格式错误，请仔细检查后重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "70022",
+        "errDesc": "70022:运单已被其他订单使用，且收货人手机号/收货地址不一致，请核对运单",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "运单已被其他订单使用，且收货人手机号/收货地址不一致，请核对运单"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60111",
+        "errDesc": "60111:暂不支持课程类订单发货",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请检查订单类型"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60104",
+        "errDesc": "60104:组合商品的商品和SKU信息不存在",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请检查请求参数"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60138",
+        "errDesc": "60138:订单需送货上门，请使用支持送货上门的物流公司发货",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请检查请求参数"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60056",
+        "errDesc": "60056:补贴商品发货时需要上传商品序列号",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "补贴商品发货时需要上传商品序列号"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "700004",
+        "errDesc": "700004:store_id不存在/错误，超市小时达订单发货需传入订单对应的门店ID",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "store_id不存在/错误，超市小时达订单发货需传入订单对应的门店ID"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "700029",
+        "errDesc": "请传入退货地址，提高退换货的履约准确率",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请传入退货地址，提高退换货的履约准确率"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "70019",
+        "errDesc": "物流单号首条轨迹产生时间早于订单支付时间，请核实后更新单号",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "物流单号首条轨迹产生时间早于订单支付时间，请核实后更新单号"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "70018",
+        "errDesc": "物流单号已被快递回收或取消，无法继续使用，请核实后更新单号",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "物流单号已被快递回收或取消，无法继续使用，请核实后更新单号"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "700042",
+        "errDesc": "物流服务商信息异常，请传入正确的物流服务商信息或稍后重试",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "物流服务商信息异常，请传入正确的物流服务商信息或稍后重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60134",
+        "errDesc": "退货地址在地址库不存在，请刷新重试",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "退货地址在地址库不存在，请刷新重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "700047",
+        "errDesc": "同城发货暂不支持拆单,无法发货",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "同城发货暂不支持拆单,无法发货"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "120064",
+        "errDesc": "120064:该订单为偏远地区中转订单，您的账户余额不够支付中转运费，不能进行中转，请前往管家账户充值",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "120064:该订单为偏远地区中转订单，您的账户余额不够支付中转运费，不能进行中转，请前往管家账户充值"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "70017",
+        "errDesc": "70017:订单发货信息填写有误，请检查物流单号、物流公司是否填写/选择正确",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "70017:订单发货信息填写有误，请检查物流单号、物流公司是否填写/选择正确"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "120056",
+        "errDesc": "120056:系统繁忙，请稍后重试",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "120056:系统繁忙，请稍后重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "500001",
+        "errDesc": "500001:系统繁忙，请稍后重试",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "500001:系统繁忙，请稍后重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "700061",
+        "errDesc": "700061:系统内部错误，请重试",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "700061:系统内部错误，请重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "120002",
+        "errDesc": "120002:网络异常，请稍后重试",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "120002:网络异常，请稍后重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60145",
+        "errDesc": "60145:当前发货时间早于用户延迟发货时间的72小时前，不允许提前发货",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "60145:当前发货时间早于用户延迟发货时间的72小时前，不允许提前发货"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60143",
+        "errDesc": "60143:周期购订单非最新一期sku单不允许发货",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "60143:周期购订单非最新一期sku单不允许发货"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "700088",
+        "errDesc": "该订单为收礼订单，不支持发货，请对对应送礼订单进行操作",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "该订单为收礼订单，不支持发货，请对对应送礼订单进行操作"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "120066",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "120066",
+          "errDesc": "120066:您选择的订单中包含偏远中转订单，因货款及抖店钱包余额不足无法支付中转运费(每笔2.5元)发货失败，可在抖店PC端充值后重试，路径：账户中心 > 其他账户 > 抖店钱包"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1000000015",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "1000000015",
+          "errDesc": "1000000015:偏远中转订单必须使用抖音电子面单发货，如不希望使用抖音电子面单，可以尝试转直邮发货功能，直接发货给消费者，但是不再享受平台中转运费补贴、体验分豁免等权益"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60045",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "60045",
+          "errDesc": "60045:拆单发货需要传入商品单号及发货数量"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60151",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "60151",
+          "errDesc": "60151:运单被用于多个订单发货，且多个订单的收货人地址和手机号均不一致，请核对订单信息"
+        },
+        "solutionDesc": ""
+      }
+    ],
+    "releaseNote": "新增入参 delivery_time_info:商品发货时间信息，当前仅支持sku维度发货时效更新，仅限现货发货模式 \n新增错误码subCode:isv.business-failed:110220210 描述110220210:commit code不合法subCode:isv.business-failed:110360101 描述110360101：品牌不存在或者未审核通过subCode:isv.business-failed:110201001 描述110201001：未查询到该类目subCode:isv.business-failed:110101267 描述110101267：商品草稿删除失败，请重试"
+  },
+  "msg": ""
+}

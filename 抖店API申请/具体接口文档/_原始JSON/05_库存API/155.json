@@ -1,0 +1,419 @@
+{
+  "code": 0,
+  "data": {
+    "CustomerError": {
+      "ErrCode": 0,
+      "ErrMsg": ""
+    },
+    "RelevanceFAQs": [
+      {
+        "articleId": 5011,
+        "dirId": 1264,
+        "title": "库存上传失败，报错当前商品的部分SKU库存不得低于活动/达人专属价设置的1，如何解决？"
+      },
+      {
+        "articleId": 7066,
+        "dirId": 1264,
+        "title": "针对库存同步接口sub_code返回isv.business-failed:2010001的异常解决策略"
+      },
+      {
+        "articleId": 4314,
+        "dirId": 1264,
+        "title": "调用更新库存接口，报错更新库存数失败: 库存不足，如何解决？"
+      },
+      {
+        "articleId": 3090,
+        "dirId": 1264,
+        "title": "什么是区域库存？如何对接？"
+      },
+      {
+        "articleId": 2165,
+        "dirId": 92,
+        "title": "如何使用库存同步接口：sku/syncStock更新商品的库存？"
+      },
+      {
+        "articleId": 7070,
+        "dirId": 1264,
+        "title": "针对库存同步接口sub_code返回isv.business-failed:2010004的异常解决策略"
+      },
+      {
+        "articleId": 4994,
+        "dirId": 1264,
+        "title": "关于库存同步，更新库存数时会提示失败？"
+      },
+      {
+        "articleId": 3766,
+        "dirId": 1264,
+        "title": "买家申请发货前取消订单，取消成功后，平台是否会回补对应商品的库存？"
+      },
+      {
+        "articleId": 459,
+        "dirId": 1264,
+        "title": "库存同步，报错{\"err_no\":7,\"message\":\"系统错误:修改商品规格失败err=商品价格小于20.00元，无法使用预售交易；请调整发货模式或重新设置SKU价格\"}，如何解决？"
+      },
+      {
+        "articleId": 3089,
+        "dirId": 92,
+        "title": "要修改抖店商品的库存数量，要使用哪个接口？"
+      },
+      {
+        "articleId": 7073,
+        "dirId": 1264,
+        "title": "针对库存同步接口sub_code返回isv.business-failed:110240120/110240119的异常解决策略"
+      },
+      {
+        "articleId": 7071,
+        "dirId": 1264,
+        "title": "针对库存同步接口sub_code返回isv.parameter-invalid:5的异常解决策略"
+      },
+      {
+        "articleId": 3768,
+        "dirId": 1264,
+        "title": "调用库存同步接口，报错：out_sku_id错误, 无法定位到sku，如何解决？"
+      },
+      {
+        "articleId": 5737,
+        "dirId": 1264,
+        "title": "批量同步小时达商品库存，报错7:获取子商品信息失败，如何解决？"
+      },
+      {
+        "articleId": 4898,
+        "dirId": 1264,
+        "title": "库存同步成功后，为何平台上的库存数量不变？"
+      },
+      {
+        "articleId": 5540,
+        "dirId": 1284,
+        "title": "即时零售-小时达，商品库存更新是更新主商品还是子商品？"
+      },
+      {
+        "articleId": 7069,
+        "dirId": 1264,
+        "title": "针对库存同步接口sub_code返回isv.business-failed:7的异常解决措施"
+      },
+      {
+        "articleId": 5063,
+        "dirId": 1264,
+        "title": "为什么库存同步会报错：区域仓未找到？"
+      },
+      {
+        "articleId": 5372,
+        "dirId": 1264,
+        "title": "商家更新成0库存，买家还能下单吗？"
+      },
+      {
+        "articleId": 5407,
+        "dirId": 1264,
+        "title": "同步库存报错：7:查询商品信息失败，请检查参数后重试，如何解决？"
+      },
+      {
+        "articleId": 7068,
+        "dirId": 1264,
+        "title": "针对库存同步接口sub_code返回isv.business-failed:2010042的异常解决策略"
+      },
+      {
+        "articleId": 4666,
+        "dirId": 1264,
+        "title": "调用库存更新接口，报错提示：当前SKU已被删除，禁止修改，如何解决？"
+      },
+      {
+        "articleId": 6278,
+        "dirId": 1264,
+        "title": "同步库存，报错：获取店铺标签失败，如何解决？"
+      },
+      {
+        "articleId": 6402,
+        "dirId": 92,
+        "title": "关于商品库存，当商品库存同步为0，是否会将商品自动下架？"
+      },
+      {
+        "articleId": 5013,
+        "dirId": 1264,
+        "title": "关于抖店商品库存逻辑，sku库存同步为0，会自动下架么？"
+      },
+      {
+        "articleId": 4286,
+        "dirId": 1264,
+        "title": "调用同步库存接口，保持提示查询sku信息失败，如何解决？"
+      },
+      {
+        "articleId": 6485,
+        "dirId": 92,
+        "title": "库存同步接口子错误码返回isv.business-failed:2010005异常解决策略"
+      },
+      {
+        "articleId": 6236,
+        "dirId": 1264,
+        "title": "更新库存：/sku/syncStock ，报错提示sku不存在，如何解决？"
+      },
+      {
+        "articleId": 3767,
+        "dirId": 1264,
+        "title": "调用同步库存接口，报错：“编辑逻辑仓库存错误，如何解决？"
+      },
+      {
+        "articleId": 6193,
+        "dirId": 1264,
+        "title": "同步库存：/sku/syncStock，报错提示无法匹配到唯一sku，如何解决？"
+      },
+      {
+        "articleId": 7174,
+        "dirId": 1264,
+        "title": "/sku/syncStock报错\"sub_code\": \"isv.parameter-invalid\", \"sub_msg\": \"sku_id类型不正确，需要Number类型\""
+      },
+      {
+        "articleId": 5644,
+        "dirId": 1264,
+        "title": "货品库存同步，报错4008:编辑逻辑仓库存错误|分销品区域库存变更失败，如何解决？"
+      },
+      {
+        "articleId": 6366,
+        "dirId": 1264,
+        "title": "同步库存接口，报错：4008:编辑逻辑仓库存错误，如何解决？"
+      },
+      {
+        "articleId": 7072,
+        "dirId": 1264,
+        "title": "/sku/syncStock接口sub_code返回isv.business-failed:2010043的异常解决策略"
+      },
+      {
+        "articleId": 4355,
+        "dirId": 1264,
+        "title": "关于商品库存更改，在草稿中的状态未保存的情况下更新库存，是否再提审会库存编辑失效？"
+      },
+      {
+        "articleId": 7087,
+        "dirId": 1264,
+        "title": "针对库存同步接口sub_code返回isv.business-failed:110240116的异常解决策略"
+      },
+      {
+        "articleId": 4998,
+        "dirId": 1264,
+        "title": "为什么库存同步经常报错未知错误？"
+      }
+    ],
+    "article": {
+      "content": "{\"request\":{\"publicParam\":[{\"requestName\":\"method\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"sku.syncStock\",\"description\":\"调用的API接口名称\"},{\"requestName\":\"app_key\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"6839996111118329223\",\"description\":\"应用创建完成后被分配的key\"},{\"requestName\":\"access_token\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"edae7c30-8386-443b-88a1-031111596fdd\",\"description\":\"用于调用 API 的 access_token\",\"hiddenForInterfaceName\":[\"/token/create\"]},{\"requestName\":\"param_json\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"{cid:12,page:1}\",\"description\":\"标准json类型，里面是业务参数按照参数名的字符串大小排序具体参数值，参考每个接口的参数表\"},{\"requestName\":\"timestamp\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2020-09-15 14:48:13\",\"description\":\"时间戳，格式为yyyy-MM-dd HH:mm:ss，时区为GMT+8，例如：2016-01-01 12:00:00\"},{\"requestName\":\"v\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2\",\"description\":\"API协议版本，当前版本为2\"},{\"requestName\":\"sign\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"796559d40beb08a1a1113c456c5c5a62\",\"description\":\"输入参数签名结果，签名算法参照 [API调用指南](https://op.jinritemai.com/docs/guide-docs/10/23)\"},{\"requestName\":\"sign_method\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"hmac-sha256\",\"description\":\"签名算法类型推荐使用hmac-sha256后续会下线md5（不传则默认为\\\"md5\\\"）1. md5:表示用md5算法加密字符串 2. hmac-sha256:表示用hmac_sha_256算法加密字符串\"}],\"requestParam\":[{\"requestName\":\"code\",\"toName\":\"code\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"dy001\",\"description\":\"sku编码\",\"cipherTextType\":1},{\"requestName\":\"sku_id\",\"toName\":\"sku_id\",\"mustNeed\":false,\"type\":99,\"style\":1,\"example\":\"1737398770243598\",\"description\":\"规格id；抖店系统生成，商品id下唯一。\",\"cipherTextType\":1},{\"requestName\":\"out_sku_id\",\"toName\":\"out_sku_id\",\"mustNeed\":false,\"type\":99,\"style\":1,\"example\":\"44354354\",\"description\":\"外部skuid，开发者在创建或更新商品时设置。\",\"cipherTextType\":1},{\"requestName\":\"product_id\",\"toName\":\"product_id\",\"mustNeed\":false,\"type\":0,\"style\":1,\"example\":\"3539925204033339668\",\"description\":\"商品ID，抖店系统生成，店铺下唯一；长度19位。\",\"cipherTextType\":1,\"timeConvert\":6},{\"requestName\":\"out_product_id\",\"toName\":\"out_product_id\",\"mustNeed\":false,\"type\":99,\"style\":1,\"example\":\"435243654356\",\"description\":\"外部商品id；开发者在创建或更新商品时设置的。\",\"cipherTextType\":1},{\"requestName\":\"out_warehouse_id\",\"toName\":\"out_warehouse_id\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"dy123\",\"description\":\"外部仓库id编码，开发者自定义；如传入传值表示更新区域库存，不传默认更新普通库存。可以使用【/warehouse/list】接口响应参数【out_warehouse_id】字段获取。超市小时达店铺类型，需传入store_id字段，store_id可以使用【/shop/batchCreateStore】创建成功后获取\",\"cipherTextType\":1},{\"requestName\":\"supplier_id\",\"toName\":\"supplier_id\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"1\",\"description\":\"供应商ID\",\"cipherTextType\":1},{\"requestName\":\"incremental\",\"toName\":\"incremental\",\"mustNeed\":false,\"type\":4,\"style\":1,\"example\":\"false\",\"description\":\"库存更新方式；true-增量更新，同时idempotent_id字段必填；false-全量更新；默认为false\",\"cipherTextType\":1},{\"requestName\":\"idempotent_id\",\"toName\":\"idempotent_id\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"202206021500001001\",\"description\":\"幂等ID，当incremental=true时该参数必传\",\"cipherTextType\":1},{\"requestName\":\"stock_num\",\"toName\":\"stock_num\",\"mustNeed\":true,\"type\":99,\"style\":1,\"example\":\"100\",\"description\":\"库存值；可以设置为0，不能小于0，当incremental=true时stock_num支持加/减库存。支持传入“-”，例如：-5表示减5个库存；加库存例：原商品库存是10个，接口传入5个，执行成功商品库存是15个。减库存例：原商品库存是10个，接口stock_num传入-5，执行成功商品库存是5个。注意：减库存时【商品现库存-即将减少库存数不能\\u003c0】，否则会报错系统错误:更新库存数失败: 库存不足；\",\"cipherTextType\":1},{\"requestName\":\"step_stock_num\",\"toName\":\"step_stock_num\",\"mustNeed\":false,\"type\":99,\"style\":1,\"example\":\"100\",\"description\":\"阶梯库存\",\"cipherTextType\":1},{\"requestName\":\"store_id\",\"toName\":\"store_id\",\"mustNeed\":false,\"type\":0,\"style\":1,\"example\":\"12345\",\"description\":\"门店id①即时零售连锁版，通过传入主品id+门店id对该门店下的子品进行操作，即时零售单店版，无需使用②抖店服饰自提场景，通过传入主品id+门店id更新门店商品库存\",\"cipherTextType\":1,\"timeConvert\":12},{\"requestName\":\"multi_time_stocks\",\"toName\":\"multi_time_stocks\",\"mustNeed\":false,\"type\":3,\"subType\":5,\"style\":1,\"example\":\"\",\"description\":\"时效库存\",\"cipherTextType\":1,\"children\":[{\"requestName\":\"stock_num\",\"toName\":\"stock_num\",\"mustNeed\":false,\"type\":99,\"style\":1,\"example\":\"500\",\"description\":\"库存数\",\"cipherTextType\":1},{\"requestName\":\"time_desc\",\"toName\":\"time_desc\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"5天内发\",\"description\":\"时效描述\",\"cipherTextType\":1},{\"requestName\":\"time_type\",\"toName\":\"time_type\",\"mustNeed\":false,\"type\":99,\"style\":1,\"example\":\"5\",\"description\":\"时效\",\"cipherTextType\":1}]},{\"requestName\":\"batch_stock_items\",\"toName\":\"batch_stock_items\",\"mustNeed\":false,\"type\":3,\"subType\":5,\"style\":1,\"example\":\"\",\"description\":\"批次库存项\",\"cipherTextType\":1,\"children\":[{\"requestName\":\"batch_type\",\"toName\":\"batch_type\",\"mustNeed\":false,\"type\":99,\"style\":1,\"example\":\"1\",\"description\":\"批次库存类型：1为唯一码\",\"cipherTextType\":1},{\"requestName\":\"stock_num\",\"toName\":\"stock_num\",\"mustNeed\":false,\"type\":99,\"style\":1,\"example\":\"1\",\"description\":\"批次库存数量\",\"cipherTextType\":1},{\"requestName\":\"unique_id\",\"toName\":\"unique_id\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"\\\"356303487400309\\\"\",\"description\":\"唯一码\",\"cipherTextType\":1}]}]},\"response\":{},\"demo\":{\"requestDemo\":{\"curl\":{\"reqUrl\":\"https://openapi-fxg.jinritemai.com/sku/syncStock?app_key=your_appkey_here\\u0026method=sku.syncStock\\u0026access_token=your_accesstoken_here\\u0026param_json={}\\u0026timestamp=2018-06-19%2016:06:59\\u0026v=2\\u0026sign=your_sign_here\"},\"java\":{\"code\":\"SkuSyncStockRequest request = new SkuSyncStockRequest();\\nSkuSyncStockParam param = request.getParam();\\nparam.setCode(\\\"dy001\\\");\\nparam.setSkuId(1737398770243598L);\\nparam.setOutSkuId(44354354L);\\nparam.setProductId(3539925204033339668L);\\nparam.setOutProductId(435243654356L);\\nparam.setOutWarehouseId(\\\"dy123\\\");\\nparam.setSupplierId(\\\"1\\\");\\nparam.setIncremental(false);\\nparam.setIdempotentId(\\\"202206021500001001\\\");\\nparam.setStockNum(100L);\\nparam.setStepStockNum(100L);\\nparam.setStoreId(12345L);\\nSkuSyncStockResponse response = request.execute(accessToken);\\n\"},\"php\":{\"code\":\"$request = new SkuSyncStockRequest();\\n$param = new SkuSyncStockParam();\\n$request-\\u003esetParam($param);\\n$param-\\u003ecode = \\\"dy001\\\";\\n$param-\\u003esku_id = 1737398770243598;\\n$param-\\u003eout_sku_id = 44354354;\\n$param-\\u003eproduct_id = 3539925204033339668;\\n$param-\\u003eout_product_id = 435243654356;\\n$param-\\u003eout_warehouse_id = \\\"dy123\\\";\\n$param-\\u003esupplier_id = \\\"1\\\";\\n$param-\\u003eincremental = false;\\n$param-\\u003eidempotent_id = \\\"202206021500001001\\\";\\n$param-\\u003estock_num = 100;\\n$param-\\u003estep_stock_num = 100;\\n$param-\\u003estore_id = 12345;\\n$response = $request-\\u003eexecute(accessToken);\\n\"},\"python\":{\"code\":\"request = SkuSyncStockRequest()\\nparam = request.getParams()\\nparam.code = \\\"dy001\\\"\\nparam.sku_id = 1737398770243598\\nparam.out_sku_id = 44354354\\nparam.product_id = 3539925204033339668\\nparam.out_product_id = 435243654356\\nparam.out_warehouse_id = \\\"dy123\\\"\\nparam.supplier_id = \\\"1\\\"\\nparam.incremental = false\\nparam.idempotent_id = \\\"202206021500001001\\\"\\nparam.stock_num = 100\\nparam.step_stock_num = 100\\nparam.store_id = 12345\\nresponse = request.execute(accessToken)\\n\"},\"go\":{\"code\":\"request := sku_syncStock_request.New()\\nparam := request.GetParams()\\nparam.Code = \\\"dy001\\\"\\nparam.SkuId = 1737398770243598\\nparam.OutSkuId = 44354354\\nparam.ProductId = 3539925204033339668\\nparam.OutProductId = 435243654356\\nparam.OutWarehouseId = \\\"dy123\\\"\\nparam.SupplierId = \\\"1\\\"\\nparam.Incremental = false\\nparam.IdempotentId = \\\"202206021500001001\\\"\\nparam.StockNum = 100\\nparam.StepStockNum = 100\\nparam.StoreId = 12345\\nresponse := request.Execute(accessToken)\\n\"},\"dotNetCore\":{\"code\":\"var request = new SkuSyncStockRequest();\\nvar param = request.BuildParam();\\nparam.Code = \\\"dy001\\\";\\nparam.SkuId = 1737398770243598;\\nparam.OutSkuId = 44354354;\\nparam.ProductId = 3539925204033339668;\\nparam.OutProductId = 435243654356;\\nparam.OutWarehouseId = \\\"dy123\\\";\\nparam.SupplierId = \\\"1\\\";\\nparam.Incremental = false;\\nparam.IdempotentId = \\\"202206021500001001\\\";\\nparam.StockNum = 100;\\nparam.StepStockNum = 100;\\nparam.StoreId = 12345;\\nvar response = request.Execute\\u003cSkuSyncStockResponse\\u003e(accessToken);\\n\"},\"js\":{}},\"responseDemo\":{\"responseSuccess\":{\"code\":10000,\"msg\":\"success\",\"sub_code\":\"\",\"sub_msg\":\"\"},\"responseError\":{\"sub_code\":\"\",\"sub_msg\":\"\"}}},\"error\":{\"errCodeList\":[{\"msg\":\"success\",\"code\":10000},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"当前sku已被删除,禁止修改库存\",\"subCode\":\"isv.parameter-invalid:4\",\"solution\":\"请检查参数后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010401:系统繁忙，请稍后再试\",\"subCode\":\"isv.business-failed:2010401\",\"solution\":\"2010401:系统繁忙，请稍后再试\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"sku_id: 21062210000363, 找不到对应的sku\",\"subCode\":\"isv.parameter-invalid:5\",\"solution\":\"请检查请求参数的skuid是否存在或商品已经被删除\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"[idempotent_id]重复，操作已执行\",\"subCode\":\"isv.parameter-invalid:40010\",\"solution\":\"idempotent_id需要保持唯一性，请检查替换idempotent_id值\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"系统错误:获取区域仓失败\",\"subCode\":\"isv.parameter-invalid:40004\",\"solution\":\"此报错是超时导致，重试即可\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"获取子商品信息失败\",\"subCode\":\"isv.business-failed:7\",\"solution\":\"获取子商品信息失败\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"商品：3679752912201973760 （浅米杏-M）正在参加平台活动（抖音商城618好物节-官方立减\\u0026一件直降商品报名），无法修改库存信息\",\"subCode\":\"isv.business-failed:2010012\",\"solution\":\"商品：3679752912201973760 （浅米杏-M）正在参加平台活动（抖音商城618好物节-官方立减\\u0026一件直降商品报名），无法修改库存信息\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"查询商品信息失败，请检查参数后重试\",\"subCode\":\"isv.business-failed:2010058\",\"solution\":\"查询商品信息失败，请检查参数后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"系统错误:Sku不存在\",\"subCode\":\"isv.business-failed:2010001\",\"solution\":\"系统错误:Sku不存在\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"商品已删除，不可更新\",\"subCode\":\"isv.business-failed:2010042\",\"solution\":\"商品已删除，不可更新\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"找不到对应的sku\",\"subCode\":\"isv.business-failed:2010004\",\"solution\":\"找不到对应的sku\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"当前店铺已停业，重新开店后可支持创建商品\",\"subCode\":\"isv.business-failed:2010005\",\"solution\":\"当前店铺已停业，重新开店后可支持创建商品\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"商品封禁，不可更新\",\"subCode\":\"isv.business-failed:2010043\",\"solution\":\"商品封禁，不可更新\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"当前sku为区域库存，禁止更新为普通库存（当前接口禁止更新skuType）\",\"subCode\":\"isv.business-failed:110240119\",\"solution\":\"当前sku为区域库存，禁止更新为普通库存（当前接口禁止更新skuType）\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"更新库存数失败\",\"subCode\":\"isv.business-failed:110211009\",\"solution\":\"更新库存数失败\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"当前sku为普通库存，禁止更新为区域库存（当前接口禁止更新skuType）\",\"subCode\":\"isv.business-failed:110240120\",\"solution\":\"当前sku为普通库存，禁止更新为区域库存（当前接口禁止更新skuType）\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"商品正在参加平台活动（赠品活动），无法修改商品信息\",\"subCode\":\"isv.business-failed:2010045\",\"solution\":\"商品正在参加平台活动（赠品活动），无法修改商品信息\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"阶梯库存模式不合法\",\"subCode\":\"isv.business-failed:2010341\",\"solution\":\"阶梯库存模式不合法\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"商品审核中，不可更新\",\"subCode\":\"isv.business-failed:2010041\",\"solution\":\"商品审核中，不可更新\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"当前商品设置达人库存，不可修改库存类型\",\"subCode\":\"isv.business-failed:110240107\",\"solution\":\"当前商品设置达人库存，不可修改库存类型\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"跨境商品仅支持一品一仓，如需修改商品所在仓请使用编辑接口\",\"subCode\":\"isv.business-failed:110240116\",\"solution\":\"跨境商品仅支持一品一仓，如需修改商品所在仓请使用编辑接口\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"学浪同步商品仅支持在学浪老师端编辑\",\"subCode\":\"isv.business-failed:110102132\",\"solution\":\"学浪同步商品仅支持在学浪老师端编辑\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"获取库存数失败\",\"subCode\":\"isv.business-failed:20100\",\"solution\":\"获取库存数失败\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"读取商品失败\",\"subCode\":\"isv.business-failed:20053\",\"solution\":\"读取商品失败\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"系统异常，请稍后尝试\",\"subCode\":\"isv.business-failed:20050\",\"solution\":\"系统异常，请稍后尝试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"110502038:有价券商品不支持当前接口操作\",\"subCode\":\"isv.business-failed:110502038\",\"solution\":\"110502038:有价券商品不支持当前接口操作\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010013:获取V2库存数失败\",\"subCode\":\"isv.business-failed:2010013\",\"solution\":\"2010013:获取V2库存数失败\"}]}}",
+      "info": {
+        "AuditedTime": "",
+        "access": false,
+        "apiChargeType": 1,
+        "apiLimitLevel": 1,
+        "apiLimitValue": 18000,
+        "apiSpiMsgNames": [],
+        "articleOutId": 193,
+        "auditStatus": 401,
+        "auth": {
+          "categoryList": [],
+          "groupName": "",
+          "packageName": "",
+          "packageType": 0
+        },
+        "authSubject": "[3]",
+        "authSubjectIdList": [
+          "店铺"
+        ],
+        "auths": [
+          {
+            "categoryList": [
+              "微应用-标题优化",
+              "选品铺货-微应用",
+              "商品图文-微应用",
+              "卡券商工具",
+              "创新应用大赛_微应用",
+              "撮合服务商",
+              "直播话术-微应用",
+              "AI拼图-微应用",
+              "模版服务-图文模版",
+              "模版服务-主图视频",
+              "营销管理-互动小程序定制",
+              "营销管理-小程序定制",
+              "自研微组件",
+              "创新应用大赛_软件服务",
+              "搭配购-微应用",
+              "微应用-商详海报",
+              "教育服务",
+              "短视频工具",
+              "自研微组件-直播复盘",
+              "商家商品推广",
+              "商家后台系统",
+              "即时零售商品服务",
+              "店铺管理",
+              "微应用-主图视频",
+              "即时零售ebill订单管理（临时）",
+              "即时零售ERP",
+              "即时零售商家自研",
+              "直播工具",
+              "直播间AI导购",
+              "互动营销定制",
+              "直播间导购-微应用",
+              "短信营销",
+              "商品供应链",
+              "商品优化分析",
+              "电商ERP",
+              "商品基础工具",
+              "AI 商品运营",
+              "智能外呼"
+            ],
+            "groupName": "商品",
+            "packageName": "商品编辑",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "即时零售ERP",
+              "即时零售商家自研"
+            ],
+            "groupName": "订单",
+            "packageName": "电商小时达专用-临时",
+            "packageType": 1
+          }
+        ],
+        "commitAuditTime": "",
+        "contentType": 1,
+        "createTime": -62135596800,
+        "defaultApiAndAppLimitLevel": 1,
+        "defaultApiAndAppLimitValue": 4000,
+        "description": "1、支持修改普通库存,区域库存,阶梯库存\n2、支持增量更新，当incremental=true时idempotent_id字段参数必传，同时stock_num支持加/减库存。加库存例：原商品库存是10个，接口传入5个，执行成功商品库存是15个。减库存例：原商品库存是10个，接口stock_num传入-5，执行成功商品库存是5个。注意：减库存时【商品现库存-即将减少库存数不能<0】，否则会报错系统错误:更新库存数失败: 库存不足；\n3、支持全量更新。例：原商品库存是10个，接口传入5个，执行成功商品库存是5个。\n4、可以设置库存为0\n5、即时零售店铺类型，更新库存out_warehouse_id= store_id（门店id）表示更新门店商品库存。\n6、抖店服饰自提场景，store_id（推荐）自提场景为门店id,out_warehouse_id和store_id二选一，系统执行优先级out_warehouse_id>store_id",
+        "dirId": 34,
+        "dirLabels": [],
+        "dirName": "库存API",
+        "docLabels": [],
+        "extra": {
+          "creator": "",
+          "feishuDocUrl": "",
+          "mailDocUrl": "",
+          "mailPicUrl": "",
+          "mailTag": 0,
+          "noticeAuditUrl": "",
+          "ticketUrl": ""
+        },
+        "finalStatus": 1,
+        "flag": 0,
+        "id": 155,
+        "isTop": false,
+        "note": "",
+        "pv": 7636,
+        "reOnline": true,
+        "status": 1,
+        "subtitle": "全量/增量更新商品sku库存",
+        "title": "/sku/syncStock",
+        "updateTime": 1739783799,
+        "url": "",
+        "userList": [],
+        "userSceneDesc": "全量/增量更新商品sku库存",
+        "version": "V3.01"
+      },
+      "tagNameMap": {
+        "25": "优惠券基础数据",
+        "26": "用户优惠券数据",
+        "28": "其他字段",
+        "29": "通用字段",
+        "30": "物流公司信息",
+        "31": "订单基础信息",
+        "32": "地址基础信息",
+        "33": "寄件人地址信息",
+        "34": "寄件人联系信息",
+        "35": "物流增值服务",
+        "36": "回单寄回地址",
+        "37": "收件人地址",
+        "38": "收件人信息",
+        "39": "商品基础信息",
+        "40": "商品重量体积信息",
+        "41": "快递配置规则",
+        "42": "订单备注",
+        "43": "仓库基础信息",
+        "44": "店铺基础信息",
+        "45": "小程序基础信息",
+        "46": "订单来源分析",
+        "47": "买家留言 ",
+        "48": "商家备注",
+        "49": "订单金额信息",
+        "50": "商品金额信息",
+        "51": "营销活动金额信息",
+        "52": "营销活动基础信息",
+        "53": "精选联盟",
+        "54": "跨境海淘",
+        "55": "库存基础信息",
+        "56": "售后基础信息",
+        "57": "电子卡券",
+        "58": "赠品",
+        "59": "组合（组套）商品",
+        "60": "虚拟商品",
+        "61": "定金预售",
+        "62": "懂车帝购车信息",
+        "63": "用户特征标签",
+        "64": "物流信息",
+        "65": "证件信息",
+        "66": "C2B定制",
+        "67": "买家基础信息",
+        "68": "买家敏感信息",
+        "69": "场景包测试标签a",
+        "70": "场景包测试标签b",
+        "71": "商家快递网点信息",
+        "72": "商品类目信息",
+        "73": "短信基础字段",
+        "74": "售后文案",
+        "75": "插旗信息",
+        "76": "售后金额信息",
+        "77": "风控信息",
+        "78": "换货基础信息",
+        "79": "售后标签",
+        "80": "门店基础信息",
+        "81": "售后商家备注信息",
+        "82": "达人样品订单",
+        "83": "即时零售订单接单状态",
+        "85": "换货和补寄信息",
+        "86": "物流异常风控",
+        "87": "商家售后地址信息",
+        "88": "售后仲裁",
+        "89": "买家退货物流信息",
+        "90": "补寄场景",
+        "91": "售后价保",
+        "92": "售后数据分析",
+        "93": "售后协商记录",
+        "94": "废弃字段",
+        "95": "商品尺码模板",
+        "96": "商品标题前缀",
+        "97": "商品参考价凭证",
+        "98": "商品资质信息",
+        "99": "商品限购信息",
+        "100": "特殊日期延迟发货",
+        "101": "商品销量",
+        "102": "店铺地址库",
+        "103": "即时零售商品基础信息",
+        "104": "解密基础字段",
+        "105": "解密虚拟号",
+        "106": "解密明文信息",
+        "107": "解密手机号明文",
+        "108": "解密姓名信息",
+        "109": "解密地址信息",
+        "110": "解密身份证信息",
+        "111": "查询改地址开关",
+        "112": "用户店铺关注信息",
+        "113": "店铺会话统计数据",
+        "114": "飞鸽会话统计数据",
+        "115": "飞鸽客服基础信息",
+        "116": "飞鸽会话信息",
+        "117": "飞鸽客服登录日志",
+        "118": "飞鸽客服接待统计信息",
+        "119": "飞鸽会话消息基础信息",
+        "120": "视频信息",
+        "121": "商品卖点信息",
+        "122": "授权基础信息",
+        "123": "商品价格信息",
+        "124": "商品分佣信息",
+        "125": "联盟分佣信息",
+        "126": "商品评价信息",
+        "127": "评价基础信息",
+        "128": "评价结果数据",
+        "129": "店铺体验分",
+        "130": "评价内容信息",
+        "131": "订单extra"
+      }
+    },
+    "releaseNote": "新增入参 batch_stock_items:批次库存项 \n",
+    "version": "1.0.0"
+  },
+  "msg": ""
+}

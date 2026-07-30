@@ -1,0 +1,254 @@
+{
+  "code": 0,
+  "data": {
+    "CustomerError": {
+      "ErrCode": 0,
+      "ErrMsg": ""
+    },
+    "RelevanceFAQs": [
+      {
+        "articleId": 3333,
+        "dirId": 89,
+        "title": "订单上用户申请发票后，对应的发票收票人信息如何获取？"
+      },
+      {
+        "articleId": 3530,
+        "dirId": 89,
+        "title": "关于开票列表接口：/order/invoiceList，如果消费者买了两个商品A共花费100元，然后申请了开票，开票状态为待开票或者开票完成，在这个时候消费者申请了1件商品A的退货退款并且退款成功，那这个发票的状态会变更为关闭么？"
+      },
+      {
+        "articleId": 3029,
+        "dirId": 89,
+        "title": "平台有关于商家的开票列表接口吗？"
+      },
+      {
+        "articleId": 3667,
+        "dirId": 89,
+        "title": "开票接口：/order/invoiceList，invoice_type这个字段的枚举值有哪些？"
+      },
+      {
+        "articleId": 3665,
+        "dirId": 89,
+        "title": "开票接口：/order/invoiceList，关于字段SkuSpecs\":[{\"Name\":\"尺码-欧码\",\"Value\":\"1\"}],\"SkuCode\":\"\"}}中name、value、skucode分别代表什么业务含义？"
+      },
+      {
+        "articleId": 3894,
+        "dirId": 89,
+        "title": "调用发票查询接口，为什么返回的数据是空的？如何才能查到哪些订单需要开票？"
+      },
+      {
+        "articleId": 3666,
+        "dirId": 89,
+        "title": "开票接口：/order/invoiceList，tos_url字段表示的是什么含义？"
+      },
+      {
+        "articleId": 5705,
+        "dirId": 89,
+        "title": "已退款订单（订单状态已关闭）发票申请为什么拉取不到，而已开票的可以？"
+      },
+      {
+        "articleId": 5172,
+        "dirId": 89,
+        "title": "为什么在python的SDK中没有找到发票相关的接口？"
+      },
+      {
+        "articleId": 6213,
+        "dirId": 89,
+        "title": "商家开票列表中有没有开票方式字段？"
+      },
+      {
+        "articleId": 3668,
+        "dirId": 89,
+        "title": "开票接口：/order/invoiceList，企业地址 ：company_address 和企业电话 company_mobile，表示的具体是什么？"
+      },
+      {
+        "articleId": 7378,
+        "dirId": 1357,
+        "title": "为什么国补订单签收确认收货后未产生发票申请？"
+      }
+    ],
+    "article": {
+      "content": "{\"request\":{\"publicParam\":[{\"requestName\":\"method\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"order.invoiceList\",\"description\":\"调用的API接口名称\"},{\"requestName\":\"app_key\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"6839996111118329223\",\"description\":\"应用创建完成后被分配的key\"},{\"requestName\":\"access_token\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"edae7c30-8386-443b-88a1-031111596fdd\",\"description\":\"用于调用 API 的 access_token\",\"hiddenForInterfaceName\":[\"/token/create\"]},{\"requestName\":\"param_json\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"{cid:12,page:1}\",\"description\":\"标准json类型，里面是业务参数按照参数名的字符串大小排序具体参数值，参考每个接口的参数表\"},{\"requestName\":\"timestamp\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2020-09-15 14:48:13\",\"description\":\"时间戳，格式为yyyy-MM-dd HH:mm:ss，时区为GMT+8，例如：2016-01-01 12:00:00\"},{\"requestName\":\"v\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2\",\"description\":\"API协议版本，当前版本为2\"},{\"requestName\":\"sign\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"796559d40beb08a1a1113c456c5c5a62\",\"description\":\"输入参数签名结果，签名算法参照 [API调用指南](https://op.jinritemai.com/docs/guide-docs/10/23)\"},{\"requestName\":\"sign_method\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"hmac-sha256\",\"description\":\"签名算法类型推荐使用hmac-sha256后续会下线md5（不传则默认为\\\"md5\\\"）1. md5:表示用md5算法加密字符串 2. hmac-sha256:表示用hmac_sha_256算法加密字符串\"}],\"requestParam\":[{\"requestName\":\"order_id\",\"toName\":\"OrderId\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"4718699311644951110\",\"description\":\"父订单ID\",\"cipherTextType\":1},{\"requestName\":\"order_status\",\"toName\":\"OrderStatus\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"3,5\",\"description\":\"订单状态，逗号分割\",\"cipherTextType\":1},{\"requestName\":\"start_time\",\"toName\":\"StartTime\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1625638841\",\"description\":\"申请创建开始时间，时间戳，秒\",\"cipherTextType\":1},{\"requestName\":\"end_time\",\"toName\":\"EndTime\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1625638841\",\"description\":\"申请创建结束时间，时间戳，秒\",\"cipherTextType\":1},{\"requestName\":\"status\",\"toName\":\"status\",\"mustNeed\":false,\"type\":7,\"style\":1,\"example\":\"1\",\"description\":\"开票状态：1待开票、2已开票、3已关闭\",\"cipherTextType\":1},{\"requestName\":\"page_no\",\"toName\":\"PageNo\",\"mustNeed\":false,\"type\":7,\"style\":1,\"example\":\"0\",\"description\":\"页数（默认为0，第一页从0开始），page_no* page_size不超过1万\",\"cipherTextType\":1},{\"requestName\":\"page_size\",\"toName\":\"PageSize\",\"mustNeed\":false,\"type\":7,\"style\":1,\"example\":\"20\",\"description\":\"请求每页返回的数量，默认20，最多50\",\"cipherTextType\":1},{\"requestName\":\"order_by\",\"toName\":\"OrderBy\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"asc\",\"description\":\"默认排序规则为desc； 排序方式支持asc/desc\",\"cipherTextType\":1},{\"requestName\":\"order_field\",\"toName\":\"OrderField\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"create_time\",\"description\":\"排序规则： 创建时间排序create_time，不传默认创建时间\",\"cipherTextType\":1}]},\"response\":{\"responseData\":[{\"responseName\":\"invoice_list\",\"fromName\":\"InvoiceList\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"发票信息清单\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"invoice_sub_status\",\"fromName\":\"InvoiceSubStatus\",\"type\":7,\"example\":\"200\",\"description\":\"开票子状态：200 已开票；201  待红冲；202  已红冲待开票；203  红冲后已开票；204  红冲后已完成;205 用户撤销开票\"},{\"responseName\":\"latest_invoice_time\",\"fromName\":\"LatestInvoiceTime\",\"type\":1,\"example\":\"123455\",\"description\":\"最晚开票时间，单位: 秒\"},{\"responseName\":\"apply_scene\",\"fromName\":\"ApplyScene\",\"type\":1,\"example\":\"2\",\"description\":\"2-政府补贴订单\"},{\"responseName\":\"invoice_file_list\",\"fromName\":\"InvoiceFileList\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"发票文件列表\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"file_name\",\"fromName\":\"FileName\",\"type\":2,\"example\":\"123.OFD\",\"description\":\"发票文件名称\"},{\"responseName\":\"tos_url\",\"fromName\":\"Url\",\"type\":2,\"example\":\"https://lf26-ecom-shop-sign.bytetos.com/ecom-shop-order-invoice/21084d0102dc458be261deebb2f2064b?x-expires=1625495766\\u0026x-signature=a8QxsaOnBkSSeVEe%2Brv45NmB%2B%2BU%3D\",\"description\":\"发票文件链接\"}]},{\"responseName\":\"invoice_detail_extra\",\"fromName\":\"InvocieDetailExtra\",\"type\":5,\"example\":\"\",\"description\":\"开票明细额外信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"none_government_subsidy_backdoor_order\",\"fromName\":\"NoneGovernmentSubsidyBackDoorOrder\",\"type\":4,\"example\":\"true\",\"description\":\"是否是自营借壳订单(国补);\\n无该字段表示不是自营借壳订单\"},{\"responseName\":\"government_subsidy_backdoor_order\",\"fromName\":\"GovernmentSubsidyBackDoorOrder\",\"type\":4,\"example\":\"true\",\"description\":\"是否是自营借壳订单(非国补)；\\n无该字段表示不是自营借壳订单\"},{\"responseName\":\"urge_invoice\",\"fromName\":\"UrgeInvoice\",\"type\":2,\"example\":\"\\\"1\\\"\",\"description\":\"是否催开票\"},{\"responseName\":\"government_subsidy_major_category_name\",\"fromName\":\"GovernmentSubsidyMajorCategoryName\",\"type\":2,\"example\":\"家装厨卫\",\"description\":\"补贴类目\"},{\"responseName\":\"government_subsidy_area_name\",\"fromName\":\"GovernmentSubsidyAreaName\",\"type\":2,\"example\":\"浙江宁波\",\"description\":\"补贴地区名称\"},{\"responseName\":\"government_subsidy_item_name\",\"fromName\":\"GovernmentSubsidyItemName\",\"type\":2,\"example\":\"洗衣机\",\"description\":\"建议项目名称\"},{\"responseName\":\"government_subsidy_invoice_remark\",\"fromName\":\"GovernmentSubsidyInvoiceRemark\",\"type\":2,\"example\":\"订单号：6941940048635500445；购机日期：2025.04.27；手机号：19821877291；69码：6922122913683；政府补贴金额0.06元；SN码：mockflow\",\"description\":\"建议发票备注\"},{\"responseName\":\"payment_no\",\"fromName\":\"PaymentNo\",\"type\":2,\"example\":\"12345678910\",\"description\":\"交易流水号\"},{\"responseName\":\"post_receiver_info\",\"fromName\":\"GovernmentSubsidyPostReceiver\",\"type\":5,\"example\":\"\",\"description\":\"收件人信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"post_addr_text\",\"fromName\":\"PostAddrText\",\"type\":2,\"example\":\"安徽省安庆市安阳区安阳街道4 号楼 5 单元\",\"description\":\"收件人地址\"},{\"responseName\":\"buyer_mobile\",\"fromName\":\"BuyerMobile\",\"type\":2,\"example\":\"12345678910\",\"description\":\"购买人手机号\"}]},{\"responseName\":\"refund_amount\",\"fromName\":\"RealRefundAmount\",\"type\":1,\"example\":\"100\",\"description\":\"订单退款成功金额，单位：分\"},{\"responseName\":\"actual_pay_amount\",\"fromName\":\"ActualPayAmount\",\"type\":1,\"example\":\"100\",\"description\":\"订单实付金额，单位：分\"},{\"responseName\":\"gov_subsidy_city_code\",\"fromName\":\"GovernmentSubsidyCityCode\",\"type\":2,\"example\":\"government_subsidy_bj_bj\",\"description\":\"补贴的城市信息；\\ngovernment_subsidy_bj_bj  北京补贴\"},{\"responseName\":\"gov_subsidy_uninvoice_amount\",\"fromName\":\"GovSubsidyUnInvoiceAmount\",\"type\":2,\"example\":\"100\",\"description\":\"政府补贴订单未开票金额；单位：分\"},{\"responseName\":\"recycle_credit_deduction_amount\",\"fromName\":\"RecycleCreditDeductionAmount\",\"type\":1,\"example\":\"100\",\"description\":\"以旧换新-信用抵扣金额；单位：分\"},{\"responseName\":\"post_amount\",\"fromName\":\"PostAmount\",\"type\":1,\"example\":\"600\",\"description\":\"运费开票金额\"}]},{\"responseName\":\"registation_id\",\"fromName\":\"RegistationId\",\"type\":2,\"example\":\"6981804344242176269\",\"description\":\"开票id\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"shop_id\",\"fromName\":\"ShopId\",\"type\":1,\"example\":\"77977\",\"description\":\"店铺id\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"shop_order_id\",\"fromName\":\"ShopOrderId\",\"type\":2,\"example\":\"4816720996870743609\",\"description\":\"主订单号\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"invoice_type\",\"fromName\":\"InvoiceType\",\"type\":7,\"example\":\"1\",\"description\":\"发票种类 \\n1-增值税普通电子\\n2-数电（普通发票）\\n3-增值税专用发票\\n4-数电（专用发票）\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"apply_time\",\"fromName\":\"ApplyTime\",\"type\":1,\"example\":\"1625638841\",\"description\":\"开票申请创建时间\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"invoice_status_type\",\"fromName\":\"InvoiceStatusType\",\"type\":7,\"example\":\"1\",\"description\":\"发票类型 1-蓝票\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"title_type\",\"fromName\":\"TitleType\",\"type\":7,\"example\":\"1\",\"description\":\"抬头类型 1-个人；2-企业；3-数电发票-个人；4-数电发票-事业单位\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"title\",\"fromName\":\"Title\",\"type\":2,\"example\":\"法国发四十分\",\"description\":\"抬头\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"tax_no\",\"fromName\":\"TaxNo\",\"type\":2,\"example\":\"11752825826826826\",\"description\":\"税号\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"bank_name\",\"fromName\":\"BankName\",\"type\":2,\"example\":\"中国银行\",\"description\":\"开户银行\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"bank_no\",\"fromName\":\"BankNo\",\"type\":2,\"example\":\"338923123627\",\"description\":\"银行编号\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"company_address\",\"fromName\":\"CompanyAddress\",\"type\":2,\"example\":\"北京市平谷区林荫北街13号12幢\",\"description\":\"企业地址\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"company_mobile\",\"fromName\":\"CompanyMobile\",\"type\":2,\"example\":\"010-58323810\",\"description\":\"企业电话\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"invoice_amount\",\"fromName\":\"InvoiceAmount\",\"type\":1,\"example\":\"10000\",\"description\":\"可开票金额，单位分\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"invoice_detail\",\"fromName\":\"InvoiceDetail\",\"type\":2,\"example\":\"{\\\"4817040770060371513\\\":{\\\"ProductId\\\":3490890566424762040,\\\"ProductCount\\\":1,\\\"ProductName\\\":\\\"一单多品测试 人字拖\\\",\\\"ProductPrice\\\":1,\\\"SkuSpecs\\\":[{\\\"Name\\\":\\\"尺码-欧码\\\",\\\"Value\\\":\\\"1\\\"}],\\\"SkuCode\\\":\\\"\\\"}}\",\"description\":\"开票详情\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"invoice_status\",\"fromName\":\"InvoiceStatus\",\"type\":7,\"example\":\"2\",\"description\":\"开票状态 1待开票 2开票完成 3已关闭\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"order_status\",\"fromName\":\"OrderStatus\",\"type\":7,\"example\":\"2\",\"description\":\"订单状态\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"end_reason\",\"fromName\":\"EndReason\",\"type\":7,\"example\":\"1\",\"description\":\"关闭原因枚举 1退款完成\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"tos_url\",\"fromName\":\"TosUrl\",\"type\":2,\"example\":\"https://lf26-ecom-shop-sign.bytetos.com/ecom-shop-order-invoice/21084d0102dc458be261deebb2f2064b?x-expires=1625495766\\u0026x-signature=a8QxsaOnBkSSeVEe%2Brv45NmB%2B%2BU%3D\",\"description\":\"发票url，2小时失效\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"file_name\",\"fromName\":\"FileName\",\"type\":2,\"example\":\"发票.pdf\",\"description\":\"发票文件名称\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"upload_time\",\"fromName\":\"UploadTime\",\"type\":1,\"example\":\"1625638841\",\"description\":\"首次发票上传时间\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"end_time\",\"fromName\":\"EndTime\",\"type\":1,\"example\":\"1625638841\",\"description\":\"关闭时间\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"},{\"responseName\":\"latest_upload_time\",\"fromName\":\"LatestUploadTime\",\"type\":1,\"example\":\"1625638841\",\"description\":\"最新发票上传时间\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"}]},{\"responseName\":\"total\",\"fromName\":\"Total\",\"type\":1,\"example\":\"10\",\"description\":\"总数\",\"encryptType\":\"-\",\"securityLevel\":\"R1\"}]},\"demo\":{\"requestDemo\":{\"curl\":{\"reqUrl\":\"https://openapi-fxg.jinritemai.com?app_key=your_appkey_here\\u0026method=\\u0026access_token=your_accesstoken_here\\u0026param_json={}\\u0026timestamp=2018-06-19%2016:06:59\\u0026v=2\\u0026sign=your_sign_here\"},\"java\":{\"code\":\"OrderInvoiceListRequest request = new OrderInvoiceListRequest();\\nOrderInvoiceListParam param = request.getParam();\\nparam.setOrderId(\\\"4718699311644951110\\\");\\nparam.setOrderStatus(\\\"3,5\\\");\\nparam.setStartTime(1625638841L);\\nparam.setEndTime(1625638841L);\\nparam.setStatus(1);\\nparam.setPageNo(0);\\nparam.setPageSize(20);\\nparam.setOrderBy(\\\"asc\\\");\\nparam.setOrderField(\\\"create_time\\\");\\nOrderInvoiceListResponse response = request.execute(accessToken);\\n\"},\"php\":{\"code\":\"$request = new OrderInvoiceListRequest();\\n$param = new OrderInvoiceListParam();\\n$request-\\u003esetParam($param);\\n$param-\\u003eorder_id = \\\"4718699311644951110\\\";\\n$param-\\u003eorder_status = \\\"3,5\\\";\\n$param-\\u003estart_time = 1625638841;\\n$param-\\u003eend_time = 1625638841;\\n$param-\\u003estatus = 1;\\n$param-\\u003epage_no = 0;\\n$param-\\u003epage_size = 20;\\n$param-\\u003eorder_by = \\\"asc\\\";\\n$param-\\u003eorder_field = \\\"create_time\\\";\\n$response = $request-\\u003eexecute(accessToken);\\n\"},\"python\":{\"code\":\"request = OrderInvoiceListRequest()\\nparam = request.getParams()\\nparam.order_id = \\\"4718699311644951110\\\"\\nparam.order_status = \\\"3,5\\\"\\nparam.start_time = 1625638841\\nparam.end_time = 1625638841\\nparam.status = 1\\nparam.page_no = 0\\nparam.page_size = 20\\nparam.order_by = \\\"asc\\\"\\nparam.order_field = \\\"create_time\\\"\\nresponse = request.execute(accessToken)\\n\"},\"go\":{\"code\":\"request := order_invoiceList_request.New()\\nparam := request.GetParams()\\nparam.OrderId = \\\"4718699311644951110\\\"\\nparam.OrderStatus = \\\"3,5\\\"\\nparam.StartTime = 1625638841\\nparam.EndTime = 1625638841\\nparam.Status = 1\\nparam.PageNo = 0\\nparam.PageSize = 20\\nparam.OrderBy = \\\"asc\\\"\\nparam.OrderField = \\\"create_time\\\"\\nresponse := request.Execute(accessToken)\\n\"},\"dotNetCore\":{\"code\":\"var request = new OrderInvoiceListRequest();\\nvar param = request.BuildParam();\\nparam.OrderId = \\\"4718699311644951110\\\";\\nparam.OrderStatus = \\\"3,5\\\";\\nparam.StartTime = 1625638841;\\nparam.EndTime = 1625638841;\\nparam.Status = 1;\\nparam.PageNo = 0;\\nparam.PageSize = 20;\\nparam.OrderBy = \\\"asc\\\";\\nparam.OrderField = \\\"create_time\\\";\\nvar response = request.Execute\\u003cOrderInvoiceListResponse\\u003e(accessToken);\\n\"},\"js\":{}},\"responseDemo\":{\"responseSuccess\":{\"code\":10000,\"msg\":\"success\",\"sub_code\":\"\",\"sub_msg\":\"\"},\"responseError\":{\"sub_code\":\"\",\"sub_msg\":\"\"}}},\"error\":{\"errCodeList\":[{\"msg\":\"success\",\"code\":10000},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"8888：系统繁忙，请稍后重试\",\"subCode\":\"isv.business-failed:8888\",\"solution\":\"稍后重试\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"10009：PageSize 超过 100\",\"subCode\":\"isv.parameter-invalid:10009\",\"solution\":\"PageSize设置为50\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"40007：批量获取政府补贴订单发票规则信息失败\",\"subCode\":\"isv.business-failed:40007\",\"solution\":\"稍后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"10049: 开始时间错误\",\"subCode\":\"isv.business-failed:10049\",\"solution\":\"修改开始时间\"}]}}",
+      "info": {
+        "AuditedTime": "",
+        "access": false,
+        "apiChargeType": 1,
+        "apiLimitLevel": 1,
+        "apiLimitValue": 1600,
+        "apiSpiMsgNames": [],
+        "articleOutId": 118,
+        "auditStatus": 401,
+        "auth": {
+          "categoryList": [],
+          "groupName": "",
+          "packageName": "",
+          "packageType": 0
+        },
+        "authSubject": "[3]",
+        "authSubjectIdList": [
+          "店铺"
+        ],
+        "auths": [
+          {
+            "categoryList": [
+              "创新应用大赛_微应用",
+              "售后管理",
+              "企业财税服务",
+              "创新应用大赛_软件服务",
+              "商家后台系统",
+              "即时零售ebill订单管理（临时）",
+              "即时零售ERP",
+              "即时零售商家自研",
+              "订单管理",
+              "电商ERP"
+            ],
+            "groupName": "账单",
+            "packageName": "电子发票",
+            "packageType": 1
+          }
+        ],
+        "commitAuditTime": "",
+        "contentType": 1,
+        "createTime": -62135596800,
+        "description": "查看商家开票列表\n查看商家开票列表，支持订单号、开票状态、订单状态、开票申请创建开始时间、开票申请创建结束时间筛选",
+        "dirId": 15,
+        "dirLabels": [],
+        "dirName": "订单API",
+        "docLabels": [],
+        "extra": {
+          "creator": "",
+          "feishuDocUrl": "",
+          "mailDocUrl": "",
+          "mailPicUrl": "",
+          "mailTag": 0,
+          "noticeAuditUrl": "",
+          "ticketUrl": ""
+        },
+        "finalStatus": 1,
+        "flag": 0,
+        "id": 1842,
+        "isTop": false,
+        "note": "",
+        "pv": 3569,
+        "reOnline": true,
+        "status": 1,
+        "subtitle": "查看商家开票列表\n查看商家开票列表，支持订单号、开票状态、订单状态、开票申请创建开始时间、开票申请创建结束时间筛选",
+        "title": "/order/invoiceList",
+        "updateTime": 1773818981,
+        "url": "",
+        "userList": [],
+        "userSceneDesc": "查看商家开票列表",
+        "version": "V1.05"
+      },
+      "tagNameMap": {
+        "25": "优惠券基础数据",
+        "26": "用户优惠券数据",
+        "28": "其他字段",
+        "29": "通用字段",
+        "30": "物流公司信息",
+        "31": "订单基础信息",
+        "32": "地址基础信息",
+        "33": "寄件人地址信息",
+        "34": "寄件人联系信息",
+        "35": "物流增值服务",
+        "36": "回单寄回地址",
+        "37": "收件人地址",
+        "38": "收件人信息",
+        "39": "商品基础信息",
+        "40": "商品重量体积信息",
+        "41": "快递配置规则",
+        "42": "订单备注",
+        "43": "仓库基础信息",
+        "44": "店铺基础信息",
+        "45": "小程序基础信息",
+        "46": "订单来源分析",
+        "47": "买家留言 ",
+        "48": "商家备注",
+        "49": "订单金额信息",
+        "50": "商品金额信息",
+        "51": "营销活动金额信息",
+        "52": "营销活动基础信息",
+        "53": "精选联盟",
+        "54": "跨境海淘",
+        "55": "库存基础信息",
+        "56": "售后基础信息",
+        "57": "电子卡券",
+        "58": "赠品",
+        "59": "组合（组套）商品",
+        "60": "虚拟商品",
+        "61": "定金预售",
+        "62": "懂车帝购车信息",
+        "63": "用户特征标签",
+        "64": "物流信息",
+        "65": "证件信息",
+        "66": "C2B定制",
+        "67": "买家基础信息",
+        "68": "买家敏感信息",
+        "69": "场景包测试标签a",
+        "70": "场景包测试标签b",
+        "71": "商家快递网点信息",
+        "72": "商品类目信息",
+        "73": "短信基础字段",
+        "74": "售后文案",
+        "75": "插旗信息",
+        "76": "售后金额信息",
+        "77": "风控信息",
+        "78": "换货基础信息",
+        "79": "售后标签",
+        "80": "门店基础信息",
+        "81": "售后商家备注信息",
+        "82": "达人样品订单",
+        "83": "即时零售订单接单状态",
+        "85": "换货和补寄信息",
+        "86": "物流异常风控",
+        "87": "商家售后地址信息",
+        "88": "售后仲裁",
+        "89": "买家退货物流信息",
+        "90": "补寄场景",
+        "91": "售后价保",
+        "92": "售后数据分析",
+        "93": "售后协商记录",
+        "94": "废弃字段",
+        "95": "商品尺码模板",
+        "96": "商品标题前缀",
+        "97": "商品参考价凭证",
+        "98": "商品资质信息",
+        "99": "商品限购信息",
+        "100": "特殊日期延迟发货",
+        "101": "商品销量",
+        "102": "店铺地址库",
+        "103": "即时零售商品基础信息",
+        "104": "解密基础字段",
+        "105": "解密虚拟号",
+        "106": "解密明文信息",
+        "107": "解密手机号明文",
+        "108": "解密姓名信息",
+        "109": "解密地址信息",
+        "110": "解密身份证信息",
+        "111": "查询改地址开关",
+        "112": "用户店铺关注信息",
+        "113": "店铺会话统计数据",
+        "114": "飞鸽会话统计数据",
+        "115": "飞鸽客服基础信息",
+        "116": "飞鸽会话信息",
+        "117": "飞鸽客服登录日志",
+        "118": "飞鸽客服接待统计信息",
+        "119": "飞鸽会话消息基础信息",
+        "120": "视频信息",
+        "121": "商品卖点信息",
+        "122": "授权基础信息",
+        "123": "商品价格信息",
+        "124": "商品分佣信息",
+        "125": "联盟分佣信息",
+        "126": "商品评价信息",
+        "127": "评价基础信息",
+        "128": "评价结果数据",
+        "129": "店铺体验分",
+        "130": "评价内容信息",
+        "131": "订单extra"
+      }
+    },
+    "releaseNote": "新增出参 invoice_detail_extra.none_government_subsidy_backdoor_order:是否是自营借壳订单(国补) invoice_detail_extra.government_subsidy_backdoor_order:是否是自营借壳订单(非国补)"
+  },
+  "msg": ""
+}

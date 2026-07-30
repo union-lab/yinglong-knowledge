@@ -1,0 +1,523 @@
+{
+  "code": 0,
+  "data": {
+    "CustomerError": {
+      "ErrCode": 0,
+      "ErrMsg": ""
+    },
+    "article": {
+      "content": "{\"request\":{\"publicParam\":[{\"requestName\":\"method\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"product.batchGetCombination\",\"description\":\"调用的API接口名称\"},{\"requestName\":\"app_key\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"6839996111118329223\",\"description\":\"应用创建完成后被分配的key\"},{\"requestName\":\"access_token\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"edae7c30-8386-443b-88a1-031111596fdd\",\"description\":\"用于调用 API 的 access_token\",\"hiddenForInterfaceName\":[\"/token/create\"]},{\"requestName\":\"param_json\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"{cid:12,page:1}\",\"description\":\"标准json类型，里面是业务参数按照参数名的字符串大小排序具体参数值，参考每个接口的参数表\"},{\"requestName\":\"timestamp\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2020-09-15 14:48:13\",\"description\":\"时间戳，格式为yyyy-MM-dd HH:mm:ss，时区为GMT+8，例如：2016-01-01 12:00:00\"},{\"requestName\":\"v\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2\",\"description\":\"API协议版本，当前版本为2\"},{\"requestName\":\"sign\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"796559d40beb08a1a1113c456c5c5a62\",\"description\":\"输入参数签名结果，签名算法参照 [API调用指南](https://op.jinritemai.com/docs/guide-docs/10/23)\"},{\"requestName\":\"sign_method\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"hmac-sha256\",\"description\":\"签名算法类型推荐使用hmac-sha256后续会下线md5（不传则默认为\\\"md5\\\"）1. md5:表示用md5算法加密字符串 2. hmac-sha256:表示用hmac_sha_256算法加密字符串\"}],\"requestParam\":[{\"requestName\":\"params\",\"toName\":\"params\",\"mustNeed\":true,\"type\":3,\"subType\":5,\"style\":1,\"example\":\"\",\"description\":\"搭配id列表\",\"cipherTextType\":1,\"children\":[{\"requestName\":\"combination_id\",\"toName\":\"combination_id\",\"mustNeed\":true,\"type\":1,\"style\":1,\"example\":\"1\",\"description\":\"搭配id，最多20个\"}]}]},\"response\":{\"responseData\":[{\"responseName\":\"combination_with_products\",\"fromName\":\"combination_with_products\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"搭配信息列表\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"combination_info\",\"fromName\":\"combination_info\",\"type\":5,\"example\":\"\",\"description\":\"搭配信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"combination_id\",\"fromName\":\"combination_id\",\"type\":1,\"example\":\"1234567\",\"description\":\"搭配id\"},{\"responseName\":\"title\",\"fromName\":\"title\",\"type\":2,\"example\":\"时尚运动搭配\",\"description\":\"搭配标题\"},{\"responseName\":\"description\",\"fromName\":\"description\",\"type\":2,\"example\":\"官搭官配春季新款\",\"description\":\"搭配推荐语\"},{\"responseName\":\"image_url\",\"fromName\":\"image_url\",\"type\":2,\"example\":\"https://p3-aio.ecombdimg.com/obj/ecom-shop-material/v1_GhxlaZ_70518442764009474640419_9aee895e6a606b567d21db635f3affc5_sx_277318_www1170-1170\",\"description\":\"搭配主图\"},{\"responseName\":\"anchor_image_info\",\"fromName\":\"anchor_image_info\",\"type\":2,\"example\":\"{\\\"image\\\":{\\\"url\\\":\\\"https://p3-aio.ecombdimg.com/obj/ecom-shop-material/v1_GhxlaZ_70518442764009474640419_9aee895e6a606b567d21db635f3affc5_sx_277318_www1170-1170\\\",\\\"width\\\":1170,\\\"height\\\":1170},\\\"image_hot_area\\\":[{\\\"point\\\":{\\\"x\\\":677,\\\"y\\\":418},\\\"detail_area\\\":{\\\"direction\\\":\\\"left\\\",\\\"content\\\":{\\\"text\\\":\\\"测试搭配\\\",\\\"product_id\\\":\\\"3538140403893156430\\\"}}},{\\\"point\\\":{\\\"x\\\":677,\\\"y\\\":602},\\\"detail_area\\\":{\\\"direction\\\":\\\"left\\\",\\\"content\\\":{\\\"text\\\":\\\"测试搭配\\\",\\\"product_id\\\":\\\"3538040543806386062\\\"}}}]}\",\"description\":\"搭配锚点信息\"},{\"responseName\":\"creator_type\",\"fromName\":\"creator_type\",\"type\":1,\"example\":\"1\",\"description\":\"创建者类型\"},{\"responseName\":\"creator_id\",\"fromName\":\"creator_id\",\"type\":1,\"example\":\"1234\",\"description\":\"创建者id\"},{\"responseName\":\"create_source\",\"fromName\":\"create_source\",\"type\":1,\"example\":\"1\",\"description\":\"创建源\"},{\"responseName\":\"cross_store_combo\",\"fromName\":\"cross_store_combo\",\"type\":1,\"example\":\"1\",\"description\":\"是否跨店搭配。1：同店搭配。2：跨店搭配\"},{\"responseName\":\"status\",\"fromName\":\"status\",\"type\":1,\"example\":\"1\",\"description\":\"状态。1：有效。2：失效。3：已删除\"},{\"responseName\":\"offline_reason\",\"fromName\":\"offline_reason\",\"type\":2,\"example\":\"商品不合法\",\"description\":\"搭配下线原因\"},{\"responseName\":\"create_time\",\"fromName\":\"create_time\",\"type\":1,\"example\":\"1679049965\",\"description\":\"搭配创建时间\"},{\"responseName\":\"update_time\",\"fromName\":\"update_time\",\"type\":1,\"example\":\"1679049965\",\"description\":\"搭配更新时间\"},{\"responseName\":\"product_ids\",\"fromName\":\"product_ids\",\"type\":3,\"subType\":1,\"example\":\"1234567\",\"description\":\"搭配关联的商品id\",\"securityLevel\":\"R1\"},{\"responseName\":\"reject_reason\",\"fromName\":\"reject_reason\",\"type\":2,\"example\":\"商品不合法\",\"description\":\"搭配驳回原因\"},{\"responseName\":\"combination_extra_info\",\"fromName\":\"combination_extra_info\",\"type\":2,\"example\":\"略\",\"description\":\"搭配扩展信息\"},{\"responseName\":\"combination_type\",\"fromName\":\"combination_type\",\"type\":1,\"example\":\"1\",\"description\":\"搭配类型\"},{\"responseName\":\"combination_sub_type\",\"fromName\":\"combination_sub_type\",\"type\":1,\"example\":\"1\",\"description\":\"搭配子类型\"}]},{\"responseName\":\"products\",\"fromName\":\"products\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"product_id\",\"fromName\":\"ProductId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"name\",\"fromName\":\"Name\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"description\",\"fromName\":\"Description\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"main_img\",\"fromName\":\"MainImg\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"url\",\"fromName\":\"Url\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"width\",\"fromName\":\"Width\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"height\",\"fromName\":\"Height\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"track_info\",\"fromName\":\"TrackInfo\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"pic_type\",\"fromName\":\"pic_type\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"sale_price\",\"fromName\":\"SalePrice\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"original_price\",\"fromName\":\"OriginalPrice\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"shop_id\",\"fromName\":\"ShopId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"mobile\",\"fromName\":\"Mobile\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"sell_num\",\"fromName\":\"SellNum\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"spec_id\",\"fromName\":\"SpecId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"status\",\"fromName\":\"Status\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"check_status\",\"fromName\":\"CheckStatus\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"recommend_remark\",\"fromName\":\"RecommendRemark\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"pay_type\",\"fromName\":\"PayType\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"need_code\",\"fromName\":\"NeedCode\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"biz_type\",\"fromName\":\"BizType\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"presell_type\",\"fromName\":\"PresellType\",\"type\":7,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"end_time\",\"fromName\":\"EndTime\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"show_place\",\"fromName\":\"ShowPlace\",\"type\":7,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"product_type\",\"fromName\":\"ProductType\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"is_show\",\"fromName\":\"IsShow\",\"type\":4,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"create_time\",\"fromName\":\"CreateTime\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"assoc_ids\",\"fromName\":\"AssocIds\",\"type\":3,\"subType\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"weight\",\"fromName\":\"Weight\",\"type\":9,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"freight_id\",\"fromName\":\"FreightId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"presell_delay\",\"fromName\":\"PresellDelay\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"presell_end_time\",\"fromName\":\"PresellEndTime\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"img_list\",\"fromName\":\"ImgList\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"url\",\"fromName\":\"Url\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"width\",\"fromName\":\"Width\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"height\",\"fromName\":\"Height\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"track_info\",\"fromName\":\"TrackInfo\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"pic_type\",\"fromName\":\"pic_type\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"update_time\",\"fromName\":\"UpdateTime\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"user_limit\",\"fromName\":\"UserLimit\",\"type\":4,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"start_time\",\"fromName\":\"StartTime\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"reduce_type\",\"fromName\":\"ReduceType\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"out_product_id\",\"fromName\":\"OutProductId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"delivery_delay_day\",\"fromName\":\"DeliveryDelayDay\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"after_sale_service\",\"fromName\":\"AfterSaleService\",\"type\":8,\"mapKeyType\":2,\"mapValueType\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"market_store_id\",\"fromName\":\"MarketStoreId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"product_source\",\"fromName\":\"ProductSource\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"currency\",\"fromName\":\"Currency\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"category_id\",\"fromName\":\"CategoryId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"new_category\",\"fromName\":\"NewCategory\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"first_cid\",\"fromName\":\"FirstCid\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"second_cid\",\"fromName\":\"SecondCid\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"third_cid\",\"fromName\":\"ThirdCid\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"fourth_cid\",\"fromName\":\"FourthCid\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"first_c_name\",\"fromName\":\"FirstCName\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"second_c_name\",\"fromName\":\"SecondCName\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"third_c_name\",\"fromName\":\"ThirdCName\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"fourth_c_name\",\"fromName\":\"FourthCName\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"old_category\",\"fromName\":\"OldCategory\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"third_cid\",\"fromName\":\"ThirdCid\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"second_cid\",\"fromName\":\"SecondCid\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"first_cid\",\"fromName\":\"FirstCid\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"biz_kind\",\"fromName\":\"BizKind\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"delivery_delay_date\",\"fromName\":\"DeliveryDelayDate\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"appoint_delivery_day\",\"fromName\":\"AppointDeliveryDay\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"sell_channel\",\"fromName\":\"SellChannel\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"property_values\",\"fromName\":\"PropertyValues\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"property\",\"fromName\":\"Property\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"property_id\",\"fromName\":\"PropertyId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"property_name\",\"fromName\":\"PropertyName\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"spec_type\",\"fromName\":\"SpecType\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"values\",\"fromName\":\"Values\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"value_id\",\"fromName\":\"ValueId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"value_name\",\"fromName\":\"ValueName\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"display_value_name\",\"fromName\":\"DisplayValueName\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"pair_id\",\"fromName\":\"PairId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"seq\",\"fromName\":\"Seq\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"biz_identity\",\"fromName\":\"BizIdentity\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"bmp_seller_type\",\"fromName\":\"BmpSellerType\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"bmp_vertical_market\",\"fromName\":\"BmpVerticalMarket\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"bmp_source\",\"fromName\":\"BmpSource\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"brand_id\",\"fromName\":\"BrandId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"product_biz\",\"fromName\":\"ProductBiz\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"image_detail_info\",\"fromName\":\"ImageDetailInfo\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"url\",\"fromName\":\"Url\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"width\",\"fromName\":\"Width\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"height\",\"fromName\":\"Height\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"track_info\",\"fromName\":\"TrackInfo\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"pic_type\",\"fromName\":\"pic_type\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"skus\",\"fromName\":\"Skus\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"shop_id\",\"fromName\":\"ShopId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"id\",\"fromName\":\"Id\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"product_id\",\"fromName\":\"ProductId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"price\",\"fromName\":\"Price\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"code\",\"fromName\":\"Code\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"spec_id\",\"fromName\":\"SpecId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"type\",\"fromName\":\"Type\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"supplier_id\",\"fromName\":\"SupplierId\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"outer_sku_id\",\"fromName\":\"OuterSkuId\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"sku_biz\",\"fromName\":\"SkuBiz\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"package_sub_sku_infos\",\"fromName\":\"PackageSubSkuInfos\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"package_sub_sku_item\",\"fromName\":\"PackageSubSkuItem\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"sku_id\",\"fromName\":\"SkuId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"sub_sku_id\",\"fromName\":\"SubSkuId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"short_name\",\"fromName\":\"ShortName\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"num\",\"fromName\":\"Num\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"ori_price\",\"fromName\":\"OriPrice\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"shop_id\",\"fromName\":\"ShopId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"sub_product_id\",\"fromName\":\"SubProductId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"package_sub_sku_detail\",\"fromName\":\"PackageSubSkuDetail\",\"type\":7,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"sale_property_values\",\"fromName\":\"SalePropertyValues\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"property\",\"fromName\":\"Property\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"property_id\",\"fromName\":\"PropertyId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"property_name\",\"fromName\":\"PropertyName\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"spec_type\",\"fromName\":\"SpecType\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"value\",\"fromName\":\"Value\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"value_id\",\"fromName\":\"ValueId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"value_name\",\"fromName\":\"ValueName\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"display_value_name\",\"fromName\":\"DisplayValueName\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"pair_id\",\"fromName\":\"PairId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"seq\",\"fromName\":\"Seq\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"pic\",\"fromName\":\"Pic\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"url\",\"fromName\":\"Url\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"width\",\"fromName\":\"Width\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"height\",\"fromName\":\"Height\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"track_info\",\"fromName\":\"TrackInfo\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"pic_type\",\"fromName\":\"pic_type\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"extra_info\",\"fromName\":\"ExtraInfo\",\"type\":8,\"mapKeyType\":2,\"mapValueType\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"status\",\"fromName\":\"Status\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"campaign_price\",\"fromName\":\"CampaignPrice\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"hit_channel\",\"fromName\":\"hitChannel\",\"type\":4,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"sellable\",\"fromName\":\"sellable\",\"type\":4,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"channel\",\"fromName\":\"channel\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"channel_type\",\"fromName\":\"channelType\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"channel_id\",\"fromName\":\"channelId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"sku_channel\",\"fromName\":\"skuChannel\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"channel\",\"fromName\":\"channel\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"channel_type\",\"fromName\":\"channelType\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"channel_id\",\"fromName\":\"channelId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"shop_id\",\"fromName\":\"shopId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"product_id\",\"fromName\":\"productId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"sku_id\",\"fromName\":\"skuId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"extra\",\"fromName\":\"extra\",\"type\":8,\"mapKeyType\":2,\"mapValueType\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"presell_delay\",\"fromName\":\"presell_delay\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"presell_type\",\"fromName\":\"presell_type\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"poi_resource\",\"fromName\":\"poi_resource\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"product_id\",\"fromName\":\"ProductId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"sku_id\",\"fromName\":\"SkuId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"res_id\",\"fromName\":\"ResId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"res_order_id\",\"fromName\":\"ResOrderId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"res_order_secret\",\"fromName\":\"ResOrderSecret\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"code_type\",\"fromName\":\"CodeType\",\"type\":7,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"status\",\"fromName\":\"Status\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"adapt_d_t_o\",\"fromName\":\"AdaptDTO\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"adapt_result\",\"fromName\":\"AdaptResult\",\"type\":8,\"mapKeyType\":2,\"mapValueType\":4,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"have_adapt_data\",\"fromName\":\"HaveAdaptData\",\"type\":4,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"package_main_product_sku_info\",\"fromName\":\"packageMainProductSkuInfo\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"product_id\",\"fromName\":\"ProductId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"sku_id\",\"fromName\":\"SkuId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"shop_id\",\"fromName\":\"ShopId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"package_id\",\"fromName\":\"PackageId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"extra_info\",\"fromName\":\"ExtraInfo\",\"type\":8,\"mapKeyType\":2,\"mapValueType\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"tag_list\",\"fromName\":\"TagList\",\"type\":3,\"subType\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"sellable\",\"fromName\":\"Sellable\",\"type\":4,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"video_item\",\"fromName\":\"VideoItem\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"vid\",\"fromName\":\"Vid\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"package_sub_products\",\"fromName\":\"PackageSubProducts\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"package_sub_product_item\",\"fromName\":\"PackageSubProductItem\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"product_id\",\"fromName\":\"ProductId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"sub_product_id\",\"fromName\":\"SubProductId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"package_sub_product_detail\",\"fromName\":\"PackageSubProductDetail\",\"type\":7,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"product_videos\",\"fromName\":\"ProductVideos\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"product_id\",\"fromName\":\"ProductId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"shop_id\",\"fromName\":\"ShopId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"video_url\",\"fromName\":\"VideoUrl\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"material_type\",\"fromName\":\"MaterialType\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"extra\",\"fromName\":\"Extra\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"channel\",\"fromName\":\"channel\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"channel_type\",\"fromName\":\"channelType\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"channel_id\",\"fromName\":\"channelId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"hit_channel\",\"fromName\":\"hitChannel\",\"type\":4,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"product_channel\",\"fromName\":\"productChannel\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"channel\",\"fromName\":\"channel\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"channel_type\",\"fromName\":\"channelType\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"channel_id\",\"fromName\":\"channelId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"shop_id\",\"fromName\":\"shopId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"product_id\",\"fromName\":\"productId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"status\",\"fromName\":\"status\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"extra\",\"fromName\":\"extra\",\"type\":8,\"mapKeyType\":2,\"mapValueType\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"tag_info_str\",\"fromName\":\"TagInfoStr\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"presell_config_level\",\"fromName\":\"presell_config_level\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"presell_delivery_type\",\"fromName\":\"presell_delivery_type\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"reason\",\"fromName\":\"Reason\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"std_brand_name\",\"fromName\":\"StdBrandName\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"default_combination_id\",\"fromName\":\"default_combination_id\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"detail_brief\",\"fromName\":\"detail_brief\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"component_info\",\"fromName\":\"component_info\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"component_type_id\",\"fromName\":\"component_type_id\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"image\",\"fromName\":\"image\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"pic_url\",\"fromName\":\"pic_url\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"width\",\"fromName\":\"width\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"height\",\"fromName\":\"height\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"track_info\",\"fromName\":\"TrackInfo\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"component_name\",\"fromName\":\"component_name\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"component_data\",\"fromName\":\"component_data\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"sell_terminal\",\"fromName\":\"SellTerminal\",\"type\":3,\"subType\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"mpu_mount_relations\",\"fromName\":\"MpuMountRelations\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"cmpu_id\",\"fromName\":\"CmpuId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"relation_skus\",\"fromName\":\"RelationSkus\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"product_id\",\"fromName\":\"ProductId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"sku_id\",\"fromName\":\"SkuId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"priority_material_info\",\"fromName\":\"PriorityMaterialInfo\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"main_img\",\"fromName\":\"MainImg\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"img_url\",\"fromName\":\"ImgUrl\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"url\",\"fromName\":\"Url\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"width\",\"fromName\":\"Width\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"height\",\"fromName\":\"Height\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"track_info\",\"fromName\":\"TrackInfo\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"pic_type\",\"fromName\":\"pic_type\",\"type\":6,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"img_props\",\"fromName\":\"ImgProps\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"store_id\",\"fromName\":\"StoreId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"product_relation\",\"fromName\":\"ProductRelation\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"relation_type\",\"fromName\":\"relationType\",\"type\":7,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"relation_item\",\"fromName\":\"relationItem\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"main_product\",\"fromName\":\"mainProduct\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"channel\",\"fromName\":\"channel\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"channel_type\",\"fromName\":\"channelType\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"channel_id\",\"fromName\":\"channelId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"product_id\",\"fromName\":\"productId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"sub_product\",\"fromName\":\"subProduct\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"channel\",\"fromName\":\"channel\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"channel_type\",\"fromName\":\"channelType\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"channel_id\",\"fromName\":\"channelId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"product_id\",\"fromName\":\"productId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1}],\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"package_main_product_info\",\"fromName\":\"packageMainProductInfo\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"product_id\",\"fromName\":\"ProductId\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"price\",\"fromName\":\"Price\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"reference_price\",\"fromName\":\"ReferencePrice\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"sell_num_value\",\"fromName\":\"SellNumValue\",\"type\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"outer_sell_num\",\"fromName\":\"OuterSellNum\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"total_sell_num\",\"fromName\":\"TotalSellNum\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"custom_value_tag_infos\",\"fromName\":\"CustomValueTagInfos\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"-\",\"children\":[{\"responseName\":\"tag_code\",\"fromName\":\"TagCode\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"tag_value\",\"fromName\":\"TagValue\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1},{\"responseName\":\"spu_id\",\"fromName\":\"SpuId\",\"type\":3,\"subType\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"default_series_id\",\"fromName\":\"default_series_id\",\"type\":1,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1},{\"responseName\":\"return_policy_id\",\"fromName\":\"ReturnPolicyId\",\"type\":2,\"example\":\"-\",\"description\":\"-\",\"isHidden\":1}],\"isHidden\":1}]}]},\"demo\":{\"requestDemo\":{\"curl\":{\"reqUrl\":\"https://openapi-fxg.jinritemai.com/product/batchGetCombination?app_key=your_appkey_here\\u0026method=product.batchGetCombination\\u0026access_token=your_accesstoken_here\\u0026param_json={}\\u0026timestamp=2018-06-19%2016:06:59\\u0026v=2\\u0026sign=your_sign_here\"},\"java\":{\"code\":\"ProductBatchGetCombinationRequest request = new ProductBatchGetCombinationRequest();\\nProductBatchGetCombinationParam param = request.getParam();\\nProductBatchGetCombinationResponse response = request.execute(accessToken);\\n\"},\"php\":{\"code\":\"$request = new ProductBatchGetCombinationRequest();\\n$param = new ProductBatchGetCombinationParam();\\n$request-\\u003esetParam($param);\\n$response = $request-\\u003eexecute(accessToken);\\n\"},\"python\":{\"code\":\"request = ProductBatchGetCombinationRequest()\\nparam = request.getParams()\\nresponse = request.execute(accessToken)\\n\"},\"go\":{\"code\":\"request := product_batchGetCombination_request.New()\\nparam := request.GetParams()\\nresponse := request.Execute(accessToken)\\n\"},\"dotNetCore\":{\"code\":\"var request = new ProductBatchGetCombinationRequest();\\nvar param = request.BuildParam();\\nvar response = request.Execute\\u003cProductBatchGetCombinationResponse\\u003e(accessToken);\\n\"},\"js\":{}},\"responseDemo\":{\"responseSuccess\":{\"data\":{\"combination_with_products\":[{\"combination_info\":{\"anchor_image_info\":\"{\\\"image\\\":{\\\"url\\\":\\\"https://p3-aio.ecombdimg.com/obj/ecom-shop-material/v1_GhxlaZ_70518442764009474640419_9aee895e6a606b567d21db635f3affc5_sx_277318_www1170-1170\\\",\\\"width\\\":1170,\\\"height\\\":1170},\\\"image_hot_area\\\":[{\\\"point\\\":{\\\"x\\\":677,\\\"y\\\":418},\\\"detail_area\\\":{\\\"direction\\\":\\\"left\\\",\\\"content\\\":{\\\"text\\\":\\\"测试搭配\\\",\\\"product_id\\\":\\\"3538140403893156430\\\"}}},{\\\"point\\\":{\\\"x\\\":677,\\\"y\\\":602},\\\"detail_area\\\":{\\\"direction\\\":\\\"left\\\",\\\"content\\\":{\\\"text\\\":\\\"测试搭配\\\",\\\"product_id\\\":\\\"3538040543806386062\\\"}}}]}\",\"combination_extra_info\":\"略\",\"combination_id\":\"1234567\",\"combination_sub_type\":\"1\",\"combination_type\":\"1\",\"create_source\":\"1\",\"create_time\":\"1679049965\",\"creator_id\":\"1234\",\"creator_type\":\"1\",\"cross_store_combo\":\"1\",\"description\":\"官搭官配春季新款\",\"image_url\":\"https://p3-aio.ecombdimg.com/obj/ecom-shop-material/v1_GhxlaZ_70518442764009474640419_9aee895e6a606b567d21db635f3affc5_sx_277318_www1170-1170\",\"offline_reason\":\"商品不合法\",\"product_ids\":\"1234567\",\"reject_reason\":\"商品不合法\",\"status\":\"1\",\"title\":\"时尚运动搭配\",\"update_time\":\"1679049965\"},\"products\":[{\"after_sale_service\":{},\"appoint_delivery_day\":\"-\",\"assoc_ids\":\"-\",\"biz_identity\":{\"bmp_seller_type\":\"-\",\"bmp_source\":\"-\",\"bmp_vertical_market\":\"-\"},\"biz_kind\":\"-\",\"biz_type\":\"-\",\"brand_id\":\"-\",\"category_id\":\"-\",\"channel\":{\"channel_id\":\"-\",\"channel_type\":\"-\"},\"check_status\":\"-\",\"create_time\":\"-\",\"currency\":\"-\",\"custom_value_tag_infos\":[{\"tag_code\":\"-\",\"tag_value\":\"-\"}],\"default_combination_id\":\"-\",\"default_series_id\":\"-\",\"delivery_delay_date\":\"-\",\"delivery_delay_day\":\"-\",\"description\":\"-\",\"detail_brief\":{\"component_info\":[{\"component_data\":\"-\",\"component_name\":\"-\",\"component_type_id\":\"-\",\"image\":{\"height\":\"-\",\"pic_url\":\"-\",\"track_info\":\"-\",\"width\":\"-\"}}]},\"end_time\":\"-\",\"extra_info\":{},\"freight_id\":\"-\",\"hit_channel\":\"-\",\"image_detail_info\":[{\"height\":\"-\",\"pic_type\":\"-\",\"track_info\":\"-\",\"url\":\"-\",\"width\":\"-\"}],\"img_list\":[{\"height\":\"-\",\"pic_type\":\"-\",\"track_info\":\"-\",\"url\":\"-\",\"width\":\"-\"}],\"is_show\":\"-\",\"main_img\":{\"height\":\"-\",\"pic_type\":\"-\",\"track_info\":\"-\",\"url\":\"-\",\"width\":\"-\"},\"market_store_id\":\"-\",\"mobile\":\"-\",\"mpu_mount_relations\":[{\"cmpu_id\":\"-\",\"relation_skus\":[{\"product_id\":\"-\",\"sku_id\":\"-\"}]}],\"name\":\"-\",\"need_code\":\"-\",\"new_category\":{\"first_c_name\":\"-\",\"first_cid\":\"-\",\"fourth_c_name\":\"-\",\"fourth_cid\":\"-\",\"second_c_name\":\"-\",\"second_cid\":\"-\",\"third_c_name\":\"-\",\"third_cid\":\"-\"},\"old_category\":{\"first_cid\":\"-\",\"second_cid\":\"-\",\"third_cid\":\"-\"},\"original_price\":\"-\",\"out_product_id\":\"-\",\"package_main_product_info\":[{\"product_id\":\"-\"}],\"package_sub_products\":[{\"package_sub_product_detail\":\"-\",\"package_sub_product_item\":{\"product_id\":\"-\",\"sub_product_id\":\"-\"}}],\"pay_type\":\"-\",\"presell_config_level\":\"-\",\"presell_delay\":\"-\",\"presell_delivery_type\":\"-\",\"presell_end_time\":\"-\",\"presell_type\":\"-\",\"price\":{\"reference_price\":\"-\"},\"priority_material_info\":{\"main_img\":{\"img_props\":\"-\",\"img_url\":{\"height\":\"-\",\"pic_type\":\"-\",\"track_info\":\"-\",\"url\":\"-\",\"width\":\"-\"}}},\"product_biz\":\"-\",\"product_channel\":{\"channel\":{\"channel_id\":\"-\",\"channel_type\":\"-\"},\"extra\":{},\"product_id\":\"-\",\"shop_id\":\"-\",\"status\":\"-\"},\"product_id\":\"-\",\"product_relation\":{\"relation_item\":[{\"main_product\":{\"channel\":{\"channel_id\":\"-\",\"channel_type\":\"-\"},\"product_id\":\"-\"},\"sub_product\":{\"channel\":{\"channel_id\":\"-\",\"channel_type\":\"-\"},\"product_id\":\"-\"}}],\"relation_type\":\"-\"},\"product_source\":\"-\",\"product_type\":\"-\",\"product_videos\":[{\"extra\":\"-\",\"material_type\":\"-\",\"product_id\":\"-\",\"shop_id\":\"-\",\"video_url\":\"-\"}],\"property_values\":[{\"pair_id\":\"-\",\"property\":{\"property_id\":\"-\",\"property_name\":\"-\",\"spec_type\":\"-\"},\"seq\":\"-\",\"values\":[{\"display_value_name\":\"-\",\"value_id\":\"-\",\"value_name\":\"-\"}]}],\"reason\":\"-\",\"recommend_remark\":\"-\",\"reduce_type\":\"-\",\"return_policy_id\":\"-\",\"sale_price\":\"-\",\"sell_channel\":\"-\",\"sell_num\":\"-\",\"sell_num_value\":{\"outer_sell_num\":\"-\",\"total_sell_num\":\"-\"},\"sell_terminal\":\"-\",\"sellable\":\"-\",\"shop_id\":\"-\",\"show_place\":\"-\",\"skus\":[{\"adapt_d_t_o\":{\"adapt_result\":{},\"have_adapt_data\":\"-\"},\"campaign_price\":\"-\",\"channel\":{\"channel_id\":\"-\",\"channel_type\":\"-\"},\"code\":\"-\",\"extra_info\":{},\"hit_channel\":\"-\",\"id\":\"-\",\"outer_sku_id\":\"-\",\"package_main_product_sku_info\":[{\"package_id\":\"-\",\"product_id\":\"-\",\"shop_id\":\"-\",\"sku_id\":\"-\"}],\"package_sub_sku_infos\":[{\"package_sub_sku_detail\":\"-\",\"package_sub_sku_item\":{\"num\":\"-\",\"ori_price\":\"-\",\"shop_id\":\"-\",\"short_name\":\"-\",\"sku_id\":\"-\",\"sub_product_id\":\"-\",\"sub_sku_id\":\"-\"}}],\"poi_resource\":{\"code_type\":\"-\",\"product_id\":\"-\",\"res_id\":\"-\",\"res_order_id\":\"-\",\"res_order_secret\":\"-\",\"sku_id\":\"-\",\"status\":\"-\"},\"presell_delay\":\"-\",\"presell_type\":\"-\",\"price\":\"-\",\"product_id\":\"-\",\"sale_property_values\":[{\"pair_id\":\"-\",\"pic\":{\"height\":\"-\",\"pic_type\":\"-\",\"track_info\":\"-\",\"url\":\"-\",\"width\":\"-\"},\"property\":{\"property_id\":\"-\",\"property_name\":\"-\",\"spec_type\":\"-\"},\"seq\":\"-\",\"value\":{\"display_value_name\":\"-\",\"value_id\":\"-\",\"value_name\":\"-\"}}],\"sellable\":\"-\",\"shop_id\":\"-\",\"sku_biz\":\"-\",\"sku_channel\":{\"channel\":{\"channel_id\":\"-\",\"channel_type\":\"-\"},\"extra\":{},\"product_id\":\"-\",\"shop_id\":\"-\",\"sku_id\":\"-\"},\"spec_id\":\"-\",\"status\":\"-\",\"supplier_id\":\"-\",\"type\":\"-\"}],\"spec_id\":\"-\",\"spu_id\":\"-\",\"start_time\":\"-\",\"status\":\"-\",\"std_brand_name\":\"-\",\"store_id\":\"-\",\"tag_info_str\":\"-\",\"tag_list\":\"-\",\"update_time\":\"-\",\"user_limit\":\"-\",\"video_item\":{\"vid\":\"-\"},\"weight\":\"-\"}]}]},\"code\":10000,\"msg\":\"success\",\"sub_code\":\"\",\"sub_msg\":\"\"},\"responseError\":{\"sub_code\":\"\",\"sub_msg\":\"\"}}},\"error\":{\"errCodeList\":[{\"msg\":\"success\",\"code\":10000},{\"msg\":\"缺少必选参数\",\"code\":40002,\"subMsg\":\"请求缺少必传参数\",\"subCode\":\"isv.missing-parameter:200002\",\"solution\":\"检查参数\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"超过最大查询数量\",\"subCode\":\"isv.parameter-invalid:200003\",\"solution\":\"检查参数\"}]}}",
+      "info": {
+        "AuditedTime": "",
+        "access": false,
+        "apiChargeType": 1,
+        "apiLimitLevel": 1,
+        "apiLimitValue": 40000,
+        "apiSpiMsgNames": [],
+        "articleOutId": 1234,
+        "auditStatus": 401,
+        "auth": {
+          "categoryList": [],
+          "groupName": "",
+          "packageName": "",
+          "packageType": 0
+        },
+        "authSubject": "[3]",
+        "authSubjectIdList": [
+          "店铺"
+        ],
+        "auths": [
+          {
+            "categoryList": [
+              "创新应用大赛_微应用"
+            ],
+            "groupName": "微应用",
+            "packageName": "搭配购-微应用",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "商家自研模版",
+              "商家自研组件",
+              "装修模板",
+              "定制装修",
+              "装修组件"
+            ],
+            "groupName": "店铺",
+            "packageName": "端店铺装修",
+            "packageType": 4
+          }
+        ],
+        "commitAuditTime": "",
+        "contentType": 1,
+        "createTime": 1680007403,
+        "description": "根据搭配id批量查询搭配详情",
+        "dirId": 14,
+        "dirLabels": [],
+        "dirName": "商品API",
+        "docLabels": [],
+        "extra": {},
+        "finalStatus": 1,
+        "flag": 0,
+        "id": 3367,
+        "isTop": false,
+        "note": "",
+        "pv": 1426,
+        "reOnline": true,
+        "status": 1,
+        "subtitle": "批量查询搭配详情",
+        "title": "/product/batchGetCombination",
+        "updateTime": 1680007403,
+        "url": "",
+        "userList": [],
+        "userSceneDesc": "批量查询搭配详情",
+        "version": "V1.01"
+      },
+      "tagNameMap": {
+        "25": "优惠券基础数据",
+        "26": "用户优惠券数据",
+        "28": "其他字段",
+        "29": "通用字段",
+        "30": "物流公司信息",
+        "31": "订单基础信息",
+        "32": "地址基础信息",
+        "33": "寄件人地址信息",
+        "34": "寄件人联系信息",
+        "35": "物流增值服务",
+        "36": "回单寄回地址",
+        "37": "收件人地址",
+        "38": "收件人信息",
+        "39": "商品基础信息",
+        "40": "商品重量体积信息",
+        "41": "快递配置规则",
+        "42": "订单备注",
+        "43": "仓库基础信息",
+        "44": "店铺基础信息",
+        "45": "小程序基础信息",
+        "46": "订单来源分析",
+        "47": "买家留言 ",
+        "48": "商家备注",
+        "49": "订单金额信息",
+        "50": "商品金额信息",
+        "51": "营销活动金额信息",
+        "52": "营销活动基础信息",
+        "53": "精选联盟",
+        "54": "跨境海淘",
+        "55": "库存基础信息",
+        "56": "售后基础信息",
+        "57": "电子卡券",
+        "58": "赠品",
+        "59": "组合（组套）商品",
+        "60": "虚拟商品",
+        "61": "定金预售",
+        "62": "懂车帝购车信息",
+        "63": "用户特征标签",
+        "64": "物流信息",
+        "65": "证件信息",
+        "66": "C2B定制",
+        "67": "买家基础信息",
+        "68": "买家敏感信息",
+        "69": "场景包测试标签a",
+        "70": "场景包测试标签b",
+        "71": "商家快递网点信息",
+        "72": "商品类目信息",
+        "73": "短信基础字段",
+        "74": "售后文案",
+        "75": "插旗信息",
+        "76": "售后金额信息",
+        "77": "风控信息",
+        "78": "换货基础信息",
+        "79": "售后标签",
+        "80": "门店基础信息",
+        "81": "售后商家备注信息",
+        "82": "达人样品订单",
+        "83": "即时零售订单接单状态",
+        "85": "换货和补寄信息",
+        "86": "物流异常风控",
+        "87": "商家售后地址信息",
+        "88": "售后仲裁",
+        "89": "买家退货物流信息",
+        "90": "补寄场景",
+        "91": "售后价保",
+        "92": "售后数据分析",
+        "93": "售后协商记录",
+        "94": "废弃字段",
+        "95": "商品尺码模板",
+        "96": "商品标题前缀",
+        "97": "商品参考价凭证",
+        "98": "商品资质信息",
+        "99": "商品限购信息",
+        "100": "特殊日期延迟发货",
+        "101": "商品销量",
+        "102": "店铺地址库",
+        "103": "即时零售商品基础信息",
+        "104": "解密基础字段",
+        "105": "解密虚拟号",
+        "106": "解密明文信息",
+        "107": "解密手机号明文",
+        "108": "解密姓名信息",
+        "109": "解密地址信息",
+        "110": "解密身份证信息",
+        "111": "查询改地址开关",
+        "112": "用户店铺关注信息",
+        "113": "店铺会话统计数据",
+        "114": "飞鸽会话统计数据",
+        "115": "飞鸽客服基础信息",
+        "116": "飞鸽会话信息",
+        "117": "飞鸽客服登录日志",
+        "118": "飞鸽客服接待统计信息",
+        "119": "飞鸽会话消息基础信息",
+        "120": "视频信息",
+        "121": "商品卖点信息",
+        "122": "授权基础信息",
+        "123": "商品价格信息",
+        "124": "商品分佣信息",
+        "125": "联盟分佣信息",
+        "126": "商品评价信息",
+        "127": "评价基础信息",
+        "128": "评价结果数据",
+        "129": "店铺体验分",
+        "130": "评价内容信息",
+        "131": "订单extra"
+      }
+    },
+    "errConfigList": [
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302630",
+        "errDesc": "货品不存在",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "货品信息校验不通过，按提示修改"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "100100",
+        "errDesc": "承运商不存在",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "根据提示修改，请检查快递编码"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1002",
+        "errDesc": "1002:Redis加锁失败",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "并发推送出库单失败，请重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302604",
+        "errDesc": "62302604:获取lo失败",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302625",
+        "errDesc": "62302625:接收订单异常，商家未入驻",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "商家未入驻云仓，请检查是否开通云仓服务"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "500",
+        "errDesc": "500:500",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1001",
+        "errDesc": "1001:并发处理失败",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "并发处理失败，请重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302628",
+        "errDesc": "62302628:快递不可达，无推荐快递",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "快递不可达，请联系买家"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302605",
+        "errDesc": "62302605:构建物流订单失败",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请稍后重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62301121",
+        "errDesc": "62301121:重复接单",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请检查订单信息"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302635",
+        "errDesc": "62302635:库存不足",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请检查库存信息"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302633",
+        "errDesc": "62302633:并发推送erp单据失败，请重新下发",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请重新下发！"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302601",
+        "errDesc": "62302601:调用库存中心失败",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请重试！"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1249",
+        "errDesc": "1249:该订单已存在，无需重复下发",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "无需重复下发！"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302632",
+        "errDesc": "62302632:该单号已存在，请换一个手工单号重新下发",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "该单号已存在，请换一个手工单号重新下发"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "999999",
+        "errDesc": "999999:下游RPC超时",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请重试！"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1103",
+        "errDesc": "1103:请求内部服务超时",
+        "errTypeDesc": "",
+        "errTypeId": 9,
+        "onlineValue": {},
+        "solutionDesc": "请重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "-20001",
+        "errDesc": "-20001:没有足够的预占产能释放",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "没有足够的预占产能释放"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1003",
+        "errDesc": "1003:请求内部服务异常,请重试",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请重试"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "62302606",
+        "errDesc": "62302606:构建物流履行单失败",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "构建物流履行单失败"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1271",
+        "errDesc": "1271:手工单号重复，请更换",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "手工单号重复，请更换"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1200",
+        "errDesc": "1200:标准化地址异常",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "标准化地址异常"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1252",
+        "errDesc": "1252:仓快递配置信息不存在",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "仓快递配置信息不存在"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1401",
+        "errDesc": "1401:规则查询缓存失败",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "规则查询缓存失败"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "-1",
+        "errDesc": "-1:请求详情列表（index=0）目的地-节点信息-省编码不能为空，请检查！",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "请求详情列表（index=0）目的地-节点信息-省编码不能为空，请检查！"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1100",
+        "errDesc": "1100:查询店铺与货主绑定关系失败，请重试！",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "查询店铺与货主绑定关系失败，请重试！"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1253",
+        "errDesc": "1253:货主和店铺绑定关系不存在，请在scm进行货主和店铺关系绑定后重推数据！",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {},
+        "solutionDesc": "货主和店铺绑定关系不存在，请在scm进行货主和店铺关系绑定后重推数据！"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "60001",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "60001",
+          "errDesc": "60001:库存不足,无法出库,货品编码以及预占数量详情:货品编码:7589838778936688922,预占数量:1"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1411",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "1411",
+          "errDesc": "1411:分单失败：班次规则不存在，请检查该仓的班次规则!"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1509",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "1509",
+          "errDesc": "1509:账户余额不足，请至云仓商家工作台充值后重试"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "1267",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "1267",
+          "errDesc": "1267:货品信息未推送至云仓，请先推送货品信息至云仓后再重推订单！"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "-500",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "-500",
+          "errDesc": "-500:-500"
+        },
+        "solutionDesc": ""
+      }
+    ]
+  },
+  "msg": ""
+}

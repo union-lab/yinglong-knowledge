@@ -1,0 +1,488 @@
+{
+  "code": 0,
+  "data": {
+    "CustomerError": {
+      "ErrCode": 0,
+      "ErrMsg": ""
+    },
+    "RelevanceFAQs": [
+      {
+        "articleId": 7102,
+        "dirId": 94,
+        "title": "/order/logisticsadd接口sub_code返回isp.service-error:70011/isv.business-failed:70011的异常解决策略"
+      },
+      {
+        "articleId": 2808,
+        "dirId": 94,
+        "title": "调用物流发货接口报错“物流单号收件人电话及地址与该订单买家电话及地址均不一致，请核实后更新单号”?"
+      },
+      {
+        "articleId": 7099,
+        "dirId": 94,
+        "title": "/order/logisticsadd接口sub_code返回isv.business-failed:60072的异常解决策略"
+      },
+      {
+        "articleId": 6345,
+        "dirId": 94,
+        "title": "发货接口：order.logisticsAdd，报错：该订单为偏远地区中转订单，您的账户余额不够支付中转运费，不能进行中转，请前往管家账户充值，如何解决？"
+      },
+      {
+        "articleId": 3784,
+        "dirId": 94,
+        "title": "调用发货接口，分别报错“订单已取消，禁止发货”以及报错“该订单已售前退款成功，不能发货”，这两种发货失败的报错，回传失败的区别是什么？"
+      },
+      {
+        "articleId": 7103,
+        "dirId": 94,
+        "title": "/order/logisticsAdd接口返回isv.business-failed:70023异常解决策略"
+      },
+      {
+        "articleId": 5455,
+        "dirId": 94,
+        "title": "调用发货接口，报错提示您的店铺存在履约风险，为保障用户体验，请您规范发货行为，使用抖音电商电子面单进行发货，如何解决？"
+      },
+      {
+        "articleId": 1938,
+        "dirId": 94,
+        "title": "调用发货接口/order/logisticsAdd报错\"暂不支持该物流商，请检查物流商编码后重新发货\"？"
+      },
+      {
+        "articleId": 6000,
+        "dirId": 94,
+        "title": "调用发货接口，报错：订单正在风控审核中，风控审核时效1~2小时，请等待订单变为“备货中”状态后重试\"，如何解决？"
+      },
+      {
+        "articleId": 4319,
+        "dirId": 94,
+        "title": "调用发货接口，报错：\"当前订单为供应链订单，需: xxxx有限公司帮助发货\" ，如何解决？"
+      },
+      {
+        "articleId": 6348,
+        "dirId": 94,
+        "title": "调用物流发货接口报错：该订单为偏远地区中转订单，账户余额不够支付中转运费，如何处理？"
+      },
+      {
+        "articleId": 439,
+        "dirId": 37,
+        "title": "调用整单发货接口：/order/logisticsAdd，报错：不可自行操作发货，请在商家后台的送检功能进行操作，如何解决？"
+      },
+      {
+        "articleId": 5209,
+        "dirId": 94,
+        "title": "如何获取'其他物流'的物流编码，以及在使用'其他物流'发货时是否需要填写快递单号？"
+      },
+      {
+        "articleId": 5848,
+        "dirId": 94,
+        "title": "整单发货接口，报错：订单不支持使用其他物流进行发货，如何解决？"
+      },
+      {
+        "articleId": 5860,
+        "dirId": 94,
+        "title": "订单发货，报错：平台推出官方电子面单以保障用户个人信息安全，如使用非官方电子面单，除增加用户信息泄露风险外，也将造成用户无法及时查询物流详情问题，请您发货履约使用平台官方电子面单，如何解决？"
+      },
+      {
+        "articleId": 2801,
+        "dirId": 94,
+        "title": "调用发货接口报错\"物流单号发货超过次数限制\"？"
+      },
+      {
+        "articleId": 4094,
+        "dirId": 94,
+        "title": "三方系统需要对接哪个接口推送订单发货并回传快递单号？"
+      },
+      {
+        "articleId": 3091,
+        "dirId": 94,
+        "title": "使用整单发货接口，报错：“该订单已售前退款成功，不能发货”，如何解决？"
+      },
+      {
+        "articleId": 3992,
+        "dirId": 94,
+        "title": "如何使用商家的三方系统实现抖音电商的线上订单的发货对接？"
+      },
+      {
+        "articleId": 6431,
+        "dirId": 94,
+        "title": "使用抖音电子面单取号发货，报错提示：您的店铺存在无货源风险，为保障用户个人信息安全，请使用抖音电商电子面单进行发货，如何解决？"
+      },
+      {
+        "articleId": 3885,
+        "dirId": 94,
+        "title": "使用发货接口，报错：物流单号已被快递回收或取消，无法继续使用，请核实后更新单号，如何解决？"
+      },
+      {
+        "articleId": 3508,
+        "dirId": 93,
+        "title": "售前退的售后单（未发货），商家需要拒绝退款，如何操作？"
+      },
+      {
+        "articleId": 5006,
+        "dirId": 94,
+        "title": "订单已经发货了，如何取消发货状态，改回未发货的状态？"
+      },
+      {
+        "articleId": 4449,
+        "dirId": 94,
+        "title": "可以使用抖店提供的测试店铺，调用发货接口处理发货吗？"
+      },
+      {
+        "articleId": 4426,
+        "dirId": 94,
+        "title": "如果使用的是其他物流，如何通过物流发货接口回传？"
+      },
+      {
+        "articleId": 6344,
+        "dirId": 1263,
+        "title": "面单打印组件无反应怎么办？"
+      },
+      {
+        "articleId": 5247,
+        "dirId": 94,
+        "title": "虚拟发货没有物流单号，如何回传抖店后台发货状态？"
+      },
+      {
+        "articleId": 6455,
+        "dirId": 94,
+        "title": "抖店订单物流发货，logistics_code 如何获取？"
+      },
+      {
+        "articleId": 5012,
+        "dirId": 1284,
+        "title": "关于小时达对接，订单在发货时提示store_id为空/错误，该如何操作？"
+      },
+      {
+        "articleId": 5819,
+        "dirId": 94,
+        "title": "发货接口，报错补贴商品发货时需要上传商品序列号，如何解决？"
+      },
+      {
+        "articleId": 3785,
+        "dirId": 94,
+        "title": "一个订单能用的运单号上限是多少个？"
+      },
+      {
+        "articleId": 6066,
+        "dirId": 94,
+        "title": "整单发货接口，报错非本店铺订单，操作失败，如何解决？"
+      },
+      {
+        "articleId": 3428,
+        "dirId": 94,
+        "title": "使用order/logisticsAdd接口发货， A订单成功发货之后，如果需要修改物流单号可以再次调用整单发货接口吗？会调用成功还是失败？"
+      },
+      {
+        "articleId": 6220,
+        "dirId": 94,
+        "title": "抖店是否支持物流发货？"
+      },
+      {
+        "articleId": 7100,
+        "dirId": 94,
+        "title": "/order/logisticsadd接口sub_code返回isv.business-failed:700005的异常解决策略"
+      },
+      {
+        "articleId": 5284,
+        "dirId": 94,
+        "title": "发货接口/order/logisticsAdd物流单号必填，但实际业务存在订单没有快递单号的情况，如何解决?"
+      },
+      {
+        "articleId": 3425,
+        "dirId": 94,
+        "title": "调用发货接口，报错：“发货订单中有退款申请需要处理，请先处理”，如何解决？"
+      },
+      {
+        "articleId": 6190,
+        "dirId": 94,
+        "title": "整单发货接口，报错商品单单号为空或者格式错误，如何解决？"
+      },
+      {
+        "articleId": 4304,
+        "dirId": 96,
+        "title": "关于运营商号卡订单，若商品是自有人员上门派送的，没有物流单号，如何更新发货状态？"
+      },
+      {
+        "articleId": 4312,
+        "dirId": 94,
+        "title": "调用发货接口，报错提示：订单需送货上门，请使用支持送货上门的物流公司发货 ，如何解决？"
+      },
+      {
+        "articleId": 5809,
+        "dirId": 94,
+        "title": "调用发货接口，报错创建履约单并发锁定失败，请勿同时重复请求，如何解决？"
+      },
+      {
+        "articleId": 4274,
+        "dirId": 1284,
+        "title": "调用发货接口：/order/logisticsAdd，报错：store_id不存在/错误，如何解决？"
+      },
+      {
+        "articleId": 2985,
+        "dirId": 1263,
+        "title": "取号时街道字段和详细地址一起传入，会导致调用发货接口发货时会由于地址不一致被阻断吗?"
+      },
+      {
+        "articleId": 5587,
+        "dirId": 1263,
+        "title": "订单中只有一个SKU（商品数量为1），在打单的时候打印了子母件，如何把子母单号都回传平台？"
+      },
+      {
+        "articleId": 5582,
+        "dirId": 1263,
+        "title": "非官方面单为什么发货失败？"
+      },
+      {
+        "articleId": 6050,
+        "dirId": 1268,
+        "title": "调用供货单发货接口：/supplyChain/supplyConsign，报错：业务处理异常|供货单发货失败，请检查物流等信息，如何解决？"
+      },
+      {
+        "articleId": 7291,
+        "dirId": 94,
+        "title": "/order/logisticsadd给国补单发货报错\"sub_msg\": \"60102:商品单不存在，请仔细检查后重试\""
+      },
+      {
+        "articleId": 5706,
+        "dirId": 94,
+        "title": "订单发货场景中，调用接口返回成功，但实际订单状态未发生变化，如何解决？"
+      },
+      {
+        "articleId": 7397,
+        "dirId": 94,
+        "title": "/order/logisticsAdd国补单发货报错\"sub_code\": \"isv.business-failed:70023\",   \"sub_msg\": \"发货失败，数据异常，请换SN发货\""
+      },
+      {
+        "articleId": 3860,
+        "dirId": 94,
+        "title": "调用发货接口，报错：非组合商品订单不应在组合商品发货参数中传递商品信息，如何解决？"
+      },
+      {
+        "articleId": 7673,
+        "dirId": 1357,
+        "title": "国补订单发货时是否可以不传IMEI码？如何正确传入IMEI码？"
+      }
+    ],
+    "article": {
+      "content": "{\"request\":{\"publicParam\":[{\"requestName\":\"method\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"order.logisticsAdd\",\"description\":\"调用的API接口名称\"},{\"requestName\":\"app_key\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"6839996111118329223\",\"description\":\"应用创建完成后被分配的key\"},{\"requestName\":\"access_token\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"edae7c30-8386-443b-88a1-031111596fdd\",\"description\":\"用于调用 API 的 access_token\",\"hiddenForInterfaceName\":[\"/token/create\"]},{\"requestName\":\"param_json\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"{cid:12,page:1}\",\"description\":\"标准json类型，里面是业务参数按照参数名的字符串大小排序具体参数值，参考每个接口的参数表\"},{\"requestName\":\"timestamp\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2020-09-15 14:48:13\",\"description\":\"时间戳，格式为yyyy-MM-dd HH:mm:ss，时区为GMT+8，例如：2016-01-01 12:00:00\"},{\"requestName\":\"v\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2\",\"description\":\"API协议版本，当前版本为2\"},{\"requestName\":\"sign\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"796559d40beb08a1a1113c456c5c5a62\",\"description\":\"输入参数签名结果，签名算法参照 [API调用指南](https://op.jinritemai.com/docs/guide-docs/10/23)\"},{\"requestName\":\"sign_method\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"hmac-sha256\",\"description\":\"签名算法类型推荐使用hmac-sha256后续会下线md5（不传则默认为\\\"md5\\\"）1. md5:表示用md5算法加密字符串 2. hmac-sha256:表示用hmac_sha_256算法加密字符串\"}],\"requestParam\":[{\"requestName\":\"order_id\",\"toName\":\"OrderId\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"4782813149182887526\",\"description\":\"订单ID\",\"cipherTextType\":1},{\"requestName\":\"logistics_id\",\"toName\":\"LogisticsId\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1\",\"description\":\"【已废弃】物流公司ID。请使用company_code字段。\",\"cipherTextType\":1},{\"requestName\":\"company\",\"toName\":\"Company\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"顺丰公司\",\"description\":\"物流公司名称\",\"cipherTextType\":1},{\"requestName\":\"company_code\",\"toName\":\"CompanyCode\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"shunfeng、qita\",\"description\":\"(必填)物流公司code,可从/order/logisticsCompanyList接口获取。\",\"cipherTextType\":1},{\"requestName\":\"logistics_code\",\"toName\":\"LogisticsCode\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"sf1231231231234\",\"description\":\"(必填)快递单号\",\"cipherTextType\":1},{\"requestName\":\"is_refund_reject\",\"toName\":\"IsRefundReject\",\"mustNeed\":false,\"type\":4,\"style\":1,\"example\":\"false\",\"description\":\"是否拒绝退款申请（true表示拒绝退款，并继续发货；不传或为false表示有退款需要处理，拒绝发货），is_refund_reject和is_reject_refund随机使用一个即可\",\"cipherTextType\":1},{\"requestName\":\"is_reject_refund\",\"toName\":\"IsRefundReject\",\"mustNeed\":false,\"type\":4,\"style\":1,\"example\":\"false\",\"description\":\"是否拒绝退款申请（true表示拒绝退款，并继续发货；不传或为false表示有退款需要处理，拒绝发货），is_refund_reject和is_reject_refund随机使用一个即可\",\"cipherTextType\":1},{\"requestName\":\"serial_number_list\",\"toName\":\"SerialNumberList\",\"mustNeed\":false,\"type\":3,\"subType\":2,\"style\":1,\"example\":\"[\\\"123\\\"]\",\"description\":\"商品序列号，15-17位数字\",\"cipherTextType\":1},{\"requestName\":\"address_id\",\"toName\":\"AddressId\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"6\",\"description\":\"发货地址ID,通过地址库列表【/address/list】接口查询\",\"cipherTextType\":1},{\"requestName\":\"store_id\",\"toName\":\"StoreId\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"111523\",\"description\":\"门店ID；抖超小时达店铺需要填写；\",\"cipherTextType\":1},{\"requestName\":\"after_sale_address_id\",\"toName\":\"AftersaleAddressId\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1\",\"description\":\"退货地址ID,通过地址库列表【/address/list】接口查询。当传入该字段时，可实现自动审核场景买家退货至商家指定退货地址：例如商家配置的售后小助手以及平台闪电退货规则，会获取发货时传入的after_sale_address_id地址id对应的地址给买家展示进行商品退回；\",\"cipherTextType\":1},{\"requestName\":\"product_orders\",\"toName\":\"ProductOrders\",\"mustNeed\":false,\"type\":3,\"subType\":5,\"style\":1,\"example\":\"\",\"description\":\"挂在商品单上的信息，只是用于传递和商品单关联的信息，比如SN/69/IMEI码。目前接口还是按照店铺单维度推进发货状态，不会按照传递过来的product_order_id推进订单状态。比如，店铺单下有A、B、C三个商品单，其中A单需要SN/69/IMEI码，这时候只需要把A单关联的SN/69/IMEI传递过来即可。接口会把A、B、C三个商品单都推进到已发货状态。\",\"cipherTextType\":1,\"children\":[{\"requestName\":\"serial_no_list\",\"toName\":\"SerialNosList\",\"mustNeed\":false,\"type\":3,\"subType\":5,\"style\":1,\"example\":\"\",\"description\":\"需要的SN/69/IMEI码列表。\",\"cipherTextType\":1,\"children\":[{\"requestName\":\"value\",\"toName\":\"Value\",\"mustNeed\":false,\"type\":3,\"subType\":2,\"style\":1,\"example\":\"[\\\"12343\\\"]\",\"description\":\"SN/69/IMEI码的值。\",\"cipherTextType\":1},{\"requestName\":\"key\",\"toName\":\"Key\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"SN\",\"description\":\"SN/69/IMEI码的类型\\n对于空调国补，内机SN对应SN_INDOOR，外机SN对应SN_OUTDOOR\",\"cipherTextType\":1}]},{\"requestName\":\"product_order_id\",\"toName\":\"ProductOrderId\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"4782813149182887526\",\"description\":\"商品单单号\",\"cipherTextType\":1}]},{\"requestName\":\"trace_info_list\",\"toName\":\"TraceInfoList\",\"mustNeed\":false,\"type\":3,\"subType\":5,\"style\":1,\"example\":\"\",\"description\":\"【注意！目前仅「即时零售」业务使用！！！】溯源码list，多个sku放一起，用内部的sku_order_id区分,举个例子，假设你有3个sku，你就创建一个list，长度为3，list里面每一个元素都是一个sku维度，用sku_order_id区分，其中，每一个sku的信息，里面是可以传多个批次和溯源码的，具体看你需要传几个，你就在batch_and_trace_code_list里面传几个；\",\"cipherTextType\":1,\"children\":[{\"requestName\":\"batch_and_trace_code_list\",\"toName\":\"BatchAndTraceCodeList\",\"mustNeed\":false,\"type\":3,\"subType\":5,\"style\":1,\"example\":\"\",\"description\":\"溯源码详情\",\"cipherTextType\":1,\"children\":[{\"requestName\":\"trace_code\",\"toName\":\"TraceCode\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"\\\"123\\\"\",\"description\":\"溯源码\",\"cipherTextType\":1},{\"requestName\":\"batch_code\",\"toName\":\"BatchCode\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"\\\"123\\\"\",\"description\":\"批次号\",\"cipherTextType\":1}]},{\"requestName\":\"sku_order_id\",\"toName\":\"SkuOrderId\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"\\\"123\\\"\",\"description\":\"sku单id\",\"cipherTextType\":1}]}]},\"response\":{},\"demo\":{\"requestDemo\":{\"curl\":{\"reqUrl\":\"https://openapi-fxg.jinritemai.com?app_key=your_appkey_here\\u0026method=\\u0026access_token=your_accesstoken_here\\u0026param_json={}\\u0026timestamp=2018-06-19%2016:06:59\\u0026v=2\\u0026sign=your_sign_here\"},\"java\":{\"code\":\"OrderLogisticsAddRequest request = new OrderLogisticsAddRequest();\\nOrderLogisticsAddParam param = request.getParam();\\nparam.setOrderId(\\\"4782813149182887526\\\");\\nparam.setLogisticsId(1L);\\nparam.setCompany(\\\"顺丰公司\\\");\\nparam.setCompanyCode(\\\"shunfeng、qita\\\");\\nparam.setLogisticsCode(\\\"sf1231231231234\\\");\\nparam.setIsRefundReject(false);\\nparam.setIsRejectRefund(false);\\nparam.setSerialNumberList([\\\"123\\\"]);\\nparam.setAddressId(6L);\\nparam.setStoreId(111523L);\\nparam.setAfterSaleAddressId(1L);\\nOrderLogisticsAddResponse response = request.execute(accessToken);\\n\"},\"php\":{\"code\":\"$request = new OrderLogisticsAddRequest();\\n$param = new OrderLogisticsAddParam();\\n$request-\\u003esetParam($param);\\n$param-\\u003eorder_id = \\\"4782813149182887526\\\";\\n$param-\\u003elogistics_id = 1;\\n$param-\\u003ecompany = \\\"顺丰公司\\\";\\n$param-\\u003ecompany_code = \\\"shunfeng、qita\\\";\\n$param-\\u003elogistics_code = \\\"sf1231231231234\\\";\\n$param-\\u003eis_refund_reject = false;\\n$param-\\u003eis_reject_refund = false;\\n$param-\\u003eserial_number_list = [\\\"123\\\"];\\n$param-\\u003eaddress_id = 6;\\n$param-\\u003estore_id = 111523;\\n$param-\\u003eafter_sale_address_id = 1;\\n$response = $request-\\u003eexecute(accessToken);\\n\"},\"python\":{\"code\":\"request = OrderLogisticsAddRequest()\\nparam = request.getParams()\\nparam.order_id = \\\"4782813149182887526\\\"\\nparam.logistics_id = 1\\nparam.company = \\\"顺丰公司\\\"\\nparam.company_code = \\\"shunfeng、qita\\\"\\nparam.logistics_code = \\\"sf1231231231234\\\"\\nparam.is_refund_reject = false\\nparam.is_reject_refund = false\\nparam.serial_number_list = [\\\"123\\\"]\\nparam.address_id = 6\\nparam.store_id = 111523\\nparam.after_sale_address_id = 1\\nresponse = request.execute(accessToken)\\n\"},\"go\":{\"code\":\"request := order_logisticsAdd_request.New()\\nparam := request.GetParams()\\nparam.OrderId = \\\"4782813149182887526\\\"\\nparam.LogisticsId = 1\\nparam.Company = \\\"顺丰公司\\\"\\nparam.CompanyCode = \\\"shunfeng、qita\\\"\\nparam.LogisticsCode = \\\"sf1231231231234\\\"\\nparam.IsRefundReject = false\\nparam.IsRejectRefund = false\\nparam.SerialNumberList = [\\\"123\\\"]\\nparam.AddressId = 6\\nparam.StoreId = 111523\\nparam.AfterSaleAddressId = 1\\nresponse := request.Execute(accessToken)\\n\"},\"dotNetCore\":{\"code\":\"var request = new OrderLogisticsAddRequest();\\nvar param = request.BuildParam();\\nparam.OrderId = \\\"4782813149182887526\\\";\\nparam.LogisticsId = 1;\\nparam.Company = \\\"顺丰公司\\\";\\nparam.CompanyCode = \\\"shunfeng、qita\\\";\\nparam.LogisticsCode = \\\"sf1231231231234\\\";\\nparam.IsRefundReject = false;\\nparam.IsRejectRefund = false;\\nparam.SerialNumberList = [\\\"123\\\"];\\nparam.AddressId = 6;\\nparam.StoreId = 111523;\\nparam.AfterSaleAddressId = 1;\\nvar response = request.Execute\\u003cOrderLogisticsAddResponse\\u003e(accessToken);\\n\"},\"js\":{}},\"responseDemo\":{\"responseSuccess\":{\"code\":10000,\"msg\":\"success\",\"sub_code\":\"\",\"sub_msg\":\"\"},\"responseError\":{\"sub_code\":\"\",\"sub_msg\":\"\"}}},\"error\":{\"errCodeList\":[{\"msg\":\"success\",\"code\":10000},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"系统异常，请联系相关人员处理。\",\"subCode\":\"isp.service-error:9999\",\"solution\":\"ISV开发者可以联系抖店相关运营或开发人员进行排查和解决，需要提供以下基本信息之一:   订单号或者请求的LogId;\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"系统繁忙，请稍后重试。\",\"subCode\":\"isp.service-error:10005\",\"solution\":\"1、商家重新点击发货按钮重试；2、如果多次重试不能解决问题，可以联系抖店相关运营或开发人员进行排查和解决，需要提供以下基本信息之一:   订单号或者请求的LogId。\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"系统繁忙，请稍后重试。\",\"subCode\":\"isp.service-error:10009\",\"solution\":\"1、商家重新点击发货按钮重试；2、如果多次重试不能解决问题，可以联系抖店相关运营或开发人员进行排查和解决，需要提供以下基本信息之一:   订单号或者请求的LogId。\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"校验物流信息失败，请稍后重试\",\"subCode\":\"isp.service-error:10018\",\"solution\":\"1、商家重新点击发货按钮重试；2、如果多次重试不能解决问题，可以联系抖店相关运营或开发人员进行排查和解决，需要提供以下基本信息之一:   订单号或者请求的LogId。\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"系统异常，请稍后重试。\",\"subCode\":\"isp.service-error:20003\",\"solution\":\"1、商家重新点击发货按钮重试；2、如果多次重试不能解决问题，可以联系抖店相关运营或开发人员进行排查和解决，需要提供以下基本信息之一:   订单号或者请求的LogId。\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"系统异常，请联系相关人员解决。\",\"subCode\":\"isp.service-error:50002\",\"solution\":\"ISV开发者可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一: 订单号或者请求的LogId;\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"店铺ID非法，不允许小于等于0。\",\"subCode\":\"isv.parameter-invalid:50029\",\"solution\":\"ISV接入方式错误，调整输入的店铺ID参数，重试\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"订单号不能为空或者格式错误。\",\"subCode\":\"isv.parameter-invalid:50049\",\"solution\":\"ISV调整输入的订单ID参数，重试\"},{\"msg\":\"缺少必选参数\",\"code\":40002,\"subMsg\":\"物流公司编码不允许为空。\",\"subCode\":\"isv.missing-parameter:60011\",\"solution\":\"1、ISV自查接入的参数是否为空；2、如果不能解决问题，可以联系抖店相关运营或开发人员进行排查和解决，需要提供以下基本信息之一:   订单号或者请求的LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"物流单号不符合规则。\",\"subCode\":\"isv.business-failed:60017\",\"solution\":\"1、商家仔细检查物流单号格式是否正确、和物流公司是否匹配，修改后重新操作；2、如果商家确定无误，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一: 订单号或者LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"暂不支持该物流公司或物流商已失效，请检查。\",\"subCode\":\"isv.business-failed:60018\",\"solution\":\"1、商家自行检查使用的物流公司编码是否符合平台规则；2、如果商家确定无误，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一: 订单号或者LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"暂不支持本类订单发货。\",\"subCode\":\"isv.business-failed:60111\",\"solution\":\"1、ISV自查拉单、用户对订单的筛选是否符合要求；2、- 如果无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"订单已取消，禁止发货。\",\"subCode\":\"isv.business-failed:60021\",\"solution\":\"1、ISV开发者先自行排查系统对接是否有问题；2、商家需要立即检查该订单是否已经实际线下寄出包裹，如果已经寄出，需要对物流商下达拦截操作；3、商家能否调整发货的流程，先在系统推进订单到已发货状态后再实际操作发货；4、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一: 订单号或者请求的LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"该订单为货到付款订单，不允许发货。\",\"subCode\":\"isv.business-failed:60022\",\"solution\":\"1、线上已经取消货到付款的支付方式，因此该错误码代表抖店内部系统异常，直接联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"该订单不可自行操作发货，请联系跨境服务商进行操作。\",\"subCode\":\"isv.business-failed:60024\",\"solution\":\"商家对返回该错误类型的订单，需要联系跨境服务商操作发货，商家无发货权限。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"该订单不支持使用其它物流进行发货。\",\"subCode\":\"isv.business-failed:60026\",\"solution\":\"1、商家换用正常的物流商进行发货；2、商家可以联系平台运营，对使用其他物流添加白名单。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"该店铺无默认售后地址，请前往抖店PC端「订单-发货管理-物流工具-地址库管理」设置后再操作发货。\",\"subCode\":\"isv.business-failed:60027\",\"solution\":\"商家前往抖店PC端「订单-发货管理-物流工具-地址库管理」设置默认售后地址后再操作发货。\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"发货地址ID不允许小于0。\",\"subCode\":\"isv.parameter-invalid:60028\",\"solution\":\"1、ISV自查接入的地址参数是否小于0；2、- 如果无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。\"},{\"msg\":\"缺少必选参数\",\"code\":40002,\"subMsg\":\"发货订单数最多支持400单，请重新选择。\",\"subCode\":\"isv.missing-parameter:60032\",\"solution\":\"- 引导商家减少选中的订单数量，重试。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"订单不存在，请仔细检查后重试。\",\"subCode\":\"isv.business-failed:60033\",\"solution\":\"1、ISV和商家仔细检查对应的订单号是否存在，是否是本店铺的订单；2、如果无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。\"},{\"msg\":\"缺少必选参数\",\"code\":40002,\"subMsg\":\"发货信息为空。\",\"subCode\":\"isv.missing-parameter:60036\",\"solution\":\"需要ISV仔细确认要发货的订单信息后，重试。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"发货订单中有退款申请需要处理，请先处理。\",\"subCode\":\"isv.business-failed:60040\",\"solution\":\"商家需要对返回该错误的订单检查售后信息，可以进行如下操作: 1、拒绝售前申请后重新发货；2、  - 发货选项中传递发货优先，可以优先拒绝售后；3、商家同意售前申请退款，取消对该订单的发货操作。\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"序列号长度不能超过30位字符。\",\"subCode\":\"isv.parameter-invalid:60046\",\"solution\":\"商家检查序列号是否符合正确，修改后重试。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"该订单补贴商品的序列号已经上传，请重新填写。\",\"subCode\":\"isv.business-failed:60047\",\"solution\":\"商家更换新的序列号，重试。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"上传序列号失败，请重试。\",\"subCode\":\"isv.business-failed:60051\",\"solution\":\"ISV重试，如果多次重试仍无法解决问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"暂不支持本类订单发货。\",\"subCode\":\"isv.business-failed:60057\",\"solution\":\"1、ISV自查拉单、用户对订单的筛选是否符合要求；2、如果无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"手机序列号仅支持填写15～17位数字。\",\"subCode\":\"isv.parameter-invalid:60062\",\"solution\":\"商家仔细检查自己填写的手机序列号长度是否在15~17位之间。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"该发货方式不支持质检类订单发货。\",\"subCode\":\"isv.business-failed:60069\",\"solution\":\"商家需要到商家后台质检类订单发货操作栏操作发货。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"当前发货异常，请检查发货地址。\",\"subCode\":\"isv.business-failed:60070\",\"solution\":\"商家修改手动输入的发货地址后重试。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"当前发货地址存在异常，请前往抖店PC端「订单-发货管理-物流工具-地址库管理」修改后重试。\",\"subCode\":\"isv.business-failed:60071\",\"solution\":\"商家前往抖店PC端「订单-发货管理-物流工具-地址库管理」修改后之后，重试。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"该店铺无默认发货地址，请前往抖店PC端「订单-发货管理-物流工具-地址库管理」设置后再操作发货。\",\"subCode\":\"isv.business-failed:60072\",\"solution\":\"商家前往抖店PC端「订单-发货管理-物流工具-地址库管理」设置默认发货地址后再操作发货。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"非本店铺订单，操作失败。\",\"subCode\":\"isv.business-failed:60101\",\"solution\":\"商家需要仔细检查对应的订单是否属于当前店铺，确认之后进行重试。\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"系统繁忙，请稍后重试。\",\"subCode\":\"isp.service-error:60106\",\"solution\":\"1、商家多重试几次；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"暂不支持该类型订单发货。\",\"subCode\":\"isv.business-failed:60107\",\"solution\":\"虚拟、教育等类型订单不支持发货。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"暂不支持该类型订单发货。\",\"subCode\":\"isv.business-failed:60108\",\"solution\":\"该发货方式不支持回收、寄卖、仅收款类订单发货。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"订单正在风控审核中，风控审核时效1~2小时，请等待订单变为“备货中”状态后重试。\",\"subCode\":\"isv.business-failed:60109\",\"solution\":\"1、ISV开发者先自行排查系统对接是否有问题；2、商家需要立即检查该订单是否已经实际线下寄出包裹，如果已经寄出，需要对物流商下达拦截操作；3、商家能否调整发货的流程，先在系统推进订单到已发货状态后再实际操作发货；4、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"订单已发货，不允许再次执行发货。\",\"subCode\":\"isv.business-failed:60110\",\"solution\":\"取消对该订单的发货。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"订单已完结，禁止发货。\",\"subCode\":\"isv.business-failed:60113\",\"solution\":\"取消对该订单的发货。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"系统繁忙，请稍后重试。\",\"subCode\":\"isv.business-failed:60114\",\"solution\":\"1、联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"不支持平台仓订单发货。\",\"subCode\":\"isv.business-failed:60116\",\"solution\":\"商家取消对该订单的发货。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"订单售后信息异常，请稍后重试。\",\"subCode\":\"isv.business-failed:60118\",\"solution\":\"1、商家重试；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"该订单已售前退款成功，不能发货。\",\"subCode\":\"isv.business-failed:60068\",\"solution\":\"1、商家需要立即检查该订单是否已经实际线下寄出包裹，如果已经寄出，需要对物流商下达拦截操作；2、商家能否调整发货的流程，先在系统推进订单到已发货状态后再实际操作发货。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"订单正在售后中，请确认后发货。\",\"subCode\":\"isv.business-failed:60120\",\"solution\":\"1、商家需要立即检查该订单是否已经实际线下寄出包裹，如果已经寄出，需要对物流商下达拦截操作；2、商家能否调整发货的流程，先在系统推进订单到已发货状态后再实际操作发货。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"系统繁忙，请稍后重试。\",\"subCode\":\"isv.business-failed:60121\",\"solution\":\"1、商家重试；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"该跨境订单状态暂不允许发货。\",\"subCode\":\"isv.business-failed:60122\",\"solution\":\"服务商没有对跨境订单回传信息，商家无法对跨境订单发货。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"当前订单为供应链订单，商家无权自发货。\",\"subCode\":\"isv.business-failed:60123\",\"solution\":\"商家对供应链订单操作发货，供应链订单只能通过供应链链路发货。\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"系统繁忙，请稍后重试。\",\"subCode\":\"isp.service-error:60124\",\"solution\":\"查询根据该物流单号猜想的物流公司错误，商家重试。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"系统繁忙，请稍后重试\",\"subCode\":\"isv.business-failed:60125\",\"solution\":\"1、校验其他物流订单数据异常，商家重试；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"暂不支持使用寻梦同城物流发货，请重新选择物流公司或联系平台客服申请使用。\",\"subCode\":\"isv.business-failed:60126\",\"solution\":\"商家使用“寻梦同城”物流操作发货，但是商家并不在“寻梦同城”物流的白名单内，解决方案如下: 1、商家换用正常的物流商发货；2、商家联系平台客服申请使用“寻梦同城”物流商。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"物流单号校验不通过，请仔细检查后重试。\",\"subCode\":\"isv.business-failed:60127\",\"solution\":\"1、仔细检查对应的物流单号是否正确，修改后重试；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"物流公司与系统智能检测不一致。物流公司可能为:(具体根据猜想得到的物流公司名称)，若确认无误可继续发货。\",\"subCode\":\"isv.business-failed:60128\",\"solution\":\"1、商家仔细检查对应的物流单号、物流公司是否正确，修改后重试；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"发货订单包含状态为“待用户填写定制信息”的定制商品订单，此类订单需用户填写定制信息后才能发货。\",\"subCode\":\"isv.business-failed:60131\",\"solution\":\"商家对定制商品订单发货，但是C端该定制订单并没有填写定制信息，需要联系消费者填写定制信息后才能够发货。\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"系统异常，请稍后重试。\",\"subCode\":\"isp.service-error:60132\",\"solution\":\"1、商家重试；2、联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"订单未支付，禁止发货。\",\"subCode\":\"isv.business-failed:60137\",\"solution\":\"1、仔细检查订单状态；2、ISV需要重新拉取订单信息，确保和抖店系统的数据保持一致；3、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求的LogId。\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"拒绝售后失败，请检查该单的售后处理流程后重试。\",\"subCode\":\"isp.service-error:70005\",\"solution\":\"1、商家根据返回的错误文案检查订单是否存在售后流程，处理售后单；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求LogId。\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"发货失败，请稍后重试。\",\"subCode\":\"isp.service-error:70011\",\"solution\":\"1、商家根据返回的错误文案检查订单检查订单并进行相应处理；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"系统繁忙，请稍后重试。\",\"subCode\":\"isv.business-failed:70016\",\"solution\":\"1、如果商家直接输入的发货地址，需要商家仔细检查自己的输入地址是否正确、是否符合平台要求；2、如果商家使用平台地址库管理的地址，需要检查下地址库是否存在该地址、地址库对该地址是否提示存在异常。\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"系统错误，请稍后重试或者联系客服人员解决。\",\"subCode\":\"isp.service-error:80007\",\"solution\":\"1、可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求LogId。\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"网络超时，请重试。\",\"subCode\":\"isp.service-error:99997\",\"solution\":\"重试。\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"请输入正确的参数，仔细检查输入参数是否为空或联系抖店人员排查。\",\"subCode\":\"isp.service-error:99998\",\"solution\":\"1、ISV自查接入的参数是否为空；2、如果无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求LogId。\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"未知异常，请联系客服人员处理。\",\"subCode\":\"isp.service-error:99999\",\"solution\":\"系统发生BUG，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"系统繁忙，请稍后重试\",\"subCode\":\"isv.business-failed:70009\",\"solution\":\"商家重试即可。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"补贴商品发货时需要上传商品序列号\",\"subCode\":\"isv.business-failed:60056\",\"solution\":\"商家对于报错的订单上传序列号。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"该发货地址在商家地址库不存在，请刷新或者前往抖店PC端「订单-发货管理-物流工具-地址库管理」设置后重试\",\"subCode\":\"isv.business-failed:60134\",\"solution\":\"该发货地址在商家地址库不存在，商家重新选择可用的发货地址或者前往抖店PC端「订单-发货管理-物流工具-地址库管理」设置后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"拒绝售后失败，请检查该单的售后处理流程后重试。\",\"subCode\":\"isv.business-failed:10032\",\"solution\":\"1、商家根据返回的错误文案检查订单是否存在售后流程，处理售后单；2、如果商家无法解决相关问题，可以联系抖店相关运营-开发人员进行排查和解决，需要提供以下基本信息之一:订单号或者请求LogId。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"70023:没有能发货的订单，请修改后重试\",\"subCode\":\"isv.business-failed:70023\",\"solution\":\"请检查订单物流状态\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"70020:物流单号收件人电话及地址与该订单买家电话及地址均不一致，请核实后更新单号\",\"subCode\":\"isv.business-failed:70020\",\"solution\":\"请检查订单买家电话及地址均不一致\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"70022:物流单号已被其他订单使用，且收货人手机号/收货地址不一致，请核实后更新单号\",\"subCode\":\"isv.business-failed:70022\",\"solution\":\"请检查物流单号\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"70018:物流单号已被快递回收或取消，无法继续使用，请核实后更新单号\",\"subCode\":\"isv.business-failed:70018\",\"solution\":\"请检查物流单号\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"70019:物流单号首条轨迹产生时间早于订单支付时间，请核实后更新单号\",\"subCode\":\"isv.business-failed:70019\",\"solution\":\"请检查物流单号\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"120032:售后请求并发，请稍后重试\",\"subCode\":\"isv.business-failed:120032\",\"solution\":\"请重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"700004:store_id不存在/错误，超市小时达订单发货需传入订单对应的门店ID\",\"subCode\":\"isv.business-failed:700004\",\"solution\":\"请检查store_id是否正确\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"60138:订单需送货上门，请使用支持送货上门的物流公司发货\",\"subCode\":\"isv.business-failed:60138\",\"solution\":\"请检查订单号\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"700003:store_id为空/错误，超市小时达订单发货需传入订单对应的门店ID\",\"subCode\":\"isv.business-failed:700003\",\"solution\":\"请检查store_id是否正确\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"700002:发货订单包含非本门店订单，请重试\",\"subCode\":\"isv.business-failed:700002\",\"solution\":\"请检查订单号\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"700005:小时购订单不支持该快递公司发货\",\"subCode\":\"isv.business-failed:700005\",\"solution\":\"请检查物流公司是否存在\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"请传入退货地址，提高退换货的履约准确率\",\"subCode\":\"isv.business-failed:700029\",\"solution\":\"请传入退货地址，提高退换货的履约准确率\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"700042:物流服务商信息异常，请传入正确的物流服务商信息或稍后重试\",\"subCode\":\"isv.business-failed:700042\",\"solution\":\"请检查服务商\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"120018:系统繁忙，请稍后重试\",\"subCode\":\"isv.business-failed:120018\",\"solution\":\"请重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"120064:该订单为偏远地区中转订单，您的账户余额不够支付中转运费，不能进行中转，请前往管家账户充值\",\"subCode\":\"isv.business-failed:120064\",\"solution\":\"120064:该订单为偏远地区中转订单，您的账户余额不够支付中转运费，不能进行中转，请前往管家账户充值\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"120035:系统错误，请稍后重试\",\"subCode\":\"isv.business-failed:120035\",\"solution\":\"120035:系统错误，请稍后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"500001:系统繁忙，请稍后重试\",\"subCode\":\"isv.business-failed:500001\",\"solution\":\"500001:系统繁忙，请稍后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"60140:订单为服务商品订单，不支持发货\",\"subCode\":\"isv.business-failed:60140\",\"solution\":\"60140:订单为服务商品订单，不支持发货\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"当前发货时间早于用户延迟发货时间的72小时前，不允许提前发货\",\"subCode\":\"isv.business-failed:60145\",\"solution\":\"等到了用户延迟发货时间的72小时内操作再次重试即可。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"系统内部错误，请重试\",\"subCode\":\"isv.business-failed:700061\",\"solution\":\"按照返回的结果提示重试即可。\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"网络异常，请稍后重试\",\"subCode\":\"isv.business-failed:120002\",\"solution\":\"根据返回的提示重试即可\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"订单为收礼订单，收礼单不支持发货，请对对应送礼单进行发货操作\",\"subCode\":\"isv.business-failed:700088\",\"solution\":\"订单为收礼订单，收礼单不支持发货，请对对应送礼单进行发货操作\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"120066:您选择的订单中包含偏远中转订单，因货款及管家账户余额不足无法支付中转运费（每笔3元）发货失败，可在抖店PC端充值后重试，路径：账户中心 \\u003e 其他账户 \\u003e 管家账户\",\"subCode\":\"isv.business-failed:120066\",\"solution\":\"120066:您选择的订单中包含偏远中转订单，因货款及管家账户余额不足无法支付中转运费（每笔3元）发货失败，可在抖店PC端充值后重试，路径：账户中心 \\u003e 其他账户 \\u003e 管家账户\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"1000000015:偏远中转订单必须使用抖音电子面单发货，如不希望使用抖音电子面单，可以尝试转直邮发货功能，直接发货给消费者，但是不再享受平台中转运费补贴、体验分豁免等权益\",\"subCode\":\"isv.business-failed:1000000015\",\"solution\":\"1000000015:偏远中转订单必须使用抖音电子面单发货，如不希望使用抖音电子面单，可以尝试转直邮发货功能，直接发货给消费者，但是不再享受平台中转运费补贴、体验分豁免等权益\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"130013:系统繁忙，请稍后重试\",\"subCode\":\"isv.business-failed:130013\",\"solution\":\"130013:系统繁忙，请稍后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"100001:请输入正确的SN/69/IMEI码的值\",\"subCode\":\"isv.business-failed:100001\",\"solution\":\"100001:请输入正确的SN/69/IMEI码的值\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"60016:商品单单号为空或者格式错误\",\"subCode\":\"isv.business-failed:60016\",\"solution\":\"60016:商品单单号为空或者格式错误\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"1000000014:该运单的收货地址不是中转仓地址，可以尝试转直邮发货功能，直接发货给消费者，但是不再享受平台中转运费补贴、体验分豁免等权益\",\"subCode\":\"isv.business-failed:1000000014\",\"solution\":\"1000000014:该运单的收货地址不是中转仓地址，可以尝试转直邮发货功能，直接发货给消费者，但是不再享受平台中转运费补贴、体验分豁免等权益\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"60102:商品单不存在，请仔细检查后重试\",\"subCode\":\"isv.business-failed:60102\",\"solution\":\"60102:商品单不存在，请仔细检查后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"100009:非本店铺订单\",\"subCode\":\"isv.business-failed:100009\",\"solution\":\"100009:非本店铺订单\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"100007:此订单为签收时要求快递员拍照的国家补贴订单，只能使用顺丰速运(常用)发货\",\"subCode\":\"isv.business-failed:100007\",\"solution\":\"100007:此订单为签收时要求快递员拍照的国家补贴订单，只能使用顺丰速运(常用)发货\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"120005:系统繁忙，请稍后重试\",\"subCode\":\"isv.business-failed:120005\",\"solution\":\"120005:系统繁忙，请稍后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"700007:门店ID非法，不允许小于0\",\"subCode\":\"isv.business-failed:700007\",\"solution\":\"700007:门店ID非法，不允许小于0\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"60133:当前发货地址异常，请仔细检查地址和联系人信息是否完整且有效\",\"subCode\":\"isv.business-failed:60133\",\"solution\":\"60133:当前发货地址异常，请仔细检查地址和联系人信息是否完整且有效\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"507:请求处理中，请稍后重试\",\"subCode\":\"isv.business-failed:507\",\"solution\":\"并发引起，可重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"702:查询数据失败，请稍后重试\",\"subCode\":\"isv.business-failed:702\",\"solution\":\"系统单机器异常等问题引起，可重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"10020:接单后-查合约单未找到\",\"subCode\":\"isv.business-failed:10020\",\"solution\":\"合约单查询失败，可重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"20114:系统繁忙，请稍后重试\",\"subCode\":\"isv.business-failed:20114\",\"solution\":\"系统单机器异常等问题引起\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"20200:获取订单信息失败，请稍后重试\",\"subCode\":\"isv.business-failed:20200\",\"solution\":\"系统单机器异常等问题引起\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"20211:网络异常，请稍后重试\",\"subCode\":\"isv.business-failed:20211\",\"solution\":\"网络异常，请稍后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"20113:系统异常，请稍后重试\",\"subCode\":\"isv.business-failed:20113\",\"solution\":\"系统异常，请稍后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"20212:呼叫运力失败，请稍后重试\",\"subCode\":\"isv.business-failed:20212\",\"solution\":\"呼叫运力失败，请稍后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"20796:配送方案服务时段获取失败，请稍后重试\",\"subCode\":\"isv.business-failed:20796\",\"solution\":\"系统单机器异常等问题引起，可重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"50216:系统繁忙，请稍后重试\",\"subCode\":\"isv.business-failed:50216\",\"solution\":\"系统单机器异常等问题引起，可重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"120047:呼叫运力失败，请稍后重试\",\"subCode\":\"isv.business-failed:120047\",\"solution\":\"呼叫运力失败，请稍后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"501:售后完结，订单关闭\",\"subCode\":\"isv.business-failed:501\",\"solution\":\"订单已完结，无需重试发货\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"20301:订单已存在自配送运单，无法呼叫运力\",\"subCode\":\"isv.business-failed:20301\",\"solution\":\"已发自配\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"700077:三方应用不允许对自配订单呼叫运力\",\"subCode\":\"isv.parameter-invalid:700077\",\"solution\":\"调用异常，平自配订单无法使用open接口发货\"}]}}",
+      "info": {
+        "AuditedTime": "",
+        "access": false,
+        "apiChargeType": 1,
+        "apiLimitLevel": 1,
+        "apiLimitValue": 7000,
+        "apiSpiMsgNames": [],
+        "articleOutId": 290,
+        "auditStatus": 401,
+        "auth": {
+          "categoryList": [],
+          "groupName": "",
+          "packageName": "",
+          "packageType": 0
+        },
+        "authSubject": "[3]",
+        "authSubjectIdList": [
+          "店铺"
+        ],
+        "auths": [
+          {
+            "categoryList": [
+              "即时零售ERP",
+              "即时零售商家自研"
+            ],
+            "groupName": "订单",
+            "packageName": "电商小时达专用-临时",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "精选货源-微应用",
+              "创新应用大赛_微应用",
+              "跨境供应链服务",
+              "跨境电商",
+              "打单发货-微应用",
+              "创新应用大赛_软件服务",
+              "厂商代发",
+              "教育服务",
+              "商家后台系统",
+              "订单管理",
+              "AI智能客服-微应用",
+              "商品供应链",
+              "电商ERP",
+              "AI售后挽单"
+            ],
+            "groupName": "物流发货",
+            "packageName": "物流发货",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "即时零售订单配送",
+              "即时零售ebill订单管理（临时）",
+              "即时零售ERP",
+              "即时零售商家自研"
+            ],
+            "groupName": "物流发货",
+            "packageName": "即时零售物流发货",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "即时零售商品服务",
+              "即时零售订单配送",
+              "即时零售ebill订单管理（临时）",
+              "即时零售ERP",
+              "即时零售商家自研"
+            ],
+            "groupName": "物流发货",
+            "packageName": "抖超商家运力",
+            "packageType": 1
+          }
+        ],
+        "commitAuditTime": "",
+        "contentType": 1,
+        "createTime": -62135596800,
+        "defaultApiAndAppLimitLevel": 1,
+        "defaultApiAndAppLimitValue": 2000,
+        "description": "暂时只支持整单出库，即接口调用时入参只能传父订单号。\nTips：部分发货状态下的父订单，调此接口发货，会报错：该订单当前为“部分发货”状态，无法调用此接口",
+        "dirId": 16,
+        "dirLabels": [],
+        "dirName": "物流发货API",
+        "docLabels": [],
+        "extra": {
+          "creator": "",
+          "feishuDocUrl": "",
+          "mailDocUrl": "",
+          "mailPicUrl": "",
+          "mailTag": 0,
+          "noticeAuditUrl": "",
+          "ticketUrl": ""
+        },
+        "finalStatus": 1,
+        "flag": 0,
+        "id": 718,
+        "isTop": false,
+        "note": "",
+        "pv": 7746,
+        "reOnline": true,
+        "status": 1,
+        "subtitle": "暂时只支持整单出库，即接口调用时入参只能传父订单号。\nTips：部分发货状态下的父订单，调此接口发货，会报错：该订单当前为“部分发货”状态，无法调用此接口",
+        "title": "/order/logisticsAdd",
+        "updateTime": 1755660543,
+        "url": "",
+        "userList": [],
+        "userSceneDesc": "订单发货接口",
+        "version": "V2.14"
+      },
+      "tagNameMap": {
+        "25": "优惠券基础数据",
+        "26": "用户优惠券数据",
+        "28": "其他字段",
+        "29": "通用字段",
+        "30": "物流公司信息",
+        "31": "订单基础信息",
+        "32": "地址基础信息",
+        "33": "寄件人地址信息",
+        "34": "寄件人联系信息",
+        "35": "物流增值服务",
+        "36": "回单寄回地址",
+        "37": "收件人地址",
+        "38": "收件人信息",
+        "39": "商品基础信息",
+        "40": "商品重量体积信息",
+        "41": "快递配置规则",
+        "42": "订单备注",
+        "43": "仓库基础信息",
+        "44": "店铺基础信息",
+        "45": "小程序基础信息",
+        "46": "订单来源分析",
+        "47": "买家留言 ",
+        "48": "商家备注",
+        "49": "订单金额信息",
+        "50": "商品金额信息",
+        "51": "营销活动金额信息",
+        "52": "营销活动基础信息",
+        "53": "精选联盟",
+        "54": "跨境海淘",
+        "55": "库存基础信息",
+        "56": "售后基础信息",
+        "57": "电子卡券",
+        "58": "赠品",
+        "59": "组合（组套）商品",
+        "60": "虚拟商品",
+        "61": "定金预售",
+        "62": "懂车帝购车信息",
+        "63": "用户特征标签",
+        "64": "物流信息",
+        "65": "证件信息",
+        "66": "C2B定制",
+        "67": "买家基础信息",
+        "68": "买家敏感信息",
+        "69": "场景包测试标签a",
+        "70": "场景包测试标签b",
+        "71": "商家快递网点信息",
+        "72": "商品类目信息",
+        "73": "短信基础字段",
+        "74": "售后文案",
+        "75": "插旗信息",
+        "76": "售后金额信息",
+        "77": "风控信息",
+        "78": "换货基础信息",
+        "79": "售后标签",
+        "80": "门店基础信息",
+        "81": "售后商家备注信息",
+        "82": "达人样品订单",
+        "83": "即时零售订单接单状态",
+        "85": "换货和补寄信息",
+        "86": "物流异常风控",
+        "87": "商家售后地址信息",
+        "88": "售后仲裁",
+        "89": "买家退货物流信息",
+        "90": "补寄场景",
+        "91": "售后价保",
+        "92": "售后数据分析",
+        "93": "售后协商记录",
+        "94": "废弃字段",
+        "95": "商品尺码模板",
+        "96": "商品标题前缀",
+        "97": "商品参考价凭证",
+        "98": "商品资质信息",
+        "99": "商品限购信息",
+        "100": "特殊日期延迟发货",
+        "101": "商品销量",
+        "102": "店铺地址库",
+        "103": "即时零售商品基础信息",
+        "104": "解密基础字段",
+        "105": "解密虚拟号",
+        "106": "解密明文信息",
+        "107": "解密手机号明文",
+        "108": "解密姓名信息",
+        "109": "解密地址信息",
+        "110": "解密身份证信息",
+        "111": "查询改地址开关",
+        "112": "用户店铺关注信息",
+        "113": "店铺会话统计数据",
+        "114": "飞鸽会话统计数据",
+        "115": "飞鸽客服基础信息",
+        "116": "飞鸽会话信息",
+        "117": "飞鸽客服登录日志",
+        "118": "飞鸽客服接待统计信息",
+        "119": "飞鸽会话消息基础信息",
+        "120": "视频信息",
+        "121": "商品卖点信息",
+        "122": "授权基础信息",
+        "123": "商品价格信息",
+        "124": "商品分佣信息",
+        "125": "联盟分佣信息",
+        "126": "商品评价信息",
+        "127": "评价基础信息",
+        "128": "评价结果数据",
+        "129": "店铺体验分",
+        "130": "评价内容信息",
+        "131": "订单extra"
+      }
+    },
+    "releaseNote": "新增错误码subCode:isv.business-failed:507 描述507:请求处理中，请稍后重试subCode:isv.business-failed:702 描述702:查询数据失败，请稍后重试subCode:isv.business-failed:10020 描述10020:接单后-查合约单未找到subCode:isv.business-failed:20114 描述20114:系统繁忙，请稍后重试subCode:isv.business-failed:20200 描述20200:获取订单信息失败，请稍后重试subCode:isv.business-failed:20211 描述20211:网络异常，请稍后重试subCode:isv.business-failed:20113 描述20113:系统异常，请稍后重试subCode:isv.business-failed:20212 描述20212:呼叫运力失败，请稍后重试subCode:isv.business-failed:20796 描述20796:配送方案服务时段获取失败，请稍后重试subCode:isv.business-failed:50216 描述50216:系统繁忙，请稍后重试subCode:isv.business-failed:120047 描述120047:呼叫运力失败，请稍后重试subCode:isv.business-failed:501 描述501:售后完结，订单关闭subCode:isv.business-failed:20301 描述20301:订单已存在自配送运单，无法呼叫运力subCode:isv.parameter-invalid:700077 描述700077:三方应用不允许对自配订单呼叫运力",
+    "version": "1.0.0"
+  },
+  "msg": ""
+}

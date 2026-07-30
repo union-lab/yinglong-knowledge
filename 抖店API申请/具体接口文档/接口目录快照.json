@@ -1,0 +1,2058 @@
+{
+  "工具API": [
+    {
+      "href": "/docs/api-docs/162/6060",
+      "text": "/rights/deductUsageCount\n扣减权益可使用次数"
+    },
+    {
+      "href": "/docs/api-docs/162/3586",
+      "text": "/order/getMCToken\n获取前端组件token"
+    },
+    {
+      "href": "/docs/api-docs/162/1600",
+      "text": "/token/create\n生成token API"
+    },
+    {
+      "href": "/docs/api-docs/162/1601",
+      "text": "/token/refresh\n使用refresh_token刷新access_token"
+    },
+    {
+      "href": "/docs/api-docs/162/2222",
+      "text": "/open/materialToken\n素材上传接口访问token"
+    },
+    {
+      "href": "/docs/api-docs/162/352",
+      "text": "/rights/info\n订购服务权益查询接口-服务市场"
+    },
+    {
+      "href": "/docs/api-docs/162/1655",
+      "text": "/security/batchReportOrderSecurityEvent\n批量上报订单安全事件接口"
+    },
+    {
+      "href": "/docs/api-docs/162/8058",
+      "text": "/product/isCategoryMigrateObj\n查询店铺或类目是否已升级标准类目树"
+    },
+    {
+      "href": "/docs/api-docs/162/7436",
+      "text": "/mini/blindbox/merchantresult\n直播间主播抽盒回传盲盒结果"
+    },
+    {
+      "href": "/docs/api-docs/162/6059",
+      "text": "/rights/queryUsageCount\n查询权益可使用次数"
+    },
+    {
+      "href": "/docs/api-docs/162/3582",
+      "text": "/open/getAuthInfo\n查询授权信息"
+    },
+    {
+      "href": "/docs/api-docs/162/1973",
+      "text": "/open/openIdSwitch\n提供抖音和抖店 Openid 转换功能"
+    }
+  ],
+  "店铺API": [
+    {
+      "href": "/docs/api-docs/13/8370",
+      "text": "/shop/productDiagnose\n本店商品维度诊断"
+    },
+    {
+      "href": "/docs/api-docs/13/1455",
+      "text": "/member/getShopShortLink\n获取商家推广链接接口"
+    },
+    {
+      "href": "/docs/api-docs/13/1820",
+      "text": "/shop/getShopCategory\n获取商品类目"
+    },
+    {
+      "href": "/docs/api-docs/13/2836",
+      "text": "/max/activities\n批量获取活动信息"
+    },
+    {
+      "href": "/docs/api-docs/13/7662",
+      "text": "/sms/audience/getAvailableCate\n获取商家类目id"
+    },
+    {
+      "href": "/docs/api-docs/13/1435",
+      "text": "/address/list\n批量查询地址库列表接口"
+    },
+    {
+      "href": "/docs/api-docs/13/2387",
+      "text": "/shop/batchCreateStore\n批量创建门店"
+    },
+    {
+      "href": "/docs/api-docs/13/2389",
+      "text": "/shop/getStoreDetail\n单个获取门店信息"
+    },
+    {
+      "href": "/docs/api-docs/13/1784",
+      "text": "/warehouse/setFence\n更新电子围栏接口"
+    },
+    {
+      "href": "/docs/api-docs/13/4195",
+      "text": "/trade/CreateFreightTemplate\n小时达创建运费模板"
+    },
+    {
+      "href": "/docs/api-docs/13/4674",
+      "text": "/trade/UpdateFreightTemplate\n小时达更新运费模板"
+    },
+    {
+      "href": "/docs/api-docs/13/2707",
+      "text": "/trade/UpdateTradeLimitTemplate\n更新限售模版"
+    },
+    {
+      "href": "/docs/api-docs/13/2438",
+      "text": "/trade/batchGetTradeLimitTemplateList\n批量查询限购模板"
+    },
+    {
+      "href": "/docs/api-docs/13/2439",
+      "text": "/trade/createTradeLimitTemplate\n创建限售规则模板"
+    },
+    {
+      "href": "/docs/api-docs/13/2065",
+      "text": "/warehouse/delFence\n删除电子围栏"
+    },
+    {
+      "href": "/docs/api-docs/13/1783",
+      "text": "/warehouse/getFences\n获取电子围栏信息/列表"
+    },
+    {
+      "href": "/docs/api-docs/13/2384",
+      "text": "/shop/unsuspendStore\n门店恢复营业"
+    },
+    {
+      "href": "/docs/api-docs/13/2385",
+      "text": "/shop/getStoreFreight\n获取门店绑定的运费模版"
+    },
+    {
+      "href": "/docs/api-docs/13/2381",
+      "text": "/shop/bindStoreFreight\n门店绑定运费模版"
+    },
+    {
+      "href": "/docs/api-docs/13/2383",
+      "text": "/shop/editStore\n编辑门店"
+    },
+    {
+      "href": "/docs/api-docs/13/2379",
+      "text": "/shop/getStoreSaleLimit\n获取门店绑定的限售模版"
+    },
+    {
+      "href": "/docs/api-docs/13/2382",
+      "text": "/shop/storeSuspend\n暂停营业"
+    },
+    {
+      "href": "/docs/api-docs/13/2534",
+      "text": "/warehouse/unbindFencesByStore\n解绑门店和电子围栏"
+    },
+    {
+      "href": "/docs/api-docs/13/4675",
+      "text": "/trade/GetFreightTemplateByTemplateID\n小时达查询运费模板"
+    },
+    {
+      "href": "/docs/api-docs/13/1510",
+      "text": "/address/create\n创建店铺地址库"
+    },
+    {
+      "href": "/docs/api-docs/13/2854",
+      "text": "/supplyChain/CouponZoneFeeds\n二级承接页初始化"
+    },
+    {
+      "href": "/docs/api-docs/13/1511",
+      "text": "/address/update\n店铺修改售后地址接口"
+    },
+    {
+      "href": "/docs/api-docs/13/8181",
+      "text": "/expScore/getDsrDetailProdList\n获取体验分商品综合评分商品列表"
+    },
+    {
+      "href": "/docs/api-docs/13/7393",
+      "text": "/shop/getExperienceScore\n查询店铺体验分"
+    },
+    {
+      "href": "/docs/api-docs/13/6725",
+      "text": "/sendHome/store/getStoreFence\n到家场景-查询门店配送电子围栏"
+    },
+    {
+      "href": "/docs/api-docs/13/6676",
+      "text": "/product/batchGetProductLocks\n批量查询商品锁"
+    },
+    {
+      "href": "/docs/api-docs/13/6532",
+      "text": "/instantShopping/starhub/updateInboundOrderStatus\n更新抖音侧即时零售入库单状态"
+    },
+    {
+      "href": "/docs/api-docs/13/2658",
+      "text": "/shop/reputation\n查询商家评分"
+    }
+  ],
+  "素材中心API": [
+    {
+      "href": "/docs/api-docs/69/2914",
+      "text": "/microapp/GetStaticFileUrlBatch\nISV批量兑换文件url"
+    },
+    {
+      "href": "/docs/api-docs/69/2884",
+      "text": "/microapp/UpdateStaticFileMeta\nISV上传静态资源后绑定相对路径"
+    },
+    {
+      "href": "/docs/api-docs/69/946",
+      "text": "/material/createFolder\n创建文件夹"
+    },
+    {
+      "href": "/docs/api-docs/69/1146",
+      "text": "/material/uploadImageSync\n单个图片上传"
+    },
+    {
+      "href": "/docs/api-docs/69/1145",
+      "text": "/material/queryMaterialDetail\n根据素材id查素材详情"
+    },
+    {
+      "href": "/docs/api-docs/69/1150",
+      "text": "/material/getFolderInfo\n查看文件夹详情"
+    },
+    {
+      "href": "/docs/api-docs/69/1149",
+      "text": "/material/searchFolder\n搜索文件夹"
+    },
+    {
+      "href": "/docs/api-docs/69/1616",
+      "text": "/material/batchUploadImageSync\n批量上传图片到素材中心"
+    },
+    {
+      "href": "/docs/api-docs/69/1148",
+      "text": "/material/searchMaterial\n素材中心--素材搜索接口"
+    },
+    {
+      "href": "/docs/api-docs/69/1694",
+      "text": "/material/get_cap_info\n获取商家容量详情"
+    },
+    {
+      "href": "/docs/api-docs/69/2164",
+      "text": "/material/mGetPlayInfo\n批量获取视频信息"
+    },
+    {
+      "href": "/docs/api-docs/69/1147",
+      "text": "/material/uploadVideoAsync\n素材中心--异步上传视频接口"
+    },
+    {
+      "href": "/docs/api-docs/69/1617",
+      "text": "/material/batchUploadVideoAsync\n批量上传视频到素材中心"
+    },
+    {
+      "href": "/docs/api-docs/69/1139",
+      "text": "/material/deleteFolder\n彻底删除文件夹"
+    },
+    {
+      "href": "/docs/api-docs/69/947",
+      "text": "/material/moveFolderToRecycleBin\n将文件夹移动到回收站"
+    },
+    {
+      "href": "/docs/api-docs/69/1096",
+      "text": "/material/recoverFolder\n从回收站恢复文件夹"
+    },
+    {
+      "href": "/docs/api-docs/69/956",
+      "text": "/material/editMaterial\n编辑素材"
+    },
+    {
+      "href": "/docs/api-docs/69/1955",
+      "text": "/material/easyShuttle\n一键删除"
+    },
+    {
+      "href": "/docs/api-docs/69/954",
+      "text": "/material/recoverMaterial\n从回收站中恢复素材"
+    },
+    {
+      "href": "/docs/api-docs/69/951",
+      "text": "/material/moveMaterialToRecycleBin\n移动素材到回收站"
+    },
+    {
+      "href": "/docs/api-docs/69/948",
+      "text": "/material/editFolder\n编辑/移动文件夹"
+    },
+    {
+      "href": "/docs/api-docs/69/1138",
+      "text": "/material/deleteMaterial\n彻底删除素材"
+    },
+    {
+      "href": "/docs/api-docs/69/3241",
+      "text": "/material/uploadVideoAsyncForIsv\nisv单个视频上传"
+    },
+    {
+      "href": "/docs/api-docs/69/2887",
+      "text": "/material/uploadImageSyncForIsv\nisv单个图片上传"
+    }
+  ],
+  "商品API": [
+    {
+      "href": "/docs/api-docs/14/6503",
+      "text": "/product/publishPreCheck\n商品发布前置校验接口"
+    },
+    {
+      "href": "/docs/api-docs/14/8371",
+      "text": "/shop/prodOrderCntDiagnose\n商品维度订单量诊断"
+    },
+    {
+      "href": "/docs/api-docs/14/56",
+      "text": "/product/detail\n查询商品详情"
+    },
+    {
+      "href": "/docs/api-docs/14/8339",
+      "text": "/product/getProductSuggestionList\n查询诊断商品列表及其处理建议"
+    },
+    {
+      "href": "/docs/api-docs/14/250",
+      "text": "/product/editV2\n编辑商品"
+    },
+    {
+      "href": "/docs/api-docs/14/249",
+      "text": "/product/addV2\n发布商品"
+    },
+    {
+      "href": "/docs/api-docs/14/1614",
+      "text": "/product/getProductUpdateRule\n查询商品发布规则"
+    },
+    {
+      "href": "/docs/api-docs/14/6361",
+      "text": "/product/getSchema\n商品发布schema-渲染接口"
+    },
+    {
+      "href": "/docs/api-docs/14/1373",
+      "text": "/product/getCatePropertyV2\n查询商品类目id的属性列表"
+    },
+    {
+      "href": "/docs/api-docs/14/8154",
+      "text": "/promise/QueryBenefitTraction\n查询店铺维度利益点和库存推荐"
+    },
+    {
+      "href": "/docs/api-docs/14/8153",
+      "text": "/promise/QueryBenefitTractionByProductId\n商品维度查询利益点和库存建议"
+    },
+    {
+      "href": "/docs/api-docs/14/7748",
+      "text": "/productClue/distributableCluelist\n批量获取可分发在架线索列表"
+    },
+    {
+      "href": "/docs/api-docs/14/2004",
+      "text": "/product/GetRecommendCategory\n商品类目预测"
+    },
+    {
+      "href": "/docs/api-docs/14/2373",
+      "text": "/spu/queryBookNameByISBN\n根据ISBN查询书名"
+    },
+    {
+      "href": "/docs/api-docs/14/2312",
+      "text": "/spu/getSpuRule\n获取SPU发布规则和模板"
+    },
+    {
+      "href": "/docs/api-docs/14/2311",
+      "text": "/spu/createSpu\n发布SPU"
+    },
+    {
+      "href": "/docs/api-docs/14/2309",
+      "text": "/spu/getSpu\n查询SPU（根据关键属性/SPU ID）"
+    },
+    {
+      "href": "/docs/api-docs/14/6206",
+      "text": "/spu/QuerySpu\n检索SPU"
+    },
+    {
+      "href": "/docs/api-docs/14/8066",
+      "text": "/product/calDelayShipTimeForOpen\n发货时效规则预览"
+    },
+    {
+      "href": "/docs/api-docs/14/4649",
+      "text": "/product/getCategories\n获取商家可选类目"
+    },
+    {
+      "href": "/docs/api-docs/14/633",
+      "text": "/product/listV2\n批量查询商品列表"
+    },
+    {
+      "href": "/docs/api-docs/14/5980",
+      "text": "/product/launchProduct\n上架商品（抖店店铺）"
+    },
+    {
+      "href": "/docs/api-docs/14/2847",
+      "text": "/sku/syncStockBatchMultiProducts\n多商品内 sku 更新库存"
+    },
+    {
+      "href": "/docs/api-docs/14/4462",
+      "text": "/product/addChannelProduct\n创建销售渠道品"
+    },
+    {
+      "href": "/docs/api-docs/14/4461",
+      "text": "/product/updateChannelProduct\n编辑渠道商品"
+    },
+    {
+      "href": "/docs/api-docs/14/4467",
+      "text": "/product/previewChannelProduct\n预览渠道品信息"
+    },
+    {
+      "href": "/docs/api-docs/14/2694",
+      "text": "/product/partialEdit\n部分编辑商品信息"
+    },
+    {
+      "href": "/docs/api-docs/14/6371",
+      "text": "/product/editSchema\n商品发布schema编辑接口"
+    },
+    {
+      "href": "/docs/api-docs/14/6370",
+      "text": "/product/addSchema\n商品发布schema提交"
+    },
+    {
+      "href": "/docs/api-docs/14/7342",
+      "text": "/product/diagnoseCheck\n发布前校验"
+    },
+    {
+      "href": "/docs/api-docs/14/938",
+      "text": "/product/qualityList\n店铺商品质量查询API"
+    },
+    {
+      "href": "/docs/api-docs/14/566",
+      "text": "/sku/detail\n获取商品sku详情"
+    },
+    {
+      "href": "/docs/api-docs/14/1748",
+      "text": "/product/auditList\n审核记录列表"
+    },
+    {
+      "href": "/docs/api-docs/14/6866",
+      "text": "/product/recommendProperties\n商品属性推荐"
+    },
+    {
+      "href": "/docs/api-docs/14/2698",
+      "text": "/superm/product/createSubProduct\n基于店铺主品创建门店子品 (同步创建)"
+    },
+    {
+      "href": "/docs/api-docs/14/6525",
+      "text": "/instantShopping/product/add\n即时零售商家商品发布接口"
+    },
+    {
+      "href": "/docs/api-docs/14/7049",
+      "text": "/product/delProductMainPicVideo\n删除商品上的主图视频"
+    },
+    {
+      "href": "/docs/api-docs/14/7048",
+      "text": "/product/applyMainPicVideo\n应用主图视频至商品"
+    },
+    {
+      "href": "/docs/api-docs/14/4229",
+      "text": "/mini/product/isWanted\n查询是否收藏"
+    },
+    {
+      "href": "/docs/api-docs/14/82",
+      "text": "/sku/list\n获取商品sku列表"
+    },
+    {
+      "href": "/docs/api-docs/14/499",
+      "text": "/product/addCbProduct\n新增跨境/海南商品"
+    },
+    {
+      "href": "/docs/api-docs/14/553",
+      "text": "/product/editCbProduct\n编辑一个跨境/海南商品"
+    },
+    {
+      "href": "/docs/api-docs/14/1830",
+      "text": "/product/qualityDetail\n商品信息质量分查询API"
+    },
+    {
+      "href": "/docs/api-docs/14/4465",
+      "text": "/product/listChannelProduct\n检索渠道商品"
+    },
+    {
+      "href": "/docs/api-docs/14/2148",
+      "text": "/product/isv/queryClueAuditStatus\n查询线索提报审核结果"
+    },
+    {
+      "href": "/docs/api-docs/14/1822",
+      "text": "/sku/editPrice\n编辑sku价格"
+    },
+    {
+      "href": "/docs/api-docs/14/252",
+      "text": "/product/setOffline\n商品下架接口"
+    },
+    {
+      "href": "/docs/api-docs/14/61",
+      "text": "/product/del\n删除商品"
+    },
+    {
+      "href": "/docs/api-docs/14/2428",
+      "text": "/product/getRecommendName\n根据商品信息推荐商品标题相关信息"
+    },
+    {
+      "href": "/docs/api-docs/14/2195",
+      "text": "/product/isv/getClueList\n提供给isv，根据店铺获取线索"
+    },
+    {
+      "href": "/docs/api-docs/14/251",
+      "text": "/product/setOnline\n拍卖商品上架接口-仅限拍卖商品使用"
+    },
+    {
+      "href": "/docs/api-docs/14/4801",
+      "text": "/product/isv/scanClue\n扫描获取商机中心全量线索信息"
+    },
+    {
+      "href": "/docs/api-docs/14/1267",
+      "text": "/brand/list\n根据类目id获取可选品牌"
+    },
+    {
+      "href": "/docs/api-docs/14/2696",
+      "text": "/superm/product/queryProductSyncTask\n查询异步执行的根任务列表"
+    },
+    {
+      "href": "/docs/api-docs/14/1382",
+      "text": "/product/qualificationConfig\n获取类目下需要填写的资质列表"
+    },
+    {
+      "href": "/docs/api-docs/14/2787",
+      "text": "/microapp/generateCombination\n生成组合购"
+    },
+    {
+      "href": "/docs/api-docs/14/2768",
+      "text": "/compass/CommonProductQueryData\n获取商品搜索词"
+    },
+    {
+      "href": "/docs/api-docs/14/2677",
+      "text": "/trade/TopSearchQueryPredict\n商品标题热搜词推荐"
+    },
+    {
+      "href": "/docs/api-docs/14/2318",
+      "text": "/product/isv/batchGetClueSubmitStatus\n批量查询线索的提报状态"
+    },
+    {
+      "href": "/docs/api-docs/14/86",
+      "text": "/sku/editCode\n修改sku编码"
+    },
+    {
+      "href": "/docs/api-docs/14/1436",
+      "text": "/brand/getSug\n通过前缀匹配召回品牌信息"
+    },
+    {
+      "href": "/docs/api-docs/14/1500",
+      "text": "/brand/convert\n兼容老品牌id转为新品牌"
+    },
+    {
+      "href": "/docs/api-docs/14/1796",
+      "text": "/opptyProduct/getApplyProgress\n机会品提报进度查询"
+    },
+    {
+      "href": "/docs/api-docs/14/1829",
+      "text": "/product/qualityTask\n商品每日诊断任务查询API"
+    },
+    {
+      "href": "/docs/api-docs/14/8379",
+      "text": "/product/batchOfflineProducts\n批量下架商品接口"
+    },
+    {
+      "href": "/docs/api-docs/14/8367",
+      "text": "/product/imgWhiteGroundCheck\n白底图校验"
+    },
+    {
+      "href": "/docs/api-docs/14/8120",
+      "text": "/product/batchSearchDiaProductInfo\n获取商品生命周期标签"
+    },
+    {
+      "href": "/docs/api-docs/14/8106",
+      "text": "/product/getShopHostingInfo\n查询商家是否已开启AI生图托管"
+    },
+    {
+      "href": "/docs/api-docs/14/8105",
+      "text": "/product/updateMaterialHostingSwitch\n开启/关闭生图托管状态"
+    },
+    {
+      "href": "/docs/api-docs/14/7876",
+      "text": "/product/openAutoSizeTemplateOptimize\n店铺开启尺码表自动优化"
+    },
+    {
+      "href": "/docs/api-docs/14/7875",
+      "text": "/product/queryAutoSizeTemplateOptimizeConfig\n查询店铺尺码表自动优化配置（是否允许出自动优化弹窗"
+    },
+    {
+      "href": "/docs/api-docs/14/7725",
+      "text": "/open/createProductVideoCheckTask\n创建商品主图视频质检任务"
+    },
+    {
+      "href": "/docs/api-docs/14/7724",
+      "text": "/open/getProductVideoCheckResult\n获取商品主图视频质检结果"
+    },
+    {
+      "href": "/docs/api-docs/14/7696",
+      "text": "/open/isExposureProducts\n是否曝光商品"
+    },
+    {
+      "href": "/docs/api-docs/14/7636",
+      "text": "/cpaypromotion/queryProductCpayPromotionAndShopStatus\n查询商品管理可报名的月付优惠活动"
+    },
+    {
+      "href": "/docs/api-docs/14/7605",
+      "text": "/open/submitRejectionReason\n提交不采纳类目预测结果的原因"
+    },
+    {
+      "href": "/docs/api-docs/14/7494",
+      "text": "/product/queryPropAutoOptimizeConfig\n查询店铺属性自动优化配置（是否开启"
+    },
+    {
+      "href": "/docs/api-docs/14/7493",
+      "text": "/product/openPropAutoOptimize\n开启店铺属性自动优化"
+    },
+    {
+      "href": "/docs/api-docs/14/7203",
+      "text": "/product/getPublishProductLimit\n获取店铺发品限额"
+    },
+    {
+      "href": "/docs/api-docs/14/7109",
+      "text": "/product/auditAutoRectifyGrant\n商品驳回自动整改授权"
+    },
+    {
+      "href": "/docs/api-docs/14/7108",
+      "text": "/product/getProductShopRule\n获取商品相关店铺维度的规则"
+    },
+    {
+      "href": "/docs/api-docs/14/4466",
+      "text": "/product/removeChannelProduct\n删除渠道品"
+    },
+    {
+      "href": "/docs/api-docs/14/4464",
+      "text": "/product/offlineChannelProduct\n下架渠道商品"
+    },
+    {
+      "href": "/docs/api-docs/14/4463",
+      "text": "/product/onlineChannelProduct\n上架渠道品"
+    },
+    {
+      "href": "/docs/api-docs/14/4425",
+      "text": "/buyin/bindChannelProduct\n渠道品绑定达人"
+    },
+    {
+      "href": "/docs/api-docs/14/4424",
+      "text": "/buyin/queryShopSelfAuthors\n店铺自播达人"
+    },
+    {
+      "href": "/docs/api-docs/14/4423",
+      "text": "/buyin/channelBindAuthors\n查询渠道商品绑定的达人列表"
+    },
+    {
+      "href": "/docs/api-docs/14/4276",
+      "text": "/product/getCascadeValue\n获取级联属性"
+    },
+    {
+      "href": "/docs/api-docs/14/4275",
+      "text": "/product/getCategoryPropertyValue\n查询属性项的属性值"
+    },
+    {
+      "href": "/docs/api-docs/14/3392",
+      "text": "/product/addCombination\n创建商品搭配"
+    },
+    {
+      "href": "/docs/api-docs/14/3368",
+      "text": "/product/combinationList\n批量查询某个创建者创建的搭配id"
+    },
+    {
+      "href": "/docs/api-docs/14/3367",
+      "text": "/product/batchGetCombination\n批量查询搭配详情"
+    },
+    {
+      "href": "/docs/api-docs/14/2946",
+      "text": "/product/cancelAudit\n取消正在审核中的商品"
+    },
+    {
+      "href": "/docs/api-docs/14/2769",
+      "text": "/compass/CommonProductSaleDataByDay\n获取商品天级指标数据"
+    },
+    {
+      "href": "/docs/api-docs/14/2758",
+      "text": "/spu/getAuditInfo\n查询SPU审核记录"
+    },
+    {
+      "href": "/docs/api-docs/14/2710",
+      "text": "/trade/TopSearchQueryFilter\n商品标题热搜词推荐过滤"
+    },
+    {
+      "href": "/docs/api-docs/14/2699",
+      "text": "/superm/product/batchApplyStoreProductPrice\n将店铺主品的价格应用至门店子品 (异步执行)"
+    },
+    {
+      "href": "/docs/api-docs/14/2310",
+      "text": "/spu/batchUploadImg\n批量上传SPU详情图和实物图"
+    },
+    {
+      "href": "/docs/api-docs/14/1993",
+      "text": "/product/editComponentTemplate\n编辑尺码模板"
+    },
+    {
+      "href": "/docs/api-docs/14/1992",
+      "text": "/product/createComponentTemplateV2\n创建尺码模板"
+    },
+    {
+      "href": "/docs/api-docs/14/1990",
+      "text": "/product/getComponentTemplate\n分页查询模板列表"
+    }
+  ],
+  "库存API": [
+    {
+      "href": "/docs/api-docs/34/155",
+      "text": "/sku/syncStock\n全量/增量更新商品sku库存"
+    },
+    {
+      "href": "/docs/api-docs/34/936",
+      "text": "/sku/stockNum\n查询商品规格库存"
+    },
+    {
+      "href": "/docs/api-docs/34/298",
+      "text": "/sku/syncStockBatch\n库存批量同步接口"
+    },
+    {
+      "href": "/docs/api-docs/34/2535",
+      "text": "/warehouse/bindFencesByStore\n绑定门店和电子围栏"
+    },
+    {
+      "href": "/docs/api-docs/34/1778",
+      "text": "/warehouse/createFence\n创建电子围栏"
+    },
+    {
+      "href": "/docs/api-docs/34/1857",
+      "text": "/warehouse/info\n查询区域仓"
+    },
+    {
+      "href": "/docs/api-docs/34/1858",
+      "text": "/warehouse/list\n批量查询区域仓"
+    },
+    {
+      "href": "/docs/api-docs/34/1862",
+      "text": "/warehouse/createBatch\n批量创建区域仓"
+    },
+    {
+      "href": "/docs/api-docs/34/1856",
+      "text": "/warehouse/edit\n编辑区域仓"
+    },
+    {
+      "href": "/docs/api-docs/34/2062",
+      "text": "/warehouse/bindFences\n仓绑定电子围栏（废弃）"
+    },
+    {
+      "href": "/docs/api-docs/34/760",
+      "text": "/warehouse/adjustInventory\n库存调整(盘点和转移)"
+    },
+    {
+      "href": "/docs/api-docs/34/1899",
+      "text": "/warehouse/removeAddr\n地址与区域仓解绑"
+    },
+    {
+      "href": "/docs/api-docs/34/1855",
+      "text": "/warehouse/create"
+    },
+    {
+      "href": "/docs/api-docs/34/1859",
+      "text": "/warehouse/setAddr\n绑定单个地址到区域仓"
+    },
+    {
+      "href": "/docs/api-docs/34/1861",
+      "text": "/warehouse/setAddrBatch"
+    },
+    {
+      "href": "/docs/api-docs/34/1863",
+      "text": "/warehouse/setPriority"
+    },
+    {
+      "href": "/docs/api-docs/34/2390",
+      "text": "/warehouse/createV2\n单个仓创建v2版本"
+    }
+  ],
+  "订单API": [
+    {
+      "href": "/docs/api-docs/15/1343",
+      "text": "/order/orderDetail\n订单详情查询"
+    },
+    {
+      "href": "/docs/api-docs/15/1342",
+      "text": "/order/searchList\n订单列表查询"
+    },
+    {
+      "href": "/docs/api-docs/15/1842",
+      "text": "/order/invoiceList\n查看商家开票列表"
+    },
+    {
+      "href": "/docs/api-docs/15/7110",
+      "text": "/coupons/SendCodeByPlatform\n商家接单（触发平台发码）"
+    },
+    {
+      "href": "/docs/api-docs/15/7383",
+      "text": "/order/batchBindSerialNumber\n上传序列号"
+    },
+    {
+      "href": "/docs/api-docs/15/7024",
+      "text": "/address/delAftersaleAddress\n删除商家地址库单条地址。"
+    },
+    {
+      "href": "/docs/api-docs/15/568",
+      "text": "/order/addOrderRemark\n为商家提供订单备注接口"
+    },
+    {
+      "href": "/docs/api-docs/15/290",
+      "text": "/order/addressModify\n用于卖家和买家沟通后，主动帮买家修改收货信息"
+    },
+    {
+      "href": "/docs/api-docs/15/1832",
+      "text": "/order/serviceDetail\n商家服务单详情"
+    },
+    {
+      "href": "/docs/api-docs/15/500",
+      "text": "/order/AddressAppliedSwitch\n支持调用后打开（或关闭）卖家针对买家收货地址变更的审核流程"
+    },
+    {
+      "href": "/docs/api-docs/15/1836",
+      "text": "/order/addressConfirm\n买家地址变更确认"
+    },
+    {
+      "href": "/docs/api-docs/15/1785",
+      "text": "/order/review\n商家回传订单审核结果"
+    },
+    {
+      "href": "/docs/api-docs/15/982",
+      "text": "/order/batchDecrypt\n批量解密接口"
+    },
+    {
+      "href": "/docs/api-docs/15/4042",
+      "text": "/order/merge\n合单校验接口"
+    },
+    {
+      "href": "/docs/api-docs/15/487",
+      "text": "/order/batchEncrypt\n批量加密接口"
+    },
+    {
+      "href": "/docs/api-docs/15/3615",
+      "text": "/order/searchByReceiver\n根据收件人姓名、手机号查询订单"
+    },
+    {
+      "href": "/docs/api-docs/15/2797",
+      "text": "/trace/batchRecord\n订单链路监控批量回传轨迹信息"
+    },
+    {
+      "href": "/docs/api-docs/15/2795",
+      "text": "/trace/checkShop\n订单链路监控检查用户是否开通"
+    },
+    {
+      "href": "/docs/api-docs/15/2793",
+      "text": "/trace/cancelShop\n订单链路监控删除用户"
+    },
+    {
+      "href": "/docs/api-docs/15/2794",
+      "text": "/trace/addShop\n订单链路监控添加用户"
+    },
+    {
+      "href": "/docs/api-docs/15/2735",
+      "text": "/logistics/virtualServicePushCallRecord\n虚拟号服务商通话记录回传"
+    },
+    {
+      "href": "/docs/api-docs/15/1835",
+      "text": "/order/getServiceList\n获取服务单列表"
+    },
+    {
+      "href": "/docs/api-docs/15/1917",
+      "text": "/order/replyService\n回复服务请求"
+    },
+    {
+      "href": "/docs/api-docs/15/508",
+      "text": "/order/batchSensitive\n批量脱敏接口"
+    },
+    {
+      "href": "/docs/api-docs/15/892",
+      "text": "/order/invoiceUpload\n订单发票上传"
+    },
+    {
+      "href": "/docs/api-docs/15/1289",
+      "text": "/order/addSerialNumber\n订单商品的序列号上传"
+    },
+    {
+      "href": "/docs/api-docs/15/1550",
+      "text": "/order/ordeReportList\n明文手机号报备接口"
+    },
+    {
+      "href": "/docs/api-docs/15/1915",
+      "text": "/order/getUserOrderList\n按用户id查询订单简要信息"
+    },
+    {
+      "href": "/docs/api-docs/15/1841",
+      "text": "/antispam/orderQuery\n用户在ISV查看订单、下载订单时, 上报事件到风控系统"
+    },
+    {
+      "href": "/docs/api-docs/15/1840",
+      "text": "/antispam/orderSend\n支持使用在ISV系统商户发送（外部系统或模块，如快递平台）场景"
+    },
+    {
+      "href": "/docs/api-docs/15/1837",
+      "text": "/order/getCrossBorderFulfillInfo\n获取跨境承运单信息"
+    },
+    {
+      "href": "/docs/api-docs/15/1838",
+      "text": "/order/addresSwitchConfig\n获取App对于商家订单修改地址的审核权限"
+    },
+    {
+      "href": "/docs/api-docs/15/7650",
+      "text": "/bigCustomer/queryCounting\n查询统计销量结果"
+    },
+    {
+      "href": "/docs/api-docs/15/6662",
+      "text": "/coupons/CertSyncFailedCancelOrder\n商家主动取消"
+    },
+    {
+      "href": "/docs/api-docs/15/6649",
+      "text": "/order/mergeV2\n合单校验接口"
+    },
+    {
+      "href": "/docs/api-docs/15/3381",
+      "text": "/order/orderCancel\n商家取消待支付订单"
+    },
+    {
+      "href": "/docs/api-docs/15/2676",
+      "text": "/logistics/virtualServicePushSms\n短信回传"
+    }
+  ],
+  "售后退款API": [
+    {
+      "href": "/docs/api-docs/17/8135",
+      "text": "/second/volcengineRetainOrder\n核心入口，用于对单一退货的订单进行全面评估"
+    },
+    {
+      "href": "/docs/api-docs/17/8136",
+      "text": "/second/volcengineFeedbackOrderRetention\nAI挽单回调接口"
+    },
+    {
+      "href": "/docs/api-docs/17/1095",
+      "text": "/afterSale/Detail\n提供给商家获取售后单详情信息"
+    },
+    {
+      "href": "/docs/api-docs/17/6908",
+      "text": "/address/getAftersaleStrategy\n根据策略ID获取单个策略信息"
+    },
+    {
+      "href": "/docs/api-docs/17/1295",
+      "text": "/afterSale/List\n售后列表接口"
+    },
+    {
+      "href": "/docs/api-docs/17/560",
+      "text": "/afterSale/operate\n售后审核接口聚合版"
+    },
+    {
+      "href": "/docs/api-docs/17/6910",
+      "text": "/address/updateAftersaleStrategy\n更新地址策略"
+    },
+    {
+      "href": "/docs/api-docs/17/6907",
+      "text": "/address/listAftersaleStrategy\n地址策略列表接口"
+    },
+    {
+      "href": "/docs/api-docs/17/1908",
+      "text": "/afterSale/fillLogistics\n售后商家填写物流信息"
+    },
+    {
+      "href": "/docs/api-docs/17/897",
+      "text": "/afterSale/applyLogisticsIntercept\n申请物流拦截"
+    },
+    {
+      "href": "/docs/api-docs/17/1540",
+      "text": "/afterSale/rejectReasonCodeList\n查询商家拒绝原因列表"
+    },
+    {
+      "href": "/docs/api-docs/17/585",
+      "text": "/afterSale/addOrderRemark\n店家给售后单添加备注"
+    },
+    {
+      "href": "/docs/api-docs/17/764",
+      "text": "/afterSale/OpenAfterSaleChannel\n打开售后通道，使用户可以发起超级售后"
+    },
+    {
+      "href": "/docs/api-docs/17/768",
+      "text": "/afterSale/buyerExchangeConfirm\n商家确认是否收到换货"
+    },
+    {
+      "href": "/docs/api-docs/17/816",
+      "text": "/afterSale/CancelSendGoodsSuccess\n商家在未发货/已发货退款途中发送取消发货的状态"
+    },
+    {
+      "href": "/docs/api-docs/17/815",
+      "text": "/afterSale/returnGoodsToWareHouseSuccess\n商家确认售后单对应的用户退货入仓成功"
+    },
+    {
+      "href": "/docs/api-docs/17/770",
+      "text": "/afterSale/timeExtend\n商家延时收获接口"
+    },
+    {
+      "href": "/docs/api-docs/17/769",
+      "text": "/afterSale/buyerExchange\n商家处理换货请求接口"
+    },
+    {
+      "href": "/docs/api-docs/17/8096",
+      "text": "/open/getOrderRecoveryRecommendation\n查询挽单策略"
+    },
+    {
+      "href": "/docs/api-docs/17/8095",
+      "text": "/open/reportOrderRecoveryResult\n上报挽单执行结果"
+    },
+    {
+      "href": "/docs/api-docs/17/6922",
+      "text": "/address/listStrategyBindProducts\n分页获取地址库策略绑定的商品"
+    },
+    {
+      "href": "/docs/api-docs/17/6909",
+      "text": "/address/delAftersaleStrategy\n删除售后地址策略"
+    },
+    {
+      "href": "/docs/api-docs/17/6905",
+      "text": "/address/addAftersaleStrategy\n添加售后地址策略"
+    }
+  ],
+  "物流发货API": [
+    {
+      "href": "/docs/api-docs/16/8212",
+      "text": "/order/checkPreDelivery\n查询商家/订单是否可用预发货"
+    },
+    {
+      "href": "/docs/api-docs/16/8213",
+      "text": "/order/reportPreDeliveryOrder\n上报预发货订单"
+    },
+    {
+      "href": "/docs/api-docs/16/2363",
+      "text": "/logistics/terminalRouteData\n末端操作数据回传"
+    },
+    {
+      "href": "/docs/api-docs/16/2856",
+      "text": "/logistics/getRecommendedAndDeliveryExpressByOrder\n查询订单维度快递可达及推荐服务"
+    },
+    {
+      "href": "/docs/api-docs/16/1627",
+      "text": "/power/updateCollectTime\n物流商推送改约时间"
+    },
+    {
+      "href": "/docs/api-docs/16/718",
+      "text": "/order/logisticsAdd\n订单发货接口"
+    },
+    {
+      "href": "/docs/api-docs/16/2147",
+      "text": "/logistics/resourceAbilityServiceArea\n服务商能力的服务范围同步"
+    },
+    {
+      "href": "/docs/api-docs/16/1558",
+      "text": "/power/isByteDancePackage\n末端服务字节面单信息查询（仅用于兼容老物流网关）"
+    },
+    {
+      "href": "/docs/api-docs/16/1662",
+      "text": "/freightTemplate/update\n更新运费模板"
+    },
+    {
+      "href": "/docs/api-docs/16/1661",
+      "text": "/freightTemplate/create\n创建运费模板"
+    },
+    {
+      "href": "/docs/api-docs/16/2157",
+      "text": "/freightTemplate/detail\n获取运费模板详情"
+    },
+    {
+      "href": "/docs/api-docs/16/562",
+      "text": "/order/logisticsAddMultiPack\n一单多包发货接口（不适用于即时零售业务）"
+    },
+    {
+      "href": "/docs/api-docs/16/563",
+      "text": "/order/logisticsAddSinglePack\n支持多个订单发同一个物流包裹（不适用于即时零售业务）"
+    },
+    {
+      "href": "/docs/api-docs/16/7189",
+      "text": "/instantShopping/getStoreAutoCallRider\n查询自动呼叫运力配置"
+    },
+    {
+      "href": "/docs/api-docs/16/7155",
+      "text": "/instantShopping/GetCallRecord\n查询骑手-用户通话记录"
+    },
+    {
+      "href": "/docs/api-docs/16/6585",
+      "text": "/instantShopping/distribution/notifyDeliveryStatus\n抖音侧订单状态变更回调"
+    },
+    {
+      "href": "/docs/api-docs/16/6584",
+      "text": "/instantShopping/distribution/exceptionReport\n骑手上报异常"
+    },
+    {
+      "href": "/docs/api-docs/16/2032",
+      "text": "/logistics/terminalCancelOrder\n物流商取消"
+    },
+    {
+      "href": "/docs/api-docs/16/2462",
+      "text": "/logistics/sendByteDanceMessage\n短信代发"
+    },
+    {
+      "href": "/docs/api-docs/16/2016",
+      "text": "/logistics/updateTerminalOrder\n末端订单状态推送"
+    },
+    {
+      "href": "/docs/api-docs/16/2743",
+      "text": "/superm/getShipmentInfo\n运力配送状态查询接口"
+    },
+    {
+      "href": "/docs/api-docs/16/2800",
+      "text": "/superm/setStoreAutoCallRider\n新增自动呼叫运力配置"
+    },
+    {
+      "href": "/docs/api-docs/16/2740",
+      "text": "/superm/getDispatcherInfo\n运力呼叫询价/取消呼叫询价（正向）"
+    },
+    {
+      "href": "/docs/api-docs/16/2905",
+      "text": "/logistics/getDistrict\n四级地址查询接口"
+    },
+    {
+      "href": "/docs/api-docs/16/4182",
+      "text": "/order/uploadextrapackage\n订单额外运单信息上传接口"
+    },
+    {
+      "href": "/docs/api-docs/16/526",
+      "text": "/crossBorder/orderOperate\n服务商回传仓储"
+    },
+    {
+      "href": "/docs/api-docs/16/541",
+      "text": "/order/logisticsCompanyList\n获取快递公司列表"
+    },
+    {
+      "href": "/docs/api-docs/16/2456",
+      "text": "/logistics/ind/orderStatusPush\n订单状态回传"
+    },
+    {
+      "href": "/docs/api-docs/16/2920",
+      "text": "/logistics/operatorAppointmentEventRequest\n服务商预约事件"
+    },
+    {
+      "href": "/docs/api-docs/16/1471",
+      "text": "/power/netsiteUpdate\n网点信息更新（仅用于兼容老物流网关）"
+    },
+    {
+      "href": "/docs/api-docs/16/1478",
+      "text": "/power/verifyFetchCode\n取件码核销（仅用于兼容老物流网关）"
+    },
+    {
+      "href": "/docs/api-docs/16/1774",
+      "text": "/power/queryPaymentStatus\n逆向支付信息查询"
+    },
+    {
+      "href": "/docs/api-docs/16/1850",
+      "text": "/dutyFree/orderOperate\n海南项目服务商回传实操节点"
+    },
+    {
+      "href": "/docs/api-docs/16/2011",
+      "text": "/power/HandleVirtualTelConnect\n虚拟号服务商回传虚拟号接通事件"
+    },
+    {
+      "href": "/docs/api-docs/16/1920",
+      "text": "/power/virtualServicePushCallRecord\n虚拟号服务商通话记录回传（仅用于兼容老物流网关）"
+    },
+    {
+      "href": "/docs/api-docs/16/539",
+      "text": "/order/logisticsEditByPack\n更新一单多包/合单发货物流信息"
+    },
+    {
+      "href": "/docs/api-docs/16/390",
+      "text": "/order/logisticsEdit\n更新整单发货物流信息"
+    },
+    {
+      "href": "/docs/api-docs/16/1573",
+      "text": "/power/homeDeliveryCallback\n送货上门履约结果推送（仅用于兼容老物流网关）"
+    },
+    {
+      "href": "/docs/api-docs/16/2455",
+      "text": "/logistics/ind/aoi/push\n门店入驻后，自动/手动向承运商同步门店信息"
+    },
+    {
+      "href": "/docs/api-docs/16/1848",
+      "text": "/address/getProvince\n获取四级地址全量省份信息"
+    },
+    {
+      "href": "/docs/api-docs/16/1844",
+      "text": "/address/getAreasByProvince\n根据省获取全量四级地址"
+    },
+    {
+      "href": "/docs/api-docs/16/565",
+      "text": "/freightTemplate/list\n获取运费模板列表"
+    },
+    {
+      "href": "/docs/api-docs/16/527",
+      "text": "/crossborder/orderCustomClearance\n服务商回告清关状态"
+    },
+    {
+      "href": "/docs/api-docs/16/528",
+      "text": "/crossborder/orderLogisticsTrace\n服务商回传国际干线作业节点"
+    },
+    {
+      "href": "/docs/api-docs/16/549",
+      "text": "/logistics/customTemplateList\n查询商家自定义区域数据"
+    },
+    {
+      "href": "/docs/api-docs/16/401",
+      "text": "/crossBorder/orderConfirm\n服务商接单"
+    },
+    {
+      "href": "/docs/api-docs/16/1615",
+      "text": "/power/expressSendMessage\n快递短信代发接口（仅用于兼容老物流网关）"
+    },
+    {
+      "href": "/docs/api-docs/16/1572",
+      "text": "/power/courierStationUpdate\n末端资源更新（仅用于兼容老物流网关）"
+    },
+    {
+      "href": "/docs/api-docs/16/1571",
+      "text": "/power/decryptByteDanceMobile\n末端服务异常单数据解密接口（仅用于兼容老物流网关）"
+    },
+    {
+      "href": "/docs/api-docs/16/1560",
+      "text": "/power/notifyRelationTicket\n物流商关联工单推送（仅用于兼容老物流网关）"
+    },
+    {
+      "href": "/docs/api-docs/16/1559",
+      "text": "/power/sendByteDanceMessage\n末端服务短信待发（仅用于兼容老物流网关）"
+    },
+    {
+      "href": "/docs/api-docs/16/1548",
+      "text": "/power/batchCallback\nbatchCallback接口（仅用于兼容老物流网关）"
+    },
+    {
+      "href": "/docs/api-docs/16/1489",
+      "text": "/power/ebillAccountCharge\n面单余额充值/撤销（仅用于兼容老物流网关）"
+    },
+    {
+      "href": "/docs/api-docs/16/1480",
+      "text": "/power/updateInterceptionInfo\n拦截成功退回结果回传接口（仅用于兼容老物流网关）"
+    },
+    {
+      "href": "/docs/api-docs/16/1475",
+      "text": "/power/register\n订阅物流（仅用于兼容老物流网关）"
+    },
+    {
+      "href": "/docs/api-docs/16/1637",
+      "text": "/power/pushNetCodeMapList\n段码配置数据"
+    },
+    {
+      "href": "/docs/api-docs/16/1793",
+      "text": "/power/pickupCodeCallback\n末端服务商回传取件码（仅用于兼容老物流网关）"
+    },
+    {
+      "href": "/docs/api-docs/16/7952",
+      "text": "/logistics/merchant/updateCalendar\n商家上传上门自取日历"
+    },
+    {
+      "href": "/docs/api-docs/16/7951",
+      "text": "/logistics/merchant/confirmUpdateResult\n确认更新结果"
+    },
+    {
+      "href": "/docs/api-docs/16/7496",
+      "text": "/promise/SaveTemplate\n创建时效规则"
+    },
+    {
+      "href": "/docs/api-docs/16/7190",
+      "text": "/instantShopping/setStoreAutoCallRider\n新增自动呼叫运力配置"
+    },
+    {
+      "href": "/docs/api-docs/16/7170",
+      "text": "/order/queryOrderLogistics\n查询订单包裹物流"
+    },
+    {
+      "href": "/docs/api-docs/16/6394",
+      "text": "/instantShopping/notifyPickingStatus\n回传商家拣货状态"
+    },
+    {
+      "href": "/docs/api-docs/16/6200",
+      "text": "/freightTemplate/delete\n删除运费模板"
+    },
+    {
+      "href": "/docs/api-docs/16/4778",
+      "text": "/instantShopping/cancelDelivery\n平台运力取消"
+    },
+    {
+      "href": "/docs/api-docs/16/4776",
+      "text": "/instantShopping/getDeliveryListByOrderId\n商家查询抖音配送信息。"
+    },
+    {
+      "href": "/docs/api-docs/16/3845",
+      "text": "/order/queryLogisticsCompanyList\n查询当前商家、订单可用物流公司列表"
+    },
+    {
+      "href": "/docs/api-docs/16/3579",
+      "text": "/logistics/QueryRecycleCateByLevelForPaging\n回收服务商查询字节回收类目"
+    },
+    {
+      "href": "/docs/api-docs/16/2742",
+      "text": "/superm/cancelPlatformPickUp\n运力取消（逆向）"
+    },
+    {
+      "href": "/docs/api-docs/16/2671",
+      "text": "/logistics/pushPickupCode\n末端服务商推送取件码信息"
+    },
+    {
+      "href": "/docs/api-docs/16/2020",
+      "text": "/crossBorder/receiveReceiptOfCustomsWayBill\n快递服务商将运单申报的回执回告至平台"
+    }
+  ],
+  "电子面单API": [
+    {
+      "href": "/docs/api-docs/1262/1339",
+      "text": "/logistics/newCreateOrder\n商家ERP/ISV 向字节电子面单系统获取单号和打印信息"
+    },
+    {
+      "href": "/docs/api-docs/1262/4142",
+      "text": "/logistics/fetchBluetoothCmd\n获取蓝牙打印指令"
+    },
+    {
+      "href": "/docs/api-docs/1262/1843",
+      "text": "/logistics/listShopNetsite\n查询商家和物流商的订购关系以及物流单号使用情况"
+    },
+    {
+      "href": "/docs/api-docs/1262/494",
+      "text": "/logistics/updateOrder\n更新收件人信息 以及发件人名字联系方式信息，不支持顺丰速递更新面单信息（支持顺丰速递更新重量体积）"
+    },
+    {
+      "href": "/docs/api-docs/1262/1075",
+      "text": "/logistics/appendSubOrder\n追加子母件"
+    },
+    {
+      "href": "/docs/api-docs/1262/397",
+      "text": "/logistics/cancelOrder\n用于ISV/商家ERP系统 端发起取消已获取的电子面单号"
+    },
+    {
+      "href": "/docs/api-docs/1262/582",
+      "text": "/logistics/getOutRange\n查询地址快递是否可以送达"
+    },
+    {
+      "href": "/docs/api-docs/1262/476",
+      "text": "/logistics/templateList\n获取商家所有标准模版信息"
+    },
+    {
+      "href": "/docs/api-docs/1262/490",
+      "text": "/logistics/waybillApply\n获取面单信息"
+    },
+    {
+      "href": "/docs/api-docs/1262/1578",
+      "text": "/logistics/deliveryNotice\n订单放行/回退"
+    },
+    {
+      "href": "/docs/api-docs/1262/1737",
+      "text": "/logistics/getDesignTemplateList\n查询商家自定义模板（新版）"
+    },
+    {
+      "href": "/docs/api-docs/1262/1852",
+      "text": "/logistics/getCustomTemplateList\n查询商家自定义区模板（新版）"
+    },
+    {
+      "href": "/docs/api-docs/1262/1851",
+      "text": "/logistics/trackNoRouteDetail\n运单轨迹查询接口"
+    }
+  ],
+  "账单API": [
+    {
+      "href": "/docs/api-docs/46/1430",
+      "text": "/order/getShopAccountItem\n资金流水明细接口(境内)"
+    },
+    {
+      "href": "/docs/api-docs/46/1433",
+      "text": "/order/downloadShopAccountItemFile\n资金流水明细文件下载(境内)"
+    },
+    {
+      "href": "/docs/api-docs/46/1431",
+      "text": "/order/downloadShopAccountItem\n资金流水明细下载请求(境内)"
+    },
+    {
+      "href": "/docs/api-docs/46/1191",
+      "text": "/order/downloadSettleItemToShop\n结算账单下载请求（境内)"
+    },
+    {
+      "href": "/docs/api-docs/46/1193",
+      "text": "/order/downloadToShop\n结算账单文件下载-URL方式（境内）"
+    },
+    {
+      "href": "/docs/api-docs/46/7226",
+      "text": "/order/getSettleBillDetailV3\n商家结算账单"
+    },
+    {
+      "href": "/docs/api-docs/46/6641",
+      "text": "/sendHome/settle/getShopAccountItem\n资金流水明细接口(境内,关联门店ID门店自编码)"
+    }
+  ],
+  "短信API": [
+    {
+      "href": "/docs/api-docs/163/6664",
+      "text": "/sms/audience/send\n按人群包发送短信"
+    },
+    {
+      "href": "/docs/api-docs/163/4014",
+      "text": "/sms/applyVmsTemplate\n申请创建图文短信模板"
+    },
+    {
+      "href": "/docs/api-docs/163/8167",
+      "text": "/sms/template/bind\n绑定短信模板"
+    },
+    {
+      "href": "/docs/api-docs/163/4017",
+      "text": "/sms/getVmsTemplateList\n获取视频短信模板list"
+    },
+    {
+      "href": "/docs/api-docs/163/1514",
+      "text": "/sms/template/search\n查询短信模板"
+    },
+    {
+      "href": "/docs/api-docs/163/1527",
+      "text": "/sms/template/apply\n提交短信模板申请单"
+    },
+    {
+      "href": "/docs/api-docs/163/1518",
+      "text": "/sms/template/delete\n删除短信模板"
+    },
+    {
+      "href": "/docs/api-docs/163/1525",
+      "text": "/sms/sign/apply\n提交短信签名申请单"
+    },
+    {
+      "href": "/docs/api-docs/163/1523",
+      "text": "/sms/sign/apply/list\n查看短信签名申请单"
+    },
+    {
+      "href": "/docs/api-docs/163/1519",
+      "text": "/sms/sign/apply/revoke\n撤销短信签名申请单"
+    },
+    {
+      "href": "/docs/api-docs/163/8148",
+      "text": "/sms/sign/getShopSign\n获取商家在抖店的最新审核通过签名"
+    },
+    {
+      "href": "/docs/api-docs/163/1515",
+      "text": "/sms/sign/search\n查看短信签名"
+    },
+    {
+      "href": "/docs/api-docs/163/7659",
+      "text": "/sms/audience/createCrowdTask\n创建种子人群任务"
+    },
+    {
+      "href": "/docs/api-docs/163/1521",
+      "text": "/sms/batchSend\n批量短信发送"
+    },
+    {
+      "href": "/docs/api-docs/163/1522",
+      "text": "/sms/send\n短信发送"
+    },
+    {
+      "href": "/docs/api-docs/163/1516",
+      "text": "/sms/template/apply/list\n查询短信模板申请单"
+    },
+    {
+      "href": "/docs/api-docs/163/7929",
+      "text": "/sms/saveSecondPartyAudience\n保存二方人群"
+    },
+    {
+      "href": "/docs/api-docs/163/7503",
+      "text": "/sms/queryPublicDomainAudience\n查询公域标签圈选的人群包"
+    },
+    {
+      "href": "/docs/api-docs/163/7502",
+      "text": "/sms/getPreviewUserAmount\n预估公域标签圈选人群包人群数量"
+    },
+    {
+      "href": "/docs/api-docs/163/7658",
+      "text": "/sms/audience/listCrowdTask\n获取种子人群任务列表"
+    },
+    {
+      "href": "/docs/api-docs/163/1517",
+      "text": "/sms/sendResult\n查询短信发送结果"
+    },
+    {
+      "href": "/docs/api-docs/163/6878",
+      "text": "/member/queryOutboundAudiencePlan\n外呼计划生产信息查询"
+    },
+    {
+      "href": "/docs/api-docs/163/6879",
+      "text": "/member/submitOutboundAudiencePlan\n提交外呼人群包生成计划"
+    },
+    {
+      "href": "/docs/api-docs/163/6665",
+      "text": "/sms/audience/getSendExecuteReport\n查询任务发送情况"
+    },
+    {
+      "href": "/docs/api-docs/163/1524",
+      "text": "/sms/template/revoke\n撤销短信模板申请单"
+    },
+    {
+      "href": "/docs/api-docs/163/1520",
+      "text": "/sms/sign/delete\n删除短信签名"
+    },
+    {
+      "href": "/docs/api-docs/163/1526",
+      "text": "/sms/public/template\n公共模版查询接口"
+    },
+    {
+      "href": "/docs/api-docs/163/8219",
+      "text": "/sms/getTemplateBizType\n获取模板类型"
+    },
+    {
+      "href": "/docs/api-docs/163/7865",
+      "text": "/recycle/sms/sendSmsTestCode\n发送短信验证码"
+    },
+    {
+      "href": "/docs/api-docs/163/7836",
+      "text": "/recycle/sms/applySmsTemplate\n申请短信模板"
+    },
+    {
+      "href": "/docs/api-docs/163/7835",
+      "text": "/recycle/sms/sendIndustrySms\n发送短信"
+    },
+    {
+      "href": "/docs/api-docs/163/7834",
+      "text": "/recycle/sms/uploadIdentification\n上传服务商资质"
+    },
+    {
+      "href": "/docs/api-docs/163/7833",
+      "text": "/recycle/sms/searchSmsSign\n签名列表接口"
+    },
+    {
+      "href": "/docs/api-docs/163/7832",
+      "text": "/recycle/sms/searchSmsTemplate\n获取短信模板"
+    },
+    {
+      "href": "/docs/api-docs/163/7789",
+      "text": "/sms/sendSmsByTask\n通过父任务发起新的短信发送任务"
+    },
+    {
+      "href": "/docs/api-docs/163/7788",
+      "text": "/sms/saveCombineAudience\n保存生产包交互规则，获取组合人群包"
+    },
+    {
+      "href": "/docs/api-docs/163/7787",
+      "text": "/sms/listAudienceProduce\n获取人群生产包列表"
+    },
+    {
+      "href": "/docs/api-docs/163/7786",
+      "text": "/sms/submitAudienceProduce\n提交人群包圈选生产任务"
+    },
+    {
+      "href": "/docs/api-docs/163/7691",
+      "text": "/sms/sendSmsTestCode\n给测试手机号发送验证码"
+    },
+    {
+      "href": "/docs/api-docs/163/7661",
+      "text": "/sms/audience/listSeedMeta\n获取种子人群元数据接口"
+    },
+    {
+      "href": "/docs/api-docs/163/7660",
+      "text": "/sms/audience/verifyShop\n公域标签短信商家是否符合准入门槛"
+    },
+    {
+      "href": "/docs/api-docs/163/6728",
+      "text": "/sms/GetLabelParamList\n标签参数获取"
+    }
+  ],
+  "精选联盟API": [
+    {
+      "href": "/docs/api-docs/61/469",
+      "text": "/alliance/getOrderList\n查询联盟订单明细"
+    },
+    {
+      "href": "/docs/api-docs/61/637",
+      "text": "/alliance/materialsProductCategory\n类目查询"
+    },
+    {
+      "href": "/docs/api-docs/61/744",
+      "text": "/buyin/applyActivities\n商品团长活动提报接口"
+    },
+    {
+      "href": "/docs/api-docs/61/966",
+      "text": "/alliance/colonelActivityCreateOrUpdate\n团长活动创建/编辑接口"
+    },
+    {
+      "href": "/docs/api-docs/61/968",
+      "text": "/alliance/colonelActivityProduct\n活动商品查询接口"
+    },
+    {
+      "href": "/docs/api-docs/61/971",
+      "text": "/alliance/colonelActivityProductAudit\n专属团长活动商品审核接口"
+    },
+    {
+      "href": "/docs/api-docs/61/972",
+      "text": "/alliance/instituteColonelActivityOperate\n专属团长活动删除接口（下线+删除）"
+    },
+    {
+      "href": "/docs/api-docs/61/1270",
+      "text": "/buyin/institutePidEdit\n抖客PID 编辑"
+    },
+    {
+      "href": "/docs/api-docs/61/1271",
+      "text": "/buyin/institutePidDel\n抖客PID删除"
+    },
+    {
+      "href": "/docs/api-docs/61/1273",
+      "text": "/buyin/institutePidCreate\n抖客PID创建"
+    },
+    {
+      "href": "/docs/api-docs/61/1296",
+      "text": "/buyin/instituteOrderAds\n查询抖客直播间分销订单"
+    },
+    {
+      "href": "/docs/api-docs/61/1330",
+      "text": "/alliance/instituteColonelActivityList\n团长活动查询接口"
+    },
+    {
+      "href": "/docs/api-docs/61/1396",
+      "text": "/buyin/liveShareMaterial\n直播间分销物料查询"
+    },
+    {
+      "href": "/docs/api-docs/61/1454",
+      "text": "/buyin/instPickSourceConvert\n商品选品来源转链"
+    },
+    {
+      "href": "/docs/api-docs/61/1463",
+      "text": "/buyin/kolPidDel\n达人PID删除"
+    },
+    {
+      "href": "/docs/api-docs/61/1493",
+      "text": "/buyin/shopPidMemberCreate\n店铺会员绑定渠道关系创建"
+    },
+    {
+      "href": "/docs/api-docs/61/1497",
+      "text": "/buyin/materialsProductStatus\n商品状态查询"
+    },
+    {
+      "href": "/docs/api-docs/61/1552",
+      "text": "/buyin/colonel/specialApplyList\n查询团长活动特殊申请"
+    },
+    {
+      "href": "/docs/api-docs/61/1553",
+      "text": "/buyin/colonel/specialApplyDeal\n团长活动特殊申请审核"
+    },
+    {
+      "href": "/docs/api-docs/61/1602",
+      "text": "/buyin/instituteOrderMCN\n查询MCN机构的抖音、火山、西瓜和头条的联盟订单，需要MCN机构百应授权"
+    },
+    {
+      "href": "/docs/api-docs/61/1603",
+      "text": "/buyin/instituteOrderColonel\n查询团长抖音、火山、头条和西瓜订单，需要团长百应授权"
+    },
+    {
+      "href": "/docs/api-docs/61/1670",
+      "text": "/buyin/colonelActivityDetail\n获取团长活动详情"
+    },
+    {
+      "href": "/docs/api-docs/61/1671",
+      "text": "/buyin/ShopActivityList\n接口用于商家获取可参与的团长活动，支持报名状态筛选，包括已提报和未提报两种状态"
+    },
+    {
+      "href": "/docs/api-docs/61/1672",
+      "text": "/buyin/originColonelApplyActivities\n团长报名二级团长活动"
+    },
+    {
+      "href": "/docs/api-docs/61/1675",
+      "text": "/buyin/originColonelEnrollableActivityList\n接口用于团长获取可参与的二级团长活动，支持报名状态筛选，包括已提报和未提报两种状态"
+    },
+    {
+      "href": "/docs/api-docs/61/1677",
+      "text": "/buyin/originColonelUnappliedProductList\n团长获取可提报二级团长活动的商品列表"
+    },
+    {
+      "href": "/docs/api-docs/61/1724",
+      "text": "/buyin/kolLiveShare\n获取达人直播间分享链接"
+    },
+    {
+      "href": "/docs/api-docs/61/1725",
+      "text": "/buyin/kolMaterialsProductsSearch\n检索精选联盟商品，需达人/抖客授权"
+    },
+    {
+      "href": "/docs/api-docs/61/1797",
+      "text": "/buyin/shopActivityDetail\n商家侧获取团长活动详情"
+    },
+    {
+      "href": "/docs/api-docs/61/1879",
+      "text": "/buyin/orienPlanAuthors\n查询定向计划作者列表"
+    },
+    {
+      "href": "/docs/api-docs/61/1881",
+      "text": "/alliance/colonelActivityProductExtension\n专属团长活动商品延时接口"
+    },
+    {
+      "href": "/docs/api-docs/61/1882",
+      "text": "/alliance/activityProductCategoryList\n创建活动时候可选择的类目接口"
+    },
+    {
+      "href": "/docs/api-docs/61/1926",
+      "text": "/buyin/activityProductList\n一级团长查询提报活动商品"
+    },
+    {
+      "href": "/docs/api-docs/61/1927",
+      "text": "/buyin/activityProductCancel\n一级团长取消活动提报申请接口"
+    },
+    {
+      "href": "/docs/api-docs/61/2006",
+      "text": "/buyin/kolLivePreviewShare\n达人直播预告转链"
+    },
+    {
+      "href": "/docs/api-docs/61/2008",
+      "text": "/buyin/instituteOrderPick\n选品订单明细查询接口"
+    },
+    {
+      "href": "/docs/api-docs/61/2137",
+      "text": "/buyin/colonel/trusteeshipList\n团长托管商品查询"
+    },
+    {
+      "href": "/docs/api-docs/61/2138",
+      "text": "/buyin/mHandleTrusteeshipApply\n团长托管商品审核"
+    },
+    {
+      "href": "/docs/api-docs/61/2224",
+      "text": "/buyin/instituteLivePreviewList\n获取直播预告及商品信息列表"
+    },
+    {
+      "href": "/docs/api-docs/61/2305",
+      "text": "/buyin/institutionInfo\n获取机构信息"
+    },
+    {
+      "href": "/docs/api-docs/61/2407",
+      "text": "/buyin/queryShopAllianceOrder\n获取商家的联盟订单"
+    },
+    {
+      "href": "/docs/api-docs/61/2408",
+      "text": "/buyin/queryShopAllianceProducts\n联盟商家-查询店铺联盟推广"
+    },
+    {
+      "href": "/docs/api-docs/61/2429",
+      "text": "/buyin/colonelMultiParseActivityUrl\n批量解析团长活动推广链接"
+    },
+    {
+      "href": "/docs/api-docs/61/2430",
+      "text": "/buyin/colonelExtendApplyList\n专属团长活动商品延时申请结果查询"
+    },
+    {
+      "href": "/docs/api-docs/61/2546",
+      "text": "/buyin/distributionRedpackDetailList\n达人抖客红包详情"
+    },
+    {
+      "href": "/docs/api-docs/61/2547",
+      "text": "/buyin/shareRedpack\n抖客红包转链"
+    },
+    {
+      "href": "/docs/api-docs/61/2703",
+      "text": "/buyin/shopMultiSettlementOrders\n商家分次结算订单"
+    },
+    {
+      "href": "/docs/api-docs/61/2704",
+      "text": "/buyin/colonelMultiSettlementOrders\n团长分次结算订单"
+    },
+    {
+      "href": "/docs/api-docs/61/2866",
+      "text": "/buyin/kolProductsDetail\n1、本接口用于查询达人视角下单个或批量推广商品的详情；\n2、如商品推广不可推广（如下架、清退、封禁等情况下），接口会返回为空；商品状态查询接口：/buyin/materialsProductStatus\n3、调用接口前，请先获取精选联盟业务权限：https"
+    },
+    {
+      "href": "/docs/api-docs/61/2895",
+      "text": "/buyin/serviceFeeOrderList\n可查询MCN机构绑定达人周期内百应商达合作订单（包含纯佣及坑位费订单）数据情况"
+    },
+    {
+      "href": "/docs/api-docs/61/3079",
+      "text": "/buyin/doukePidDel\n独立抖客PID删除"
+    },
+    {
+      "href": "/docs/api-docs/61/3080",
+      "text": "/buyin/doukePidEdit\n独立抖客PID编辑"
+    },
+    {
+      "href": "/docs/api-docs/61/3081",
+      "text": "/buyin/doukePidCreate\n独立抖客PID创建"
+    },
+    {
+      "href": "/docs/api-docs/61/3200",
+      "text": "/buyin/doukeRewardOrders\n抖客获取近30天内奖励订单"
+    },
+    {
+      "href": "/docs/api-docs/61/3202",
+      "text": "/buyin/doukeCrowdMatch\n电商用户类型识别接口"
+    },
+    {
+      "href": "/docs/api-docs/61/4010",
+      "text": "/buyin/doukeCommandParseAndShare\n口令解析&转链"
+    },
+    {
+      "href": "/docs/api-docs/61/5908",
+      "text": "/buyin/updateSampleConfs\n批量设置达人买样返款规则"
+    },
+    {
+      "href": "/docs/api-docs/61/7460",
+      "text": "/buyin/getDeliveryActivityProds\n三方获取活动页商品货池"
+    },
+    {
+      "href": "/docs/api-docs/61/8228",
+      "text": "/alliance/colonelBatchAddCaptainGoods\n团长选品库商品批量加入指定活动"
+    },
+    {
+      "href": "/docs/api-docs/61/705",
+      "text": "/buyin/orienPlanList\n商品定向计划查询"
+    },
+    {
+      "href": "/docs/api-docs/61/1460",
+      "text": "/buyin/kolPidCreate\n达人PID创建"
+    },
+    {
+      "href": "/docs/api-docs/61/2283",
+      "text": "/buyin/activityShareCommandParse\n解析分销活动页口令"
+    },
+    {
+      "href": "/docs/api-docs/61/2705",
+      "text": "/buyin/MCNMultiSettlementOrders\nMCN机构分次结算订单"
+    },
+    {
+      "href": "/docs/api-docs/61/2863",
+      "text": "/buyin/MCNSearchKolExclusiveProductList\nMCN机构查询达人专属活动商品列表"
+    },
+    {
+      "href": "/docs/api-docs/61/2896",
+      "text": "/buyin/externalServiceFeeOrderImport\nMCN机构商达合作订单同步至百应平台"
+    },
+    {
+      "href": "/docs/api-docs/61/3573",
+      "text": "/buyin/colonelAwardTaskList\n团长赏金任务列表查询"
+    },
+    {
+      "href": "/docs/api-docs/61/5758",
+      "text": "/buyin/promotionStrategyList\n支持商家通过接口对已经开启推广的商品，查询商品配置的策略"
+    },
+    {
+      "href": "/docs/api-docs/61/5759",
+      "text": "/buyin/kolStrategyEdit\n策略修改&关闭接口"
+    },
+    {
+      "href": "/docs/api-docs/61/5760",
+      "text": "/buyin/orientKolStrategyCreate\n指定达人策略创建"
+    },
+    {
+      "href": "/docs/api-docs/61/5761",
+      "text": "/buyin/strategyPromotionCreate\n商品推广创建"
+    },
+    {
+      "href": "/docs/api-docs/61/5762",
+      "text": "/buyin/allKolStrategyCreate\n创建全部达人策略"
+    },
+    {
+      "href": "/docs/api-docs/61/6741",
+      "text": "/alliance/delAuthorCartProducts\n删除达人选品车商品"
+    },
+    {
+      "href": "/docs/api-docs/61/7459",
+      "text": "/buyin/getActiveDeliveryActivities\n三方获取生效的活动页"
+    },
+    {
+      "href": "/docs/api-docs/61/8225",
+      "text": "/alliance/colonelActivityProductCancel\n团长批量终止招商活动合作"
+    },
+    {
+      "href": "/docs/api-docs/61/8361",
+      "text": "/alliance/colonelGetOfficialSelectionProductList\n团长拉取爆品合伙人选品库商品"
+    }
+  ],
+  "保险API": [
+    {
+      "href": "/docs/api-docs/32/1854",
+      "text": "/order/policy\n查各种保险的保单详情"
+    },
+    {
+      "href": "/docs/api-docs/32/626",
+      "text": "/order/insurance\n根据订单ID，获取该订单对应的运费险保单的详细信息；\n1、status<=1&status=5的情况下ins_ensured_time_begin、ins_ensured_time_end没有意义（返回的是默认时间\"1754-08-31 06:49:25\""
+    }
+  ],
+  "风控安全API": [
+    {
+      "href": "/docs/api-docs/187/635",
+      "text": "/antispam/userLogin\n商户登陆风险检查"
+    }
+  ],
+  "飞鸽API": [
+    {
+      "href": "/docs/api-docs/188/1974",
+      "text": "/pigeon/workOrderNotify\n更新或者存储工单"
+    },
+    {
+      "href": "/docs/api-docs/188/5343",
+      "text": "/pigeon/getStaffOnlineRecordList\n查询客服在线日志列表"
+    },
+    {
+      "href": "/docs/api-docs/188/6016",
+      "text": "/pigeon/updatePushUser\n飞鸽消息推送店铺设置"
+    },
+    {
+      "href": "/docs/api-docs/188/7670",
+      "text": "/pigeon/ISVExecuteTool\n执行ISV客服工具的接口，支持执行各种客服相关的自动化工具和脚本"
+    },
+    {
+      "href": "/docs/api-docs/188/7668",
+      "text": "/pigeon/GetPigeonToolList\n该接口用于根据业务身份和相关参数获取可用的客服工具列表。主要应用场景包括：\n\n1. 初始化时获取可用工具\n2. 根据不同业务场景动态展示工具列表\n3. 支持多种业务身份和客服场景的工具配置\n4. 提供扩展字段支持未来功能迭代\n\n请求参数包括必需的业务身份标"
+    },
+    {
+      "href": "/docs/api-docs/188/7955",
+      "text": "/pigeon/ISVToolEventPreCheck\nISV客服工具可用性预检查接口，用于查询指定会话中各个客服工具的可执行状态和频控限制"
+    }
+  ],
+  "短视频API": [
+    {
+      "href": "/docs/api-docs/1568/7145",
+      "text": "/shopVideo/publishVideo\n投稿短视频"
+    },
+    {
+      "href": "/docs/api-docs/1568/7148",
+      "text": "/shopVideo/getInfoForPublish\n查询投稿需要的信息"
+    },
+    {
+      "href": "/docs/api-docs/1568/7149",
+      "text": "/shopVideo/listRelatableProduct\n查询短视频可关联商品列表"
+    },
+    {
+      "href": "/docs/api-docs/1568/7208",
+      "text": "/shopVideo/submitHiddenWaterMarkTask\n提交加暗水印任务"
+    },
+    {
+      "href": "/docs/api-docs/1568/7477",
+      "text": "/shopVideo/accountShoppingCartPrecheck\n挂车视频预校验接口"
+    },
+    {
+      "href": "/docs/api-docs/1568/7486",
+      "text": "/shopVideo/searchItem\n查询视频列表"
+    },
+    {
+      "href": "/docs/api-docs/1568/7487",
+      "text": "/shopVideo/createShoppingCartAnchor\n创建挂车锚点"
+    },
+    {
+      "href": "/docs/api-docs/1568/7489",
+      "text": "/shopVideo/publishVideoNew\n发布视频新接口"
+    },
+    {
+      "href": "/docs/api-docs/1568/7490",
+      "text": "/shopVideo/getShopAccountInfo\n查询店铺下所有账号信息"
+    },
+    {
+      "href": "/docs/api-docs/1568/7930",
+      "text": "/second/ecomInsight/getTaskResult\n获取任务结果"
+    },
+    {
+      "href": "/docs/api-docs/1568/7931",
+      "text": "/second/videoTop/mainPicVideo\n获取主图视频榜单接口"
+    },
+    {
+      "href": "/docs/api-docs/1568/7932",
+      "text": "/second/videoTop/shortVideo\n获取短视频榜单"
+    },
+    {
+      "href": "/docs/api-docs/1568/7935",
+      "text": "/second/ecomInsight/createTask\n创建task任务接口"
+    },
+    {
+      "href": "/docs/api-docs/1568/7936",
+      "text": "/second/ecomInsight/taskList\n获取task列表"
+    },
+    {
+      "href": "/docs/api-docs/1568/8141",
+      "text": "/shopVideo/searchImageText\n搜索图文"
+    },
+    {
+      "href": "/docs/api-docs/1568/8183",
+      "text": "/second/ecomInsight/createAssetTask\n创建素材任务"
+    },
+    {
+      "href": "/docs/api-docs/1568/8184",
+      "text": "/second/ecomInsight/getAssetTask\n获取素材任务信息"
+    },
+    {
+      "href": "/docs/api-docs/1568/8353",
+      "text": "/second/ecomInsight/getAigcTaskResult\n获取任务结果"
+    },
+    {
+      "href": "/docs/api-docs/1568/8355",
+      "text": "/second/ecomInsight/createVideoRecommendTask\n创建视频推荐子任务"
+    },
+    {
+      "href": "/docs/api-docs/1568/8378",
+      "text": "/second/ecomInsight/createVideoSearchTopTask\n创建视频查询榜单任务"
+    },
+    {
+      "href": "/docs/api-docs/1568/7146",
+      "text": "/shopVideo/listVideo\n查询已投稿短视频列表"
+    },
+    {
+      "href": "/docs/api-docs/1568/7147",
+      "text": "/shopVideo/uploadVideo\n商家短视频上传"
+    },
+    {
+      "href": "/docs/api-docs/1568/7150",
+      "text": "/shopVideo/genUploadAuth\n获取SDK上传视频的授权"
+    },
+    {
+      "href": "/docs/api-docs/1568/7151",
+      "text": "/shopVideo/queryUploadTask\n查询url上传视频接口的任务信息（状态、上传成功的视频id等）"
+    },
+    {
+      "href": "/docs/api-docs/1568/7207",
+      "text": "/shopVideo/getHiddenWaterMarkTask\n查询加暗水印任务"
+    },
+    {
+      "href": "/docs/api-docs/1568/7488",
+      "text": "/shopVideo/deleteShopVideo\n删除短视频"
+    },
+    {
+      "href": "/docs/api-docs/1568/7491",
+      "text": "/shopVideo/getSugWords\n查询话题信息"
+    },
+    {
+      "href": "/docs/api-docs/1568/7933",
+      "text": "/second/ecomInsight/taskDetail\n获取任务详情"
+    },
+    {
+      "href": "/docs/api-docs/1568/7934",
+      "text": "/second/ecomInsight/deleteTask\n删除task"
+    },
+    {
+      "href": "/docs/api-docs/1568/7970",
+      "text": "/shopVideo/reportVideoPublishRecord\n上报短视频上传记录"
+    },
+    {
+      "href": "/docs/api-docs/1568/8138",
+      "text": "/shopVideo/getAfterWatchRelatedProducts\n获取搜后承接商品列表"
+    },
+    {
+      "href": "/docs/api-docs/1568/8139",
+      "text": "/shopVideo/publishImageText\n发布图文接口，支持渠道号"
+    },
+    {
+      "href": "/docs/api-docs/1568/8140",
+      "text": "/shopVideo/getImageTextMusic\n获取图文音乐列表"
+    },
+    {
+      "href": "/docs/api-docs/1568/8182",
+      "text": "/second/ecomInsight/queryShortVideoData\n查询短视频数据接口"
+    },
+    {
+      "href": "/docs/api-docs/1568/8220",
+      "text": "/second/ecomInsight/createVisualValidateSession\n创建活体检测链接"
+    },
+    {
+      "href": "/docs/api-docs/1568/8221",
+      "text": "/second/ecomInsight/getVisualValidateResult\n获取活体检测结果"
+    },
+    {
+      "href": "/docs/api-docs/1568/8344",
+      "text": "/second/ecomInsight/getTaskBillDetail\n获取任务账单详情"
+    },
+    {
+      "href": "/docs/api-docs/1568/8351",
+      "text": "/second/ecomInsight/createVideoUnderstandTask\n创建视频理解子任务"
+    },
+    {
+      "href": "/docs/api-docs/1568/8352",
+      "text": "/second/ecomInsight/createVideoSearchTask\n创建视频搜索子任务"
+    },
+    {
+      "href": "/docs/api-docs/1568/8354",
+      "text": "/second/ecomInsight/createAigcTask\n创建aigc集成任务"
+    },
+    {
+      "href": "/docs/api-docs/1568/8376",
+      "text": "/second/ecomInsight/queryTrackVideoData\n查询追踪数据"
+    },
+    {
+      "href": "/docs/api-docs/1568/8377",
+      "text": "/second/ecomInsight/trackVideoId\n数据追踪接口"
+    }
+  ]
+}

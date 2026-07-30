@@ -1,0 +1,388 @@
+{
+  "code": 0,
+  "data": {
+    "CustomerError": {
+      "ErrCode": 0,
+      "ErrMsg": ""
+    },
+    "RelevanceFAQs": [
+      {
+        "articleId": 2877,
+        "dirId": 92,
+        "title": "调用创建尺码表接口：product/createComponentTemplateV2创建尺码模板，报错：\"sub_code\":\"isp.service-error:2010001\",\"sub_msg\":\"构建尺码表失败\"，如何解决？"
+      },
+      {
+        "articleId": 2175,
+        "dirId": 92,
+        "title": "创建尺码模板报错\"message\":\"商家可创建模板超过限制\""
+      }
+    ],
+    "article": {
+      "content": "{\"request\":{\"publicParam\":[{\"requestName\":\"method\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"product.createComponentTemplateV2\",\"description\":\"调用的API接口名称\"},{\"requestName\":\"app_key\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"6839996111118329223\",\"description\":\"应用创建完成后被分配的key\"},{\"requestName\":\"access_token\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"edae7c30-8386-443b-88a1-031111596fdd\",\"description\":\"用于调用 API 的 access_token\",\"hiddenForInterfaceName\":[\"/token/create\"]},{\"requestName\":\"param_json\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"{cid:12,page:1}\",\"description\":\"标准json类型，里面是业务参数按照参数名的字符串大小排序具体参数值，参考每个接口的参数表\"},{\"requestName\":\"timestamp\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2020-09-15 14:48:13\",\"description\":\"时间戳，格式为yyyy-MM-dd HH:mm:ss，时区为GMT+8，例如：2016-01-01 12:00:00\"},{\"requestName\":\"v\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2\",\"description\":\"API协议版本，当前版本为2\"},{\"requestName\":\"sign\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"796559d40beb08a1a1113c456c5c5a62\",\"description\":\"输入参数签名结果，签名算法参照 [API调用指南](https://op.jinritemai.com/docs/guide-docs/10/23)\"},{\"requestName\":\"sign_method\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"hmac-sha256\",\"description\":\"签名算法类型推荐使用hmac-sha256后续会下线md5（不传则默认为\\\"md5\\\"）1. md5:表示用md5算法加密字符串 2. hmac-sha256:表示用hmac_sha_256算法加密字符串\"}],\"requestParam\":[{\"requestName\":\"template_type\",\"toName\":\"template_type\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"size_info\",\"description\":\"模板类型：尺码模板\",\"cipherTextType\":1},{\"requestName\":\"template_sub_type\",\"toName\":\"template_sub_type\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"clothing\",\"description\":\"模板子类型: clothing(服装)、undies(内衣)、shoes(鞋靴类)、children_clothing(童装)\",\"cipherTextType\":1},{\"requestName\":\"template_name\",\"toName\":\"template_name\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"模板名称1\",\"description\":\"模板名称\",\"cipherTextType\":1},{\"requestName\":\"component_front_data\",\"toName\":\"component_front_data\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"{\\\"title\\\":\\\"测试模板3\\\",\\\"desc\\\":\\\"测试\\\",\\\"tempName\\\":\\\"测试模板3副本1副本1\\\",\\\"configTable\\\":[{\\\"size\\\":\\\"XS\\\",\\\"specMap\\\":{\\\"身高（cm）\\\":\\\"1\\\",\\\"体重（斤）\\\":\\\"2\\\",\\\"胸围（cm）\\\":\\\"3\\\"}},{\\\"size\\\":\\\"M\\\",\\\"specMap\\\":{\\\"身高（cm）\\\":\\\"10\\\",\\\"体重（斤）\\\":\\\"10\\\",\\\"胸围（cm）\\\":\\\"10\\\"}}],\\\"selectedSpecs\\\":[\\\"身高（cm）\\\",\\\"体重（斤）\\\",\\\"胸围（cm）\\\"],\\\"specOptions\\\":[\\\"身高（cm）\\\",\\\"体重（斤）\\\",\\\"胸围（cm）\\\"],\\\"selectedSize\\\":[\\\"XS\\\",\\\"M\\\"]}\",\"description\":\"商品组件数据 json，表格行列顺序以selectedSize和selectedSpecs的顺序为准\",\"cipherTextType\":1},{\"requestName\":\"shareable\",\"toName\":\"shareable\",\"mustNeed\":false,\"type\":4,\"style\":1,\"example\":\"true\",\"description\":\"是否设置为公有模板(多个商品可共用)。true-是，false-不是；不传默认fasle\",\"cipherTextType\":1},{\"requestName\":\"category_id\",\"toName\":\"category_id\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"214691\",\"description\":\"类目id，用来确定模板类型\",\"cipherTextType\":1}]},\"response\":{\"responseData\":[{\"responseName\":\"template_id\",\"fromName\":\"template_id\",\"type\":1,\"example\":\"101\",\"description\":\"模板ID\",\"securityLevel\":\"R1\"}]},\"demo\":{\"requestDemo\":{\"curl\":{\"reqUrl\":\"https://openapi-fxg.jinritemai.com/product/createComponentTemplateV2?app_key=your_appkey_here\\u0026method=product.createComponentTemplateV2\\u0026access_token=your_accesstoken_here\\u0026param_json={}\\u0026timestamp=2018-06-19%2016:06:59\\u0026v=2\\u0026sign=your_sign_here\"},\"java\":{\"code\":\"ProductCreateComponentTemplateV2Request request = new ProductCreateComponentTemplateV2Request();\\nProductCreateComponentTemplateV2Param param = request.getParam();\\nparam.setTemplateType(\\\"size_info\\\");\\nparam.setTemplateSubType(\\\"clothing\\\");\\nparam.setTemplateName(\\\"模板名称1\\\");\\nparam.setComponentFrontData(\\\"{\\\\\\\"title\\\\\\\":\\\\\\\"测试模板3\\\\\\\",\\\\\\\"desc\\\\\\\":\\\\\\\"测试\\\\\\\",\\\\\\\"tempName\\\\\\\":\\\\\\\"测试模板3副本1副本1\\\\\\\",\\\\\\\"configTable\\\\\\\":[{\\\\\\\"size\\\\\\\":\\\\\\\"XS\\\\\\\",\\\\\\\"specMap\\\\\\\":{\\\\\\\"身高（cm）\\\\\\\":\\\\\\\"1\\\\\\\",\\\\\\\"体重（斤）\\\\\\\":\\\\\\\"2\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\":\\\\\\\"3\\\\\\\"}},{\\\\\\\"size\\\\\\\":\\\\\\\"M\\\\\\\",\\\\\\\"specMap\\\\\\\":{\\\\\\\"身高（cm）\\\\\\\":\\\\\\\"10\\\\\\\",\\\\\\\"体重（斤）\\\\\\\":\\\\\\\"10\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\":\\\\\\\"10\\\\\\\"}}],\\\\\\\"selectedSpecs\\\\\\\":[\\\\\\\"身高（cm）\\\\\\\",\\\\\\\"体重（斤）\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\"],\\\\\\\"specOptions\\\\\\\":[\\\\\\\"身高（cm）\\\\\\\",\\\\\\\"体重（斤）\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\"],\\\\\\\"selectedSize\\\\\\\":[\\\\\\\"XS\\\\\\\",\\\\\\\"M\\\\\\\"]}\\\");\\nparam.setShareable(true);\\nparam.setCategoryId(214691L);\\nProductCreateComponentTemplateV2Response response = request.execute(accessToken);\\n\"},\"php\":{\"code\":\"$request = new ProductCreateComponentTemplateV2Request();\\n$param = new ProductCreateComponentTemplateV2Param();\\n$request-\\u003esetParam($param);\\n$param-\\u003etemplate_type = \\\"size_info\\\";\\n$param-\\u003etemplate_sub_type = \\\"clothing\\\";\\n$param-\\u003etemplate_name = \\\"模板名称1\\\";\\n$param-\\u003ecomponent_front_data = \\\"{\\\\\\\"title\\\\\\\":\\\\\\\"测试模板3\\\\\\\",\\\\\\\"desc\\\\\\\":\\\\\\\"测试\\\\\\\",\\\\\\\"tempName\\\\\\\":\\\\\\\"测试模板3副本1副本1\\\\\\\",\\\\\\\"configTable\\\\\\\":[{\\\\\\\"size\\\\\\\":\\\\\\\"XS\\\\\\\",\\\\\\\"specMap\\\\\\\":{\\\\\\\"身高（cm）\\\\\\\":\\\\\\\"1\\\\\\\",\\\\\\\"体重（斤）\\\\\\\":\\\\\\\"2\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\":\\\\\\\"3\\\\\\\"}},{\\\\\\\"size\\\\\\\":\\\\\\\"M\\\\\\\",\\\\\\\"specMap\\\\\\\":{\\\\\\\"身高（cm）\\\\\\\":\\\\\\\"10\\\\\\\",\\\\\\\"体重（斤）\\\\\\\":\\\\\\\"10\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\":\\\\\\\"10\\\\\\\"}}],\\\\\\\"selectedSpecs\\\\\\\":[\\\\\\\"身高（cm）\\\\\\\",\\\\\\\"体重（斤）\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\"],\\\\\\\"specOptions\\\\\\\":[\\\\\\\"身高（cm）\\\\\\\",\\\\\\\"体重（斤）\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\"],\\\\\\\"selectedSize\\\\\\\":[\\\\\\\"XS\\\\\\\",\\\\\\\"M\\\\\\\"]}\\\";\\n$param-\\u003eshareable = true;\\n$param-\\u003ecategory_id = 214691;\\n$response = $request-\\u003eexecute(accessToken);\\n\"},\"python\":{\"code\":\"request = ProductCreateComponentTemplateV2Request()\\nparam = request.getParams()\\nparam.template_type = \\\"size_info\\\"\\nparam.template_sub_type = \\\"clothing\\\"\\nparam.template_name = \\\"模板名称1\\\"\\nparam.component_front_data = \\\"{\\\\\\\"title\\\\\\\":\\\\\\\"测试模板3\\\\\\\",\\\\\\\"desc\\\\\\\":\\\\\\\"测试\\\\\\\",\\\\\\\"tempName\\\\\\\":\\\\\\\"测试模板3副本1副本1\\\\\\\",\\\\\\\"configTable\\\\\\\":[{\\\\\\\"size\\\\\\\":\\\\\\\"XS\\\\\\\",\\\\\\\"specMap\\\\\\\":{\\\\\\\"身高（cm）\\\\\\\":\\\\\\\"1\\\\\\\",\\\\\\\"体重（斤）\\\\\\\":\\\\\\\"2\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\":\\\\\\\"3\\\\\\\"}},{\\\\\\\"size\\\\\\\":\\\\\\\"M\\\\\\\",\\\\\\\"specMap\\\\\\\":{\\\\\\\"身高（cm）\\\\\\\":\\\\\\\"10\\\\\\\",\\\\\\\"体重（斤）\\\\\\\":\\\\\\\"10\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\":\\\\\\\"10\\\\\\\"}}],\\\\\\\"selectedSpecs\\\\\\\":[\\\\\\\"身高（cm）\\\\\\\",\\\\\\\"体重（斤）\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\"],\\\\\\\"specOptions\\\\\\\":[\\\\\\\"身高（cm）\\\\\\\",\\\\\\\"体重（斤）\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\"],\\\\\\\"selectedSize\\\\\\\":[\\\\\\\"XS\\\\\\\",\\\\\\\"M\\\\\\\"]}\\\"\\nparam.shareable = true\\nparam.category_id = 214691\\nresponse = request.execute(accessToken)\\n\"},\"go\":{\"code\":\"request := product_createComponentTemplateV2_request.New()\\nparam := request.GetParams()\\nparam.TemplateType = \\\"size_info\\\"\\nparam.TemplateSubType = \\\"clothing\\\"\\nparam.TemplateName = \\\"模板名称1\\\"\\nparam.ComponentFrontData = \\\"{\\\\\\\"title\\\\\\\":\\\\\\\"测试模板3\\\\\\\",\\\\\\\"desc\\\\\\\":\\\\\\\"测试\\\\\\\",\\\\\\\"tempName\\\\\\\":\\\\\\\"测试模板3副本1副本1\\\\\\\",\\\\\\\"configTable\\\\\\\":[{\\\\\\\"size\\\\\\\":\\\\\\\"XS\\\\\\\",\\\\\\\"specMap\\\\\\\":{\\\\\\\"身高（cm）\\\\\\\":\\\\\\\"1\\\\\\\",\\\\\\\"体重（斤）\\\\\\\":\\\\\\\"2\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\":\\\\\\\"3\\\\\\\"}},{\\\\\\\"size\\\\\\\":\\\\\\\"M\\\\\\\",\\\\\\\"specMap\\\\\\\":{\\\\\\\"身高（cm）\\\\\\\":\\\\\\\"10\\\\\\\",\\\\\\\"体重（斤）\\\\\\\":\\\\\\\"10\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\":\\\\\\\"10\\\\\\\"}}],\\\\\\\"selectedSpecs\\\\\\\":[\\\\\\\"身高（cm）\\\\\\\",\\\\\\\"体重（斤）\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\"],\\\\\\\"specOptions\\\\\\\":[\\\\\\\"身高（cm）\\\\\\\",\\\\\\\"体重（斤）\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\"],\\\\\\\"selectedSize\\\\\\\":[\\\\\\\"XS\\\\\\\",\\\\\\\"M\\\\\\\"]}\\\"\\nparam.Shareable = true\\nparam.CategoryId = 214691\\nresponse := request.Execute(accessToken)\\n\"},\"dotNetCore\":{\"code\":\"var request = new ProductCreateComponentTemplateV2Request();\\nvar param = request.BuildParam();\\nparam.TemplateType = \\\"size_info\\\";\\nparam.TemplateSubType = \\\"clothing\\\";\\nparam.TemplateName = \\\"模板名称1\\\";\\nparam.ComponentFrontData = \\\"{\\\\\\\"title\\\\\\\":\\\\\\\"测试模板3\\\\\\\",\\\\\\\"desc\\\\\\\":\\\\\\\"测试\\\\\\\",\\\\\\\"tempName\\\\\\\":\\\\\\\"测试模板3副本1副本1\\\\\\\",\\\\\\\"configTable\\\\\\\":[{\\\\\\\"size\\\\\\\":\\\\\\\"XS\\\\\\\",\\\\\\\"specMap\\\\\\\":{\\\\\\\"身高（cm）\\\\\\\":\\\\\\\"1\\\\\\\",\\\\\\\"体重（斤）\\\\\\\":\\\\\\\"2\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\":\\\\\\\"3\\\\\\\"}},{\\\\\\\"size\\\\\\\":\\\\\\\"M\\\\\\\",\\\\\\\"specMap\\\\\\\":{\\\\\\\"身高（cm）\\\\\\\":\\\\\\\"10\\\\\\\",\\\\\\\"体重（斤）\\\\\\\":\\\\\\\"10\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\":\\\\\\\"10\\\\\\\"}}],\\\\\\\"selectedSpecs\\\\\\\":[\\\\\\\"身高（cm）\\\\\\\",\\\\\\\"体重（斤）\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\"],\\\\\\\"specOptions\\\\\\\":[\\\\\\\"身高（cm）\\\\\\\",\\\\\\\"体重（斤）\\\\\\\",\\\\\\\"胸围（cm）\\\\\\\"],\\\\\\\"selectedSize\\\\\\\":[\\\\\\\"XS\\\\\\\",\\\\\\\"M\\\\\\\"]}\\\";\\nparam.Shareable = true;\\nparam.CategoryId = 214691;\\nvar response = request.Execute\\u003cProductCreateComponentTemplateV2Response\\u003e(accessToken);\\n\"},\"js\":{}},\"responseDemo\":{\"responseSuccess\":{\"data\":{\"template_id\":\"101\"},\"code\":10000,\"msg\":\"success\",\"sub_code\":\"\",\"sub_msg\":\"\"},\"responseError\":{\"sub_code\":\"\",\"sub_msg\":\"\"}}},\"error\":{}}",
+      "info": {
+        "AuditedTime": "",
+        "access": false,
+        "apiChargeType": 1,
+        "apiLimitLevel": 1,
+        "apiLimitValue": 800,
+        "apiSpiMsgNames": [],
+        "articleOutId": 2830,
+        "auditStatus": 401,
+        "auth": {
+          "categoryList": [],
+          "groupName": "",
+          "packageName": "",
+          "packageType": 0
+        },
+        "authSubject": "[3]",
+        "authSubjectIdList": [
+          "店铺"
+        ],
+        "auths": [
+          {
+            "categoryList": [
+              "撮合服务商",
+              "AI拼图-微应用",
+              "营销管理-小程序定制",
+              "创新应用大赛_软件服务",
+              "搭配购-微应用",
+              "微应用-商详海报",
+              "商家商品推广",
+              "商家后台系统",
+              "即时零售商品服务",
+              "店铺管理",
+              "微应用-主图视频",
+              "即时零售ebill订单管理（临时）",
+              "AIGC视频创作",
+              "即时零售ERP",
+              "AIGC视频洞察",
+              "即时零售商家自研",
+              "互动营销定制",
+              "短信营销",
+              "AI智能客服-微应用",
+              "商品供应链",
+              "商品优化分析",
+              "电商ERP",
+              "商品基础工具",
+              "AI售后挽单",
+              "AI 商品运营",
+              "智能外呼"
+            ],
+            "groupName": "商品",
+            "packageName": "商品尺码模板",
+            "packageType": 1
+          }
+        ],
+        "commitAuditTime": "",
+        "contentType": 1,
+        "createTime": 1654921769,
+        "defaultApiAndAppLimitLevel": 1,
+        "defaultApiAndAppLimitValue": 150,
+        "description": "创建尺码模板",
+        "dirId": 14,
+        "dirLabels": [],
+        "dirName": "商品API",
+        "docLabels": [],
+        "extra": {},
+        "finalStatus": 1,
+        "flag": 0,
+        "id": 1992,
+        "isTop": false,
+        "note": "",
+        "pv": 6764,
+        "reOnline": false,
+        "status": 1,
+        "subtitle": "创建尺码模板",
+        "title": "/product/createComponentTemplateV2",
+        "updateTime": 1654921769,
+        "url": "",
+        "userList": [],
+        "userSceneDesc": "创建尺码模板",
+        "version": "V1.03"
+      },
+      "tagNameMap": {
+        "25": "优惠券基础数据",
+        "26": "用户优惠券数据",
+        "28": "其他字段",
+        "29": "通用字段",
+        "30": "物流公司信息",
+        "31": "订单基础信息",
+        "32": "地址基础信息",
+        "33": "寄件人地址信息",
+        "34": "寄件人联系信息",
+        "35": "物流增值服务",
+        "36": "回单寄回地址",
+        "37": "收件人地址",
+        "38": "收件人信息",
+        "39": "商品基础信息",
+        "40": "商品重量体积信息",
+        "41": "快递配置规则",
+        "42": "订单备注",
+        "43": "仓库基础信息",
+        "44": "店铺基础信息",
+        "45": "小程序基础信息",
+        "46": "订单来源分析",
+        "47": "买家留言 ",
+        "48": "商家备注",
+        "49": "订单金额信息",
+        "50": "商品金额信息",
+        "51": "营销活动金额信息",
+        "52": "营销活动基础信息",
+        "53": "精选联盟",
+        "54": "跨境海淘",
+        "55": "库存基础信息",
+        "56": "售后基础信息",
+        "57": "电子卡券",
+        "58": "赠品",
+        "59": "组合（组套）商品",
+        "60": "虚拟商品",
+        "61": "定金预售",
+        "62": "懂车帝购车信息",
+        "63": "用户特征标签",
+        "64": "物流信息",
+        "65": "证件信息",
+        "66": "C2B定制",
+        "67": "买家基础信息",
+        "68": "买家敏感信息",
+        "69": "场景包测试标签a",
+        "70": "场景包测试标签b",
+        "71": "商家快递网点信息",
+        "72": "商品类目信息",
+        "73": "短信基础字段",
+        "74": "售后文案",
+        "75": "插旗信息",
+        "76": "售后金额信息",
+        "77": "风控信息",
+        "78": "换货基础信息",
+        "79": "售后标签",
+        "80": "门店基础信息",
+        "81": "售后商家备注信息",
+        "82": "达人样品订单",
+        "83": "即时零售订单接单状态",
+        "85": "换货和补寄信息",
+        "86": "物流异常风控",
+        "87": "商家售后地址信息",
+        "88": "售后仲裁",
+        "89": "买家退货物流信息",
+        "90": "补寄场景",
+        "91": "售后价保",
+        "92": "售后数据分析",
+        "93": "售后协商记录",
+        "94": "废弃字段",
+        "95": "商品尺码模板",
+        "96": "商品标题前缀",
+        "97": "商品参考价凭证",
+        "98": "商品资质信息",
+        "99": "商品限购信息",
+        "100": "特殊日期延迟发货",
+        "101": "商品销量",
+        "102": "店铺地址库",
+        "103": "即时零售商品基础信息",
+        "104": "解密基础字段",
+        "105": "解密虚拟号",
+        "106": "解密明文信息",
+        "107": "解密手机号明文",
+        "108": "解密姓名信息",
+        "109": "解密地址信息",
+        "110": "解密身份证信息",
+        "111": "查询改地址开关",
+        "112": "用户店铺关注信息",
+        "113": "店铺会话统计数据",
+        "114": "飞鸽会话统计数据",
+        "115": "飞鸽客服基础信息",
+        "116": "飞鸽会话信息",
+        "117": "飞鸽客服登录日志",
+        "118": "飞鸽客服接待统计信息",
+        "119": "飞鸽会话消息基础信息",
+        "120": "视频信息",
+        "121": "商品卖点信息",
+        "122": "授权基础信息",
+        "123": "商品价格信息",
+        "124": "商品分佣信息",
+        "125": "联盟分佣信息",
+        "126": "商品评价信息",
+        "127": "评价基础信息",
+        "128": "评价结果数据",
+        "129": "店铺体验分",
+        "130": "评价内容信息",
+        "131": "订单extra"
+      }
+    },
+    "errConfigList": [
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "2010001",
+        "errDesc": "系统异常，构建尺码表失败",
+        "errTypeDesc": "",
+        "errTypeId": 2,
+        "onlineValue": {},
+        "solutionDesc": "系统异常，请联系研发人员处理"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "2010003",
+        "errDesc": "缺少必填参数",
+        "errTypeDesc": "",
+        "errTypeId": 3,
+        "onlineValue": {},
+        "solutionDesc": "根据错误信息指引检查入参"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "2010004",
+        "errDesc": "参数错误",
+        "errTypeDesc": "",
+        "errTypeId": 4,
+        "onlineValue": {},
+        "solutionDesc": "根据错误信息指引检查入参"
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "110250142",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "110250142",
+          "errDesc": "110250142:尺码信息中肩宽(cm)不能大于100"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "110250140",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "110250140",
+          "errDesc": "110250140:商家可创建公有模板数量超过限制：200"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "110250115",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "110250115",
+          "errDesc": "110250115:尺码不能大于30个字"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "110250108",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "110250108",
+          "errDesc": "110250108:模板行数超过上限"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "110250102",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "110250102",
+          "errDesc": "110250102:尺码标题不能超过10个字"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "110250138",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "110250138",
+          "errDesc": "110250138:尺码表不能超过12列，请修改后提交"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "110250112",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "110250112",
+          "errDesc": "110250112:选中的尺码数量和表格行数量不一致"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "110250105",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "110250105",
+          "errDesc": "110250105:[标题]素材描述不符合平台要求，请重新填写。"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "110250110",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "110250110",
+          "errDesc": "110250110:表格内的尺码和选中尺码列表不匹配"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "110250139",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "110250139",
+          "errDesc": "110250139:模板名称最多支持30个字符"
+        },
+        "solutionDesc": ""
+      },
+      {
+        "conveyErrDesc": false,
+        "deleteDenied": false,
+        "errCode": "110250104",
+        "errDesc": "",
+        "errTypeDesc": "",
+        "errTypeId": 5,
+        "onlineValue": {
+          "errCode": "110250104",
+          "errDesc": "110250104:尺码值长度不能大于30个字"
+        },
+        "solutionDesc": ""
+      }
+    ]
+  },
+  "msg": ""
+}

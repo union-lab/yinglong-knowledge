@@ -1,0 +1,263 @@
+{
+  "code": 0,
+  "data": {
+    "CustomerError": {
+      "ErrCode": 0,
+      "ErrMsg": ""
+    },
+    "RelevanceFAQs": [
+      {
+        "articleId": 4361,
+        "dirId": 89,
+        "title": "如果查看订单中产生的佣金？"
+      },
+      {
+        "articleId": 2955,
+        "dirId": 1036,
+        "title": "资金流水明细接口中返回超时赔付单产生的资金流水，如何获取对应的订单号？"
+      },
+      {
+        "articleId": 3324,
+        "dirId": 89,
+        "title": "通过抖店商家后台-【资金】-【账单管理】-【资金流水明细】导出账单，获取的实际抖音月付（原DOU分期）营销补贴，可通过哪个接口获取到？"
+      },
+      {
+        "articleId": 4834,
+        "dirId": 1036,
+        "title": "资金流水明细接口(境内)接口是否支持下载历史账单？例如2022-10-01的账单。"
+      },
+      {
+        "articleId": 3387,
+        "dirId": 1036,
+        "title": "资金流水明细下载请求(境内)接口：请求参数 order_id支持一次性传递多个值吗？如果下载多个订单编号的是不是需要请求多次，下载多个文件才能满足需求。"
+      },
+      {
+        "articleId": 5027,
+        "dirId": 1036,
+        "title": "三方系统如何接入账单API？"
+      },
+      {
+        "articleId": 3389,
+        "dirId": 1036,
+        "title": "资金流水明细接口中唯一索引是哪个字段（怎么判断重复）？"
+      },
+      {
+        "articleId": 5442,
+        "dirId": 1036,
+        "title": "关于资金流水明细接口，commission和real_free_commission_amount有关系么？commission是指的实际收取的佣金吗？"
+      },
+      {
+        "articleId": 5502,
+        "dirId": 1036,
+        "title": "为什么我在下载账单文件时会报403错误？"
+      },
+      {
+        "articleId": 5696,
+        "dirId": 1036,
+        "title": "关于资金流水明细接口(境内)接口，如果主订单中存在多个子订单时，根据order_id（主订单号）查询接口会返回多条数据吗？"
+      },
+      {
+        "articleId": 6227,
+        "dirId": 1036,
+        "title": "/getShopAccountItem获取资金流水明细接口(境内)，数据获取不到？"
+      },
+      {
+        "articleId": 6273,
+        "dirId": 1036,
+        "title": "/order/getShopAccountItem 翻页无效，如何解决？"
+      }
+    ],
+    "article": {
+      "content": "{\"request\":{\"publicParam\":[{\"requestName\":\"method\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"order.getShopAccountItem\",\"description\":\"调用的API接口名称\"},{\"requestName\":\"app_key\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"6839996111118329223\",\"description\":\"应用创建完成后被分配的key\"},{\"requestName\":\"access_token\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"edae7c30-8386-443b-88a1-031111596fdd\",\"description\":\"用于调用 API 的 access_token\",\"hiddenForInterfaceName\":[\"/token/create\"]},{\"requestName\":\"param_json\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"{cid:12,page:1}\",\"description\":\"标准json类型，里面是业务参数按照参数名的字符串大小排序具体参数值，参考每个接口的参数表\"},{\"requestName\":\"timestamp\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2020-09-15 14:48:13\",\"description\":\"时间戳，格式为yyyy-MM-dd HH:mm:ss，时区为GMT+8，例如：2016-01-01 12:00:00\"},{\"requestName\":\"v\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2\",\"description\":\"API协议版本，当前版本为2\"},{\"requestName\":\"sign\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"796559d40beb08a1a1113c456c5c5a62\",\"description\":\"输入参数签名结果，签名算法参照 [API调用指南](https://op.jinritemai.com/docs/guide-docs/10/23)\"},{\"requestName\":\"sign_method\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"hmac-sha256\",\"description\":\"签名算法类型推荐使用hmac-sha256后续会下线md5（不传则默认为\\\"md5\\\"）1. md5:表示用md5算法加密字符串 2. hmac-sha256:表示用hmac_sha_256算法加密字符串\"}],\"requestParam\":[{\"requestName\":\"start_time\",\"toName\":\"start_time\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"2021-10-01 00:00:00\",\"description\":\"开始时间\",\"cipherTextType\":1},{\"requestName\":\"end_time\",\"toName\":\"end_time\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"2021-10-01 23:59:59\",\"description\":\"结束时间\",\"cipherTextType\":1},{\"requestName\":\"order_id\",\"toName\":\"order_id\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"4847151209529677080\",\"description\":\"订单号(如果订单号未传，则时间必须传)\",\"cipherTextType\":1},{\"requestName\":\"size\",\"toName\":\"size\",\"mustNeed\":false,\"type\":7,\"style\":1,\"example\":\"100\",\"description\":\"查询数量(不传默认100，最大为1000)\",\"cipherTextType\":1},{\"requestName\":\"account_type\",\"toName\":\"account_type\",\"mustNeed\":false,\"type\":7,\"style\":1,\"example\":\"0\",\"description\":\"动账账户 0: 所有 1: 微信 2:支付宝 3:合众支付 4:聚合支付\",\"cipherTextType\":1},{\"requestName\":\"biz_type\",\"toName\":\"biz_type\",\"mustNeed\":false,\"type\":7,\"style\":1,\"example\":\"0\",\"description\":\"计费类型 0:全部 1:鲁班广告 2:精选联盟 3:值点商城 4:小店自卖 5:橙子建站 6:POI 7:抖+ 8:穿山甲 9:服务市场 10:服务市场外包客服 11:学浪\",\"cipherTextType\":1},{\"requestName\":\"time_type\",\"toName\":\"time_type\",\"mustNeed\":false,\"type\":7,\"style\":1,\"example\":\"0\",\"description\":\"时间类型 0 动账时间 1 下单时间\",\"cipherTextType\":1},{\"requestName\":\"start_index\",\"toName\":\"start_index\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"d746da31eee45e65d07b20f87d6844bbf72041350acc66af1711408070b62428\",\"description\":\"开始下标  请求值为上一次响应参数的next_index，第一次请求不传\",\"cipherTextType\":1},{\"requestName\":\"product_id\",\"toName\":\"product_id\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"33323233\",\"description\":\"产品id\",\"cipherTextType\":1}]},\"response\":{\"responseData\":[{\"responseName\":\"code\",\"fromName\":\"code\",\"type\":2,\"example\":\"10000\",\"description\":\"返回code 100000为成功，其他为失败\",\"securityLevel\":\"R1\"},{\"responseName\":\"code_msg\",\"fromName\":\"code_msg\",\"type\":2,\"example\":\"SUCCESS\",\"description\":\"返回描述\",\"securityLevel\":\"R1\"},{\"responseName\":\"data\",\"fromName\":\"data\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"资金流水明细\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"bill_time\",\"fromName\":\"bill_time\",\"type\":2,\"example\":\"2021-10-01 10:10:11\",\"description\":\"动账时间\",\"securityLevel\":\"R1\"},{\"responseName\":\"fund_flow\",\"fromName\":\"fund_flow\",\"type\":7,\"example\":\"1\",\"description\":\"动账方向  0:入账 1:出账\",\"securityLevel\":\"R1\"},{\"responseName\":\"fund_flow_desc\",\"fromName\":\"fund_flow_desc\",\"type\":2,\"example\":\"出账\",\"description\":\"动账方向描述  出账、入账\",\"securityLevel\":\"R1\"},{\"responseName\":\"account_amount\",\"fromName\":\"account_amount\",\"type\":1,\"example\":\"96\",\"description\":\"动账金额(分)\",\"securityLevel\":\"R1\"},{\"responseName\":\"account_bill_desc\",\"fromName\":\"account_bill_desc\",\"type\":2,\"example\":\"订单结算\",\"description\":\"动账摘要\",\"securityLevel\":\"R1\"},{\"responseName\":\"account_bill_desc_tag\",\"fromName\":\"account_bill_desc_tag\",\"type\":7,\"example\":\"3\",\"description\":\"[枚举值已废弃，若要对应场景，可用trans_scene_tag]动账摘要 0：其他 1：达人带货佣金 2：达人佣金退款 3：订单结算 4：部分结算 5：运费单结算 6：服务费返还 7：平台补贴扣回 8：退款失败退票 9：结算重复扣款调账 10：保证金退款 11：提现 12：提现退票 13：极速退款分账 14：小额打款(原因:补差价) 15：小额打款(原因:其他) 16：小额打款(原因:商品补偿) 17：小额打款(原因:运费补偿) 18：小额打款退票 19：已退款 20：保费扣除（x笔保单扣费，明细详见保费扣除明细） 21：支付BIC服务费 22：BIC服务费退票  23: 原路退\",\"securityLevel\":\"R1\"},{\"responseName\":\"biz_type\",\"fromName\":\"biz_type\",\"type\":7,\"example\":\"1\",\"description\":\"计费类型  0:全部 1:巨量千川 2:精选联盟 3:值点商城 4:小店自卖 5:橙子建站 6:POI 7:抖+ 8:穿山甲 9:服务市场 10:服务市场外包客服 11:学浪\",\"securityLevel\":\"R1\"},{\"responseName\":\"biz_type_desc\",\"fromName\":\"biz_type_desc\",\"type\":2,\"example\":\"鲁班广告\",\"description\":\"计费类型描述\",\"securityLevel\":\"R1\"},{\"responseName\":\"order_id\",\"fromName\":\"order_id\",\"type\":2,\"example\":\"4847151209529677080\",\"description\":\"订单号\",\"securityLevel\":\"R1\"},{\"responseName\":\"shop_order_id\",\"fromName\":\"shop_order_id\",\"type\":2,\"example\":\"4847151209529677080\",\"description\":\"店铺单号\",\"securityLevel\":\"R1\"},{\"responseName\":\"after_sale_service_no\",\"fromName\":\"after_sale_service_no\",\"type\":2,\"example\":\"SS7015036721667375372\",\"description\":\"【商家无需使用】售后编号非售后接口的售后单id；该字段为账单售后编号id；\",\"securityLevel\":\"R1\"},{\"responseName\":\"business_order_create_time\",\"fromName\":\"business_order_create_time\",\"type\":2,\"example\":\"2021-09-26 20:46:16\",\"description\":\"下单时间\",\"securityLevel\":\"R1\"},{\"responseName\":\"product_id\",\"fromName\":\"product_id\",\"type\":2,\"example\":\"3494738440426276563\",\"description\":\"商品ID\",\"securityLevel\":\"R1\"},{\"responseName\":\"pay_amount\",\"fromName\":\"pay_amount\",\"type\":1,\"example\":\"100\",\"description\":\"订单实付应结，单位：分；只包含用户实际支付的金额，不含各类补贴（如：平台补贴、达人补贴、支付补贴等）\",\"securityLevel\":\"R1\"},{\"responseName\":\"promotion_amount\",\"fromName\":\"promotion_amount\",\"type\":1,\"example\":\"0\",\"description\":\"实际平台补贴(分)\",\"securityLevel\":\"R1\"},{\"responseName\":\"refund_amount\",\"fromName\":\"refund_amount\",\"type\":1,\"example\":\"0\",\"description\":\"订单退款(分)\",\"securityLevel\":\"R1\"},{\"responseName\":\"platform_service_fee\",\"fromName\":\"platform_service_fee\",\"type\":1,\"example\":\"-3\",\"description\":\"平台服务费(分)\",\"securityLevel\":\"R1\"},{\"responseName\":\"commission\",\"fromName\":\"commission\",\"type\":1,\"example\":\"-1\",\"description\":\"佣金(分)\",\"securityLevel\":\"R1\"},{\"responseName\":\"channel_fee\",\"fromName\":\"channel_fee\",\"type\":1,\"example\":\"0\",\"description\":\"渠道分成(分)\",\"securityLevel\":\"R1\"},{\"responseName\":\"colonel_service_fee\",\"fromName\":\"colonel_service_fee\",\"type\":1,\"example\":\"0\",\"description\":\"招商服务费(分)\",\"securityLevel\":\"R1\"},{\"responseName\":\"account_type\",\"fromName\":\"account_type\",\"type\":7,\"example\":\"1\",\"description\":\"动账账户  1: 微信 2:支付宝 3:合众支付 4:聚合支付\",\"securityLevel\":\"R1\"},{\"responseName\":\"account_type_desc\",\"fromName\":\"account_type_desc\",\"type\":2,\"example\":\"微信\",\"description\":\"动账账户\",\"securityLevel\":\"R1\"},{\"responseName\":\"author_coupon_subsidy\",\"fromName\":\"author_coupon_subsidy\",\"type\":1,\"example\":\"0\",\"description\":\"实际达人补贴(分)\",\"securityLevel\":\"R1\"},{\"responseName\":\"post_amount\",\"fromName\":\"post_amount\",\"type\":1,\"example\":\"0\",\"description\":\"运费(分)\",\"securityLevel\":\"R1\"},{\"responseName\":\"account_trade_no\",\"fromName\":\"account_trade_no\",\"type\":2,\"example\":\"AS202110050707321602785799467_IN\",\"description\":\"动账流水号(唯一)\",\"securityLevel\":\"R1\"},{\"responseName\":\"order_type\",\"fromName\":\"order_type\",\"type\":7,\"example\":\"0\",\"description\":\"订单类型  0：普通订单  1：定金(已退款) 2：定金(尾款已支付) 3：定金(尾款未支付) 4：尾款(尾款已支付) 5：尾款(已退款)\",\"securityLevel\":\"R1\"},{\"responseName\":\"order_type_desc\",\"fromName\":\"order_type_desc\",\"type\":2,\"example\":\"普通订单\",\"description\":\"订单类型描述\",\"securityLevel\":\"R1\"},{\"responseName\":\"actual_zt_pay_promotion\",\"fromName\":\"actual_zt_pay_promotion\",\"type\":1,\"example\":\"0\",\"description\":\"实际抖音支付补贴(分)\",\"securityLevel\":\"R1\"},{\"responseName\":\"actual_zr_pay_promotion\",\"fromName\":\"actual_zr_pay_promotion\",\"type\":1,\"example\":\"0\",\"description\":\"实际DOU分期营销补贴(分)\",\"securityLevel\":\"R1\"},{\"responseName\":\"channel_promotion_fee\",\"fromName\":\"channel_promotion_fee\",\"type\":1,\"example\":\"0\",\"description\":\"直播间站外推广(分)\",\"securityLevel\":\"R1\"},{\"responseName\":\"other_sharing_amount\",\"fromName\":\"other_sharing_amount\",\"type\":1,\"example\":\"0\",\"description\":\"其他分成金额(分)\",\"securityLevel\":\"R1\"},{\"responseName\":\"remark\",\"fromName\":\"remark\",\"type\":2,\"example\":\"无\",\"description\":\"备注\",\"securityLevel\":\"R1\"},{\"responseName\":\"shop_id\",\"fromName\":\"shop_id\",\"type\":2,\"example\":\"12344\",\"description\":\"店铺id\",\"securityLevel\":\"R1\"},{\"responseName\":\"trans_scene\",\"fromName\":\"trans_scene\",\"type\":2,\"example\":\"消费者赔付\",\"description\":\"动账场景\"},{\"responseName\":\"trans_scene_tag\",\"fromName\":\"trans_scene_tag\",\"type\":7,\"example\":\"1\",\"description\":\"动账场景 枚举值对应含义请参考文档：https://bytedance.larkoffice.com/docx/FefRdbxoPoSUBYx4YHhc5a5rnrh\"},{\"responseName\":\"free_commission_flag\",\"fromName\":\"free_commission_flag\",\"type\":2,\"example\":\"是\",\"description\":\"是否免佣, 枚举值为\\\"是/否\\\"或为空\"},{\"responseName\":\"real_free_commission_amount\",\"fromName\":\"real_free_commission_amount\",\"type\":1,\"example\":\"0\",\"description\":\"免佣金额(分)\"},{\"responseName\":\"bank_pay_promotion_amount\",\"fromName\":\"bank_pay_promotion_amount\",\"type\":1,\"example\":\"0\",\"description\":\"银行补贴(分)\"},{\"responseName\":\"recycler_amount\",\"fromName\":\"recycler_amount\",\"type\":1,\"example\":\"0\",\"description\":\"以旧换新抵扣(分)\"},{\"responseName\":\"post_promotion_amount\",\"fromName\":\"post_promotion_amount\",\"type\":1,\"example\":\"0\",\"description\":\"平台补贴运费(分)\"},{\"responseName\":\"partner_commission\",\"fromName\":\"partner_commission\",\"type\":1,\"example\":\"0\",\"description\":\"服务商佣金(分)\"},{\"responseName\":\"gov_promotion_amount\",\"fromName\":\"gov_promotion_amount\",\"type\":1,\"example\":\"0\",\"description\":\"政府补贴平台垫资(分)\"},{\"responseName\":\"product_name\",\"fromName\":\"product_name\",\"type\":2,\"example\":\"商品名称示例\",\"description\":\"商品名称\"},{\"responseName\":\"author_id\",\"fromName\":\"author_id\",\"type\":2,\"example\":\"123123123\",\"description\":\"达人id\"},{\"responseName\":\"author_name\",\"fromName\":\"author_name\",\"type\":2,\"example\":\"达人名称示例\",\"description\":\"达人名称\"},{\"responseName\":\"other_platform_promotion_amount\",\"fromName\":\"other_platform_promotion_amount\",\"type\":1,\"example\":\"0\",\"description\":\"其他平台补贴(分)\"},{\"responseName\":\"collection_subject_name\",\"fromName\":\"collection_subject_name\",\"type\":2,\"example\":\"主体名称示例\",\"description\":\"主体名称\"}]},{\"responseName\":\"next_start_index\",\"fromName\":\"next_start_index\",\"type\":2,\"example\":\"d746da31eee45e65d07b20f87d6844bbf72041350acc66af1711408070b62428\",\"description\":\"下一次请求参数start_index 的值\",\"securityLevel\":\"R1\"},{\"responseName\":\"next_start_time\",\"fromName\":\"next_start_time\",\"type\":2,\"example\":\"2021-10-01 06:00:00\",\"description\":\"下一次请求参数start_time的值\",\"securityLevel\":\"R1\"},{\"responseName\":\"size\",\"fromName\":\"size\",\"type\":7,\"example\":\"100\",\"description\":\"查询数量，请求参数size传了值得话为请求参数传的值，未传的话，值为100\",\"securityLevel\":\"R1\"},{\"responseName\":\"data_size\",\"fromName\":\"data_size\",\"type\":7,\"example\":\"100\",\"description\":\"返回结果data的数量\",\"securityLevel\":\"R1\"},{\"responseName\":\"is_end\",\"fromName\":\"is_end\",\"type\":7,\"example\":\"1\",\"description\":\"判断查询是否结束。0 未结束, 1 结束。未结束时，需要把next_start_index作为下一次请求的start_index,next_start_time作为下一次请求的start_time。\",\"securityLevel\":\"R1\"}]},\"demo\":{\"requestDemo\":{\"curl\":{\"reqUrl\":\"https://openapi-fxg.jinritemai.com?app_key=your_appkey_here\\u0026method=\\u0026access_token=your_accesstoken_here\\u0026param_json={}\\u0026timestamp=2018-06-19%2016:06:59\\u0026v=2\\u0026sign=your_sign_here\"},\"java\":{\"code\":\"OrderGetShopAccountItemRequest request = new OrderGetShopAccountItemRequest();\\nOrderGetShopAccountItemParam param = request.getParam();\\nparam.setStartTime(\\\"2021-10-01 00:00:00\\\");\\nparam.setEndTime(\\\"2021-10-01 23:59:59\\\");\\nparam.setOrderId(\\\"4847151209529677080\\\");\\nparam.setSize(100);\\nparam.setAccountType(0);\\nparam.setBizType(0);\\nparam.setTimeType(0);\\nparam.setStartIndex(\\\"d746da31eee45e65d07b20f87d6844bbf72041350acc66af1711408070b62428\\\");\\nparam.setProductId(\\\"33323233\\\");\\nOrderGetShopAccountItemResponse response = request.execute(accessToken);\\n\"},\"php\":{\"code\":\"$request = new OrderGetShopAccountItemRequest();\\n$param = new OrderGetShopAccountItemParam();\\n$request-\\u003esetParam($param);\\n$param-\\u003estart_time = \\\"2021-10-01 00:00:00\\\";\\n$param-\\u003eend_time = \\\"2021-10-01 23:59:59\\\";\\n$param-\\u003eorder_id = \\\"4847151209529677080\\\";\\n$param-\\u003esize = 100;\\n$param-\\u003eaccount_type = 0;\\n$param-\\u003ebiz_type = 0;\\n$param-\\u003etime_type = 0;\\n$param-\\u003estart_index = \\\"d746da31eee45e65d07b20f87d6844bbf72041350acc66af1711408070b62428\\\";\\n$param-\\u003eproduct_id = \\\"33323233\\\";\\n$response = $request-\\u003eexecute(accessToken);\\n\"},\"python\":{\"code\":\"request = OrderGetShopAccountItemRequest()\\nparam = request.getParams()\\nparam.start_time = \\\"2021-10-01 00:00:00\\\"\\nparam.end_time = \\\"2021-10-01 23:59:59\\\"\\nparam.order_id = \\\"4847151209529677080\\\"\\nparam.size = 100\\nparam.account_type = 0\\nparam.biz_type = 0\\nparam.time_type = 0\\nparam.start_index = \\\"d746da31eee45e65d07b20f87d6844bbf72041350acc66af1711408070b62428\\\"\\nparam.product_id = \\\"33323233\\\"\\nresponse = request.execute(accessToken)\\n\"},\"go\":{\"code\":\"request := order_getShopAccountItem_request.New()\\nparam := request.GetParams()\\nparam.StartTime = \\\"2021-10-01 00:00:00\\\"\\nparam.EndTime = \\\"2021-10-01 23:59:59\\\"\\nparam.OrderId = \\\"4847151209529677080\\\"\\nparam.Size = 100\\nparam.AccountType = 0\\nparam.BizType = 0\\nparam.TimeType = 0\\nparam.StartIndex = \\\"d746da31eee45e65d07b20f87d6844bbf72041350acc66af1711408070b62428\\\"\\nparam.ProductId = \\\"33323233\\\"\\nresponse := request.Execute(accessToken)\\n\"},\"dotNetCore\":{\"code\":\"var request = new OrderGetShopAccountItemRequest();\\nvar param = request.BuildParam();\\nparam.StartTime = \\\"2021-10-01 00:00:00\\\";\\nparam.EndTime = \\\"2021-10-01 23:59:59\\\";\\nparam.OrderId = \\\"4847151209529677080\\\";\\nparam.Size = 100;\\nparam.AccountType = 0;\\nparam.BizType = 0;\\nparam.TimeType = 0;\\nparam.StartIndex = \\\"d746da31eee45e65d07b20f87d6844bbf72041350acc66af1711408070b62428\\\";\\nparam.ProductId = \\\"33323233\\\";\\nvar response = request.Execute\\u003cOrderGetShopAccountItemResponse\\u003e(accessToken);\\n\"},\"js\":{}},\"responseDemo\":{\"responseSuccess\":{\"code\":10000,\"msg\":\"success\",\"sub_code\":\"\",\"sub_msg\":\"\"},\"responseError\":{\"sub_code\":\"\",\"sub_msg\":\"\"}}},\"error\":{\"errCodeList\":[{\"msg\":\"success\",\"code\":10000},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"500:参数异常，请检查参数start_time\",\"subCode\":\"isv.parameter-invalid:500\",\"solution\":\"请检查参数\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"系统错误\",\"subCode\":\"isp.service-error:100001\",\"solution\":\"系统错误\"}]}}",
+      "info": {
+        "AuditedTime": "",
+        "access": false,
+        "apiChargeType": 1,
+        "apiLimitLevel": 1,
+        "apiLimitValue": 500,
+        "apiSpiMsgNames": [],
+        "articleOutId": 206,
+        "auditStatus": 401,
+        "auth": {
+          "categoryList": [],
+          "groupName": "",
+          "packageName": "",
+          "packageType": 0
+        },
+        "authSubject": "[3]",
+        "authSubjectIdList": [
+          "店铺"
+        ],
+        "auths": [
+          {
+            "categoryList": [
+              "创新应用大赛_微应用",
+              "财务管理",
+              "打单发货-微应用",
+              "创新应用大赛_软件服务",
+              "商家后台系统",
+              "即时零售ebill订单管理（临时）",
+              "即时零售ERP",
+              "即时零售商家自研",
+              "订单管理",
+              "电商ERP"
+            ],
+            "groupName": "账单",
+            "packageName": "资金流水明细",
+            "packageType": 1
+          },
+          {
+            "categoryList": [],
+            "groupName": "定向权限",
+            "packageName": "定向权限包",
+            "packageType": 1
+          }
+        ],
+        "commitAuditTime": "",
+        "contentType": 1,
+        "createTime": -62135596800,
+        "defaultApiAndAppLimitLevel": 1,
+        "defaultApiAndAppLimitValue": 60,
+        "description": "查询资金流水明细，查询方式为时间轮训方式，数据T+1生成，建议第二天10点之后查询。如因任务积压导致延迟的情况，建议重试。",
+        "dirId": 46,
+        "dirLabels": [],
+        "dirName": "账单API",
+        "docLabels": [],
+        "extra": {
+          "creator": "",
+          "feishuDocUrl": "",
+          "mailDocUrl": "",
+          "mailPicUrl": "",
+          "mailTag": 0,
+          "noticeAuditUrl": "",
+          "ticketUrl": ""
+        },
+        "finalStatus": 1,
+        "flag": 0,
+        "id": 1430,
+        "isTop": false,
+        "note": "",
+        "pv": 3377,
+        "reOnline": true,
+        "status": 1,
+        "subtitle": "查询资金流水明细，查询方式为时间轮训方式，数据T+1生成，建议第二天10点之后查询。如因任务积压导致延迟的情况，建议重试。",
+        "title": "/order/getShopAccountItem",
+        "updateTime": 1773918583,
+        "url": "",
+        "userList": [],
+        "userSceneDesc": "资金流水明细接口(境内)",
+        "version": "V1.19"
+      },
+      "tagNameMap": {
+        "25": "优惠券基础数据",
+        "26": "用户优惠券数据",
+        "28": "其他字段",
+        "29": "通用字段",
+        "30": "物流公司信息",
+        "31": "订单基础信息",
+        "32": "地址基础信息",
+        "33": "寄件人地址信息",
+        "34": "寄件人联系信息",
+        "35": "物流增值服务",
+        "36": "回单寄回地址",
+        "37": "收件人地址",
+        "38": "收件人信息",
+        "39": "商品基础信息",
+        "40": "商品重量体积信息",
+        "41": "快递配置规则",
+        "42": "订单备注",
+        "43": "仓库基础信息",
+        "44": "店铺基础信息",
+        "45": "小程序基础信息",
+        "46": "订单来源分析",
+        "47": "买家留言 ",
+        "48": "商家备注",
+        "49": "订单金额信息",
+        "50": "商品金额信息",
+        "51": "营销活动金额信息",
+        "52": "营销活动基础信息",
+        "53": "精选联盟",
+        "54": "跨境海淘",
+        "55": "库存基础信息",
+        "56": "售后基础信息",
+        "57": "电子卡券",
+        "58": "赠品",
+        "59": "组合（组套）商品",
+        "60": "虚拟商品",
+        "61": "定金预售",
+        "62": "懂车帝购车信息",
+        "63": "用户特征标签",
+        "64": "物流信息",
+        "65": "证件信息",
+        "66": "C2B定制",
+        "67": "买家基础信息",
+        "68": "买家敏感信息",
+        "69": "场景包测试标签a",
+        "70": "场景包测试标签b",
+        "71": "商家快递网点信息",
+        "72": "商品类目信息",
+        "73": "短信基础字段",
+        "74": "售后文案",
+        "75": "插旗信息",
+        "76": "售后金额信息",
+        "77": "风控信息",
+        "78": "换货基础信息",
+        "79": "售后标签",
+        "80": "门店基础信息",
+        "81": "售后商家备注信息",
+        "82": "达人样品订单",
+        "83": "即时零售订单接单状态",
+        "85": "换货和补寄信息",
+        "86": "物流异常风控",
+        "87": "商家售后地址信息",
+        "88": "售后仲裁",
+        "89": "买家退货物流信息",
+        "90": "补寄场景",
+        "91": "售后价保",
+        "92": "售后数据分析",
+        "93": "售后协商记录",
+        "94": "废弃字段",
+        "95": "商品尺码模板",
+        "96": "商品标题前缀",
+        "97": "商品参考价凭证",
+        "98": "商品资质信息",
+        "99": "商品限购信息",
+        "100": "特殊日期延迟发货",
+        "101": "商品销量",
+        "102": "店铺地址库",
+        "103": "即时零售商品基础信息",
+        "104": "解密基础字段",
+        "105": "解密虚拟号",
+        "106": "解密明文信息",
+        "107": "解密手机号明文",
+        "108": "解密姓名信息",
+        "109": "解密地址信息",
+        "110": "解密身份证信息",
+        "111": "查询改地址开关",
+        "112": "用户店铺关注信息",
+        "113": "店铺会话统计数据",
+        "114": "飞鸽会话统计数据",
+        "115": "飞鸽客服基础信息",
+        "116": "飞鸽会话信息",
+        "117": "飞鸽客服登录日志",
+        "118": "飞鸽客服接待统计信息",
+        "119": "飞鸽会话消息基础信息",
+        "120": "视频信息",
+        "121": "商品卖点信息",
+        "122": "授权基础信息",
+        "123": "商品价格信息",
+        "124": "商品分佣信息",
+        "125": "联盟分佣信息",
+        "126": "商品评价信息",
+        "127": "评价基础信息",
+        "128": "评价结果数据",
+        "129": "店铺体验分",
+        "130": "评价内容信息",
+        "131": "订单extra"
+      }
+    },
+    "releaseNote": "新增出参 data.collection_subject_name:主体名称",
+    "version": "1.0.0"
+  },
+  "msg": ""
+}

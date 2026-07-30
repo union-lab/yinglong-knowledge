@@ -1,0 +1,334 @@
+{
+  "code": 0,
+  "data": {
+    "CustomerError": {
+      "ErrCode": 0,
+      "ErrMsg": ""
+    },
+    "RelevanceFAQs": [
+      {
+        "articleId": 3480,
+        "dirId": 93,
+        "title": "售后单如何判断是否极速退款？"
+      },
+      {
+        "articleId": 7263,
+        "dirId": 1284,
+        "title": "即时零售售后申请原因code"
+      },
+      {
+        "articleId": 3483,
+        "dirId": 93,
+        "title": "请求售后列表接口：/afterSale/List，返回的aftersale_status=53，这个53的状态表示的是什么？"
+      },
+      {
+        "articleId": 3474,
+        "dirId": 93,
+        "title": "调用售后列表接口字段没有看到买家的地址信息，如果是换货的售后单，补发商品给用户时的收件人地址信息从哪里可以获取到呢？"
+      },
+      {
+        "articleId": 5414,
+        "dirId": 93,
+        "title": "售后类型：价保，在售后列表接口如何拉取？"
+      },
+      {
+        "articleId": 6292,
+        "dirId": 93,
+        "title": "关于售后退款，refund_type退款方式中哪些会自动退款成功？"
+      },
+      {
+        "articleId": 3523,
+        "dirId": 93,
+        "title": "要查询21年的店铺历史售后单，使用售后列表接口：afterSale.List获取不到，如何解决？"
+      },
+      {
+        "articleId": 3457,
+        "dirId": 93,
+        "title": "调用售后列表接口：afterSale/List，经常报错系统异常，如何解决？"
+      },
+      {
+        "articleId": 3764,
+        "dirId": 93,
+        "title": "关于同意退款消息，能区分出是商家主动操作还是系统超时自动同意吗？"
+      },
+      {
+        "articleId": 5419,
+        "dirId": 93,
+        "title": "为什么接收到售后退款消息后，再查询退款列表api时，发现退款信息有延迟？"
+      },
+      {
+        "articleId": 5957,
+        "dirId": 93,
+        "title": "关于虚拟卡券订单，一个子订单是否会对应多个售后单ID的情况？"
+      }
+    ],
+    "article": {
+      "content": "{\"request\":{\"publicParam\":[{\"requestName\":\"method\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"afterSale.List\",\"description\":\"调用的API接口名称\"},{\"requestName\":\"app_key\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"6839996111118329223\",\"description\":\"应用创建完成后被分配的key\"},{\"requestName\":\"access_token\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"edae7c30-8386-443b-88a1-031111596fdd\",\"description\":\"用于调用 API 的 access_token\",\"hiddenForInterfaceName\":[\"/token/create\"]},{\"requestName\":\"param_json\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"{cid:12,page:1}\",\"description\":\"标准json类型，里面是业务参数按照参数名的字符串大小排序具体参数值，参考每个接口的参数表\"},{\"requestName\":\"timestamp\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2020-09-15 14:48:13\",\"description\":\"时间戳，格式为yyyy-MM-dd HH:mm:ss，时区为GMT+8，例如：2016-01-01 12:00:00\"},{\"requestName\":\"v\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2\",\"description\":\"API协议版本，当前版本为2\"},{\"requestName\":\"sign\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"796559d40beb08a1a1113c456c5c5a62\",\"description\":\"输入参数签名结果，签名算法参照 [API调用指南](https://op.jinritemai.com/docs/guide-docs/10/23)\"},{\"requestName\":\"sign_method\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"hmac-sha256\",\"description\":\"签名算法类型推荐使用hmac-sha256后续会下线md5（不传则默认为\\\"md5\\\"）1. md5:表示用md5算法加密字符串 2. hmac-sha256:表示用hmac_sha_256算法加密字符串\"}],\"requestParam\":[{\"requestName\":\"order_id\",\"toName\":\"OrderID\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"4821845786203981633\",\"description\":\"父订单号\",\"cipherTextType\":1},{\"requestName\":\"aftersale_type\",\"toName\":\"AfterSaleType\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1\",\"description\":\"售后类型；0-退货退款；1-已发货退款；2-未发货退款；3-换货；6-价保；7-补寄；8-维修\",\"cipherTextType\":1},{\"requestName\":\"aftersale_status\",\"toName\":\"AfterSaleStatus\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"2\",\"description\":\"已废弃，推荐使用standard_aftersale_status字段。售后状态，枚举为6(待商家同意),7(待买家退货),8(待商家发货),11(待商家二次同意),12(售后成功),13(换货待买家收货),14(换货成功),27(商家一次拒绝),28(售后失败),29(商家二次拒绝)\",\"cipherTextType\":1},{\"requestName\":\"reason\",\"toName\":\"Reason\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1\",\"description\":\"售后理由；1-七天无理由退货；2-非七天无理由退货；\",\"cipherTextType\":1},{\"requestName\":\"logistics_status\",\"toName\":\"LogisticsStatus\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"2\",\"description\":\"退货物流状态，枚举为1(全部),2(已发货),3(未发货)\",\"cipherTextType\":1},{\"requestName\":\"pay_type\",\"toName\":\"PayType\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"2\",\"description\":\"付款方式，枚举为1(全部), 2(货到付款),3(线上付款)\",\"cipherTextType\":1},{\"requestName\":\"refund_type\",\"toName\":\"RefundType\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1\",\"description\":\"退款类型，枚举为0(原路退款),1(线下退款),2(备用金),3(保证金),4(无需退款)\",\"cipherTextType\":1},{\"requestName\":\"arbitrate_status\",\"toName\":\"ArbitrateStatus\",\"mustNeed\":false,\"type\":3,\"subType\":1,\"style\":1,\"example\":\"0\",\"description\":\"仲裁状态，枚举为0(未介入),1(客服处理中),2(仲裁结束-支持买家),3(仲裁结束-支持卖家),4(待商家举证),5(待与买家协商),6(仲裁结束),255(取消)\",\"cipherTextType\":1},{\"requestName\":\"order_flag\",\"toName\":\"OrderFlag\",\"mustNeed\":false,\"type\":3,\"subType\":1,\"style\":1,\"example\":\"[1,2,3]\",\"description\":\"插旗信息：0：灰 1：紫 2: 青 3：绿 4： 橙 5： 红\",\"cipherTextType\":1},{\"requestName\":\"start_time\",\"toName\":\"ApplyTimeStart\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1626770133\",\"description\":\"申请时间开始，单位为秒（查询范围包含开始值）\",\"cipherTextType\":1},{\"requestName\":\"end_time\",\"toName\":\"ApplyTimeEnd\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1626856525\",\"description\":\"申请时间结束，单位为秒（查询范围不包含结束值）\",\"cipherTextType\":1},{\"requestName\":\"amount_start\",\"toName\":\"AmountStart\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"300\",\"description\":\"金额下限，单位为分（查询范围包含开始值）\",\"cipherTextType\":1},{\"requestName\":\"amount_end\",\"toName\":\"AmountEnd\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1000\",\"description\":\"金额上限，单位为分（查询范围不包含结束值）\",\"cipherTextType\":1},{\"requestName\":\"risk_flag\",\"toName\":\"RiskFlag\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"-1\",\"description\":\"风控标签，枚举为-1(退货正常),1(退货异常)\",\"cipherTextType\":1},{\"requestName\":\"order_by\",\"toName\":\"OrderBy\",\"mustNeed\":false,\"type\":3,\"subType\":2,\"style\":1,\"example\":\"[\\\"status_deadline desc\\\"]\",\"description\":\"排序方式，优先级按照列表顺序从前往后依次减小，写法为\\\"\\u003c字段名称\\u003e \\u003c排序方式\\u003e\\\"，字段名称目前支持\\\"status_deadline\\\"（逾期时间）、\\\"apply_time\\\"（申请时间）和 \\\"update_time\\\"（更新时间），排序方式目前支持\\\"asc\\\"（升序）和\\\"desc\\\"（降序）。按照\\\"逾期时间\\\"升序排列，会优先返回临近逾期时间的数据。\",\"cipherTextType\":1},{\"requestName\":\"page\",\"toName\":\"Page\",\"mustNeed\":true,\"type\":1,\"style\":1,\"example\":\"0\",\"description\":\"页数，从0开始\",\"cipherTextType\":1},{\"requestName\":\"size\",\"toName\":\"Size\",\"mustNeed\":true,\"type\":1,\"style\":1,\"example\":\"50\",\"description\":\"每页数量，最多100个\",\"cipherTextType\":1},{\"requestName\":\"aftersale_id\",\"toName\":\"AfterSaleID\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"6987272148133888300\",\"description\":\"售后单号\",\"cipherTextType\":1},{\"requestName\":\"standard_aftersale_status\",\"toName\":\"StandardAfterSaleStatus\",\"mustNeed\":false,\"type\":3,\"subType\":1,\"style\":1,\"example\":\"[6,7,11]\",\"description\":\"售后状态；6-待商家同意；7-待买家退货；8-待商家发货；11-待商家二次同意；12-售后成功；13-换货\\\\补寄\\\\维修待买家收货；14-换货\\\\补寄\\\\维修成功；27-商家一次拒绝；28-售后失败；29-商家二次拒绝；支持传多种状态，使用英文“,”分隔；注意：如传入非枚举值信息会被系统忽略，如传入都不合法则默认查询所有；\",\"cipherTextType\":1},{\"requestName\":\"need_special_type\",\"toName\":\"NeedSpecialType\",\"mustNeed\":false,\"type\":4,\"style\":1,\"example\":\"true/false\",\"description\":\"是否展示特殊售后\",\"cipherTextType\":1},{\"requestName\":\"update_start_time\",\"toName\":\"UpdateTimeStart\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1626856525\",\"description\":\"更新时间开始，单位为秒（查询范围包含开始值）；当使用update_start_time和update_end_time时，请配合传入order_by= update_time否则会导致基于更新时间查询售后列表轮询数据遗漏；\",\"cipherTextType\":1},{\"requestName\":\"update_end_time\",\"toName\":\"UpdateTimeEnd\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1626856525\",\"description\":\"更新时间结束，单位为秒（查询范围包含开始值）；当使用update_start_time和update_end_time时，请配合传入order_by= update_time否则会导致基于更新时间查询售后列表轮询数据遗漏；\",\"cipherTextType\":1},{\"requestName\":\"order_logistics_tracking_no\",\"toName\":\"OrderLogisticsTrackingNo\",\"mustNeed\":false,\"type\":3,\"subType\":2,\"style\":1,\"example\":\"[\\\"SF12345678910\\\"]\",\"description\":\"正向物流单号\",\"cipherTextType\":1},{\"requestName\":\"order_logistics_state\",\"toName\":\"OrderLogisticsState\",\"mustNeed\":false,\"type\":3,\"subType\":1,\"style\":1,\"example\":\"[1,2,3,4]\",\"description\":\"正向物流状态（仅支持拒签场景下的状态筛选，状态更新有一定时延。1：买家已拒签；2：买家已签收；3：快递退回中，运往商家，包含快递拦截成功；4：商家已签收）\",\"cipherTextType\":1},{\"requestName\":\"agree_refuse_sign\",\"toName\":\"AgreeRefuseSign\",\"mustNeed\":false,\"type\":3,\"subType\":1,\"style\":1,\"example\":\"[1,2]\",\"description\":\"是否拒签后退款（1：已同意拒签, 2：未同意拒签）\",\"cipherTextType\":1},{\"requestName\":\"aftersale_sub_type\",\"toName\":\"AfterSaleSubType\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"8001\",\"description\":\"售后子类型；8001-以换代修。\",\"cipherTextType\":1},{\"requestName\":\"aftersale_status_to_final_start_time\",\"toName\":\"AfterSaleStatusToFinalTimeStart\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1626856525\",\"description\":\"售后完结时间开始，单位为秒（查询范围包含开始值），仅支持售后完结时间在近6个月内的售后单，按完结时间筛选；售后完结时间生成规则是平台根据商品的类型，售后状态等综合判断生成，当售后单有完结时间返回时售后单不可再做任何操作；\",\"cipherTextType\":1},{\"requestName\":\"aftersale_status_to_final_end_time\",\"toName\":\"AfterSaleStatusToFinalTimeEnd\",\"mustNeed\":false,\"type\":1,\"style\":1,\"example\":\"1626856525\",\"description\":\"售后完结时间结束，单位为秒（查询范围包含开始值），仅支持售后完结时间在近6个月内的售后单，按完结时间筛选；售后完结时间生成规则是平台根据商品的类型，售后状态等综合判断生成，当售后单有完结时间返回时售后单不可再做任何操作；\",\"cipherTextType\":1},{\"requestName\":\"store_id_list\",\"toName\":\"store_id_list\",\"mustNeed\":false,\"type\":3,\"subType\":1,\"style\":1,\"example\":\"[1626856525,1123416]\",\"description\":\"即时零售专用, 查询门店id list入参 其中最多传入50个门店id\",\"cipherTextType\":1}]},\"response\":{\"responseData\":[{\"responseName\":\"items\",\"fromName\":\"Items\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"售后列表元素\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"aftersale_info\",\"fromName\":\"AfterSaleInfo\",\"type\":5,\"example\":\"\",\"description\":\"售后信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"aftersale_status_to_final_time\",\"fromName\":\"AfterSaleStatusToFinalTime\",\"type\":1,\"example\":\"1626753592\",\"description\":\"售后完结时间，完结时间是平台根据商品的类型，售后状态等综合判断生成，当售后单有完结时间返回时售后单不可再做任何操作；未完结售后单的该字段值为0；Unix时间戳：秒\",\"tagId\":56},{\"responseName\":\"aftersale_id\",\"fromName\":\"AfterSaleID\",\"type\":2,\"example\":\"6986853269519810849\",\"description\":\"售后单号\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"aftersale_order_type\",\"fromName\":\"AfterSaleOrderType\",\"type\":1,\"example\":\"1\",\"description\":\"售后订单类型，枚举为-1(历史订单),1(商品单),2(店铺单)\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"aftersale_type\",\"fromName\":\"AfterSaleType\",\"type\":1,\"example\":\"0\",\"description\":\"售后类型，枚举为0(退货退款),1(已发货退款),2(未发货退款),3(换货),6(价保),7(补寄)\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"aftersale_status\",\"fromName\":\"AfterSaleStatus\",\"type\":1,\"example\":\"11\",\"description\":\"售后状态和请求参数standard_aftersale_status字段对应；3-换货待买家收货；6-待商家同意；7-待买家退货；8-待商家发货；11-待商家二次同意；12-售后成功；14-换货成功；27-商家一次拒绝；28-售后失败；29-商家二次拒绝；\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"related_id\",\"fromName\":\"RelatedID\",\"type\":2,\"example\":\"\\\"4821780700279174718\\\"\",\"description\":\"关联的订单ID\",\"securityLevel\":\"R1\",\"tagId\":31},{\"responseName\":\"apply_time\",\"fromName\":\"ApplyTime\",\"type\":1,\"example\":\"1626753592\",\"description\":\"申请时间\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"update_time\",\"fromName\":\"UpdateTime\",\"type\":1,\"example\":\"1626860666\",\"description\":\"最近更新时间\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"status_deadline\",\"fromName\":\"StatusDeadline\",\"type\":1,\"example\":\"1626926420\",\"description\":\"当前节点逾期时间\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"refund_amount\",\"fromName\":\"RefundAmount\",\"type\":1,\"example\":\"20\",\"description\":\"售后退款金额，单位为分\",\"securityLevel\":\"R1\"},{\"responseName\":\"refund_post_amount\",\"fromName\":\"RefundPostAmount\",\"type\":1,\"example\":\"0\",\"description\":\"售后退运费金额，单位为分\",\"securityLevel\":\"R1\"},{\"responseName\":\"aftersale_num\",\"fromName\":\"AfterSaleQuantity\",\"type\":1,\"example\":\"1\",\"description\":\"售后数量\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"part_type\",\"fromName\":\"PartType\",\"type\":1,\"example\":\"0\",\"description\":\"部分退类型\",\"securityLevel\":\"R1\"},{\"responseName\":\"aftersale_refund_type\",\"fromName\":\"AfterSaleRefundType\",\"type\":1,\"example\":\"0\",\"description\":\"售后退款类型，枚举为-1(历史数据默认值),0(订单货款/原路退款),1(货到付款线下退款),2(备用金),3(保证金),4(无需退款),5(平台垫付)\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"refund_type\",\"fromName\":\"RefundType\",\"type\":1,\"example\":\"0\",\"description\":\"退款方式，枚举为1(极速退款助手)、2(售后小助手)、3(售后急速退)、4(闪电退货)\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"arbitrate_status\",\"fromName\":\"ArbitrateStatus\",\"type\":1,\"example\":\"0\",\"description\":\"仲裁状态，枚举为0(无仲裁记录),1(仲裁中),2(客服同意),3(客服拒绝),4(待商家举证),5(协商期),255(仲裁结束)\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"create_time\",\"fromName\":\"CreateTime\",\"type\":1,\"example\":\"1626753592\",\"description\":\"售后单创建时间\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"refund_tax_amount\",\"fromName\":\"RefundTaxAmount\",\"type\":1,\"example\":\"0\",\"description\":\"退税费\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"left_urge_sms_count\",\"fromName\":\"LeftUrgeSMSCount\",\"type\":1,\"example\":\"0\",\"description\":\"商家剩余发送短信（催用户寄回）次数\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"return_logistics_code\",\"fromName\":\"ReturnLogisticsCode\",\"type\":2,\"example\":\"\\\"XY123123123\\\"\",\"description\":\"退货物流单号\",\"securityLevel\":\"R1\",\"tagId\":64},{\"responseName\":\"risk_decision_code\",\"fromName\":\"RiskDecisionCode\",\"type\":1,\"example\":\"0\",\"description\":\"风控码\",\"securityLevel\":\"R1\",\"tagId\":77},{\"responseName\":\"risk_decision_reason\",\"fromName\":\"RiskDecisionReason\",\"type\":2,\"example\":\"\\\"\\\"\",\"description\":\"风控理由\",\"securityLevel\":\"R1\",\"tagId\":77},{\"responseName\":\"risk_decision_description\",\"fromName\":\"RiskDecisionDescription\",\"type\":2,\"example\":\"\\\"\\\"\",\"description\":\"风控描述\",\"securityLevel\":\"R1\",\"tagId\":77},{\"responseName\":\"return_promotion_amount\",\"fromName\":\"ReturnPromotionAmount\",\"type\":1,\"example\":\"0\",\"description\":\"退优惠金额\",\"securityLevel\":\"R1\",\"tagId\":51},{\"responseName\":\"refund_status\",\"fromName\":\"RefundStatus\",\"type\":1,\"example\":\"1\",\"description\":\"退款状态；1-待退款;2-退款中;3-退款成功;4-退款失败;5-追缴成功;\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"arbitrate_blame\",\"fromName\":\"ArbitrateBlame\",\"type\":1,\"example\":\"1:商家责任,2:买家责任,3:双方有责,4:平台责任,5:达人责任\",\"description\":\"仲裁责任方\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"exchange_sku_info\",\"fromName\":\"ExchangeSkuInfo\",\"type\":5,\"example\":\"\",\"description\":\"换货SKU信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"sku_id\",\"fromName\":\"SkuId\",\"type\":2,\"example\":\"\\\"1709160688834615\\\"\",\"description\":\"换货SkuID\",\"securityLevel\":\"R1\",\"tagId\":78},{\"responseName\":\"code\",\"fromName\":\"Code\",\"type\":2,\"example\":\"\\\"10000\\\"\",\"description\":\"换货SKU code\",\"securityLevel\":\"R1\",\"tagId\":78},{\"responseName\":\"num\",\"fromName\":\"Num\",\"type\":1,\"example\":\"1\",\"description\":\"换货数目\",\"securityLevel\":\"R1\",\"tagId\":78},{\"responseName\":\"out_sku_id\",\"fromName\":\"OutSkuId\",\"type\":2,\"example\":\"\\\"10000\\\"\",\"description\":\"商家编号\",\"securityLevel\":\"R1\",\"tagId\":78},{\"responseName\":\"out_warehouse_id\",\"fromName\":\"WarehouseId\",\"type\":2,\"example\":\"\\\"10000\\\"\",\"description\":\"区域库存仓ID\",\"securityLevel\":\"R1\",\"tagId\":78},{\"responseName\":\"supplier_id\",\"fromName\":\"SupplierId\",\"type\":2,\"example\":\"\\\"10000\\\"\",\"description\":\"sku外部供应商编码供应商ID\",\"securityLevel\":\"R1\",\"tagId\":78},{\"responseName\":\"url\",\"fromName\":\"Url\",\"type\":2,\"example\":\"\\\"http://xxxxx\\\"\",\"description\":\"商品图片url\",\"securityLevel\":\"R1\",\"tagId\":78},{\"responseName\":\"name\",\"fromName\":\"Name\",\"type\":2,\"example\":\"\\\"xxx\\\"\",\"description\":\"商品名称\",\"securityLevel\":\"R1\",\"tagId\":78},{\"responseName\":\"price\",\"fromName\":\"Price\",\"type\":2,\"example\":\"\\\"100\\\"\",\"description\":\"换货商品的价格，单位分\",\"securityLevel\":\"R1\",\"tagId\":78},{\"responseName\":\"spec_desc\",\"fromName\":\"SpecDesc\",\"type\":2,\"example\":\"\\\"xx/xx/xx\\\"\",\"description\":\"sku规格信息\",\"securityLevel\":\"R1\",\"tagId\":78}],\"tagId\":78},{\"responseName\":\"return_logistics_company_name\",\"fromName\":\"ReturnLogisticsCompanyName\",\"type\":2,\"example\":\"顺丰速运\",\"description\":\"退货物流公司名称\",\"securityLevel\":\"R1\",\"tagId\":30},{\"responseName\":\"exchange_logistics_company_name\",\"fromName\":\"ExchangeLogisticsCompanyName\",\"type\":2,\"example\":\"韵达快递\",\"description\":\"换货物流公司名称\",\"securityLevel\":\"R1\",\"tagId\":30},{\"responseName\":\"remark\",\"fromName\":\"Remark\",\"type\":2,\"example\":\"买家不想要了\",\"description\":\"售后商家备注\",\"securityLevel\":\"R1\",\"tagId\":81},{\"responseName\":\"got_pkg\",\"fromName\":\"GotPkg\",\"type\":1,\"example\":\"1\",\"description\":\"买家是否收到货物，0表示未收到，1表示收到\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"order_logistics\",\"fromName\":\"OrderLogistics\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"商家首次发货的正向物流信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"tracking_no\",\"fromName\":\"TrackingNo\",\"type\":2,\"example\":\"SF12345678910\",\"description\":\"物流单号\",\"securityLevel\":\"R1\",\"tagId\":64},{\"responseName\":\"company_name\",\"fromName\":\"CompanyName\",\"type\":2,\"example\":\"顺丰\",\"description\":\"物流公司名称\",\"securityLevel\":\"R1\",\"tagId\":30},{\"responseName\":\"company_code\",\"fromName\":\"CompanyCode\",\"type\":2,\"example\":\"shunfeng\",\"description\":\"物流公司编码\",\"securityLevel\":\"R1\",\"tagId\":30},{\"responseName\":\"logistics_time\",\"fromName\":\"LogisticsTime\",\"type\":1,\"example\":\"1637586290\",\"description\":\"物流状态到达时间\",\"securityLevel\":\"R1\",\"tagId\":64},{\"responseName\":\"logistics_state\",\"fromName\":\"LogisticsState\",\"type\":1,\"example\":\"6\",\"description\":\"正向物流状态\",\"securityLevel\":\"R1\",\"tagId\":64}]},{\"responseName\":\"is_agree_refuse_sign\",\"fromName\":\"IsAgreeRefuseSign\",\"type\":1,\"example\":\"1\",\"description\":\"是否拒签后退款（1：已同意拒签, 2：未同意拒签）\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"reason_second_labels\",\"fromName\":\"ReasonSecondLabels\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"用户申请售后时选择的二级原因标签\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"code\",\"fromName\":\"Code\",\"type\":1,\"example\":\"1\",\"description\":\"二级原因标签编号\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"name\",\"fromName\":\"Name\",\"type\":2,\"example\":\"衣服买大\",\"description\":\"二级原因标签名称\",\"securityLevel\":\"R1\",\"tagId\":56}]},{\"responseName\":\"aftersale_tags\",\"fromName\":\"AftersaleTags\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"售后标签（含时效延长、风险预警、豁免体验分等标签）标签在平台侧会有更新，标签仅做展示使用，请勿作为系统判断依赖。\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"tag_detail\",\"fromName\":\"TagDetail\",\"type\":2,\"example\":\"风险预警\",\"description\":\"标签名称\",\"securityLevel\":\"R1\",\"tagId\":79},{\"responseName\":\"tag_detail_en\",\"fromName\":\"TagDetailEn\",\"type\":2,\"example\":\"risk_warning\",\"description\":\"标签关键字\",\"securityLevel\":\"R1\",\"tagId\":79},{\"responseName\":\"tag_detail_text\",\"fromName\":\"TagDetailText\",\"type\":2,\"example\":\"该售后单【xxx预警原因】请根据物流/商品状态进行核实。若确认有风险，请及时保存举证${relate_doc}，可在${asset_prevent}操作批量拒绝售后；若无风险，可同意售后。\",\"description\":\"标签悬浮文案（其中${key}占位符对应placeholder中的key对应内容）\",\"securityLevel\":\"R1\",\"tagId\":79},{\"responseName\":\"tag_link_url\",\"fromName\":\"TagLinkUrl\",\"type\":2,\"example\":\"略\",\"description\":\"标签跳转链接\",\"securityLevel\":\"R1\",\"tagId\":79},{\"responseName\":\"placeholder\",\"fromName\":\"Placeholder\",\"type\":8,\"mapKeyType\":2,\"mapValueType\":5,\"example\":\"\",\"description\":\"标签悬浮文案的占位符定义\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"text\",\"fromName\":\"Text\",\"type\":2,\"example\":\"防控中心\",\"description\":\"占位符文案\",\"securityLevel\":\"R1\",\"tagId\":79},{\"responseName\":\"url\",\"fromName\":\"Url\",\"type\":2,\"example\":\"略\",\"description\":\"占位符跳转链接\",\"securityLevel\":\"R1\",\"tagId\":79}],\"tagId\":79}],\"tagId\":79},{\"responseName\":\"store_id\",\"fromName\":\"StoreID\",\"type\":1,\"example\":\"3592\",\"description\":\"门店ID\",\"securityLevel\":\"R1\",\"tagId\":80},{\"responseName\":\"store_name\",\"fromName\":\"StoreName\",\"type\":2,\"example\":\"xxx朝阳分店\",\"description\":\"门店名称\",\"securityLevel\":\"R1\",\"tagId\":80},{\"responseName\":\"aftersale_sub_type\",\"fromName\":\"AfterSaleSubType\",\"type\":1,\"example\":\"8001\",\"description\":\"售后子类型；8001-以换代修。\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"auto_audit_bits\",\"fromName\":\"AutoAuditbits\",\"type\":3,\"subType\":1,\"example\":\"[1, 2]\",\"description\":\"自动审核方式：1-发货前极速退；2-小助手自动同意退款；3-发货后极速退；4-闪电退货；5-跨境零秒退；6-云仓拦截自动退；7-小助手自动同意退货；8-小助手自动同意拒签后退款；9-商家代客填写卡片发起售后；10-治理未发货自动同意退款；11-治理已发货自动同意退款；12-商家快递拦截成功自动退款；13-质检商品免审核；14-协商方案自动同意退款；15-平台卡券自动同意退款；16-三方卡券自动同意退款；17-治理一审自动同意退货退款；21-物流异常极速退；27-发货后签收前垫资极速退\",\"securityLevel\":\"R1\",\"tagId\":56}]},{\"responseName\":\"order_info\",\"fromName\":\"OrderInfo\",\"type\":5,\"example\":\"\",\"description\":\"订单信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"shop_order_id\",\"fromName\":\"ShopOrderID\",\"type\":2,\"example\":\"\\\"4821780700279174718\\\"\",\"description\":\"店铺单订单ID\",\"securityLevel\":\"R1\",\"tagId\":31},{\"responseName\":\"related_order_info\",\"fromName\":\"RelatedOrderInfo\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"售后关联的订单信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"delivery_infos\",\"fromName\":\"delivery_infos\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"称重品信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"info_unit\",\"fromName\":\"info_unit\",\"type\":2,\"example\":\"单位\",\"description\":\"g\"},{\"responseName\":\"info_value\",\"fromName\":\"info_value\",\"type\":2,\"example\":\"值\",\"description\":\"220\"},{\"responseName\":\"info_type\",\"fromName\":\"info_type\",\"type\":2,\"example\":\"类型\",\"description\":\"weight\"}]},{\"responseName\":\"sku_order_id\",\"fromName\":\"SKUOrderID\",\"type\":2,\"example\":\"\\\"4821780700279174718\\\"\",\"description\":\"商品单信息\",\"securityLevel\":\"R1\",\"tagId\":31},{\"responseName\":\"order_status\",\"fromName\":\"OrderStatus\",\"type\":1,\"example\":\"3\",\"description\":\"订单状态，枚举为2(未发货),3(已发货),5(已收货或已完成),255(已完成,废弃)\",\"securityLevel\":\"R1\",\"tagId\":31},{\"responseName\":\"pay_amount\",\"fromName\":\"PayAmount\",\"type\":1,\"example\":\"20\",\"description\":\"付款金额\",\"securityLevel\":\"R1\",\"tagId\":49},{\"responseName\":\"post_amount\",\"fromName\":\"PostAmount\",\"type\":1,\"example\":\"0\",\"description\":\"付运费金额\",\"securityLevel\":\"R1\",\"tagId\":49},{\"responseName\":\"item_num\",\"fromName\":\"ItemQuantity\",\"type\":1,\"example\":\"1\",\"description\":\"购买数量\",\"securityLevel\":\"R1\",\"tagId\":31},{\"responseName\":\"create_time\",\"fromName\":\"CreateTime\",\"type\":1,\"example\":\"1626753467\",\"description\":\"下单时间\",\"securityLevel\":\"R1\",\"tagId\":31},{\"responseName\":\"tax_amount\",\"fromName\":\"TaxAmount\",\"type\":1,\"example\":\"0\",\"description\":\"税费\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"is_oversea_order\",\"fromName\":\"IsOverseaOrder\",\"type\":1,\"example\":\"0\",\"description\":\"是否为海外订单\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"product_name\",\"fromName\":\"ProductName\",\"type\":2,\"example\":\"小兔子T恤\",\"description\":\"商品名称\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"product_id\",\"fromName\":\"ProductID\",\"type\":1,\"example\":\"9999888777666\",\"description\":\"商品ID\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"product_image\",\"fromName\":\"ProductImage\",\"type\":2,\"example\":\"https://bytedance.com/image/rabbit.jpg\",\"description\":\"商品图片\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"tags\",\"fromName\":\"Tags\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"订单标签；标签在平台侧会有更新，标签仅做展示使用，请勿作为系统判断依赖。\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"tag_detail\",\"fromName\":\"TagDetail\",\"type\":2,\"example\":\"超级售后\",\"description\":\"标签中文名称\",\"securityLevel\":\"R1\"},{\"responseName\":\"tag_detail_en\",\"fromName\":\"TagDetailEn\",\"type\":2,\"example\":\"super_after_sale\",\"description\":\"标签编号\",\"securityLevel\":\"R1\"},{\"responseName\":\"tag_link_url\",\"fromName\":\"TagLinkUrl\",\"type\":2,\"example\":\"http://what_is_super_after_sale.bytedance.com/faq\",\"description\":\"标签链接\",\"securityLevel\":\"R1\"}]},{\"responseName\":\"sku_spec\",\"fromName\":\"SKUSpec\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"商品规格\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"name\",\"fromName\":\"Name\",\"type\":2,\"example\":\"颜色\",\"description\":\"规格类型名称\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"value\",\"fromName\":\"Value\",\"type\":2,\"example\":\"白\",\"description\":\"规格值\",\"securityLevel\":\"R1\",\"tagId\":39}]},{\"responseName\":\"shop_sku_code\",\"fromName\":\"ShopSKUCode\",\"type\":2,\"example\":\"\\\"\\\"\",\"description\":\"商家SKU编码\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"logistics_code\",\"fromName\":\"LogisticsCode\",\"type\":2,\"example\":\"\\\"RABBIT123123\\\"\",\"description\":\"发货物流编码\",\"securityLevel\":\"R1\",\"tagId\":30},{\"responseName\":\"aftersale_pay_amount\",\"fromName\":\"AfterSalePayAmount\",\"type\":1,\"example\":\"20\",\"description\":\"售后退款金额\",\"securityLevel\":\"R1\",\"tagId\":76},{\"responseName\":\"aftersale_post_amount\",\"fromName\":\"AfterSalePostAmount\",\"type\":1,\"example\":\"0\",\"description\":\"售后退运费金额\",\"securityLevel\":\"R1\",\"tagId\":76},{\"responseName\":\"aftersale_tax_amount\",\"fromName\":\"AfterSaleTaxAmount\",\"type\":1,\"example\":\"0\",\"description\":\"售后退税费金额\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"aftersale_item_num\",\"fromName\":\"AfterSaleItemQuantity\",\"type\":1,\"example\":\"1\",\"description\":\"售后商品数量\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"promotion_pay_amount\",\"fromName\":\"PromotionPayAmount\",\"type\":1,\"example\":\"0\",\"description\":\"优惠券金额\",\"securityLevel\":\"R1\",\"tagId\":51},{\"responseName\":\"price\",\"fromName\":\"Price\",\"type\":1,\"example\":\"20\",\"description\":\"价格\",\"securityLevel\":\"R1\",\"tagId\":49},{\"responseName\":\"logistics_company_name\",\"fromName\":\"LogisticsCompanyName\",\"type\":2,\"example\":\"顺丰速运\",\"description\":\"【已废弃】正向物流公司名称,替代字段：aftersale_info.order_logistics.company_name字段\",\"securityLevel\":\"R1\"},{\"responseName\":\"given_sku_order_ids\",\"fromName\":\"GivenSkuOrderIds\",\"type\":3,\"subType\":2,\"example\":\"4863025593329976686\",\"description\":\"赠品订单id\",\"securityLevel\":\"R1\",\"tagId\":58}]},{\"responseName\":\"order_flag\",\"fromName\":\"OrderFlag\",\"type\":1,\"example\":\"0\",\"description\":\"订单插旗\",\"securityLevel\":\"R1\",\"tagId\":75}]},{\"responseName\":\"text_part\",\"fromName\":\"TextPart\",\"type\":5,\"example\":\"\",\"description\":\"文案部分\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"logistics_text\",\"fromName\":\"LogisticsShippedText\",\"type\":2,\"example\":\"\\\"已发货\\\"\",\"description\":\"正向物流发货状态文案\",\"securityLevel\":\"R1\",\"tagId\":74},{\"responseName\":\"aftersale_status_text\",\"fromName\":\"AfterSaleStatusText\",\"type\":2,\"example\":\"\\\"待商家审核\\\"\",\"description\":\"售后状态文案\",\"securityLevel\":\"R1\",\"tagId\":74},{\"responseName\":\"aftersale_type_text\",\"fromName\":\"AfterSaleTypeText\",\"type\":2,\"example\":\"\\\"退货退款\\\"\",\"description\":\"售后类型文案\",\"securityLevel\":\"R1\",\"tagId\":74},{\"responseName\":\"return_logistics_text\",\"fromName\":\"ReturnLogisticsShippedText\",\"type\":2,\"example\":\"\\\"已发货\\\"\",\"description\":\"退货物流发货状态文案\",\"securityLevel\":\"R1\",\"tagId\":74},{\"responseName\":\"aftersale_refund_type_text\",\"fromName\":\"AfterSaleRefundTypeText\",\"type\":2,\"example\":\"\\\"保证金\\\"\",\"description\":\"售后退款类型文案\",\"securityLevel\":\"R1\",\"tagId\":74},{\"responseName\":\"reason_text\",\"fromName\":\"ReasonText\",\"type\":2,\"example\":\"\\\"无理由退款\\\"\",\"description\":\"售后理由文案\",\"securityLevel\":\"R1\",\"tagId\":74},{\"responseName\":\"bad_item_text\",\"fromName\":\"AfterSaleBadItemCountText\",\"type\":2,\"example\":\"\\\"\\\"\",\"description\":\"坏单比例文案\",\"securityLevel\":\"R1\",\"tagId\":74},{\"responseName\":\"arbitrate_status_text\",\"fromName\":\"ArbitrateStatusText\",\"type\":2,\"example\":\"\\\"\\\"\",\"description\":\"仲裁状态文案\",\"securityLevel\":\"R1\",\"tagId\":74}]},{\"responseName\":\"seller_logs\",\"fromName\":\"SellerLogs\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"卖家插旗日志\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"content\",\"fromName\":\"Content\",\"type\":2,\"example\":\"\\\"买家觉得小兔子太可爱了，不想要了\\\"\",\"description\":\"插旗日志内容\",\"securityLevel\":\"R1\",\"tagId\":75},{\"responseName\":\"op_name\",\"fromName\":\"OpName\",\"type\":2,\"example\":\"\\\"兔子店铺CEO\\\"\",\"description\":\"插旗操作人\",\"securityLevel\":\"R1\",\"tagId\":75},{\"responseName\":\"create_time\",\"fromName\":\"CreateTime\",\"type\":2,\"example\":\"2001-01-01 03:04:05\",\"description\":\"插旗时间（字符串格式）\",\"securityLevel\":\"R1\",\"tagId\":75},{\"responseName\":\"star\",\"fromName\":\"Star\",\"type\":1,\"example\":\"0\",\"description\":\"插旗信息；0：灰 1：紫 2: 青 3：绿 4： 橙 5： 红\",\"securityLevel\":\"R1\",\"tagId\":75}]}]},{\"responseName\":\"has_more\",\"fromName\":\"HasMore\",\"type\":4,\"example\":\"true\",\"description\":\"是否还有更多\",\"securityLevel\":\"R1\",\"tagId\":29},{\"responseName\":\"total\",\"fromName\":\"Total\",\"type\":1,\"example\":\"1025\",\"description\":\"当前搜索条件下，匹配到的总数量\",\"securityLevel\":\"R1\",\"tagId\":29},{\"responseName\":\"page\",\"fromName\":\"Page\",\"type\":1,\"example\":\"0\",\"description\":\"页码，从0开始\",\"securityLevel\":\"R1\",\"tagId\":29},{\"responseName\":\"size\",\"fromName\":\"Size\",\"type\":1,\"example\":\"10\",\"description\":\"当前返回售后数量\",\"securityLevel\":\"R1\",\"tagId\":29}]},\"demo\":{\"requestDemo\":{\"curl\":{\"reqUrl\":\"https://openapi-fxg.jinritemai.com?app_key=your_appkey_here\\u0026method=\\u0026access_token=your_accesstoken_here\\u0026param_json={}\\u0026timestamp=2018-06-19%2016:06:59\\u0026v=2\\u0026sign=your_sign_here\"},\"java\":{\"code\":\"AfterSaleListRequest request = new AfterSaleListRequest();\\nAfterSaleListParam param = request.getParam();\\nparam.setOrderId(\\\"4821845786203981633\\\");\\nparam.setAftersaleType(1L);\\nparam.setAftersaleStatus(2L);\\nparam.setReason(1L);\\nparam.setLogisticsStatus(2L);\\nparam.setPayType(2L);\\nparam.setRefundType(1L);\\nparam.setArbitrateStatus(0);\\nparam.setOrderFlag([1,2,3]);\\nparam.setStartTime(1626770133L);\\nparam.setEndTime(1626856525L);\\nparam.setAmountStart(300L);\\nparam.setAmountEnd(1000L);\\nparam.setRiskFlag(-1L);\\nparam.setOrderBy([\\\"status_deadline desc\\\"]);\\nparam.setPage(0L);\\nparam.setSize(50L);\\nparam.setAftersaleId(\\\"6987272148133888300\\\");\\nparam.setStandardAftersaleStatus([6,7,11]);\\nparam.setNeedSpecialType(true/false);\\nparam.setUpdateStartTime(1626856525L);\\nparam.setUpdateEndTime(1626856525L);\\nparam.setOrderLogisticsTrackingNo([\\\"SF12345678910\\\"]);\\nparam.setOrderLogisticsState([1,2,3,4]);\\nparam.setAgreeRefuseSign([1,2]);\\nparam.setAftersaleSubType(8001L);\\nparam.setAftersaleStatusToFinalStartTime(1626856525L);\\nparam.setAftersaleStatusToFinalEndTime(1626856525L);\\nparam.setStoreIdList([1626856525,1123416]);\\nAfterSaleListResponse response = request.execute(accessToken);\\n\"},\"php\":{\"code\":\"$request = new AfterSaleListRequest();\\n$param = new AfterSaleListParam();\\n$request-\\u003esetParam($param);\\n$param-\\u003eorder_id = \\\"4821845786203981633\\\";\\n$param-\\u003eaftersale_type = 1;\\n$param-\\u003eaftersale_status = 2;\\n$param-\\u003ereason = 1;\\n$param-\\u003elogistics_status = 2;\\n$param-\\u003epay_type = 2;\\n$param-\\u003erefund_type = 1;\\n$param-\\u003earbitrate_status = 0;\\n$param-\\u003eorder_flag = [1,2,3];\\n$param-\\u003estart_time = 1626770133;\\n$param-\\u003eend_time = 1626856525;\\n$param-\\u003eamount_start = 300;\\n$param-\\u003eamount_end = 1000;\\n$param-\\u003erisk_flag = -1;\\n$param-\\u003eorder_by = [\\\"status_deadline desc\\\"];\\n$param-\\u003epage = 0;\\n$param-\\u003esize = 50;\\n$param-\\u003eaftersale_id = \\\"6987272148133888300\\\";\\n$param-\\u003estandard_aftersale_status = [6,7,11];\\n$param-\\u003eneed_special_type = true/false;\\n$param-\\u003eupdate_start_time = 1626856525;\\n$param-\\u003eupdate_end_time = 1626856525;\\n$param-\\u003eorder_logistics_tracking_no = [\\\"SF12345678910\\\"];\\n$param-\\u003eorder_logistics_state = [1,2,3,4];\\n$param-\\u003eagree_refuse_sign = [1,2];\\n$param-\\u003eaftersale_sub_type = 8001;\\n$param-\\u003eaftersale_status_to_final_start_time = 1626856525;\\n$param-\\u003eaftersale_status_to_final_end_time = 1626856525;\\n$param-\\u003estore_id_list = [1626856525,1123416];\\n$response = $request-\\u003eexecute(accessToken);\\n\"},\"python\":{\"code\":\"request = AfterSaleListRequest()\\nparam = request.getParams()\\nparam.order_id = \\\"4821845786203981633\\\"\\nparam.aftersale_type = 1\\nparam.aftersale_status = 2\\nparam.reason = 1\\nparam.logistics_status = 2\\nparam.pay_type = 2\\nparam.refund_type = 1\\nparam.arbitrate_status = 0\\nparam.order_flag = [1,2,3]\\nparam.start_time = 1626770133\\nparam.end_time = 1626856525\\nparam.amount_start = 300\\nparam.amount_end = 1000\\nparam.risk_flag = -1\\nparam.order_by = [\\\"status_deadline desc\\\"]\\nparam.page = 0\\nparam.size = 50\\nparam.aftersale_id = \\\"6987272148133888300\\\"\\nparam.standard_aftersale_status = [6,7,11]\\nparam.need_special_type = true/false\\nparam.update_start_time = 1626856525\\nparam.update_end_time = 1626856525\\nparam.order_logistics_tracking_no = [\\\"SF12345678910\\\"]\\nparam.order_logistics_state = [1,2,3,4]\\nparam.agree_refuse_sign = [1,2]\\nparam.aftersale_sub_type = 8001\\nparam.aftersale_status_to_final_start_time = 1626856525\\nparam.aftersale_status_to_final_end_time = 1626856525\\nparam.store_id_list = [1626856525,1123416]\\nresponse = request.execute(accessToken)\\n\"},\"go\":{\"code\":\"request := afterSale_List_request.New()\\nparam := request.GetParams()\\nparam.OrderId = \\\"4821845786203981633\\\"\\nparam.AftersaleType = 1\\nparam.AftersaleStatus = 2\\nparam.Reason = 1\\nparam.LogisticsStatus = 2\\nparam.PayType = 2\\nparam.RefundType = 1\\nparam.ArbitrateStatus = 0\\nparam.OrderFlag = [1,2,3]\\nparam.StartTime = 1626770133\\nparam.EndTime = 1626856525\\nparam.AmountStart = 300\\nparam.AmountEnd = 1000\\nparam.RiskFlag = -1\\nparam.OrderBy = [\\\"status_deadline desc\\\"]\\nparam.Page = 0\\nparam.Size = 50\\nparam.AftersaleId = \\\"6987272148133888300\\\"\\nparam.StandardAftersaleStatus = [6,7,11]\\nparam.NeedSpecialType = true/false\\nparam.UpdateStartTime = 1626856525\\nparam.UpdateEndTime = 1626856525\\nparam.OrderLogisticsTrackingNo = [\\\"SF12345678910\\\"]\\nparam.OrderLogisticsState = [1,2,3,4]\\nparam.AgreeRefuseSign = [1,2]\\nparam.AftersaleSubType = 8001\\nparam.AftersaleStatusToFinalStartTime = 1626856525\\nparam.AftersaleStatusToFinalEndTime = 1626856525\\nparam.StoreIdList = [1626856525,1123416]\\nresponse := request.Execute(accessToken)\\n\"},\"dotNetCore\":{\"code\":\"var request = new AfterSaleListRequest();\\nvar param = request.BuildParam();\\nparam.OrderId = \\\"4821845786203981633\\\";\\nparam.AftersaleType = 1;\\nparam.AftersaleStatus = 2;\\nparam.Reason = 1;\\nparam.LogisticsStatus = 2;\\nparam.PayType = 2;\\nparam.RefundType = 1;\\nparam.ArbitrateStatus = 0;\\nparam.OrderFlag = [1,2,3];\\nparam.StartTime = 1626770133;\\nparam.EndTime = 1626856525;\\nparam.AmountStart = 300;\\nparam.AmountEnd = 1000;\\nparam.RiskFlag = -1;\\nparam.OrderBy = [\\\"status_deadline desc\\\"];\\nparam.Page = 0;\\nparam.Size = 50;\\nparam.AftersaleId = \\\"6987272148133888300\\\";\\nparam.StandardAftersaleStatus = [6,7,11];\\nparam.NeedSpecialType = true/false;\\nparam.UpdateStartTime = 1626856525;\\nparam.UpdateEndTime = 1626856525;\\nparam.OrderLogisticsTrackingNo = [\\\"SF12345678910\\\"];\\nparam.OrderLogisticsState = [1,2,3,4];\\nparam.AgreeRefuseSign = [1,2];\\nparam.AftersaleSubType = 8001;\\nparam.AftersaleStatusToFinalStartTime = 1626856525;\\nparam.AftersaleStatusToFinalEndTime = 1626856525;\\nparam.StoreIdList = [1626856525,1123416];\\nvar response = request.Execute\\u003cAfterSaleListResponse\\u003e(accessToken);\\n\"},\"js\":{}},\"responseDemo\":{\"responseSuccess\":{\"code\":10000,\"msg\":\"success\",\"sub_code\":\"\",\"sub_msg\":\"\"},\"responseError\":{\"sub_code\":\"\",\"sub_msg\":\"\"}}},\"error\":{\"errCodeList\":[{\"msg\":\"success\",\"code\":10000},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"参数错误\",\"subCode\":\"isv.parameter-invalid:11000\",\"solution\":\"请检查输入参数是否合法\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"系统超时\",\"subCode\":\"isp.service-error:10000\",\"solution\":\"请重试\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"系统处理失败\",\"subCode\":\"isp.service-error:10002\",\"solution\":\"请重试\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"数据不存在\",\"subCode\":\"isv.parameter-invalid:11003\",\"solution\":\"请检查输入参数是否合法\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"系统处理失败\",\"subCode\":\"isv.business-failed:12001\",\"solution\":\"请检查输入参数是否合法\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"未知错误\",\"subCode\":\"isv.business-failed:12000\",\"solution\":\"请辛苦联系平台排障\"}]}}",
+      "info": {
+        "AuditedTime": "",
+        "access": false,
+        "apiChargeType": 2,
+        "apiLimitLevel": 1,
+        "apiLimitValue": 3000,
+        "apiSpiMsgNames": [],
+        "articleOutId": 482,
+        "auditStatus": 401,
+        "auth": {
+          "categoryList": [],
+          "groupName": "",
+          "packageName": "",
+          "packageType": 0
+        },
+        "authSubject": "[3]",
+        "authSubjectIdList": [
+          "店铺"
+        ],
+        "auths": [
+          {
+            "categoryList": [
+              "卡券商工具",
+              "精选货源-微应用",
+              "创新应用大赛_微应用",
+              "COD服务",
+              "跨境供应链服务",
+              "跨境电商",
+              "客服绩效-微应用",
+              "售后管理",
+              "任务玩法",
+              "财务管理",
+              "直播话术-微应用",
+              "营销管理-互动小程序定制",
+              "营销管理-小程序定制",
+              "打单发货-微应用",
+              "创新应用大赛_软件服务",
+              "教育服务",
+              "商家后台系统",
+              "即时零售商品服务",
+              "即时零售订单配送",
+              "即时零售ebill订单管理（临时）",
+              "即时零售ERP",
+              "虚拟充值",
+              "品牌会员通",
+              "即时零售商家自研",
+              "直播工具",
+              "互动营销定制",
+              "短信营销",
+              "订单管理",
+              "AI智能客服-微应用",
+              "商品供应链",
+              "电商ERP",
+              "AI售后挽单",
+              "智能外呼"
+            ],
+            "groupName": "售后",
+            "packageName": "售后信息查询",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "即时零售ERP",
+              "即时零售商家自研"
+            ],
+            "groupName": "订单",
+            "packageName": "电商小时达专用-临时",
+            "packageType": 1
+          },
+          {
+            "categoryList": [],
+            "groupName": "定向权限",
+            "packageName": "定向权限包",
+            "packageType": 1
+          },
+          {
+            "categoryList": [],
+            "groupName": "抖音超市",
+            "packageName": "抖音自营超市场景",
+            "packageType": 10
+          },
+          {
+            "categoryList": [
+              "客服机器人",
+              "AI智能客服-微应用",
+              "AI售后挽单"
+            ],
+            "groupName": "三方客服",
+            "packageName": "客服机器人",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "电商-商家工具-店铺定制",
+              "C2B购前定制",
+              "电商-商家工具-3C数码",
+              "电商-商家工具-母婴图书",
+              "电商-商家工具-酒类",
+              "电商-商家工具-生鲜",
+              "电商-商家工具-滋补保健",
+              "电商-商家工具-本地生活及虚拟",
+              "电商-商家工具-食品饮料",
+              "电商-商家工具-服装鞋包",
+              "电商-商家工具-美妆",
+              "电商-商家工具-个护家清",
+              "电商-商家工具-家居家电"
+            ],
+            "groupName": "小程序",
+            "packageName": "电商小程序（抖店业务）",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "盲盒互动"
+            ],
+            "groupName": "开放平台",
+            "packageName": "盲盒场景",
+            "packageType": 10
+          }
+        ],
+        "commitAuditTime": "",
+        "contentType": 1,
+        "createTime": -62135596800,
+        "defaultApiAndAppLimitLevel": 1,
+        "defaultApiAndAppLimitValue": 500,
+        "description": "1、售后列表接口，可以支持多种筛选规则，详情见请求参数。\n2、时间类型参数均为以秒为单位的时间戳，金额均以分为单位。\n3、接口中page*size最多不能超过5万条数据。如果超过5万条，请使用时间参数分割数据。\n4、默认情况下，只能查到近6个月以内的数据，超过6个月需要指定时间。",
+        "dirId": 17,
+        "dirLabels": [],
+        "dirName": "售后退款API",
+        "docLabels": [],
+        "extra": {
+          "creator": "",
+          "feishuDocUrl": "",
+          "mailDocUrl": "",
+          "mailPicUrl": "",
+          "mailTag": 0,
+          "noticeAuditUrl": "",
+          "ticketUrl": ""
+        },
+        "finalStatus": 1,
+        "flag": 0,
+        "id": 1295,
+        "isTop": false,
+        "note": "",
+        "pv": 19115,
+        "reOnline": true,
+        "status": 1,
+        "subtitle": "1、售后列表接口，可以支持多种筛选规则，详情见请求参数。\n2、时间类型参数均为以秒为单位的时间戳，金额均以分为单位。\n3、接口中page*size最多不能超过5万条数据。如果超过5万条，请使用时间参数分割数据。\n4、默认情况下，只能查到近6个月以内的数据，",
+        "title": "/afterSale/List",
+        "updateTime": 1745733731,
+        "url": "",
+        "userList": [],
+        "userSceneDesc": "售后列表接口",
+        "version": "V19.16"
+      },
+      "tagNameMap": {
+        "25": "优惠券基础数据",
+        "26": "用户优惠券数据",
+        "28": "其他字段",
+        "29": "通用字段",
+        "30": "物流公司信息",
+        "31": "订单基础信息",
+        "32": "地址基础信息",
+        "33": "寄件人地址信息",
+        "34": "寄件人联系信息",
+        "35": "物流增值服务",
+        "36": "回单寄回地址",
+        "37": "收件人地址",
+        "38": "收件人信息",
+        "39": "商品基础信息",
+        "40": "商品重量体积信息",
+        "41": "快递配置规则",
+        "42": "订单备注",
+        "43": "仓库基础信息",
+        "44": "店铺基础信息",
+        "45": "小程序基础信息",
+        "46": "订单来源分析",
+        "47": "买家留言 ",
+        "48": "商家备注",
+        "49": "订单金额信息",
+        "50": "商品金额信息",
+        "51": "营销活动金额信息",
+        "52": "营销活动基础信息",
+        "53": "精选联盟",
+        "54": "跨境海淘",
+        "55": "库存基础信息",
+        "56": "售后基础信息",
+        "57": "电子卡券",
+        "58": "赠品",
+        "59": "组合（组套）商品",
+        "60": "虚拟商品",
+        "61": "定金预售",
+        "62": "懂车帝购车信息",
+        "63": "用户特征标签",
+        "64": "物流信息",
+        "65": "证件信息",
+        "66": "C2B定制",
+        "67": "买家基础信息",
+        "68": "买家敏感信息",
+        "69": "场景包测试标签a",
+        "70": "场景包测试标签b",
+        "71": "商家快递网点信息",
+        "72": "商品类目信息",
+        "73": "短信基础字段",
+        "74": "售后文案",
+        "75": "插旗信息",
+        "76": "售后金额信息",
+        "77": "风控信息",
+        "78": "换货基础信息",
+        "79": "售后标签",
+        "80": "门店基础信息",
+        "81": "售后商家备注信息",
+        "82": "达人样品订单",
+        "83": "即时零售订单接单状态",
+        "85": "换货和补寄信息",
+        "86": "物流异常风控",
+        "87": "商家售后地址信息",
+        "88": "售后仲裁",
+        "89": "买家退货物流信息",
+        "90": "补寄场景",
+        "91": "售后价保",
+        "92": "售后数据分析",
+        "93": "售后协商记录",
+        "94": "废弃字段",
+        "95": "商品尺码模板",
+        "96": "商品标题前缀",
+        "97": "商品参考价凭证",
+        "98": "商品资质信息",
+        "99": "商品限购信息",
+        "100": "特殊日期延迟发货",
+        "101": "商品销量",
+        "102": "店铺地址库",
+        "103": "即时零售商品基础信息",
+        "104": "解密基础字段",
+        "105": "解密虚拟号",
+        "106": "解密明文信息",
+        "107": "解密手机号明文",
+        "108": "解密姓名信息",
+        "109": "解密地址信息",
+        "110": "解密身份证信息",
+        "111": "查询改地址开关",
+        "112": "用户店铺关注信息",
+        "113": "店铺会话统计数据",
+        "114": "飞鸽会话统计数据",
+        "115": "飞鸽客服基础信息",
+        "116": "飞鸽会话信息",
+        "117": "飞鸽客服登录日志",
+        "118": "飞鸽客服接待统计信息",
+        "119": "飞鸽会话消息基础信息",
+        "120": "视频信息",
+        "121": "商品卖点信息",
+        "122": "授权基础信息",
+        "123": "商品价格信息",
+        "124": "商品分佣信息",
+        "125": "联盟分佣信息",
+        "126": "商品评价信息",
+        "127": "评价基础信息",
+        "128": "评价结果数据",
+        "129": "店铺体验分",
+        "130": "评价内容信息",
+        "131": "订单extra"
+      }
+    },
+    "releaseNote": "新增出参 related_order_info.delivery_infos:称重品信息 \n",
+    "version": "1.0.1"
+  },
+  "msg": ""
+}

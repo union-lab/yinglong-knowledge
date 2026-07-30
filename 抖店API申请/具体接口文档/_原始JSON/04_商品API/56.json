@@ -1,0 +1,452 @@
+{
+  "code": 0,
+  "data": {
+    "CustomerError": {
+      "ErrCode": 0,
+      "ErrMsg": ""
+    },
+    "RelevanceFAQs": [
+      {
+        "articleId": 2070,
+        "dirId": 92,
+        "title": "商品状态机"
+      },
+      {
+        "articleId": 195,
+        "dirId": 92,
+        "title": "商品详情接口：/product/detail，返回中的spec_pics中的url是不完整的？"
+      },
+      {
+        "articleId": 3068,
+        "dirId": 92,
+        "title": "我们是多店铺管理的，如何区分商品是哪个店铺的？"
+      },
+      {
+        "articleId": 3287,
+        "dirId": 92,
+        "title": "创建了一个组合商品，调用商品详情接口查询该组合商品，返回的类目属性字段为空，为什么？"
+      },
+      {
+        "articleId": 3414,
+        "dirId": 89,
+        "title": "在订单列表接口中，如何区分是用户取消支付还是支付超时自动取消的？"
+      },
+      {
+        "articleId": 3941,
+        "dirId": 92,
+        "title": "商品详情接口能查到商品链接吗？"
+      },
+      {
+        "articleId": 5990,
+        "dirId": 89,
+        "title": "商品详情接口无法查询组合商品信息，那么如何查询组合商品的SKU规格？"
+      },
+      {
+        "articleId": 6231,
+        "dirId": 92,
+        "title": "商家在抖店店铺后台维护了商家编码，可通过商品详情接口却没有返回？"
+      },
+      {
+        "articleId": 4359,
+        "dirId": 92,
+        "title": "为什么商品列表根据商品ID获取不到数据，但是根据商品ID查看商品详情却能获取到？"
+      },
+      {
+        "articleId": 4289,
+        "dirId": 92,
+        "title": "商品详情API中，sell_num商品销量这个字段，数据会同步更新吗？"
+      },
+      {
+        "articleId": 3300,
+        "dirId": 92,
+        "title": "如何通过商品信息查询接口区分直播福袋商品、赠品商品和直播奖品商品？"
+      },
+      {
+        "articleId": 6069,
+        "dirId": 92,
+        "title": "关于商品状态，若商品处于封禁中，如何查看具体的封禁原因？"
+      },
+      {
+        "articleId": 4366,
+        "dirId": 92,
+        "title": "/product/detail报错：\"sub_code\":\"isv.parameter-invalid:2010058\",\"sub_msg\":\"商品不存在\""
+      },
+      {
+        "articleId": 3067,
+        "dirId": 92,
+        "title": "调用商品详情接口：/product/detail，为什么响应报文里的store_id都是0"
+      },
+      {
+        "articleId": 4360,
+        "dirId": 89,
+        "title": "如何通过订单详情接口，获取到子订单下的商品数量？"
+      },
+      {
+        "articleId": 3940,
+        "dirId": 92,
+        "title": "抖店开发平台创建了应用，是否就可以查询任何商品的详情信息？"
+      },
+      {
+        "articleId": 3986,
+        "dirId": 92,
+        "title": "为什么使用编辑商品接口删除某个SKU，再使用查询SKU详情接口仍可以查询到？"
+      },
+      {
+        "articleId": 3284,
+        "dirId": 92,
+        "title": "商品查询接口：/product/detail是否可以查看商品是否定金预售？如果不能，其他有api接口支持吗？"
+      },
+      {
+        "articleId": 6296,
+        "dirId": 92,
+        "title": "获取商品提示：查询品牌信息失败，如何解决？"
+      },
+      {
+        "articleId": 4297,
+        "dirId": 92,
+        "title": "通过商品/订单详情接口获取的code字段返回为空，如何解决？"
+      },
+      {
+        "articleId": 6225,
+        "dirId": 92,
+        "title": "在抖店商家后台进行商品编辑，修改商品发货时效后，该商品下的规格id会变吗？"
+      },
+      {
+        "articleId": 4305,
+        "dirId": 92,
+        "title": "为什么获取商品详情时，返回数据里面 category_detail 字段为空？"
+      },
+      {
+        "articleId": 7399,
+        "dirId": 92,
+        "title": "/product/detail报错\"sub_code\":\"isv.business-failed:2010004\",\"sub_msg\":\"子商品未找到\""
+      }
+    ],
+    "article": {
+      "content": "{\"request\":{\"publicParam\":[{\"requestName\":\"method\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"product.detail\",\"description\":\"调用的API接口名称\"},{\"requestName\":\"app_key\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"6839996111118329223\",\"description\":\"应用创建完成后被分配的key\"},{\"requestName\":\"access_token\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"edae7c30-8386-443b-88a1-031111596fdd\",\"description\":\"用于调用 API 的 access_token\",\"hiddenForInterfaceName\":[\"/token/create\"]},{\"requestName\":\"param_json\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"{cid:12,page:1}\",\"description\":\"标准json类型，里面是业务参数按照参数名的字符串大小排序具体参数值，参考每个接口的参数表\"},{\"requestName\":\"timestamp\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2020-09-15 14:48:13\",\"description\":\"时间戳，格式为yyyy-MM-dd HH:mm:ss，时区为GMT+8，例如：2016-01-01 12:00:00\"},{\"requestName\":\"v\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"2\",\"description\":\"API协议版本，当前版本为2\"},{\"requestName\":\"sign\",\"mustNeed\":true,\"type\":2,\"style\":1,\"example\":\"796559d40beb08a1a1113c456c5c5a62\",\"description\":\"输入参数签名结果，签名算法参照 [API调用指南](https://op.jinritemai.com/docs/guide-docs/10/23)\"},{\"requestName\":\"sign_method\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"hmac-sha256\",\"description\":\"签名算法类型推荐使用hmac-sha256后续会下线md5（不传则默认为\\\"md5\\\"）1. md5:表示用md5算法加密字符串 2. hmac-sha256:表示用hmac_sha_256算法加密字符串\"}],\"requestParam\":[{\"requestName\":\"product_id\",\"toName\":\"product_id\",\"mustNeed\":false,\"type\":0,\"style\":1,\"example\":\"3558192687276554544\",\"description\":\"商品ID，抖店系统生成，店铺下唯一；长度19位\",\"cipherTextType\":1,\"timeConvert\":6},{\"requestName\":\"out_product_id\",\"toName\":\"out_product_id\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"dy001\",\"description\":\"外部商家编码，商家自定义字段\",\"cipherTextType\":1},{\"requestName\":\"show_draft\",\"toName\":\"show_draft\",\"mustNeed\":false,\"type\":2,\"style\":1,\"example\":\"false\",\"description\":\"true：读取草稿数据；false：读取线上数据；不传默认为false\",\"cipherTextType\":1},{\"requestName\":\"store_id\",\"toName\":\"store_id\",\"mustNeed\":false,\"type\":0,\"style\":1,\"example\":\"1111420330\",\"description\":\"门店ID，不建议小时达一期用，即时零售单店版，无需使用\",\"cipherTextType\":1,\"timeConvert\":12}]},\"response\":{\"responseData\":[{\"responseName\":\"product_id\",\"fromName\":\"product_id\",\"type\":99,\"example\":\"3539925204033339668\",\"description\":\"商品ID，抖店系统生成，店铺下唯一；长度19位。\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"product_id_str\",\"fromName\":\"product_id_str\",\"type\":2,\"example\":\"3539925204033339668\",\"description\":\"商品ID（字符串类型），抖店系统生成，店铺下唯一；长度19位。\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"out_product_id\",\"fromName\":\"out_product_id\",\"type\":99,\"example\":\"133321\",\"description\":\"【即将废弃】外部商家编码，商家自定义字段。推荐使用，outer_product_id字段\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"outer_product_id\",\"fromName\":\"outer_product_id\",\"type\":2,\"example\":\"dy001\",\"description\":\"外部商家编码，商家自定义字段，支持最多 255个字符\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"open_user_id\",\"fromName\":\"open_user_id\",\"type\":99,\"example\":\"\\\"\\\"\",\"description\":\"【已废弃】open应用id\",\"securityLevel\":\"R1\",\"isHidden\":1,\"tagId\":94},{\"responseName\":\"name\",\"fromName\":\"name\",\"type\":2,\"example\":\"夏季男生白色短袖\",\"description\":\"商品标题，规则：至少输入8个字（16个字符）以上~输入30个字（60个字符）以内。；标题不规范会引起商品下架，影响您的正常销售，详见商品发布规范：https://school.jinritemai.com/doudian/web/article/101800?from=shop_article\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"description\",\"fromName\":\"description\",\"type\":2,\"example\":\"\\u003cp\\u003e\\u003cimg src=\\\\\\\"https://p3-aio.ecombdimg.com/obj/ecom-shop-material/v1_xPfNJOkX_71153427046487984750183_661ff1f563801d97f382e0ac114a09e6_sx_805824_www933-933\\\\\\\" style=\\\\\\\"max-width:100%;\\\\\\\"/\\u003e\\u003cimg src=\\\\\\\"https://p3-aio.ecombdimg.com/obj/ecom-shop-material/v1_xPfNJOkX_71153426724709337920183_dd825b6f3c1bc43ec26faea488447709_sx_1059417_www1080-933\\\\\\\" style=\\\\\\\"max-width:100%;\\\\\\\"/\\u003e\\u003cimg src=\\\\\\\"https://p3-aio.ecombdimg.com/obj/ecom-shop-material/v1_xPfNJOkX_71153465487927217040183_d963cc36ef6e66c0cba70e4cb2188f88_sx_436442_www1920-1080\\\\\\\" style=\\\\\\\"max-width:100%;\\\\\\\"/\\u003e\\u003c/p\\u003e\",\"description\":\"商品详情，最大支持50张图片，单张详情图宽高比不超2000*2000px，大小5M内，仅支持jpg/jpeg/png格式，返回HTML格式；注意：商品详情不规范，会引起商品下架，影响您的正常销售：https://school.jinritemai.com/doudian/web/article/101800?from=shop_article\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"delivery_method\",\"fromName\":\"delivery_method\",\"type\":99,\"example\":\"7\",\"description\":\"承诺发货时间，单位是天; 不传则默认为2天，当presell_type为0或2均只支持传入2；当presell_type为1时支持可选值为: 2、3、5、7、10、15；\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"cdf_category\",\"fromName\":\"cdf_category\",\"type\":2,\"example\":\"\\\"\\\"\",\"description\":\"海南免税，海关限购分类编码，仅海淘商品有值返回。\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"status\",\"fromName\":\"status\",\"type\":99,\"example\":\"1\",\"description\":\"商品在店铺中状态: 0-在线；1-下线；2-删除；详见商品状态机：https://op.jinritemai.com/docs/question-docs/92/2070\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"spec_id\",\"fromName\":\"spec_id\",\"type\":99,\"example\":\"1737144307943485\",\"description\":\"商品规格，新增商品是全局唯一，注意：有部分历史存量商品可能存在规格复用\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"check_status\",\"fromName\":\"check_status\",\"type\":99,\"example\":\"1\",\"description\":\"商品审核状态: 1-未提交；2-待审核；3-审核通过；4-审核未通过；5-封禁；7-审核通过待上架；详见商品状态机：https://op.jinritemai.com/docs/question-docs/92/2070\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"mobile\",\"fromName\":\"mobile\",\"type\":2,\"example\":\"15677775555\",\"description\":\"【已废弃】手机号\",\"securityLevel\":\"R1\",\"isHidden\":1},{\"responseName\":\"brand_id\",\"fromName\":\"brand_id\",\"type\":99,\"example\":\"596120136\",\"description\":\"【已废弃】品牌id，推荐使用standard_brand_id字段，通过【/brand/list】获取，无品牌id商品返回默认值：596120136；\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"is_sub_product\",\"fromName\":\"is_sub_product\",\"type\":4,\"example\":\"true\",\"description\":\"是否是组合商品的子商品；true-是，false-不是；\",\"securityLevel\":\"R1\",\"tagId\":59},{\"responseName\":\"draft_status\",\"fromName\":\"draft_status\",\"type\":99,\"example\":\"2\",\"description\":\"草稿状态；0-无草稿,1-未提审,2-待审核,3-审核通过,4-审核未通过。详见：https://op.jinritemai.com/docs/question-docs/92/2070\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"category_detail\",\"fromName\":\"category_detail\",\"type\":5,\"example\":\"\",\"description\":\"类目详情；商品类目id可使用【/shop/getShopCategory】查询\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"first_cid\",\"fromName\":\"first_cid\",\"type\":99,\"example\":\"20117\",\"description\":\"一级类目id\",\"securityLevel\":\"R1\",\"tagId\":72},{\"responseName\":\"second_cid\",\"fromName\":\"second_cid\",\"type\":99,\"example\":\"22139\",\"description\":\"二级类目id\",\"securityLevel\":\"R1\",\"tagId\":72},{\"responseName\":\"third_cid\",\"fromName\":\"third_cid\",\"type\":99,\"example\":\"28901\",\"description\":\"三级类目id\",\"securityLevel\":\"R1\",\"tagId\":72},{\"responseName\":\"fourth_cid\",\"fromName\":\"fourth_cid\",\"type\":99,\"example\":\"31800\",\"description\":\"四级类目id\",\"securityLevel\":\"R1\",\"tagId\":72},{\"responseName\":\"first_cname\",\"fromName\":\"first_cname\",\"type\":2,\"example\":\"本地生活服务\",\"description\":\"一级类目名\",\"securityLevel\":\"R1\",\"tagId\":72},{\"responseName\":\"second_cname\",\"fromName\":\"second_cname\",\"type\":2,\"example\":\"餐饮美食卡券\",\"description\":\"二级类目名\",\"securityLevel\":\"R1\",\"tagId\":72},{\"responseName\":\"third_cname\",\"fromName\":\"third_cname\",\"type\":2,\"example\":\"甜品/冰淇淋/咖啡/冷饮\",\"description\":\"三级类目名\",\"securityLevel\":\"R1\",\"tagId\":72},{\"responseName\":\"fourth_cname\",\"fromName\":\"fourth_cname\",\"type\":2,\"example\":\"咖啡\",\"description\":\"四级类目名\",\"securityLevel\":\"R1\",\"tagId\":72}]},{\"responseName\":\"pay_type\",\"fromName\":\"pay_type\",\"type\":99,\"example\":\"1\",\"description\":\"【已废弃】支持的支付方式：0货到付款 1在线支付 2两者都支持\",\"securityLevel\":\"R1\",\"isHidden\":1,\"tagId\":94},{\"responseName\":\"recommend_remark\",\"fromName\":\"recommend_remark\",\"type\":2,\"example\":\"真的很好啊\",\"description\":\"【已废弃】商家推荐语\",\"securityLevel\":\"R1\",\"isHidden\":1,\"tagId\":94},{\"responseName\":\"extra\",\"fromName\":\"extra\",\"type\":2,\"example\":\"{\\\\\\\"category_detail\\\\\\\":{\\\\\\\"first_cid\\\\\\\":20117,\\\\\\\"second_cid\\\\\\\":22139,\\\\\\\"third_cid\\\\\\\":28901,\\\\\\\"fourth_cid\\\\\\\":31800,\\\\\\\"first_cname\\\\\\\":\\\\\\\"本地生活服务\\\\\\\",\\\\\\\"second_cname\\\\\\\":\\\\\\\"餐饮美食卡券\\\\\\\",\\\\\\\"third_cname\\\\\\\":\\\\\\\"甜品/冰淇淋/咖啡/冷饮\\\\\\\",\\\\\\\"fourth_cname\\\\\\\":\\\\\\\"咖啡\\\\\\\",\\\\\\\"is_leaf\\\\\\\":true},\\\\\\\"class_quality\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"is_publish\\\\\\\":1,\\\\\\\"quality_opId\\\\\\\":\\\\\\\"7132044312682119463\\\\\\\",\\\\\\\"quality_report\\\\\\\":\\\\\\\"\\\\\\\"}\",\"description\":\"额外信息，如资质\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"is_create\",\"fromName\":\"is_create\",\"type\":99,\"example\":\"【已废弃】\",\"description\":\"【已废弃】无业务意义\",\"securityLevel\":\"R1\",\"isHidden\":1,\"tagId\":94},{\"responseName\":\"create_time\",\"fromName\":\"create_time\",\"type\":2,\"example\":\"2022-07-04 13:29:47\",\"description\":\"商品创建时间，时间格式：yyyy-mm-dd hh:mm:ss\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"update_time\",\"fromName\":\"update_time\",\"type\":2,\"example\":\"2022-07-08T16:29:01+08:00\",\"description\":\"商品更新时间，时间格式：yyyy-mm-dd hh:mm:ss\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"pic\",\"fromName\":\"pic\",\"type\":3,\"subType\":2,\"example\":\"[\\\"https://p9-aio.ecombdimg.com/obj/ecom-shop-material/v1_xPfNJOkX_71153427046487984750183_661ff1f563801d97f382e0ac114a09e6_sx_805824_www933-933\\\",     \\\"https://p6-aio.ecombdimg.com/obj/ecom-shop-material/v1_xPfNJOkX_71153429136760998540183_e3d0578bd8b499ff9dee11a0fd040070_sx_889253_www3072-3072\\\",     \\\"https://p9-aio.ecombdimg.com/obj/ecom-shop-material/v1_xPfNJOkX_71153465665006472060183_1d037ea9f83818829d3a502df6135ae4_sx_280269_www1080-1080\\\"]\",\"description\":\"商品主图；最多支持5张图片；仅支持png，jpg，jpeg格式，宽高比例为1:1（至少600*600px），大小5M内\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"product_format\",\"fromName\":\"product_format\",\"type\":2,\"example\":\"{\\\"货号\\\":\\\"8888\\\"}\",\"description\":\"【即将废弃】推荐使用product_format_new；属性名称|属性值 之间用|分隔, 多组之间用^分开\",\"securityLevel\":\"R1\",\"isHidden\":1,\"tagId\":39},{\"responseName\":\"spec_pics\",\"fromName\":\"spec_pics\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"规格图片\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"spec_detail_id\",\"fromName\":\"spec_detail_id\",\"type\":99,\"example\":\"1695459998447656\",\"description\":\"id\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"pic\",\"fromName\":\"pic\",\"type\":2,\"example\":\"temai/b637513c50b994f4c89de56a17886caca5d6569awww800-800\",\"description\":\"规格图片uri\",\"securityLevel\":\"R1\",\"tagId\":39}]},{\"responseName\":\"spec_prices\",\"fromName\":\"spec_prices\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"商品sku详情\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"operator\",\"fromName\":\"operator\",\"type\":2,\"example\":\"商家\",\"description\":\"sku下架操作人\"},{\"responseName\":\"reason\",\"fromName\":\"reason\",\"type\":2,\"example\":\"商家下架\",\"description\":\"sku下架原因\"},{\"responseName\":\"sku_picture_url\",\"fromName\":\"sku_picture_url\",\"type\":3,\"subType\":2,\"example\":\"[\\\"img_url\\\"]\",\"description\":\"SKU图URL\",\"securityLevel\":\"R1\"},{\"responseName\":\"spec_model_code\",\"fromName\":\"spec_model_code\",\"type\":3,\"subType\":2,\"example\":\"[\\\"123\\\"]\",\"description\":\"规格型号编码\",\"securityLevel\":\"R1\"},{\"responseName\":\"ship_time_type\",\"fromName\":\"delivery_time_type\",\"type\":2,\"example\":\"2\",\"description\":\"1 相对时间 ships in N days，2 固定日期 fixed date。注意仅在现货发货且开启sku时效时有值。\"},{\"responseName\":\"ship_time\",\"fromName\":\"delivery_delay_day\",\"type\":2,\"example\":\"\\\"2025-09-01\\\"\",\"description\":\"发货时间，如果是相对时间，返回 N。如果是固定日期，返回格式为yyyy-MM-dd，例如 \\\"2025-09-01\\\"。注意仅在现货发货且开启sku时效时有值。\"},{\"responseName\":\"commit_code\",\"fromName\":\"apple_commit_code\",\"type\":2,\"example\":\"3000\",\"description\":\"commit code\"},{\"responseName\":\"barcodes\",\"fromName\":\"barcodes\",\"type\":3,\"subType\":2,\"example\":\"111111\",\"description\":\"条形码\",\"securityLevel\":\"R1\"},{\"responseName\":\"multi_time_stocks\",\"fromName\":\"multi_time_stocks\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"时效库存\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"stock_num\",\"fromName\":\"stock_num\",\"type\":99,\"example\":\"500\",\"description\":\"库存数\"},{\"responseName\":\"time_desc\",\"fromName\":\"time_desc\",\"type\":2,\"example\":\"5天内发\",\"description\":\"时效描述\"},{\"responseName\":\"time_type\",\"fromName\":\"time_type\",\"type\":99,\"example\":\"5\",\"description\":\"时效\"}]},{\"responseName\":\"sku_status\",\"fromName\":\"sku_status\",\"type\":4,\"example\":\"true\",\"description\":\"sku状态 true上架 false下架\"},{\"responseName\":\"sku_classification_type\",\"fromName\":\"sku_classification_type\",\"type\":2,\"example\":\"\\\"main_sale_single_product\\\"\",\"description\":\"sku分类信息\",\"tagId\":39},{\"responseName\":\"sell_properties\",\"fromName\":\"sell_properties\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"sku对应的销售属性信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"value_spec_detail_id\",\"fromName\":\"value_spec_detail_id\",\"type\":99,\"example\":\"123123123123\",\"description\":\"规格值id\",\"tagId\":39},{\"responseName\":\"remark\",\"fromName\":\"remark\",\"type\":2,\"example\":\"非常黄\",\"description\":\"备注\",\"tagId\":39},{\"responseName\":\"value_name\",\"fromName\":\"value_name\",\"type\":2,\"example\":\"黄色\",\"description\":\"规格值名称\",\"tagId\":39},{\"responseName\":\"value_id\",\"fromName\":\"value_id\",\"type\":99,\"example\":\"12345678910\",\"description\":\"销售属性值id，只有在规格由属性库下发时，这个才有值。 默认为0\",\"tagId\":39},{\"responseName\":\"property_name\",\"fromName\":\"property_name\",\"type\":2,\"example\":\"颜色\",\"description\":\"规格项名称\",\"tagId\":39},{\"responseName\":\"perperty_id\",\"fromName\":\"property_id\",\"type\":99,\"example\":\"0\",\"description\":\"销售属性id，只有在规格由属性库下发时，这个字段才有值。 默认为0\",\"tagId\":39}]},{\"responseName\":\"cargo_info\",\"fromName\":\"cargo_info\",\"type\":5,\"example\":\"\",\"description\":\"货品信息（国内）\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"source_type\",\"fromName\":\"source_type\",\"type\":99,\"example\":\"1\",\"description\":\"货品类型，1-分销货品，2-云仓自流转货品，6-云仓非自流转货品\",\"tagId\":28},{\"responseName\":\"cargo_id\",\"fromName\":\"cargo_id\",\"type\":2,\"example\":\"777777777777777\",\"description\":\"货品id\",\"tagId\":28}]},{\"responseName\":\"gold_process_charge\",\"fromName\":\"gold_process_charge\",\"type\":99,\"example\":\"12300\",\"description\":\"Sku的黄金加工费，单位：分\",\"tagId\":28},{\"responseName\":\"sku_id\",\"fromName\":\"sku_id\",\"type\":99,\"example\":\"1737398770243598\",\"description\":\"规格id；抖店系统生成，商品id下唯一。\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"out_sku_id\",\"fromName\":\"out_sku_id\",\"type\":99,\"example\":\"0\",\"description\":\"外部商家skui_id编码，商家自定义字段；推荐使用outer_sku_id字段\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"outer_sku_id\",\"fromName\":\"outer_sku_id\",\"type\":2,\"example\":\"dy001-1\",\"description\":\"外部商家skui_id编码，商家自定义字段\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"spec_detail_ids\",\"fromName\":\"spec_detail_ids\",\"type\":3,\"subType\":1,\"example\":\"[1695459998494734,1695459998494766]\",\"description\":\"规格id列表,多规格以”,“分隔；\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"stock_num\",\"fromName\":\"stock_num\",\"type\":99,\"example\":\"13\",\"description\":\"可售库存；当前现货可售库存；\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"price\",\"fromName\":\"price\",\"type\":99,\"example\":\"102\",\"description\":\"商品价格；单位：分\",\"securityLevel\":\"R1\",\"tagId\":50},{\"responseName\":\"code\",\"fromName\":\"code\",\"type\":2,\"example\":\"aaa\",\"description\":\"编码\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"step_stock_num\",\"fromName\":\"step_stock_num\",\"type\":99,\"example\":\"0\",\"description\":\"阶梯库存，规则详见名称解释：https://op.jinritemai.com/docs/guide-docs/202/170\",\"securityLevel\":\"R1\",\"tagId\":55},{\"responseName\":\"prom_stock_num\",\"fromName\":\"prom_stock_num\",\"type\":99,\"example\":\"0\",\"description\":\"活动库存，，规则详见名称解释：https://op.jinritemai.com/docs/guide-docs/202/170\",\"securityLevel\":\"R1\",\"tagId\":55},{\"responseName\":\"prom_step_stock_num\",\"fromName\":\"prom_step_stock_num\",\"type\":99,\"example\":\"0\",\"description\":\"活动阶梯库存，，规则详见名称解释：https://op.jinritemai.com/docs/guide-docs/202/170\",\"securityLevel\":\"R1\",\"tagId\":55},{\"responseName\":\"spec_detail_id1\",\"fromName\":\"spec_detail_id1\",\"type\":99,\"example\":\"1695459998494734\",\"description\":\"【已废弃，无需使用】规格ID\",\"securityLevel\":\"R1\",\"isHidden\":1,\"tagId\":94},{\"responseName\":\"spec_detail_id2\",\"fromName\":\"spec_detail_id2\",\"type\":99,\"example\":\"1695459998494734\",\"description\":\"【已废弃，无需使用】规格ID\",\"securityLevel\":\"R1\",\"isHidden\":1,\"tagId\":94},{\"responseName\":\"spec_detail_id3\",\"fromName\":\"spec_detail_id3\",\"type\":99,\"example\":\"0\",\"description\":\"【已废弃，无需使用】规格ID\",\"securityLevel\":\"R1\",\"isHidden\":1,\"tagId\":94},{\"responseName\":\"sku_type\",\"fromName\":\"sku_type\",\"type\":99,\"example\":\"0\",\"description\":\"sku类型；0-普通库存  1-区域库存  10-阶梯库存\",\"securityLevel\":\"R1\",\"tagId\":55},{\"responseName\":\"supplier_id\",\"fromName\":\"supplier_id\",\"type\":2,\"example\":\"123\",\"description\":\"供应商编码\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"promotion_stock_num\",\"fromName\":\"promotion_stock_num\",\"type\":99,\"example\":\"0\",\"description\":\"活动现货库存\",\"securityLevel\":\"R1\",\"tagId\":55},{\"responseName\":\"promotion_step_stock_num\",\"fromName\":\"promotion_step_stock_num\",\"type\":99,\"example\":\"0\",\"description\":\"活动阶梯库存\",\"securityLevel\":\"R1\",\"tagId\":55},{\"responseName\":\"customs_report_info\",\"fromName\":\"customs_report_info\",\"type\":5,\"example\":\"\",\"description\":\"海关申报要素（仅海淘商品返回信息）\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"hs_code\",\"fromName\":\"hs_code\",\"type\":2,\"example\":\"1564564\",\"description\":\"海关代码\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"first_measure_qty\",\"fromName\":\"first_measure_qty\",\"type\":9,\"example\":\"1\",\"description\":\"法定第一计量数量\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"second_measure_qty\",\"fromName\":\"second_measure_qty\",\"type\":9,\"example\":\"1\",\"description\":\"法定第二计量数量\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"first_measure_unit\",\"fromName\":\"first_measure_unit\",\"type\":2,\"example\":\"-\",\"description\":\"法定第一计量单位\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"second_measure_unit\",\"fromName\":\"second_measure_unit\",\"type\":2,\"example\":\"-\",\"description\":\"法定第二计量单位\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"unit\",\"fromName\":\"unit\",\"type\":2,\"example\":\"-\",\"description\":\"售卖单位\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"report_name\",\"fromName\":\"report_name\",\"type\":2,\"example\":\"-\",\"description\":\"品名\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"report_brand_name\",\"fromName\":\"report_brand_name\",\"type\":2,\"example\":\"-\",\"description\":\"品牌\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"usage\",\"fromName\":\"usage\",\"type\":2,\"example\":\"-\",\"description\":\"用途\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"g_model\",\"fromName\":\"g_model\",\"type\":2,\"example\":\"-\",\"description\":\"规格型号\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"bar_code\",\"fromName\":\"bar_code\",\"type\":2,\"example\":\"-\",\"description\":\"条形码\",\"securityLevel\":\"R1\",\"tagId\":54}]},{\"responseName\":\"lock_stock_num\",\"fromName\":\"lock_stock_num\",\"type\":99,\"example\":\"1\",\"description\":\"现货订单锁定库存\",\"securityLevel\":\"R1\",\"tagId\":55},{\"responseName\":\"lock_step_stock_num\",\"fromName\":\"lock_step_stock_num\",\"type\":99,\"example\":\"1\",\"description\":\"阶梯订单锁定库存\",\"securityLevel\":\"R1\",\"tagId\":55},{\"responseName\":\"stock_num_map\",\"fromName\":\"stock_num_map\",\"type\":8,\"mapKeyType\":2,\"mapValueType\":1,\"example\":\"{\\n   \\\"1\\\": 10\\n}\",\"description\":\"仓ID-\\u003e库存映射\",\"securityLevel\":\"R1\",\"tagId\":55},{\"responseName\":\"tax_exemption_sku_info\",\"fromName\":\"tax_exemption_sku_info\",\"type\":5,\"example\":\"\",\"description\":\"海南免税sku信息（仅海淘商品返回信息）\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"is_suit\",\"fromName\":\"is_suit\",\"type\":99,\"example\":\"1\",\"description\":\"是否套装（0 否 1 是）\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"suit_num\",\"fromName\":\"suit_num\",\"type\":99,\"example\":\"10\",\"description\":\"套装数量\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"volume\",\"fromName\":\"volume\",\"type\":99,\"example\":\"100\",\"description\":\"净含量\",\"securityLevel\":\"R1\",\"tagId\":54}]},{\"responseName\":\"presell_delay\",\"fromName\":\"presell_delay\",\"type\":99,\"example\":\"5\",\"description\":\"发货时间（全款预售模式时的发货时间/阶梯模式下阶梯发货时间），9999是当日发、1次日发、2 是48小时发、5、15、45天等。发货时间规则可使用【product/getProductUpdateRule】获取\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"delivery_infos\",\"fromName\":\"delivery_infos\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"SKU物流信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"info_type\",\"fromName\":\"info_type\",\"type\":2,\"example\":\"weight\",\"description\":\"信息类型\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"info_value\",\"fromName\":\"info_value\",\"type\":2,\"example\":\"100\",\"description\":\"信息值\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"info_unit\",\"fromName\":\"info_unit\",\"type\":2,\"example\":\"当info_type=weight时，支持mg,g,kg三种类型\",\"description\":\"信息计量单位\",\"securityLevel\":\"R1\",\"tagId\":28}]}]},{\"responseName\":\"specs\",\"fromName\":\"specs\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"规格信息，规格项和规格值\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"property_id\",\"fromName\":\"sell_property_id\",\"type\":99,\"example\":\"123\",\"description\":\"标准销售属性id\",\"tagId\":39},{\"responseName\":\"id\",\"fromName\":\"id\",\"type\":99,\"example\":\"1713023986705415\",\"description\":\"【无需使用】规格模版id\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"spec_id\",\"fromName\":\"spec_id\",\"type\":99,\"example\":\"1713023983665214\",\"description\":\"【无需使用】规格id\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"name\",\"fromName\":\"name\",\"type\":2,\"example\":\"颜色\",\"description\":\"销售属性\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"pid\",\"fromName\":\"pid\",\"type\":99,\"example\":\"1713023986705415\",\"description\":\"【无需使用】规格父id\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"is_leaf\",\"fromName\":\"is_leaf\",\"type\":99,\"example\":\"0\",\"description\":\"是否是销售属性值\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"values\",\"fromName\":\"values\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"销售属性值\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"value_id\",\"fromName\":\"sell_property_value_id\",\"type\":2,\"example\":\"12\",\"description\":\"标准销售属性值id\",\"tagId\":39},{\"responseName\":\"extra\",\"fromName\":\"extra\",\"type\":5,\"example\":\"\",\"description\":\"其他扩展信息：\\n包括度量衡信息等\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"measure_info\",\"fromName\":\"measure_info\",\"type\":5,\"example\":\"\",\"description\":\"度量衡结构化信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"values\",\"fromName\":\"values\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"度量衡模块\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"value\",\"fromName\":\"value\",\"type\":2,\"example\":\"10\",\"description\":\"度量衡值\"},{\"responseName\":\"unit_name\",\"fromName\":\"unit_name\",\"type\":2,\"example\":\"g\",\"description\":\"度量衡单位名称\"},{\"responseName\":\"unit_id\",\"fromName\":\"unit_id\",\"type\":99,\"example\":\"2\",\"description\":\"度量衡单位id\"},{\"responseName\":\"suffix\",\"fromName\":\"suffix\",\"type\":2,\"example\":\"\\\"\\\"\",\"description\":\"度量衡后缀\"},{\"responseName\":\"prefix\",\"fromName\":\"prefix\",\"type\":2,\"example\":\"-\",\"description\":\"度量衡前缀\"},{\"responseName\":\"module_id\",\"fromName\":\"module_id\",\"type\":99,\"example\":\"123\",\"description\":\"度量衡模块id\"}]},{\"responseName\":\"template_id\",\"fromName\":\"template_id\",\"type\":99,\"example\":\"234\",\"description\":\"度量衡模版id\"}]},{\"responseName\":\"cpv_path\",\"fromName\":\"cpv_path\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"导航路径信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"cpvid\",\"fromName\":\"cpvid\",\"type\":99,\"example\":\"123\",\"description\":\"导航属性值id\"},{\"responseName\":\"cpid\",\"fromName\":\"cpid\",\"type\":99,\"example\":\"1234\",\"description\":\"导航属性id\"}]}]},{\"responseName\":\"id\",\"fromName\":\"id\",\"type\":99,\"example\":\"1695459998447656\",\"description\":\"规格值id\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"spec_id\",\"fromName\":\"spec_id\",\"type\":99,\"example\":\"1713023983665214\",\"description\":\"规格ID\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"name\",\"fromName\":\"name\",\"type\":2,\"example\":\"红色\",\"description\":\"销售属性值\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"pid\",\"fromName\":\"pid\",\"type\":99,\"example\":\"1695459998447640\",\"description\":\"规格值父id\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"is_leaf\",\"fromName\":\"is_leaf\",\"type\":99,\"example\":\"1\",\"description\":\"是否是销售属性值\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"status\",\"fromName\":\"status\",\"type\":99,\"example\":\"1\",\"description\":\"在线状态，-2彻底删除、0在线、1下线、2删除\",\"securityLevel\":\"R1\",\"tagId\":28}],\"tagId\":28}]},{\"responseName\":\"img\",\"fromName\":\"img\",\"type\":2,\"example\":\"https://p9-aio.ecombdimg.com/obj/ecom-shop-material/v1_xPfNJOkX_71153427046487984750183_661ff1f563801d97f382e0ac114a09e6_sx_805824_www933-933\",\"description\":\"头图，主图第一张\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"presell_type\",\"fromName\":\"presell_type\",\"type\":99,\"example\":\"1\",\"description\":\"预售类型，1-全款预售，0-非预售，2-阶梯库存\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"maximum_per_order\",\"fromName\":\"maximum_per_order\",\"type\":99,\"example\":\"5\",\"description\":\"单用户下单限购件数\",\"securityLevel\":\"R1\"},{\"responseName\":\"limit_per_buyer\",\"fromName\":\"limit_per_buyer\",\"type\":99,\"example\":\"5\",\"description\":\"单用户累计限购件数\",\"securityLevel\":\"R1\"},{\"responseName\":\"minimum_per_order\",\"fromName\":\"minimum_per_order\",\"type\":99,\"example\":\"1\",\"description\":\"用户每次下单至少购买的件数\",\"securityLevel\":\"R1\"},{\"responseName\":\"quality_list\",\"fromName\":\"quality_list\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"资质信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"quality_key\",\"fromName\":\"qualityKey\",\"type\":2,\"example\":\"3457***9470978\",\"description\":\"资质key\",\"securityLevel\":\"R1\",\"tagId\":98},{\"responseName\":\"quality_name\",\"fromName\":\"qualityName\",\"type\":2,\"example\":\"进货凭证\",\"description\":\"资质名称\",\"securityLevel\":\"R1\",\"tagId\":98},{\"responseName\":\"quality_attachments\",\"fromName\":\"qualityAttachments\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"资质链接\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"media_type\",\"fromName\":\"mediaType\",\"type\":99,\"example\":\"1\",\"description\":\"1-图片，2-pdf\",\"securityLevel\":\"R1\",\"tagId\":98},{\"responseName\":\"url\",\"fromName\":\"url\",\"type\":2,\"example\":\"http://www.byted***.com/YYYY\",\"description\":\"资质url\",\"securityLevel\":\"R1\",\"tagId\":98}]}]},{\"responseName\":\"logistics_info\",\"fromName\":\"logistics_info\",\"type\":5,\"example\":\"\",\"description\":\"跨境物流信息（仅海淘商品返回）\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"customs_clear_type\",\"fromName\":\"customs_clear_type\",\"type\":99,\"example\":\"1\",\"description\":\"通关模式，1BBC 2BC 3邮关\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"origin_country_id\",\"fromName\":\"origin_country_id\",\"type\":99,\"example\":\"123\",\"description\":\"原产国id\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"source_country_id\",\"fromName\":\"source_country_id\",\"type\":99,\"example\":\"123\",\"description\":\"货源国id\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"brand_country_id\",\"fromName\":\"brand_country_id\",\"type\":99,\"example\":\"123\",\"description\":\"品牌所在地id\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"tax_payer\",\"fromName\":\"tax_payer\",\"type\":99,\"example\":\"0\",\"description\":\"税金承担方，0商家承担，1用户承担\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"net_weight_qty\",\"fromName\":\"net_weight_qty\",\"type\":9,\"example\":\"100\",\"description\":\"商品净重\",\"securityLevel\":\"R1\",\"tagId\":54}]},{\"responseName\":\"after_sale_service\",\"fromName\":\"after_sale_service\",\"type\":2,\"example\":\"{\\\"supply_7day_return\\\":\\\"2\\\"}\",\"description\":\"售后服务\",\"securityLevel\":\"R1\",\"tagId\":56},{\"responseName\":\"price_has_tax\",\"fromName\":\"price_has_tax\",\"type\":99,\"example\":\"0\",\"description\":\"商品价格是否含税\",\"securityLevel\":\"R1\",\"tagId\":54},{\"responseName\":\"appoint_delivery_day\",\"fromName\":\"appoint_delivery_day\",\"type\":99,\"example\":\"2\",\"description\":\"可预约发货天数\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"product_format_new\",\"fromName\":\"product_format_new\",\"type\":2,\"example\":\"{\\\"1088\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"小33学二年级\\\",\\\"PropertyId\\\":1088,\\\"PropertyName\\\":\\\"适用学龄段\\\",\\\"diy_type\\\":1}],\\\"1319\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"1\\\",\\\"PropertyId\\\":1319,\\\"PropertyName\\\":\\\"适用地区\\\",\\\"diy_type\\\":0}],\\\"1618\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"9787218122861\\\",\\\"PropertyId\\\":1618,\\\"PropertyName\\\":\\\"ISBN编号\\\",\\\"diy_type\\\":0}],\\\"1831\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"小学英语看图说话写话二年级\\\",\\\"PropertyId\\\":1831,\\\"PropertyName\\\":\\\"书名\\\",\\\"diy_type\\\":0}],\\\"2000\\\":[{\\\"Value\\\":34762,\\\"Name\\\":\\\"无\\\",\\\"PropertyId\\\":2000,\\\"PropertyName\\\":\\\"作者地区\\\",\\\"diy_type\\\":0}],\\\"2229\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"1\\\",\\\"PropertyId\\\":2229,\\\"PropertyName\\\":\\\"编者\\\",\\\"diy_type\\\":0}],\\\"3271\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"1\\\",\\\"PropertyId\\\":3271,\\\"PropertyName\\\":\\\"出版时间\\\",\\\"diy_type\\\":0}],\\\"449\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"1\\\",\\\"PropertyId\\\":449,\\\"PropertyName\\\":\\\"作者\\\",\\\"diy_type\\\":0}],\\\"501\\\":[{\\\"Value\\\":7310,\\\"Name\\\":\\\"否\\\",\\\"PropertyId\\\":501,\\\"PropertyName\\\":\\\"是否是套装\\\",\\\"diy_type\\\":0}],\\\"855\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"陕西人民教育出版社\\\",\\\"PropertyId\\\":855,\\\"PropertyName\\\":\\\"出版社名称\\\",\\\"diy_type\\\":0}]}\",\"description\":\"类目属性\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"standard_brand_id\",\"fromName\":\"standard_brand_id\",\"type\":99,\"example\":\"121354\",\"description\":\"品牌库brand id，原brand_id代表商标关系id\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"market_price\",\"fromName\":\"market_price\",\"type\":99,\"example\":\"12000\",\"description\":\"划线价 单位分\",\"securityLevel\":\"R1\",\"tagId\":50},{\"responseName\":\"discount_price\",\"fromName\":\"discount_price\",\"type\":99,\"example\":\"12000\",\"description\":\"售卖价 单位分\",\"securityLevel\":\"R1\",\"tagId\":50},{\"responseName\":\"car_vin_code\",\"fromName\":\"car_vin_code\",\"type\":2,\"example\":\"VIN11111111111111\",\"description\":\"汽车vin码\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"need_recharge_mode\",\"fromName\":\"need_recharge_mode\",\"type\":4,\"example\":\"false\",\"description\":\"生活娱乐充值模式\",\"securityLevel\":\"R1\",\"tagId\":60},{\"responseName\":\"account_template_id\",\"fromName\":\"account_template_id\",\"type\":2,\"example\":\"1\",\"description\":\"多账号充值账号模板\",\"securityLevel\":\"R1\",\"tagId\":60},{\"responseName\":\"presell_config_level\",\"fromName\":\"presell_config_level\",\"type\":99,\"example\":\"2\",\"description\":\"发货模式：presell_type = 0 现货；presell_type = 2 阶梯；presell_type = 1 \\u0026\\u0026 presell_config_level = 0 全款预售；presell_type = 1 \\u0026\\u0026 presell_config_level = 1 sku预售；presell_type = 1 \\u0026\\u0026 presell_config_level = 2 现货+预售；presell_type = 1 \\u0026\\u0026 presell_config_level = 3 新预售\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"delivery_delay_day\",\"fromName\":\"delivery_delay_day\",\"type\":99,\"example\":\"2\",\"description\":\"现货模式的发货天数；阶梯模式现货部分的发货天数，9999=当日发、1=次日发\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"presell_delay\",\"fromName\":\"presell_delay\",\"type\":99,\"example\":\"4\",\"description\":\"阶梯模式阶梯部分的发货天数；商品全款预售模式，预售天数\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"poi_resource\",\"fromName\":\"poi_resource\",\"type\":5,\"subType\":5,\"example\":\"\",\"description\":\"卡券信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"poi_lib_id\",\"fromName\":\"poiLibId\",\"type\":99,\"example\":\"3526522\",\"description\":\"卡券关联的门店库id\",\"tagId\":57},{\"responseName\":\"notification\",\"fromName\":\"notification\",\"type\":2,\"example\":\"发码后可核销使用\",\"description\":\"领取须知\",\"tagId\":57},{\"responseName\":\"service_num\",\"fromName\":\"service_num\",\"type\":2,\"example\":\"86668888\",\"description\":\"客服电话\",\"tagId\":57},{\"responseName\":\"valid_days\",\"fromName\":\"valid_days\",\"type\":99,\"example\":\"7\",\"description\":\"有效期天数\",\"tagId\":57},{\"responseName\":\"condition\",\"fromName\":\"condition\",\"type\":2,\"example\":\"仅可在XXX门店范围使用\",\"description\":\"使用条件\",\"tagId\":57},{\"responseName\":\"total_can_use_count\",\"fromName\":\"total_can_use_count\",\"type\":99,\"example\":\"1\",\"description\":\"可使用次数\",\"tagId\":57},{\"responseName\":\"code_type\",\"fromName\":\"code_type\",\"type\":99,\"example\":\"1\",\"description\":\"券码生成方式\",\"tagId\":57},{\"responseName\":\"coupon_return_methods\",\"fromName\":\"coupon_return_methods\",\"type\":3,\"subType\":1,\"example\":\"[1]\",\"description\":\"1 随时退+过期自动退，2 不支持退\",\"securityLevel\":\"R1\",\"tagId\":57}]},{\"responseName\":\"delay_rule\",\"fromName\":\"delay_rule\",\"type\":5,\"example\":\"\",\"description\":\"特殊日期延迟发货规则\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"rule_scope\",\"fromName\":\"rule_scope\",\"type\":99,\"example\":\"1\",\"description\":\"生效维度\\n0 无效 1 店铺（此时无法设置商品维度数据） 2 商品维度 99 平台默认（没有设置商品维度时的默认生效数据）\",\"tagId\":100},{\"responseName\":\"enable\",\"fromName\":\"enable\",\"type\":4,\"example\":\"true\",\"description\":\"是否开启特殊日期延迟发货\",\"securityLevel\":\"R1\",\"tagId\":100},{\"responseName\":\"config_type\",\"fromName\":\"config_type\",\"type\":99,\"example\":\"1\",\"description\":\"1 时间点；2 时间范围\",\"securityLevel\":\"R1\",\"tagId\":100},{\"responseName\":\"config_value\",\"fromName\":\"config_value\",\"type\":99,\"example\":\"1673539199\",\"description\":\"特殊日期延迟发货时间最晚发货时间，时间戳，单位秒\",\"securityLevel\":\"R1\",\"tagId\":100},{\"responseName\":\"start_time\",\"fromName\":\"start_time\",\"type\":99,\"example\":\"1643040000\",\"description\":\"特殊日期延迟发货时间下单开始时间，时间戳，单位秒\",\"securityLevel\":\"R1\",\"tagId\":100},{\"responseName\":\"end_time\",\"fromName\":\"end_time\",\"type\":99,\"example\":\"1672502400\",\"description\":\"特殊日期延迟发货时间下单结束时间，时间戳，单位秒\",\"securityLevel\":\"R1\",\"tagId\":100}]},{\"responseName\":\"long_pic_url\",\"fromName\":\"long_pic_url\",\"type\":2,\"example\":\"https://aaa\",\"description\":\"3:4长图url(仅素材中心url有效)\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"sell_channel\",\"fromName\":\"sell_channel\",\"type\":3,\"subType\":1,\"example\":\"[0]\",\"description\":\"售卖方式;0:全渠道手售卖,1:仅指定直播间售卖\",\"securityLevel\":\"R1\"},{\"responseName\":\"freight_id\",\"fromName\":\"freight_id\",\"type\":99,\"example\":\"123\",\"description\":\"运费模版ID\",\"securityLevel\":\"R1\"},{\"responseName\":\"material_video_id\",\"fromName\":\"material_video_id\",\"type\":2,\"example\":\"Vaaxxaa\",\"description\":\"主图视频ID\",\"securityLevel\":\"R1\"},{\"responseName\":\"pickup_method\",\"fromName\":\"pickup_method\",\"type\":2,\"example\":\"0\",\"description\":\"提取方式新字段，推荐使用。\\\"0\\\": 普通商品-使用物流发货, \\\"1\\\": 虚拟商品-无需物流与电子交易凭证, \\\"2\\\": 虚拟商品-使用电子交易凭证,  \\\"3\\\": 虚拟商品-充值直连\",\"securityLevel\":\"R1\"},{\"responseName\":\"size_info_template_id\",\"fromName\":\"size_info_template_id\",\"type\":99,\"example\":\"7102988069296423000\",\"description\":\"尺码模板ID\",\"securityLevel\":\"R1\",\"tagId\":95},{\"responseName\":\"white_back_ground_pic_url\",\"fromName\":\"white_back_ground_pic_url\",\"type\":2,\"example\":\"https://aaa\",\"description\":\"白底图url(仅素材中心url有效)\",\"securityLevel\":\"R1\"},{\"responseName\":\"sale_channel_type\",\"fromName\":\"sale_channel_type\",\"type\":2,\"example\":\"sameAsOffline\",\"description\":\"销售渠道类型，包括纯电商（onlineOnly）、专柜同款（sameAsOffline），云零售商家（https://fxg.jinritemai.com/ffa/merchant-growth/cloud-retail）可以设置\",\"securityLevel\":\"R1\"},{\"responseName\":\"store_id\",\"fromName\":\"store_id\",\"type\":99,\"example\":\"103121\",\"description\":\"门店ID\",\"securityLevel\":\"R1\",\"tagId\":80},{\"responseName\":\"main_product_id\",\"fromName\":\"main_product_id\",\"type\":99,\"example\":\"3121213\",\"description\":\"主商品ID\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"sale_limit_id\",\"fromName\":\"sale_limit_id\",\"type\":99,\"example\":\"123\",\"description\":\"限售模板ID\",\"securityLevel\":\"R1\"},{\"responseName\":\"name_prefix\",\"fromName\":\"name_prefix\",\"type\":2,\"example\":\"钛钢木质耳饰\",\"description\":\"系统推荐的标题前缀\",\"securityLevel\":\"R1\",\"tagId\":96},{\"responseName\":\"product_type\",\"fromName\":\"product_type\",\"type\":99,\"example\":\"0\",\"description\":\"商品类型，0-普通，3-虚拟，6玉石闪购，7云闪购\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"presell_delivery_type\",\"fromName\":\"presell_delivery_type\",\"type\":99,\"example\":\"0\",\"description\":\"预售发货方式配置 0-预售结束后xx天发货; 1-支付完成后xx天发货\",\"securityLevel\":\"R1\"},{\"responseName\":\"start_sale_type\",\"fromName\":\"start_sale_type\",\"type\":99,\"example\":\"0\",\"description\":\"审核通过后上架售卖时间配置：0-立即上架售卖 1-放入仓库\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"reduce_type\",\"fromName\":\"reduce_type\",\"type\":99,\"example\":\"1\",\"description\":\"库存扣减方式，1-拍下减库存 2-付款减库存\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"presell_end_time\",\"fromName\":\"presell_end_time\",\"type\":2,\"example\":\"2020-02-21 18:54:27\",\"description\":\"预售结束时间，格式2020-02-21 18:54:27，最多支持设置距离当前30天\",\"securityLevel\":\"R1\"},{\"responseName\":\"weight_value\",\"fromName\":\"weight_value\",\"type\":9,\"example\":\"0\",\"description\":\"重量数值\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"weight_unit\",\"fromName\":\"weight_unit\",\"type\":99,\"example\":\"0\",\"description\":\"重量单位，0-kg, 1-g\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"reference_price_certificate\",\"fromName\":\"reference_price_certificate\",\"type\":5,\"example\":\"\",\"description\":\"参考价凭证\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"certificate_type\",\"fromName\":\"certificate_type\",\"type\":2,\"example\":\"1\",\"description\":\"凭证类型;1:\\\"厂商建议零售价\\\",2:\\\"吊牌价\\\",3:\\\"定价\\\",4:\\\"官网零售售价\\\"\",\"securityLevel\":\"R1\",\"tagId\":97},{\"responseName\":\"certificate_urls\",\"fromName\":\"certificate_urls\",\"type\":2,\"example\":\"http://www.\",\"description\":\"凭证图片url\",\"securityLevel\":\"R1\",\"tagId\":97}]},{\"responseName\":\"reference_price\",\"fromName\":\"reference_price\",\"type\":99,\"example\":\"12300\",\"description\":\"参考价，单位分\",\"securityLevel\":\"R1\",\"tagId\":97},{\"responseName\":\"quality_inspection_info\",\"fromName\":\"quality_inspection_info\",\"type\":5,\"example\":\"\",\"description\":\"前置质检相关（特定二手商家、特定二手类目使用）\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"mode\",\"fromName\":\"mode\",\"type\":99,\"example\":\"1\",\"description\":\"1: 单库存模式，只允许售卖一个sku；2: 多库存模式，不限售卖次数\",\"tagId\":28},{\"responseName\":\"certificate_code\",\"fromName\":\"certificate_code\",\"type\":2,\"example\":\"abc\",\"description\":\"质检证书编码\",\"tagId\":28},{\"responseName\":\"agency\",\"fromName\":\"agency\",\"type\":2,\"example\":\"123\",\"description\":\"机构编码\",\"tagId\":28},{\"responseName\":\"supported\",\"fromName\":\"supported\",\"type\":4,\"example\":\"false\",\"description\":\"是否勾选支持前置质检\",\"tagId\":28}]},{\"responseName\":\"unit_price_info\",\"fromName\":\"unit_price_info\",\"type\":5,\"example\":\"\",\"description\":\"单位价格信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"price_rule_type\",\"fromName\":\"price_rule_type\",\"type\":99,\"example\":\"1\",\"description\":\"1：投资金单位价格\\n2：首饰金单位价格\",\"tagId\":28}]},{\"responseName\":\"main_image_three_to_four\",\"fromName\":\"main_image_three_to_four\",\"type\":2,\"example\":\"[https://p9-aio.ecombdimg.com/obj/ecom-shop-material/rgKVRhPW_m_a9223a677dc42718d1203bd2165e3bf5_sx_89532_www570-760,https://p3-aio.ecombdimg.com/obj/ecom-shop-material/rgKVRhPW_m_cd15cfb47c3091dea24d2f84d17e2cad_sx_975664_www750-1000,https://p6-aio.ecombdimg.com/obj/ecom-shop-material/rgKVRhPW_m_ed6f9c9914a5a6ff444a25afc71313c3_sx_63512_www570-760]\",\"description\":\"商品主图3:4；最多支持5张图片；宽高比例为3:4\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"is_c2b_switch_on\",\"fromName\":\"is_c2b_switch_on\",\"type\":4,\"example\":\"false\",\"description\":\"是否支持c2b小程序（特定c2b定制商家使用）\",\"tagId\":45},{\"responseName\":\"micro_app_id\",\"fromName\":\"micro_app_id\",\"type\":2,\"example\":\"abcde\",\"description\":\"支持c2b定制时的小程序id（特定c2b定制商家使用）\",\"tagId\":45},{\"responseName\":\"is_auto_charge\",\"fromName\":\"is_auto_charge\",\"type\":4,\"example\":\"false\",\"description\":\"是否是自动充值商品\",\"tagId\":28},{\"responseName\":\"spu_id\",\"fromName\":\"spu_id\",\"type\":99,\"example\":\"1234\",\"description\":\"spu_id 大于0代表有挂载spu\",\"tagId\":39},{\"responseName\":\"short_product_name\",\"fromName\":\"short_product_name\",\"type\":2,\"example\":\"好吃牛肉干\",\"description\":\"导购短标题，短标题可用于物流打单及商品搜索场景，若未填写，则系统将智能生成最优短标题在商详购买页面展示，说明详见：https://school.jinritemai.com/doudian/web/article/aHUW2MCvHqF3?from=shop_article\",\"tagId\":39},{\"responseName\":\"after_sale_service_v2\",\"fromName\":\"after_sale_service_v2\",\"type\":5,\"example\":\"\",\"description\":\"售后服务新结构\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"three_guarantees\",\"fromName\":\"three_guarantees\",\"type\":5,\"example\":\"\",\"description\":\"三包服务承诺配置信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"duration\",\"fromName\":\"duration\",\"type\":99,\"example\":\"180\",\"description\":\"售后天数，例如服务类型选择了寄修，并且该参数为180，表示售后180天内支持寄修服务\",\"tagId\":56},{\"responseName\":\"service_type\",\"fromName\":\"service_type\",\"type\":99,\"example\":\"1\",\"description\":\"服务类型 1-寄修 2-延保\",\"tagId\":56}]},{\"responseName\":\"is_large_product\",\"fromName\":\"is_large_product\",\"type\":99,\"example\":\"1\",\"description\":\"当前商品是否是大件商品 1-是\",\"tagId\":28}]},{\"responseName\":\"format_update_time\",\"fromName\":\"format_update_time\",\"type\":2,\"example\":\"2021-11-23 10:17:48\",\"description\":\"更新时间，和update_time一样，只是格式不同\",\"tagId\":28},{\"responseName\":\"sell_num\",\"fromName\":\"sell_num\",\"type\":99,\"example\":\"123\",\"description\":\"商品销量\",\"tagId\":101},{\"responseName\":\"product_audit_info\",\"fromName\":\"product_audit_info\",\"type\":5,\"example\":\"\",\"description\":\"商品审核结果\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"material_audit_status\",\"fromName\":\"material_audit_status\",\"type\":8,\"mapKeyType\":2,\"mapValueType\":1,\"example\":\"{  \\n\\\"1\\\": 1\\n}\",\"description\":\"素材审核状态，key=素材类型（0-主图视频、1-白底图、4-长图、17-测评视频），value=审核状态（0-初始化 1-审核中 2-审核通过 3-审核不通过）\",\"securityLevel\":\"R1\",\"tagId\":28},{\"responseName\":\"material_audit_reason\",\"fromName\":\"material_audit_reason\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"素材审核驳回原因\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"material_type\",\"fromName\":\"material_type\",\"type\":2,\"example\":\"0\",\"description\":\"0-主图视频、1-白底图、4-长图、17-测评视频\",\"tagId\":39},{\"responseName\":\"reasons\",\"fromName\":\"reasons\",\"type\":3,\"subType\":2,\"example\":\"[\\\"白底图不符合规范\\\",\\\"白底图太黑了\\\"]\",\"description\":\"素材类型对应的驳回原因\",\"securityLevel\":\"R1\",\"tagId\":39}],\"tagId\":39}]},{\"responseName\":\"main_pic_3_4\",\"fromName\":\"main_image_three_to_four\",\"type\":3,\"subType\":2,\"example\":\"[https://p9-aio.ecombdimg.com/obj/ecom-shop-material/rgKVRhPW_m_a9223a677dc42718d1203bd2165e3bf5_sx_89532_www570-760,https://p3-aio.ecombdimg.com/obj/ecom-shop-material/rgKVRhPW_m_cd15cfb47c3091dea24d2f84d17e2cad_sx_975664_www750-1000,https://p6-aio.ecombdimg.com/obj/ecom-shop-material/rgKVRhPW_m_ed6f9c9914a5a6ff444a25afc71313c3_sx_63512_www570-760]\",\"description\":\"商品主图3:4；最多支持5张图片；宽高比例为3:4\",\"securityLevel\":\"R1\",\"tagId\":39},{\"responseName\":\"shop_category\",\"fromName\":\"shop_category\",\"type\":5,\"example\":\"\",\"description\":\"店铺装修分类\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"leaf_category_ids\",\"fromName\":\"leaf_category_ids\",\"type\":2,\"example\":\"123\",\"description\":\"店铺装修分类叶子类目id\",\"tagId\":28}]},{\"responseName\":\"name_suffix\",\"fromName\":\"name_suffix\",\"type\":2,\"example\":\"36.9度\",\"description\":\"标题后缀\"},{\"responseName\":\"use_brand_name\",\"fromName\":\"use_brand_name\",\"type\":4,\"example\":\"false\",\"description\":\"是否勾选使用品牌名\"},{\"responseName\":\"new_step_product\",\"fromName\":\"new_step_product\",\"type\":4,\"example\":\"true\",\"description\":\"新现货+预售商品标识，true-新现货+预售商品\"},{\"responseName\":\"is_charity_product\",\"fromName\":\"is_charity_product\",\"type\":4,\"example\":\"false\",\"description\":\"是否公益商品\",\"tagId\":28},{\"responseName\":\"charity_id\",\"fromName\":\"charity_id\",\"type\":2,\"example\":\"123\",\"description\":\"公益项目id\",\"tagId\":28},{\"responseName\":\"is_evaluate_opened\",\"fromName\":\"is_evaluate_opened\",\"type\":2,\"example\":\"false\",\"description\":\"测评模块是否打开\"},{\"responseName\":\"custom_property\",\"fromName\":\"custom_property\",\"type\":5,\"example\":\"\",\"description\":\"定制属性\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"customPropertyGroups\",\"fromName\":\"customPropertyGroups\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"定制属性组信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"propertyDetail\",\"fromName\":\"propertyDetail\",\"type\":3,\"subType\":5,\"example\":\"\",\"description\":\"属性详细信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"extra_info\",\"fromName\":\"extra_info\",\"type\":5,\"example\":\"\",\"description\":\"属性扩展信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"process_time\",\"fromName\":\"process_time\",\"type\":99,\"example\":\"600\",\"description\":\"处理时间，单位秒\"}]},{\"responseName\":\"name\",\"fromName\":\"name\",\"type\":2,\"example\":\"宰杀\",\"description\":\"商品属性名称\"}]},{\"responseName\":\"name\",\"fromName\":\"name\",\"type\":2,\"example\":\"加工方式\",\"description\":\"属性组名称\"}]}]},{\"responseName\":\"default_process_time\",\"fromName\":\"default_process_time\",\"type\":5,\"example\":\"\",\"description\":\"商品默认处理时长\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"value\",\"fromName\":\"value\",\"type\":99,\"example\":\"处理时长值\",\"description\":\"处理时间，单位秒\"}]},{\"responseName\":\"is_second_hand_digital\",\"fromName\":\"is_second_hand_digital\",\"type\":4,\"example\":\"false\",\"description\":\"是否二手数码(成色机)\"},{\"responseName\":\"delivery_time_sub_type\",\"fromName\":\"delivery_time_sub_type\",\"type\":99,\"example\":\"1\",\"description\":\"发货时间子类型，该值仅在现货发货时效（presellType = 0）下有意义，1 sku维度发货时效，0或者缺省为商品维度发货时效\"},{\"responseName\":\"home_install_service_info\",\"fromName\":\"home_install_service_info\",\"type\":5,\"example\":\"\",\"description\":\"上门安装服务信息\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"home_install_service_template_id\",\"fromName\":\"home_install_service_template_id\",\"type\":99,\"example\":\"12345\",\"description\":\"门安装服务模版id\"}]},{\"responseName\":\"original_category_detail\",\"fromName\":\"original_category_detail\",\"type\":5,\"example\":\"\",\"description\":\"门捷列夫类目详情，临时字段，类目数升级期间使用的字段，主要返回老的类目信息，方便开发者做映射使用，升级结束后字段会下线，下线时间另行通知\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"first_cid\",\"fromName\":\"first_cid\",\"type\":99,\"example\":\"20117\",\"description\":\"一级类目id（临时字段）\",\"tagId\":72},{\"responseName\":\"second_cid\",\"fromName\":\"second_cid\",\"type\":99,\"example\":\"22139\",\"description\":\"二级类目id（临时字段）\",\"tagId\":72},{\"responseName\":\"third_cid\",\"fromName\":\"third_cid\",\"type\":99,\"example\":\"28901\",\"description\":\"三级类目id（临时字段）\",\"tagId\":72},{\"responseName\":\"fourth_cid\",\"fromName\":\"fourth_cid\",\"type\":99,\"example\":\"31800\",\"description\":\"四级类目id（临时字段）\",\"tagId\":72},{\"responseName\":\"first_cname\",\"fromName\":\"first_cname\",\"type\":2,\"example\":\"本地生活服务\",\"description\":\"一级类目名（临时字段）\",\"tagId\":72},{\"responseName\":\"second_cname\",\"fromName\":\"second_cname\",\"type\":2,\"example\":\"餐饮美食卡券\",\"description\":\"二级类目名（临时字段）\",\"tagId\":72},{\"responseName\":\"third_cname\",\"fromName\":\"third_cname\",\"type\":2,\"example\":\"甜品/冰淇淋/咖啡/冷饮\",\"description\":\"三级类目名（临时字段）\",\"tagId\":72},{\"responseName\":\"fourth_cname\",\"fromName\":\"fourth_cname\",\"type\":2,\"example\":\"咖啡\",\"description\":\"四级类目名（临时字段）\",\"tagId\":72}]},{\"responseName\":\"future_category_detail\",\"fromName\":\"future_category_detail\",\"type\":5,\"example\":\"\",\"description\":\"标准类目详情（新类目信息）方便开发者做映射使用，升级结束后字段会下线，下线时间另行通知\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"first_cid\",\"fromName\":\"first_cid\",\"type\":99,\"example\":\"1000007740\",\"description\":\"一级类目id（临时字段）\",\"tagId\":72},{\"responseName\":\"second_cid\",\"fromName\":\"second_cid\",\"type\":99,\"example\":\"1000007878\",\"description\":\"二级类目id（临时字段）\",\"tagId\":72},{\"responseName\":\"third_cid\",\"fromName\":\"third_cid\",\"type\":99,\"example\":\"1000007926\",\"description\":\"三级类目id（临时字段）\",\"tagId\":72},{\"responseName\":\"fourth_cid\",\"fromName\":\"fourth_cid\",\"type\":99,\"example\":\"1000008663\",\"description\":\"四级类目id（临时字段）\",\"tagId\":72},{\"responseName\":\"first_cname\",\"fromName\":\"first_cname\",\"type\":2,\"example\":\"黄金珠宝玉石\",\"description\":\"一级类目名（临时字段）\",\"tagId\":72},{\"responseName\":\"second_cname\",\"fromName\":\"second_cname\",\"type\":2,\"example\":\"合成宝石\",\"description\":\"二级类目名（临时字段）\",\"tagId\":72},{\"responseName\":\"third_cname\",\"fromName\":\"third_cname\",\"type\":2,\"example\":\"合成钻石\",\"description\":\"三级类目名（临时字段）\",\"tagId\":72},{\"responseName\":\"fourth_cname\",\"fromName\":\"fourth_cname\",\"type\":2,\"example\":\"裸石\",\"description\":\"四级类目名（临时字段）\",\"tagId\":72}]},{\"responseName\":\"category_property_pics\",\"fromName\":\"category_property_pics\",\"type\":8,\"mapKeyType\":1,\"mapValueType\":5,\"example\":\"\",\"description\":\"属性图，如水洗标等，key=属性id\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"urls\",\"fromName\":\"urls\",\"type\":3,\"subType\":2,\"example\":\"[\\\"http\\\"]\",\"description\":\"属性图链接\",\"securityLevel\":\"R1\",\"tagId\":39}]},{\"responseName\":\"correct_size_suggestion\",\"fromName\":\"correct_size_suggestion\",\"type\":5,\"example\":\"\",\"description\":\"偏码建议\",\"securityLevel\":\"R1\",\"children\":[{\"responseName\":\"size\",\"fromName\":\"size\",\"type\":9,\"example\":\"0.5\",\"description\":\"建议尺码选大/小 x 码\"},{\"responseName\":\"value_id\",\"fromName\":\"value_id\",\"type\":99,\"example\":\"2\",\"description\":\"偏码建议选项id\"}]}]},\"demo\":{\"requestDemo\":{\"curl\":{\"reqUrl\":\"https://openapi-fxg.jinritemai.com/product/detail?app_key=your_appkey_here\\u0026method=product.detail\\u0026access_token=your_accesstoken_here\\u0026param_json={}\\u0026timestamp=2018-06-19%2016:06:59\\u0026v=2\\u0026sign=your_sign_here\"},\"java\":{\"code\":\"ProductDetailRequest request = new ProductDetailRequest();\\nProductDetailParam param = request.getParam();\\nparam.setProductId(\\\"3558192687276554544\\\");\\nparam.setOutProductId(\\\"dy001\\\");\\nparam.setShowDraft(\\\"false\\\");\\nparam.setStoreId(1111420330L);\\nProductDetailResponse response = request.execute(accessToken);\\n\"},\"php\":{\"code\":\"$request = new ProductDetailRequest();\\n$param = new ProductDetailParam();\\n$request-\\u003esetParam($param);\\n$param-\\u003eproduct_id = \\\"3558192687276554544\\\";\\n$param-\\u003eout_product_id = \\\"dy001\\\";\\n$param-\\u003eshow_draft = \\\"false\\\";\\n$param-\\u003estore_id = 1111420330;\\n$response = $request-\\u003eexecute(accessToken);\\n\"},\"python\":{\"code\":\"request = ProductDetailRequest()\\nparam = request.getParams()\\nparam.product_id = \\\"3558192687276554544\\\"\\nparam.out_product_id = \\\"dy001\\\"\\nparam.show_draft = \\\"false\\\"\\nparam.store_id = 1111420330\\nresponse = request.execute(accessToken)\\n\"},\"go\":{\"code\":\"request := product_detail_request.New()\\nparam := request.GetParams()\\nparam.ProductId = \\\"3558192687276554544\\\"\\nparam.OutProductId = \\\"dy001\\\"\\nparam.ShowDraft = \\\"false\\\"\\nparam.StoreId = 1111420330\\nresponse := request.Execute(accessToken)\\n\"},\"dotNetCore\":{\"code\":\"var request = new ProductDetailRequest();\\nvar param = request.BuildParam();\\nparam.ProductId = \\\"3558192687276554544\\\";\\nparam.OutProductId = \\\"dy001\\\";\\nparam.ShowDraft = \\\"false\\\";\\nparam.StoreId = 1111420330;\\nvar response = request.Execute\\u003cProductDetailResponse\\u003e(accessToken);\\n\"},\"js\":{}},\"responseDemo\":{\"responseSuccess\":{\"data\":{\"account_template_id\":\"1\",\"after_sale_service\":\"{\\\"supply_7day_return\\\":\\\"2\\\"}\",\"after_sale_service_v2\":{\"is_large_product\":\"1\",\"three_guarantees\":{\"duration\":\"180\",\"service_type\":\"1\"}},\"appoint_delivery_day\":\"2\",\"brand_id\":\"596120136\",\"car_vin_code\":\"VIN11111111111111\",\"category_detail\":{\"first_cid\":\"20117\",\"first_cname\":\"本地生活服务\",\"fourth_cid\":\"31800\",\"fourth_cname\":\"咖啡\",\"second_cid\":\"22139\",\"second_cname\":\"餐饮美食卡券\",\"third_cid\":\"28901\",\"third_cname\":\"甜品/冰淇淋/咖啡/冷饮\"},\"category_property_pics\":{},\"cdf_category\":\"\\\"\\\"\",\"charity_id\":\"123\",\"check_status\":\"1\",\"correct_size_suggestion\":{\"size\":\"0.5\",\"value_id\":\"2\"},\"create_time\":\"2022-07-04 13:29:47\",\"custom_property\":{\"customPropertyGroups\":[{\"name\":\"加工方式\",\"propertyDetail\":[{\"extra_info\":{\"process_time\":\"600\"},\"name\":\"宰杀\"}]}]},\"default_process_time\":{\"value\":\"处理时长值\"},\"delay_rule\":{\"config_type\":\"1\",\"config_value\":\"1673539199\",\"enable\":\"true\",\"end_time\":\"1672502400\",\"rule_scope\":\"1\",\"start_time\":\"1643040000\"},\"delivery_delay_day\":\"2\",\"delivery_method\":\"7\",\"delivery_time_sub_type\":\"1\",\"description\":\"\\u003cp\\u003e\\u003cimg src=\\\\\\\"https://p3-aio.ecombdimg.com/obj/ecom-shop-material/v1_xPfNJOkX_71153427046487984750183_661ff1f563801d97f382e0ac114a09e6_sx_805824_www933-933\\\\\\\" style=\\\\\\\"max-width:100%;\\\\\\\"/\\u003e\\u003cimg src=\\\\\\\"https://p3-aio.ecombdimg.com/obj/ecom-shop-material/v1_xPfNJOkX_71153426724709337920183_dd825b6f3c1bc43ec26faea488447709_sx_1059417_www1080-933\\\\\\\" style=\\\\\\\"max-width:100%;\\\\\\\"/\\u003e\\u003cimg src=\\\\\\\"https://p3-aio.ecombdimg.com/obj/ecom-shop-material/v1_xPfNJOkX_71153465487927217040183_d963cc36ef6e66c0cba70e4cb2188f88_sx_436442_www1920-1080\\\\\\\" style=\\\\\\\"max-width:100%;\\\\\\\"/\\u003e\\u003c/p\\u003e\",\"discount_price\":\"12000\",\"draft_status\":\"2\",\"extra\":\"{\\\\\\\"category_detail\\\\\\\":{\\\\\\\"first_cid\\\\\\\":20117,\\\\\\\"second_cid\\\\\\\":22139,\\\\\\\"third_cid\\\\\\\":28901,\\\\\\\"fourth_cid\\\\\\\":31800,\\\\\\\"first_cname\\\\\\\":\\\\\\\"本地生活服务\\\\\\\",\\\\\\\"second_cname\\\\\\\":\\\\\\\"餐饮美食卡券\\\\\\\",\\\\\\\"third_cname\\\\\\\":\\\\\\\"甜品/冰淇淋/咖啡/冷饮\\\\\\\",\\\\\\\"fourth_cname\\\\\\\":\\\\\\\"咖啡\\\\\\\",\\\\\\\"is_leaf\\\\\\\":true},\\\\\\\"class_quality\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"is_publish\\\\\\\":1,\\\\\\\"quality_opId\\\\\\\":\\\\\\\"7132044312682119463\\\\\\\",\\\\\\\"quality_report\\\\\\\":\\\\\\\"\\\\\\\"}\",\"format_update_time\":\"2021-11-23 10:17:48\",\"freight_id\":\"123\",\"future_category_detail\":{\"first_cid\":\"1000007740\",\"first_cname\":\"黄金珠宝玉石\",\"fourth_cid\":\"1000008663\",\"fourth_cname\":\"裸石\",\"second_cid\":\"1000007878\",\"second_cname\":\"合成宝石\",\"third_cid\":\"1000007926\",\"third_cname\":\"合成钻石\"},\"home_install_service_info\":{\"home_install_service_template_id\":\"12345\"},\"img\":\"https://p9-aio.ecombdimg.com/obj/ecom-shop-material/v1_xPfNJOkX_71153427046487984750183_661ff1f563801d97f382e0ac114a09e6_sx_805824_www933-933\",\"is_auto_charge\":\"false\",\"is_c2b_switch_on\":\"false\",\"is_charity_product\":\"false\",\"is_create\":\"【已废弃】\",\"is_evaluate_opened\":\"false\",\"is_second_hand_digital\":\"false\",\"is_sub_product\":\"true\",\"limit_per_buyer\":\"5\",\"logistics_info\":{\"brand_country_id\":\"123\",\"customs_clear_type\":\"1\",\"net_weight_qty\":\"100\",\"origin_country_id\":\"123\",\"source_country_id\":\"123\",\"tax_payer\":\"0\"},\"long_pic_url\":\"https://aaa\",\"main_image_three_to_four\":\"[https://p9-aio.ecombdimg.com/obj/ecom-shop-material/rgKVRhPW_m_a9223a677dc42718d1203bd2165e3bf5_sx_89532_www570-760,https://p3-aio.ecombdimg.com/obj/ecom-shop-material/rgKVRhPW_m_cd15cfb47c3091dea24d2f84d17e2cad_sx_975664_www750-1000,https://p6-aio.ecombdimg.com/obj/ecom-shop-material/rgKVRhPW_m_ed6f9c9914a5a6ff444a25afc71313c3_sx_63512_www570-760]\",\"main_pic_3_4\":\"[https://p9-aio.ecombdimg.com/obj/ecom-shop-material/rgKVRhPW_m_a9223a677dc42718d1203bd2165e3bf5_sx_89532_www570-760,https://p3-aio.ecombdimg.com/obj/ecom-shop-material/rgKVRhPW_m_cd15cfb47c3091dea24d2f84d17e2cad_sx_975664_www750-1000,https://p6-aio.ecombdimg.com/obj/ecom-shop-material/rgKVRhPW_m_ed6f9c9914a5a6ff444a25afc71313c3_sx_63512_www570-760]\",\"main_product_id\":\"3121213\",\"market_price\":\"12000\",\"material_video_id\":\"Vaaxxaa\",\"maximum_per_order\":\"5\",\"micro_app_id\":\"abcde\",\"minimum_per_order\":\"1\",\"mobile\":\"15677775555\",\"name\":\"夏季男生白色短袖\",\"name_prefix\":\"钛钢木质耳饰\",\"name_suffix\":\"36.9度\",\"need_recharge_mode\":\"false\",\"new_step_product\":\"true\",\"open_user_id\":\"\\\"\\\"\",\"original_category_detail\":{\"first_cid\":\"20117\",\"first_cname\":\"本地生活服务\",\"fourth_cid\":\"31800\",\"fourth_cname\":\"咖啡\",\"second_cid\":\"22139\",\"second_cname\":\"餐饮美食卡券\",\"third_cid\":\"28901\",\"third_cname\":\"甜品/冰淇淋/咖啡/冷饮\"},\"out_product_id\":\"133321\",\"outer_product_id\":\"dy001\",\"pay_type\":\"1\",\"pic\":\"[\\\"https://p9-aio.ecombdimg.com/obj/ecom-shop-material/v1_xPfNJOkX_71153427046487984750183_661ff1f563801d97f382e0ac114a09e6_sx_805824_www933-933\\\",     \\\"https://p6-aio.ecombdimg.com/obj/ecom-shop-material/v1_xPfNJOkX_71153429136760998540183_e3d0578bd8b499ff9dee11a0fd040070_sx_889253_www3072-3072\\\",     \\\"https://p9-aio.ecombdimg.com/obj/ecom-shop-material/v1_xPfNJOkX_71153465665006472060183_1d037ea9f83818829d3a502df6135ae4_sx_280269_www1080-1080\\\"]\",\"pickup_method\":\"0\",\"poi_resource\":{\"code_type\":\"1\",\"condition\":\"仅可在XXX门店范围使用\",\"coupon_return_methods\":\"[1]\",\"notification\":\"发码后可核销使用\",\"poi_lib_id\":\"3526522\",\"service_num\":\"86668888\",\"total_can_use_count\":\"1\",\"valid_days\":\"7\"},\"presell_config_level\":\"2\",\"presell_delay\":\"4\",\"presell_delivery_type\":\"0\",\"presell_end_time\":\"2020-02-21 18:54:27\",\"presell_type\":\"1\",\"price_has_tax\":\"0\",\"product_audit_info\":{\"material_audit_reason\":[{\"material_type\":\"0\",\"reasons\":\"[\\\"白底图不符合规范\\\",\\\"白底图太黑了\\\"]\"}],\"material_audit_status\":{}},\"product_format\":\"{\\\"货号\\\":\\\"8888\\\"}\",\"product_format_new\":\"{\\\"1088\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"小33学二年级\\\",\\\"PropertyId\\\":1088,\\\"PropertyName\\\":\\\"适用学龄段\\\",\\\"diy_type\\\":1}],\\\"1319\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"1\\\",\\\"PropertyId\\\":1319,\\\"PropertyName\\\":\\\"适用地区\\\",\\\"diy_type\\\":0}],\\\"1618\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"9787218122861\\\",\\\"PropertyId\\\":1618,\\\"PropertyName\\\":\\\"ISBN编号\\\",\\\"diy_type\\\":0}],\\\"1831\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"小学英语看图说话写话二年级\\\",\\\"PropertyId\\\":1831,\\\"PropertyName\\\":\\\"书名\\\",\\\"diy_type\\\":0}],\\\"2000\\\":[{\\\"Value\\\":34762,\\\"Name\\\":\\\"无\\\",\\\"PropertyId\\\":2000,\\\"PropertyName\\\":\\\"作者地区\\\",\\\"diy_type\\\":0}],\\\"2229\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"1\\\",\\\"PropertyId\\\":2229,\\\"PropertyName\\\":\\\"编者\\\",\\\"diy_type\\\":0}],\\\"3271\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"1\\\",\\\"PropertyId\\\":3271,\\\"PropertyName\\\":\\\"出版时间\\\",\\\"diy_type\\\":0}],\\\"449\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"1\\\",\\\"PropertyId\\\":449,\\\"PropertyName\\\":\\\"作者\\\",\\\"diy_type\\\":0}],\\\"501\\\":[{\\\"Value\\\":7310,\\\"Name\\\":\\\"否\\\",\\\"PropertyId\\\":501,\\\"PropertyName\\\":\\\"是否是套装\\\",\\\"diy_type\\\":0}],\\\"855\\\":[{\\\"Value\\\":0,\\\"Name\\\":\\\"陕西人民教育出版社\\\",\\\"PropertyId\\\":855,\\\"PropertyName\\\":\\\"出版社名称\\\",\\\"diy_type\\\":0}]}\",\"product_id\":\"3539925204033339668\",\"product_id_str\":\"3539925204033339668\",\"product_type\":\"0\",\"quality_inspection_info\":{\"agency\":\"123\",\"certificate_code\":\"abc\",\"mode\":\"1\",\"supported\":\"false\"},\"quality_list\":[{\"quality_attachments\":[{\"media_type\":\"1\",\"url\":\"http://www.byted***.com/YYYY\"}],\"quality_key\":\"3457***9470978\",\"quality_name\":\"进货凭证\"}],\"recommend_remark\":\"真的很好啊\",\"reduce_type\":\"1\",\"reference_price\":\"12300\",\"reference_price_certificate\":{\"certificate_type\":\"1\",\"certificate_urls\":\"http://www.\"},\"sale_channel_type\":\"sameAsOffline\",\"sale_limit_id\":\"123\",\"sell_channel\":\"[0]\",\"sell_num\":\"123\",\"shop_category\":{\"leaf_category_ids\":\"123\"},\"short_product_name\":\"好吃牛肉干\",\"size_info_template_id\":\"7102988069296423000\",\"spec_id\":\"1737144307943485\",\"spec_pics\":[{\"pic\":\"temai/b637513c50b994f4c89de56a17886caca5d6569awww800-800\",\"spec_detail_id\":\"1695459998447656\"}],\"spec_prices\":[{\"barcodes\":\"111111\",\"cargo_info\":{\"cargo_id\":\"777777777777777\",\"source_type\":\"1\"},\"code\":\"aaa\",\"commit_code\":\"3000\",\"customs_report_info\":{\"bar_code\":\"-\",\"first_measure_qty\":\"1\",\"first_measure_unit\":\"-\",\"g_model\":\"-\",\"hs_code\":\"1564564\",\"report_brand_name\":\"-\",\"report_name\":\"-\",\"second_measure_qty\":\"1\",\"second_measure_unit\":\"-\",\"unit\":\"-\",\"usage\":\"-\"},\"delivery_infos\":[{\"info_type\":\"weight\",\"info_unit\":\"当info_type=weight时，支持mg,g,kg三种类型\",\"info_value\":\"100\"}],\"gold_process_charge\":\"12300\",\"lock_step_stock_num\":\"1\",\"lock_stock_num\":\"1\",\"multi_time_stocks\":[{\"stock_num\":\"500\",\"time_desc\":\"5天内发\",\"time_type\":\"5\"}],\"operator\":\"商家\",\"out_sku_id\":\"0\",\"outer_sku_id\":\"dy001-1\",\"presell_delay\":\"5\",\"price\":\"102\",\"prom_step_stock_num\":\"0\",\"prom_stock_num\":\"0\",\"promotion_step_stock_num\":\"0\",\"promotion_stock_num\":\"0\",\"reason\":\"商家下架\",\"sell_properties\":[{\"perperty_id\":\"0\",\"property_name\":\"颜色\",\"remark\":\"非常黄\",\"value_id\":\"12345678910\",\"value_name\":\"黄色\",\"value_spec_detail_id\":\"123123123123\"}],\"ship_time\":\"\\\"2025-09-01\\\"\",\"ship_time_type\":\"2\",\"sku_classification_type\":\"\\\"main_sale_single_product\\\"\",\"sku_id\":\"1737398770243598\",\"sku_picture_url\":\"[\\\"img_url\\\"]\",\"sku_status\":\"true\",\"sku_type\":\"0\",\"spec_detail_id1\":\"1695459998494734\",\"spec_detail_id2\":\"1695459998494734\",\"spec_detail_id3\":\"0\",\"spec_detail_ids\":\"[1695459998494734,1695459998494766]\",\"spec_model_code\":\"[\\\"123\\\"]\",\"step_stock_num\":\"0\",\"stock_num\":\"13\",\"stock_num_map\":{},\"supplier_id\":\"123\",\"tax_exemption_sku_info\":{\"is_suit\":\"1\",\"suit_num\":\"10\",\"volume\":\"100\"}}],\"specs\":[{\"id\":\"1713023986705415\",\"is_leaf\":\"0\",\"name\":\"颜色\",\"pid\":\"1713023986705415\",\"property_id\":\"123\",\"spec_id\":\"1713023983665214\",\"values\":[{\"extra\":{\"cpv_path\":[{\"cpid\":\"1234\",\"cpvid\":\"123\"}],\"measure_info\":{\"template_id\":\"234\",\"values\":[{\"module_id\":\"123\",\"prefix\":\"-\",\"suffix\":\"\\\"\\\"\",\"unit_id\":\"2\",\"unit_name\":\"g\",\"value\":\"10\"}]}},\"id\":\"1695459998447656\",\"is_leaf\":\"1\",\"name\":\"红色\",\"pid\":\"1695459998447640\",\"spec_id\":\"1713023983665214\",\"status\":\"1\",\"value_id\":\"12\"}]}],\"spu_id\":\"1234\",\"standard_brand_id\":\"121354\",\"start_sale_type\":\"0\",\"status\":\"1\",\"store_id\":\"103121\",\"unit_price_info\":{\"price_rule_type\":\"1\"},\"update_time\":\"2022-07-08T16:29:01+08:00\",\"use_brand_name\":\"false\",\"weight_unit\":\"0\",\"weight_value\":\"0\",\"white_back_ground_pic_url\":\"https://aaa\"},\"code\":10000,\"msg\":\"success\",\"sub_code\":\"\",\"sub_msg\":\"\"},\"responseError\":{\"sub_code\":\"\",\"sub_msg\":\"\"}}},\"error\":{\"errCodeList\":[{\"msg\":\"success\",\"code\":10000},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"out_product_id未找到或商品已删除\",\"subCode\":\"isv.parameter-invalid:4\",\"solution\":\"请检查参数后重试\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"7:请求失败，请稍后再试\",\"subCode\":\"isp.service-error:7\",\"solution\":\"请检查参数后重试\"},{\"msg\":\"非法的参数\",\"code\":40004,\"subMsg\":\"商品不存在或已彻底删除\",\"subCode\":\"isv.parameter-invalid:2010058\",\"solution\":\"请检查参数后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010401:触发商品操作限流,请稍后再试\",\"subCode\":\"isv.business-failed:2010401\",\"solution\":\"请稍后再试\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"2010001:系统异常,请重试\",\"subCode\":\"isp.service-error:2010001\",\"solution\":\"请稍后再试\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"2010327:销售属性查询失败\",\"subCode\":\"isp.service-error:2010327\",\"solution\":\"请稍后再试\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"2010013:数据查询异常\",\"subCode\":\"isp.service-error:2010013\",\"solution\":\"请稍后再试\"},{\"msg\":\"系统错误\",\"code\":20000,\"subMsg\":\"2010321:类目属性查询异常\",\"subCode\":\"isp.service-error:2010321\",\"solution\":\"请稍后再试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010004:商品参数错误\",\"subCode\":\"isv.business-failed:2010004\",\"solution\":\"请检查参数后重试\"},{\"msg\":\"业务处理失败\",\"code\":50002,\"subMsg\":\"2010203:获取商品信息失败\",\"subCode\":\"isv.business-failed:2010203\",\"solution\":\"请检查参数后重试\"}]}}",
+      "info": {
+        "AuditedTime": "",
+        "access": false,
+        "apiChargeType": 2,
+        "apiLimitLevel": 1,
+        "apiLimitValue": 8000,
+        "apiSpiMsgNames": [],
+        "articleOutId": 514,
+        "auditStatus": 401,
+        "auth": {
+          "categoryList": [],
+          "groupName": "",
+          "packageName": "",
+          "packageType": 0
+        },
+        "authSubject": "[3]",
+        "authSubjectIdList": [
+          "店铺"
+        ],
+        "auths": [
+          {
+            "categoryList": [
+              "跨境金服",
+              "装修设计",
+              "客服工具-微应用",
+              "微应用-标题优化",
+              "选品铺货-微应用",
+              "商品图文-微应用",
+              "卡券商工具",
+              "创新应用大赛_微应用",
+              "跨境供应链服务",
+              "商家自研模版",
+              "商家自研组件",
+              "撮合服务商",
+              "客服绩效-微应用",
+              "售后管理",
+              "任务玩法",
+              "财务管理",
+              "直播话术-微应用",
+              "AI拼图-微应用",
+              "微应用-图文模版",
+              "模版服务-图文模版",
+              "模版服务-主图视频",
+              "营销管理-互动小程序定制",
+              "营销管理-小程序定制",
+              "数据应用",
+              "打单发货-微应用",
+              "自研微组件",
+              "品牌数据洞察-三方应用",
+              "品牌数据洞察-二方应用",
+              "创新应用大赛_软件服务",
+              "搭配购-微应用",
+              "微应用-商详海报",
+              "教育服务",
+              "短视频工具",
+              "自研微组件-直播复盘",
+              "商家商品推广",
+              "商家后台系统",
+              "即时零售商品服务",
+              "店铺管理",
+              "微应用-主图视频",
+              "装修模板",
+              "定制装修",
+              "装修组件",
+              "即时零售ebill订单管理（临时）",
+              "即时零售ERP",
+              "AIGC视频洞察",
+              "虚拟充值",
+              "即时零售商家自研",
+              "直播工具",
+              "互动营销定制",
+              "直播间导购-微应用",
+              "短信营销",
+              "订单管理",
+              "AI智能客服-微应用",
+              "商品供应链",
+              "商品优化分析",
+              "电商ERP",
+              "商品基础工具",
+              "AI售后挽单",
+              "AI 商品运营",
+              "智能外呼"
+            ],
+            "groupName": "商品",
+            "packageName": "商品信息查询",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "即时零售ERP",
+              "即时零售商家自研"
+            ],
+            "groupName": "订单",
+            "packageName": "电商小时达专用-临时",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "服务市场按次订购-模板服务",
+              "服务市场按次订购-微应用",
+              "内部测类目"
+            ],
+            "groupName": "p测试权限组",
+            "packageName": "场景包测试",
+            "packageType": 10
+          },
+          {
+            "categoryList": [],
+            "groupName": "内部二方开放",
+            "packageName": "搜广内部定向权限包",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "创新应用"
+            ],
+            "groupName": "创新应用",
+            "packageName": "商品优化（创新应用）",
+            "packageType": 1
+          },
+          {
+            "categoryList": [],
+            "groupName": "定向权限",
+            "packageName": "定向权限包",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "AIGC视频创作"
+            ],
+            "groupName": "商品",
+            "packageName": "aigc商品管理",
+            "packageType": 10
+          },
+          {
+            "categoryList": [
+              "客服机器人",
+              "AI智能客服-微应用",
+              "AI售后挽单"
+            ],
+            "groupName": "三方客服",
+            "packageName": "客服机器人",
+            "packageType": 1
+          },
+          {
+            "categoryList": [
+              "电商-商家工具-店铺定制",
+              "C2B购前定制",
+              "电商-商家工具-3C数码",
+              "电商-商家工具-母婴图书",
+              "电商-商家工具-酒类",
+              "电商-商家工具-生鲜",
+              "电商-商家工具-滋补保健",
+              "电商-商家工具-本地生活及虚拟",
+              "电商-商家工具-食品饮料",
+              "电商-商家工具-服装鞋包",
+              "电商-商家工具-美妆",
+              "电商-商家工具-个护家清",
+              "电商-商家工具-家居家电"
+            ],
+            "groupName": "小程序",
+            "packageName": "电商小程序（抖店业务）",
+            "packageType": 1
+          },
+          {
+            "categoryList": [],
+            "groupName": "店铺",
+            "packageName": "千川权限包",
+            "packageType": 10
+          },
+          {
+            "categoryList": [
+              "盲盒互动"
+            ],
+            "groupName": "开放平台",
+            "packageName": "盲盒互动（服务商）",
+            "packageType": 1
+          }
+        ],
+        "commitAuditTime": "",
+        "contentType": 1,
+        "createTime": -62135596800,
+        "defaultApiAndAppLimitLevel": 1,
+        "defaultApiAndAppLimitValue": 1000,
+        "description": "使用场景：查询抖店商品详情信息\n1、支持使用抖店商品id\n2、商品外部开发者自定义编码查询",
+        "dirId": 14,
+        "dirLabels": [],
+        "dirName": "商品API",
+        "docLabels": [],
+        "extra": {
+          "creator": "",
+          "feishuDocUrl": "",
+          "mailDocUrl": "",
+          "mailPicUrl": "",
+          "mailTag": 0,
+          "noticeAuditUrl": "",
+          "ticketUrl": ""
+        },
+        "finalStatus": 1,
+        "flag": 0,
+        "id": 56,
+        "isTop": false,
+        "note": "",
+        "pv": 1164,
+        "reOnline": true,
+        "status": 1,
+        "subtitle": "查询商品详情",
+        "title": "/product/detail",
+        "updateTime": 1783065111,
+        "url": "",
+        "userList": [],
+        "userSceneDesc": "查询商品详情",
+        "version": "V12.01"
+      },
+      "tagNameMap": {
+        "25": "优惠券基础数据",
+        "26": "用户优惠券数据",
+        "28": "其他字段",
+        "29": "通用字段",
+        "30": "物流公司信息",
+        "31": "订单基础信息",
+        "32": "地址基础信息",
+        "33": "寄件人地址信息",
+        "34": "寄件人联系信息",
+        "35": "物流增值服务",
+        "36": "回单寄回地址",
+        "37": "收件人地址",
+        "38": "收件人信息",
+        "39": "商品基础信息",
+        "40": "商品重量体积信息",
+        "41": "快递配置规则",
+        "42": "订单备注",
+        "43": "仓库基础信息",
+        "44": "店铺基础信息",
+        "45": "小程序基础信息",
+        "46": "订单来源分析",
+        "47": "买家留言 ",
+        "48": "商家备注",
+        "49": "订单金额信息",
+        "50": "商品金额信息",
+        "51": "营销活动金额信息",
+        "52": "营销活动基础信息",
+        "53": "精选联盟",
+        "54": "跨境海淘",
+        "55": "库存基础信息",
+        "56": "售后基础信息",
+        "57": "电子卡券",
+        "58": "赠品",
+        "59": "组合（组套）商品",
+        "60": "虚拟商品",
+        "61": "定金预售",
+        "62": "懂车帝购车信息",
+        "63": "用户特征标签",
+        "64": "物流信息",
+        "65": "证件信息",
+        "66": "C2B定制",
+        "67": "买家基础信息",
+        "68": "买家敏感信息",
+        "69": "场景包测试标签a",
+        "70": "场景包测试标签b",
+        "71": "商家快递网点信息",
+        "72": "商品类目信息",
+        "73": "短信基础字段",
+        "74": "售后文案",
+        "75": "插旗信息",
+        "76": "售后金额信息",
+        "77": "风控信息",
+        "78": "换货基础信息",
+        "79": "售后标签",
+        "80": "门店基础信息",
+        "81": "售后商家备注信息",
+        "82": "达人样品订单",
+        "83": "即时零售订单接单状态",
+        "85": "换货和补寄信息",
+        "86": "物流异常风控",
+        "87": "商家售后地址信息",
+        "88": "售后仲裁",
+        "89": "买家退货物流信息",
+        "90": "补寄场景",
+        "91": "售后价保",
+        "92": "售后数据分析",
+        "93": "售后协商记录",
+        "94": "废弃字段",
+        "95": "商品尺码模板",
+        "96": "商品标题前缀",
+        "97": "商品参考价凭证",
+        "98": "商品资质信息",
+        "99": "商品限购信息",
+        "100": "特殊日期延迟发货",
+        "101": "商品销量",
+        "102": "店铺地址库",
+        "103": "即时零售商品基础信息",
+        "104": "解密基础字段",
+        "105": "解密虚拟号",
+        "106": "解密明文信息",
+        "107": "解密手机号明文",
+        "108": "解密姓名信息",
+        "109": "解密地址信息",
+        "110": "解密身份证信息",
+        "111": "查询改地址开关",
+        "112": "用户店铺关注信息",
+        "113": "店铺会话统计数据",
+        "114": "飞鸽会话统计数据",
+        "115": "飞鸽客服基础信息",
+        "116": "飞鸽会话信息",
+        "117": "飞鸽客服登录日志",
+        "118": "飞鸽客服接待统计信息",
+        "119": "飞鸽会话消息基础信息",
+        "120": "视频信息",
+        "121": "商品卖点信息",
+        "122": "授权基础信息",
+        "123": "商品价格信息",
+        "124": "商品分佣信息",
+        "125": "联盟分佣信息",
+        "126": "商品评价信息",
+        "127": "评价基础信息",
+        "128": "评价结果数据",
+        "129": "店铺体验分",
+        "130": "评价内容信息",
+        "131": "订单extra"
+      }
+    },
+    "releaseNote": "新增出参 spec_prices.operator:sku下架操作人 spec_prices.reason:sku下架原因"
+  },
+  "msg": ""
+}
