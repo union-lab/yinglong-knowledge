@@ -1,0 +1,13 @@
+<view class="select-page">
+    <view class="select-hero">
+        <view class="select-kicker">善医分层</view>
+        <view class="select-title">选择善医级别</view>
+    </view>
+    <view class="unionlev-list">
+        <view class="unionlev-item" wx:for="{{unionlevList}}" wx:key="index" bindtap="confirmUnionLev" data-item="{{item}}">
+            <view class="unionlev-item-title">{{item.name}}</view>
+            <view class="select-arrow">›</view>
+        </view>
+        <view class="text-center" wx:if="{{!unionlevList.length}}">暂无数据</view>
+    </view>
+</view>

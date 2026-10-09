@@ -1,0 +1,9 @@
+<!-- 默认为黑色的返回键-->
+<view class="nav-wrap nav-bgc-class" style='height: {{statusBarHeight + navBarHeight}}px;'>
+  <!--  左上角的返回按钮 其中wx:if='{{navbarData.showCapsule}}' 是控制左上角按钮的显示隐藏，1为显示，0为隐藏 -->
+  <view class='nav-capsule' style='margin-top: {{statusBarHeight}}px; height: {{navBarHeight}}px;' wx:if='{{navbarData.showCapsule}}' bindtap='_navback'>
+  <mp-icon icon="back" color="black" size="{{12}}"></mp-icon>
+  </view>
+    <!--  中间的标题 -->
+  <view class='nav-title nav-title-class' style='margin-top: {{statusBarHeight}}px; height: {{navBarHeight}}px;line-height: {{navBarHeight}}px;'>{{navbarData.title}}</view>
+</view>

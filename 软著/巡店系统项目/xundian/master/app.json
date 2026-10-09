@@ -1,0 +1,40 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/xundian/selectstore",
+        "pages/xundian/record",
+        "pages/xundian/detail",
+        "pages/xundian/polyline",
+        "pages/user/usercenter",
+        "pages/user/loginlog",
+        "pages/store/storelist",
+        "pages/store/nearstoremap",
+        "pages/logs/logs",
+        "pages/store/storeedit",
+        "pages/xundian/selectshoptourtype",
+        "pages/xundian/selectchainlev",
+        "pages/xundian/selectunionlev",
+        "pages/upload/index"
+    ],
+    "requiredPrivateInfos": [
+        "chooseLocation",
+        "getLocation"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#0f66d8",
+        "navigationBarTitleText": "善医巡店",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#f4f8ff"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置将用于巡店打卡定位"
+        }
+    },
+    "useExtendedLib": {
+        "kbone": true,
+        "weui": true
+    }
+}

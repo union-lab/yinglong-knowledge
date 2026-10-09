@@ -1,0 +1,134 @@
+page {
+    min-height: 100%;
+    background: #f4f8ff;
+}
+
+.store-edit-page {
+    min-height: 100vh;
+    padding: 24rpx 24rpx 150rpx;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #0f66d8 0, #2f8cff 250rpx, #f4f8ff 251rpx);
+}
+
+.edit-hero {
+    padding: 28rpx 28rpx 32rpx;
+    color: #fff;
+}
+
+.hero-kicker {
+    color: rgba(255,255,255,.76);
+    font-size: 24rpx;
+    line-height: 34rpx;
+}
+
+.hero-title {
+    margin-top: 8rpx;
+    font-size: 42rpx;
+    line-height: 54rpx;
+    font-weight: 700;
+}
+
+.hero-sub {
+    margin-top: 8rpx;
+    color: rgba(255,255,255,.82);
+    font-size: 25rpx;
+    line-height: 36rpx;
+}
+
+.edit-card {
+    margin-bottom: 22rpx;
+    padding: 24rpx;
+    border-radius: 28rpx;
+    background: #fff;
+    box-shadow: 0 18rpx 46rpx rgba(33, 74, 132, 0.1);
+}
+
+.section-title {
+    margin-bottom: 20rpx;
+    color: #172033;
+    font-size: 30rpx;
+    line-height: 42rpx;
+    font-weight: 700;
+}
+
+.field-block {
+    margin-top: 18rpx;
+}
+
+.field-block:first-of-type {
+    margin-top: 0;
+}
+
+.field-label {
+    margin-bottom: 12rpx;
+    color: #49627f;
+    font-size: 25rpx;
+    line-height: 34rpx;
+    font-weight: 700;
+}
+
+.field-input,
+.field-picker,
+.field-textarea {
+    width: 100%;
+    border: 1rpx solid #dfeafe;
+    border-radius: 20rpx;
+    background: #f8fbff;
+    color: #172033;
+    font-size: 28rpx;
+    box-sizing: border-box;
+}
+
+.field-input {
+    height: 82rpx;
+    padding: 0 24rpx;
+    line-height: 82rpx;
+}
+
+.field-picker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 82rpx;
+    padding: 0 24rpx;
+    line-height: 82rpx;
+}
+
+.field-picker.empty {
+    color: #9aaabd;
+}
+
+.picker-arrow {
+    color: #7b91ad;
+    font-size: 30rpx;
+    line-height: 30rpx;
+}
+
+.field-textarea {
+    min-height: 132rpx;
+    padding: 22rpx 24rpx;
+    line-height: 38rpx;
+}
+
+.save-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    padding: 18rpx 32rpx 42rpx;
+    background: rgba(244,248,255,.96);
+    box-sizing: border-box;
+}
+
+.save-button {
+    height: 84rpx;
+    margin: 0;
+    border-radius: 999rpx;
+    background: linear-gradient(135deg, #0f66d8, #2f8cff);
+    color: #fff;
+    font-size: 30rpx;
+    line-height: 84rpx;
+    font-weight: 700;
+    box-shadow: 0 14rpx 30rpx rgba(15, 102, 216, 0.26);
+}

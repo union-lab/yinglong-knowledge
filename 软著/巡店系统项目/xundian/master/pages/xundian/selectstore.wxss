@@ -1,0 +1,122 @@
+page {
+    min-height: 100%;
+    background: #f4f8ff;
+}
+
+.store-page {
+    min-height: 100vh;
+    padding: 28rpx 24rpx;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #0f66d8 0, #2f8cff 210rpx, #f4f8ff 211rpx);
+}
+
+.store-hero {
+    padding: 30rpx 30rpx 36rpx;
+    color: #fff;
+}
+
+.store-kicker {
+    font-size: 24rpx;
+    line-height: 34rpx;
+    color: rgba(255, 255, 255, 0.74);
+}
+
+.store-title {
+    margin-top: 8rpx;
+    font-size: 42rpx;
+    line-height: 54rpx;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.search-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 104rpx;
+    padding: 0 24rpx;
+    border-radius: 24rpx;
+    background: #fff;
+    box-shadow: 0 18rpx 46rpx rgba(33, 74, 132, 0.08);
+}
+
+.search-label {
+    margin-right: 18rpx;
+    color: #26384f;
+    font-size: 28rpx;
+    font-weight: 700;
+}
+
+.search-input {
+    flex: 1;
+    min-width: 0;
+    color: #172033;
+    font-size: 28rpx;
+}
+
+.search-confirm {
+    min-width: 116rpx;
+    margin-left: 18rpx;
+    border-radius: 999rpx;
+    background: linear-gradient(135deg, #0f66d8, #2f8cff);
+    color: #fff;
+    font-size: 24rpx;
+}
+
+.list-title{
+    padding: 28rpx 8rpx 18rpx;
+    font-size: 26rpx;
+    font-weight: 700;
+    color: #49627f;
+}
+.store-list{
+    padding: 14rpx;
+    border-radius: 26rpx;
+    background-color: #fff;
+    box-shadow: 0 18rpx 46rpx rgba(33, 74, 132, 0.08);
+}
+.store-item{
+    position: relative;
+    min-height: 126rpx;
+    margin-bottom: 12rpx;
+    padding: 24rpx 130rpx 24rpx 24rpx;
+    border: 1rpx solid #e7effa;
+    border-radius: 18rpx;
+    background: #f8fbff;
+    box-sizing: border-box;
+  }
+  .store-item-title{
+    margin-bottom: 12rpx;
+    color: #172033;
+    font-size: 29rpx;
+    font-weight: 700;
+    line-height: 40rpx;
+  }
+  .store-item-desc{
+    font-size: 23rpx;
+    color: #71849a;
+    line-height: 34rpx;
+  }
+  .store-item-distance{
+    position: absolute;
+    top: 28rpx;
+    right: 24rpx;
+    font-size: 24rpx;
+    color: #0f66d8;
+    font-weight: 700;
+  }
+  .chain-badge{
+      display: inline-block;
+      max-width: 180rpx;
+      margin-right: 12rpx;
+      padding: 4rpx 12rpx;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      vertical-align: middle;
+      border-radius: 999rpx;
+      background: #e9f2ff;
+      color:#0f66d8;
+      font-size: 22rpx;
+      line-height: 30rpx;
+  }

@@ -1,0 +1,54 @@
+<view class="store-edit-page">
+    <view class="edit-hero">
+        <view class="hero-kicker">门店资产</view>
+        <view class="hero-title">{{model.id ? '编辑门店' : '新建门店'}}</view>
+        <view class="hero-sub">完善基础资料并确认地图位置</view>
+    </view>
+
+    <view class="edit-card">
+        <view class="section-title">基础信息</view>
+        <view class="field-block">
+            <view class="field-label">门店名称</view>
+            <input bindinput="setStoreName" value="{{model.storeName}}" class="field-input" placeholder="请输入门店名称" />
+        </view>
+
+        <view class="field-block">
+            <view class="field-label">所在地区</view>
+            <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                <view class="field-picker {{model.provinceName ? '' : 'empty'}}">
+                    <text>{{model.provinceName ? model.provinceName + '-' + model.cityName + '-' + model.districtName : '请选择省市区'}}</text>
+                    <text class="picker-arrow">⌄</text>
+                </view>
+            </picker>
+        </view>
+
+        <view class="field-block">
+            <view class="field-label">详细地址</view>
+            <textarea class="field-textarea" bindinput="setAddress" value="{{model.address}}" placeholder="请输入街道、门牌号，例如：前韵路17号" />
+        </view>
+
+    </view>
+
+    <view class="edit-card">
+        <view class="section-title">运营信息</view>
+        <view class="field-block">
+            <view class="field-label">联系电话</view>
+            <input bindinput="setTel" value="{{model.tel}}" class="field-input" placeholder="请输入联系电话" type="number" />
+        </view>
+        <view class="field-block">
+            <view class="field-label">连锁名称</view>
+            <input bindinput="setChainName" value="{{model.chainName}}" class="field-input" placeholder="请输入连锁名称" />
+        </view>
+        <view class="field-block">
+            <view class="field-label">门店级别</view>
+            <view class="field-picker" bindtap="toChainLevPage">
+                <text>{{model.chainLev || '请选择门店级别'}}</text>
+                <text class="picker-arrow">⌄</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="save-bar">
+        <button class="save-button" bindtap="submit">保存</button>
+    </view>
+</view>

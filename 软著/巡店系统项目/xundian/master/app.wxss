@@ -1,0 +1,220 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.flex{
+  display:flex;
+}
+.tabbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
+.list-item-msg{
+    text-align: center;
+    color: #9e9e9e;
+    border-top: 1px solid #eeeeee;
+    padding: 1rem;
+}
+
+.text-justify { text-align: justify !important; }
+
+.text-wrap { white-space: normal !important; }
+
+.text-nowrap { white-space: nowrap !important; }
+
+.text-truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.text-left { text-align: left !important; }
+
+.text-right { text-align: right !important; }
+
+.text-center { text-align: center !important; }
+
+.text-white { color: #fff !important; }
+
+.text-info{
+  color:#909399;
+}
+.text-primary{
+  color:#409EFF;
+}
+.text-success{
+  color:#67C23A;
+}
+.text-warning{
+  color:#E6A23C;
+}
+.text-danger{
+  color:#F56C6C;
+}
+.text-gray{
+  color:#c8c9cc;
+}
+.bg-primary{
+  background-color:#409EFF;
+}
+.bg-success{
+  background-color:#67C23A;
+}
+.bg-warning{
+  background-color:#E6A23C;
+}
+.bg-danger{
+  background-color:#F56C6C;
+}
+
+.svg_icon {
+    display: inline-flex;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+  }
+
+
+
+@font-face {
+    font-family: "iconfont"; /* Project id 3349129 */
+    src: url('//at.alicdn.com/t/font_3349129_12a6ysv09j2.woff2?t=1652857580050') format('woff2'),
+         url('//at.alicdn.com/t/font_3349129_12a6ysv09j2.woff?t=1652857580050') format('woff'),
+         url('//at.alicdn.com/t/font_3349129_12a6ysv09j2.ttf?t=1652857580050') format('truetype');
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-dianpu:before {
+    content: "\e600";
+  }
+  
+  .icon-top:before {
+    content: "\e69e";
+  }
+  
+  .icon-bottom:before {
+    content: "\ec33";
+  }
+  
+  .icon-excel:before {
+    content: "\e665";
+  }
+  
+  .icon-wode:before {
+    content: "\e8a0";
+  }
+  
+  .icon-add-select:before {
+    content: "\e7b0";
+  }
+  
+  .icon-sami-select:before {
+    content: "\e7b1";
+  }
+  
+  .icon-arrow-down:before {
+    content: "\e7b2";
+  }
+  
+  .icon-dingwei:before {
+    content: "\ec32";
+  }
+  
+  .icon-all:before {
+    content: "\e6ef";
+  }
+  
+  .icon-editor:before {
+    content: "\e6f6";
+  }
+  
+  .icon-data:before {
+    content: "\e6f9";
+  }
+  
+  .icon-gift:before {
+    content: "\e6fa";
+  }
+  
+  .icon-rising:before {
+    content: "\e703";
+  }
+  
+  .icon-favorites-fill:before {
+    content: "\e721";
+  }
+  
+  .icon-add-account:before {
+    content: "\e741";
+  }
+  
+  .icon-add:before {
+    content: "\e742";
+  }
+  
+  .icon-add-cart:before {
+    content: "\e743";
+  }
+  
+  .icon-arrow-right:before {
+    content: "\e744";
+  }
+  
+  .icon-arrow-left:before {
+    content: "\e745";
+  }
+  
+  .icon-arrow-up:before {
+    content: "\e746";
+  }
+  
+  .icon-ascending:before {
+    content: "\e747";
+  }
+  
+  .icon-close:before {
+    content: "\e748";
+  }
+  
+  .icon-double-arro-right:before {
+    content: "\e74c";
+  }
+  
+  .icon-double-arrow-left:before {
+    content: "\e74d";
+  }
+  
+  .icon-falling:before {
+    content: "\e750";
+  }
+  
+  .icon-leftarrow:before {
+    content: "\e755";
+  }
+  
+  .icon-Rightarrow:before {
+    content: "\e761";
+  }
+  
+  .icon-seleted:before {
+    content: "\e763";
+  }
+  
+  .icon-weizhi:before {
+    content: "\e6bf";
+  }
+  
+  
+

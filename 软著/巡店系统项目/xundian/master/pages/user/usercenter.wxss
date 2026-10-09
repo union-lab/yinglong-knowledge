@@ -1,0 +1,103 @@
+page {
+    min-height: 100%;
+    background: #f4f8ff;
+}
+
+.user-page {
+    min-height: 100vh;
+    padding: 28rpx 24rpx;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #0f66d8 0, #2f8cff 210rpx, #f4f8ff 211rpx);
+}
+
+.profile-card{
+    display: flex;
+    align-items: center;
+    padding: 34rpx 30rpx;
+    border-radius: 28rpx;
+    background: #fff;
+    box-shadow: 0 18rpx 46rpx rgba(33, 74, 132, 0.1);
+}
+.user-avatar{
+    width: 120rpx;
+    height: 120rpx;
+    overflow: hidden;
+    border-radius: 60rpx;
+}
+.user-avatar image{
+    width: 100%;
+    height: 100%;
+}
+.username {
+    min-width: 0;
+    padding-left: 28rpx;
+}
+.login {
+    padding-left: 28rpx;
+}
+
+.user-name {
+    color: #172033;
+    font-size: 34rpx;
+    line-height: 46rpx;
+    font-weight: 700;
+}
+
+.user-dept {
+    margin-top: 8rpx;
+    color: #71849a;
+    font-size: 25rpx;
+    line-height: 34rpx;
+}
+
+.menu-grid {
+    margin-top: 28rpx;
+    padding: 14rpx;
+    border-radius: 28rpx;
+    background: #fff;
+    box-shadow: 0 18rpx 46rpx rgba(33, 74, 132, 0.08);
+}
+
+.menu-item {
+    position: relative;
+    min-height: 104rpx;
+    margin-bottom: 12rpx;
+    padding: 0 78rpx 0 24rpx;
+    display: flex;
+    align-items: center;
+    border: 1rpx solid #e7effa;
+    border-radius: 20rpx;
+    background: #f8fbff;
+    box-sizing: border-box;
+}
+
+.menu-item:last-child {
+    margin-bottom: 0;
+}
+
+.menu-icon {
+    width: 42rpx;
+    height: 42rpx;
+    margin-right: 22rpx;
+}
+
+.menu-text {
+    color: #172033;
+    font-size: 29rpx;
+    line-height: 42rpx;
+    font-weight: 700;
+}
+
+.menu-arrow {
+    position: absolute;
+    right: 28rpx;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #0f66d8;
+    font-size: 44rpx;
+    line-height: 44rpx;
+}
+
+.weui-input {
+    margin-left: 1rem;
+}

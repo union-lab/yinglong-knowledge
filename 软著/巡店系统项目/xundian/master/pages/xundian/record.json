@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "mp-icon": "weui-miniprogram/icon/icon",
+        "mp-actionSheet": "weui-miniprogram/actionsheet/actionsheet"
+    },
+    "enablePullDownRefresh":true,
+    "navigationBarTitleText": "工作圈"
+}

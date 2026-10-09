@@ -1,0 +1,50 @@
+<view class="list-item" hover-class="weui-cell_active" wx:if="{{item}}">
+    <view class="list-item-left">
+        <image class="list-item-image" src="{{item.avatar}}" />
+    </view>
+    <view class="list-item-content">
+        <view class="list-item-title">{{item.realName}}</view>
+        <view class="detail-image" wx:for="{{item.detailList}}" wx:for-item="detail" wx:key="index">
+            <image src="{{detail.image}}" lazy-load="true" show-menu-by-longpress="true" style="width:{{item.imageWidth}};height:{{item.imageWidth}}" bindtap="priview" data-item="{{item}}" data-index="{{index}}"></image>
+            <view class="detail-time">{{detail.addTime}}</view>
+        </view>
+        <view class="detail-note timeago">{{item.addTime}}
+            <view class="delete" bindtap="onDelete" data-index="{{index}}" wx:if="{{userInfo.userId==item.userId}}">删除</view>
+        </view>
+        <view class="detail-note">
+            <mp-icon icon="location" class="location" size="{{14}}"></mp-icon>
+            {{item.detailList[0].address}}
+        </view>
+        <view class="detail-note" bindtap="">
+            <view class="iconfont icon-dianpu"></view>
+            {{item.storeName}}
+        </view>
+        <view class="task-info">
+            <view>
+                <view class="detail-note" wx:if="{{item.residenceTime}}"><text class="text-info">停留时间：</text> {{item.residenceTime}}</view>
+                <view class="detail-note" wx:if="{{item.prevTime}}"><text class="text-info">距上次打卡：</text>{{item.prevTime}}</view>
+                <view class="detail-note" wx:if="{{item.prevDistance}}"><text class="text-info">距上次打卡距离：</text>{{item.prevDistance}}</view>
+            </view>
+            <view class="openline" bindtap="onOpenLine" data-index="{{index}}">查看线路 〉</view>
+        </view>
+        <view class="detail-note" wx:for="{{item.detailList}}" wx:for-item="detail" wx:key="index" wx:if="{{true}}">{{detail.note||""}}</view>
+        <view class="comment-list" wx:if="{{item.comments.length}}">
+            <view class="comment-item" wx:for="{{item.comments}}" wx:for-item="comment" wx:for-index="commentindex" wx:key="index" bindtap="onComment" data-index="{{index}}" data-commentindex="{{commentindex}}">
+                <text class="comment-name">{{comment.realName||comment.userId}}</text>
+                <view wx:if="{{comment.toUserId}}" style="padding-left: 0.25rem;">回复
+                    <text class="comment-name">{{comment.toRealName||comment.toUserId}}</text>
+                </view>
+                <view class="comment-content">：{{comment.content}}</view>
+            </view>
+        </view>
+        <view wx:if="{{item.commentCount>item.comments.length}}" class="more-comments" bindtap="onMoreComments" data-index="{{index}}">查看更多评论</view>
+        <view class="operation">
+            <view class="operation-item" bindtap="onComment" data-index="{{index}}">
+                <mp-icon icon="comment" size="16"></mp-icon>评论
+            </view>
+        </view>
+    </view>
+</view>
+<view class="comment" wx:if="{{showCommentView}}">
+    <input auto-focus cursor-spacing="{{10}}" value="{{commentValue}}" bindblur="onCommentBlur" bindconfirm="onCommentConfirm" confirm-type="send" placeholder="{{replyComment.userId?'回复 '+(replyComment.realName||replyComment.userId)+'：':'评论'}}" />
+</view>

@@ -1,0 +1,13 @@
+<view class="select-page">
+    <view class="select-hero">
+        <view class="select-kicker">巡店配置</view>
+        <view class="select-title">选择巡店方式</view>
+    </view>
+    <view class="shoptourtype-list">
+        <view class="shoptourtype-item" wx:for="{{shoptourtypeList}}" wx:key="index" bindtap="confirmShopTourType" data-item="{{item}}">
+            <view class="shoptourtype-item-title">{{item.name}}</view>
+            <view class="select-arrow">›</view>
+        </view>
+        <view class="text-center" wx:if="{{!shoptourtypeList.length}}">暂无数据</view>
+    </view>
+</view>

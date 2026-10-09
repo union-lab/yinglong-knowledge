@@ -1,0 +1,28 @@
+<view class="user-page">
+    <view class="profile-card">
+        <view class="user-avatar">
+            <image src="{{userInfo.avatar || '/images/icon/default_avatar.svg'}}"></image>
+        </view>
+        <view class="username" wx:if="{{userInfo}}">
+            <view class="user-name">{{userInfo.realName || userInfo.nickName}}</view>
+            <view class="user-dept">{{userInfo.deptName || '善医巡店团队'}}</view>
+        </view>
+        <view class="login" wx:else bindtap="login">
+            <view class="user-name">立即登录</view>
+            <view class="user-dept">登录后使用管理功能</view>
+        </view>
+    </view>
+
+    <view class="menu-grid">
+        <view class="menu-item" bindtap="goStoreList">
+            <image class="menu-icon" src="/images/icon/store.svg"></image>
+            <view class="menu-text">门店列表</view>
+            <view class="menu-arrow">›</view>
+        </view>
+        <view class="menu-item" bindtap="goLoginLog">
+            <image class="menu-icon" src="/images/icon/my.svg"></image>
+            <view class="menu-text">登录日志</view>
+            <view class="menu-arrow">›</view>
+        </view>
+    </view>
+</view>

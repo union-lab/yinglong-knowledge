@@ -1,0 +1,112 @@
+.map {
+    width: 100%;
+    height: 65vh;
+}
+.head-picker{
+    display: flex;
+    justify-content:space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 0.25rem 0;
+}
+.head-picker picker{
+    width: 100%;
+    text-align: center;
+}
+.icon-arrow-down{
+    display: inline;
+}
+
+.callout-item {
+    padding: 0.2rem;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+
+.callout-img {
+    height: 60rpx;
+    width: 60rpx;
+}
+.callout-name{
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.detail{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 35vh;
+    padding: 0 1rem 0 1rem;
+    box-sizing:border-box;
+}
+.detail-top-bar{
+    background-color: #e5e5e5;
+    height: 0.3rem;
+    margin: 0.75rem 320rpx;
+    border-radius: 1rem;
+}
+.detail-title{
+    font-weight: bold;
+}
+.detail-info{
+    display: flex;
+}
+.detail-item{
+    flex: 1;
+    text-align: center;
+    border: 1px solid #abc5f7;
+    background-color: #eef3fd;
+    margin: 10rpx;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+}
+.timeline .timeline-list{
+    height: 380rpx;
+    overflow: scroll;
+}
+.timeline .timeline-item {
+    display: flex;
+}
+
+.timeline-item .time {
+    padding: 0.5rem 1.5rem 0 0;
+    border-right: 1px solid #d3cdcd;
+    position: relative;
+    font-family: 'Helvetica Neue'
+}
+
+.timeline-item .number {
+    position: absolute;
+    top: 0.5rem;
+    right: -0.75rem;
+    border: 1px solid #729ae6;
+    height: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    background-color: #729ae6;
+    color: #fff;
+}
+
+.timeline-item .content {
+    flex: 1;
+    margin-left: 1rem;
+    border-bottom:1px solid #e5e5e5;
+    padding: 0.5rem 0;
+}
+.timeline-item .detail-note{
+    font-size: 0.8rem;
+}
+
+.timeline-item .content image {
+    height: 160rpx;
+    width: 160rpx;
+    margin-right: 10rpx;
+}

@@ -1,0 +1,43 @@
+<view class="log-page">
+    <view class="log-hero">
+        <view class="hero-kicker">个人轨迹</view>
+        <view class="hero-title">登录日志</view>
+        <view class="stat-grid">
+            <view class="stat-item">
+                <view class="stat-value">{{stats.login}}</view>
+                <view class="stat-label">登录</view>
+            </view>
+            <view class="stat-item">
+                <view class="stat-value">{{stats.logout}}</view>
+                <view class="stat-label">下线</view>
+            </view>
+            <view class="stat-item">
+                <view class="stat-value">{{stats.clock}}</view>
+                <view class="stat-label">打卡</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="tab-row">
+        <view wx:for="{{tabs}}" wx:key="value" data-type="{{item.value}}" bindtap="selectType" class="tab-item {{currentType==item.value ? 'active' : ''}}">
+            {{item.text}}
+        </view>
+    </view>
+
+    <view class="timeline">
+        <view wx:for="{{list}}" wx:key="id" class="log-card">
+            <view class="log-dot {{item.typeClass}}">{{item.typeName}}</view>
+            <view class="log-content">
+                <view class="log-title-row">
+                    <view class="log-title">{{item.displayTitle}}</view>
+                    <view class="log-time">{{item.displayTime}}</view>
+                </view>
+                <view class="log-sub" wx:if="{{item.displaySub}}">{{item.displaySub}}</view>
+                <view class="log-location" wx:if="{{item.displayLocation}}">{{item.displayLocation}}</view>
+                <view class="log-remark" wx:if="{{item.displayRemark}}">{{item.displayRemark}}</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="empty" wx:if="{{!loading && !list.length}}">暂无日志</view>
+</view>

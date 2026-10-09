@@ -1,0 +1,38 @@
+<view class="map-page">
+<map 
+    id="mapId"
+    class="map"
+    scale="14"
+    show-location="true"
+    latitude="{{latitude}}"
+    longitude="{{longitude}}"
+    bindmarkertap="onMarkerTap"
+    bindcallouttap="onMarkerTap"
+    bindanchorpointtap="onMarkerTap"
+    markers="{{markers}}"
+    include-points="{{points}}"
+    enable-building="{{true}}"
+>
+    <cover-view slot="callout">
+        <cover-view class="callout-item" marker-id="{{item.id}}" wx:for="{{markers}}" wx:key="index">
+            <image class="callout-img" src="{{item.calloutImg}}" wx:if="{{item.calloutImg}}"></image>
+            <cover-view class="callout-name">{{item.calloutName}}</cover-view>
+        </cover-view>
+    </cover-view>
+</map>
+<view class="map-header">
+    <view class="map-kicker">{{singleStoreMode ? '门店位置' : '空间视图'}}</view>
+    <view class="map-title">{{singleStoreMode ? selectedStore.storeName : '门店地图'}}</view>
+</view>
+<view class="tools" wx:if="{{!singleStoreMode}}">
+    <button size="mini" class="button {{showName?'active':''}}" bindtap="onShowName">门店名称</button>
+    <button size="mini" class="button {{showSalesman?'active':''}}" bindtap="onShowSalesman">业务员</button>
+</view>
+<view class="store-address-card" wx:if="{{singleStoreMode}}">
+    <view class="address-title">{{selectedStore.storeName}}</view>
+    <view class="address-text">{{selectedStore.address}}</view>
+    <button class="nav-button" bindtap="openMap">导航到这里</button>
+</view>
+<mp-actionSheet bindactiontap="selectAction" show="{{showActionsheet}}" actions="{{actionGroups}}" title="{{actionTitle}}" sub>
+</mp-actionSheet>
+</view>

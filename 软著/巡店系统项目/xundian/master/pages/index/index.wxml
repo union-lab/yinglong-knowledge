@@ -1,0 +1,219 @@
+<!-- navbar头部 -->
+<!-- <nav-bar navbar-data='{{nvabarData}}'></nav-bar> -->
+
+<view class="page-body">
+    <view class="page-body-wrapper">
+        <!-- <view class="camera-container" style="height: 850rpx;">
+            <camera id="camera" device-position="{{devicePosition}}" flash="auto" binderror="error" resolution="high" style="width: 100%; height: 100%;"></camera>
+            <view class="watermark-view">
+                <view class="time">{{model.time}}</view>
+                <view class="address">{{model.addressWaterMark}}
+                    <view class="iconfont icon-dingwei" bindtap="showPoiPage"></view>
+                </view>
+                <view class="store-name">{{model.storeName}}</view>
+            </view>
+            <view class="svg_icon">
+                <image class="svg_icon-camerareverse" src="/images/icon/camera_reverse.svg" bindtap="reverse" />
+            </view>
+        </view>
+        <view class="status-container" wx:if="{{model.status==1}}">
+            <view>巡店中...</view>
+            <button type="primary" size="mini" plain="true" bindtap="onEndTask">结束本店任务</button>
+        </view> -->
+        <view class="hero-panel {{storeClockStatus}}">
+            <view class="hero-topline">
+                <view>
+                    <view class="hero-kicker">善医门店运营</view>
+                    <view class="hero-title">巡店工作台</view>
+                </view>
+                <view class="status-pill {{model.status==1 ? 'active' : ''}} {{storeClockStatus}}">
+                    {{model.status==1 ? '巡店中' : storeClockStatusText}}
+                </view>
+            </view>
+            <view class="hero-meta">
+                <view class="hero-meta-item">
+                    <view class="hero-meta-label">门店</view>
+                    <view class="hero-meta-value">{{model.storeName || '未选择'}}</view>
+                </view>
+                <view class="hero-meta-item">
+                    <view class="hero-meta-label">级别</view>
+                    <view class="hero-meta-value">{{model.chainLev || '未确认'}}</view>
+                </view>
+                <view class="hero-meta-item">
+                    <view class="hero-meta-label">方式</view>
+                    <view class="hero-meta-value">{{model.shopTourType || '未选择'}}</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="status-container" wx:if="{{model.status==1}}">
+            <view class="status-text">巡店任务进行中</view>
+            <button type="primary" size="mini" plain="true" bindtap="onEndTask">结束本店任务</button>
+        </view> 
+        <view class="form-container">
+            <mp-form>
+                <mp-cells title="门店信息">
+                    <view class="profile-form">
+                        <view class="field-block">
+                            <view class="field-label">店铺名称</view>
+                            <button plain="{{true}}" hover-class="field-picker-hover" bindtap="openStoreSelector" class="field-picker store-picker-button {{model.storeName ? '' : 'empty'}}">
+                                <text>{{model.storeName || (storeNameOptions.length ? '请选择店铺名称' : '暂无可选店铺')}}</text>
+                                <text class="picker-arrow">⌄</text>
+                            </button>
+                        </view>
+                        <view class="field-block">
+                            <view class="field-label">连锁名称</view>
+                            <picker bindchange="bindChainPickerChange" range="{{chainNameOptions}}" disabled="{{model.status==1 || !chainNameOptions.length}}">
+                                <view class="field-picker {{model.chainName ? '' : 'empty'}}">
+                                    <text>{{model.chainName || (chainNameOptions.length ? '请选择连锁名称' : '暂无可选连锁')}}</text>
+                                    <text class="picker-arrow">⌄</text>
+                                </view>
+                            </picker>
+                        </view>
+                        <view class="field-block">
+                            <view class="field-label">门店级别</view>
+                            <view class="button-group">
+                                <view wx:for="{{chainLevOptions}}" wx:key="index" data-value="{{item}}" bindtap="selectChainLevByButton" class="choice-button {{model.chainLev==item ? 'active' : ''}} {{model.status==1 ? 'disabled' : ''}}">
+                                    {{item}}
+                                </view>
+                            </view>
+                        </view>
+                        <view class="field-block">
+                            <view class="field-label">巡店方式</view>
+                            <view class="button-group">
+                                <view wx:for="{{shopTourTypeOptions}}" wx:key="index" data-value="{{item}}" bindtap="selectShopTourTypeByButton" class="choice-button {{model.shopTourType==item ? 'active' : ''}} {{model.status==1 ? 'disabled' : ''}}">
+                                    {{item}}
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <!--店铺分类为优秀店且巡店方式为日常巡查 需要上传的打卡数据-->
+                    <mp-cell wx-if="{{model.chainLev=='优秀店'&&model.shopTourType=='日常巡查'}}">
+                        <view>门店名称图：</view>
+                        <view class="imgline" >
+                            <uploads-img uploaderNum="1" localAddress="{{model.addressWaterMark}}"  uploaderList="{{model.shopNameImgs}}" title="" bind:getUploaderList="getshopNameImgList"></uploads-img>
+                        </view>
+                    </mp-cell>
+                    <mp-cell wx-if="{{model.chainLev=='优秀店'&&model.shopTourType=='日常巡查'}}">
+                        <!-- <picker bindchange="bindPickerBrandChange" value="{{model.brandName}}" range="{{brandArray}}" >
+                            <view class="picker" >
+                            合作品牌： {{model.brandName||"请选择合作品牌"}}
+                            </view>
+                        </picker> -->
+                            合作品牌：
+                            <checkbox-group  bindchange="checkBrand" style="display: contents !important;">
+                                <label  wx:for="{{brandCheckArray}}" wx:key="{{item.value}}">
+                                    <checkbox style="margin: 0.2rem;"  value="{{item.value}}" checked="{{item.checked}}" />{{item.name}}
+                                </label>
+                            </checkbox-group>
+                           
+                        <input style="margin: 0.3rem 0.3rem ;" wx-if="{{isShowOtherBrandNameInput}}" bindinput="setOtherBrandName" value="{{model.otherBrandName}}" class="weui-input" placeholder="请填写其他品牌名称" />
+                   
+                        <view class="imgline" >
+                            <uploads-img uploaderNum="3" localAddress="{{model.addressWaterMark}}" uploaderList="{{model.brandImgs}}" title="" bind:getUploaderList="getBrandUploaderList"></uploads-img>
+                        </view>
+                    </mp-cell>
+                    <mp-cell wx-if="{{model.chainLev=='优秀店'&&model.shopTourType=='日常巡查'}}">
+                       <view>竞品信息：</view>
+                        <view class="imgline" >
+                            <uploads-img uploaderNum="2" localAddress="{{model.addressWaterMark}}" uploaderList="{{model.competitorsAImgs}}" title="" bind:getUploaderList="getCompetitorsUploaderList"></uploads-img>
+                        </view>
+                    </mp-cell>
+                    <mp-cell wx-if="{{model.chainLev=='优秀店'&&model.shopTourType=='日常巡查'}}">
+                       <view>优秀陈列图/培训图：</view>
+                        <view class="imgline" >
+                            <uploads-img uploaderNum="2" localAddress="{{model.addressWaterMark}}" uploaderList="{{model.excellentImgs}}" title="" bind:getUploaderList="getExcellentUploaderList"></uploads-img>
+                        </view>
+                    </mp-cell>
+                    <!--门店级别为普通店 且巡店方式为日常巡查-->
+                    <mp-cell wx-if="{{model.chainLev=='普通店'&&model.shopTourType=='日常巡查'}}">
+                        <view>门店名称图：</view>
+                        <view class="imgline" >
+                            <uploads-img uploaderNum="1" localAddress="{{model.addressWaterMark}}"  uploaderList="{{model.shopNameImgs}}" title="" bind:getUploaderList="getshopNameImgList"></uploads-img>
+                        </view>
+                    </mp-cell>
+                    <mp-cell wx-if="{{model.chainLev=='普通店'&&model.shopTourType=='日常巡查'}}">
+                        <view>产品陈列图：</view>
+                        <view class="imgline" >
+                            <uploads-img uploaderNum="2" localAddress="{{model.addressWaterMark}}" uploaderList="{{model.goodsDisplayImgs}}" title="" bind:getUploaderList="getGoodsDisplayUploaderList"></uploads-img>
+                        </view>
+                    </mp-cell>
+                    <mp-cell wx-if="{{model.chainLev=='普通店'&&model.shopTourType=='日常巡查'}}">
+                        <view>竞品信息图：</view>
+                        <view class="imgline" >
+                            <uploads-img uploaderNum="2" localAddress="{{model.addressWaterMark}}" uploaderList="{{model.competitorsBImgs}}" title="" bind:getUploaderList="getCompetitorsBUploaderList"></uploads-img>
+                        </view>
+                    </mp-cell>
+                    <mp-cell wx-if="{{model.chainLev=='亏损店'&&model.shopTourType=='日常巡查'}}">
+                        <view>门店名称图：</view>
+                        <view class="imgline" >
+                            <uploads-img uploaderNum="1" localAddress="{{model.addressWaterMark}}"  uploaderList="{{model.shopNameImgs}}" title="" bind:getUploaderList="getshopNameImgList"></uploads-img>
+                        </view>
+                    </mp-cell>
+                    <mp-cell wx-if="{{model.chainLev=='亏损店'&&model.shopTourType=='日常巡查'}}">
+                        <view>走访陈列图：</view>
+                        <view class="imgline" >
+                            <uploads-img uploaderNum="2" localAddress="{{model.addressWaterMark}}" uploaderList="{{model.interviewDisplayImgs}}" title="" bind:getUploaderList="getInterviewDisplayUploaderList"></uploads-img>
+                        </view>
+                    </mp-cell>
+                    <mp-cell wx-if="{{model.shopTourType=='日常巡查'}}" title="走访总结">
+                        <textarea bindinput="setNote" value="{{model.note}}" class="weui-input" placeholder="请填写走访总结"  />
+                    </mp-cell>
+                    <mp-cell wx-if="{{model.shopTourType=='其他'}}">
+                        <view>图片：</view>
+                        <view class="imgline" >
+                            <uploads-img uploaderNum="3" localAddress="{{model.addressWaterMark}}" uploaderList="{{model.otherImgs}}" title="" bind:getUploaderList="getOtherUploaderList"></uploads-img>
+                        </view>
+                    </mp-cell>
+                    <mp-cell class="withCell">
+                    </mp-cell>
+                    <mp-cell class="withCell">
+                    </mp-cell>
+                </mp-cells>
+            </mp-form>
+        </view>
+        <view class="bottom-bar">
+            <button type="primary" bindtap="saveClockIn" class="take-photo" style="width: 80px;" disabled="{{loading||getLocationing}}">打卡</button>
+        </view>
+        <view class="main-tabbar">
+            <view wx:for="{{tabItemList}}" wx:key="index" data-index="{{index}}" data-item="{{item}}" bindtap="tabChange" class="main-tabbar-item {{currentTabIndex==index ? 'active' : ''}}">
+                <image class="main-tabbar-icon" src="{{currentTabIndex==index ? item.selectedIconPath : item.iconPath}}"></image>
+                <view class="main-tabbar-text">{{item.text}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<page-container show="{{isShowPoiPage}}" position="bottom" class="page-container" round="{{true}}" customStyle='z-index:1001'>
+    <view class="poi-page">
+        <view class="poi-title">选择位置
+        <view class="poi-location" bindtap="getLocation">{{getLocationing?'定位中':'重新定位'}}</view>
+        </view>
+        <scroll-view class="poi-list" scroll-y="true">
+            <view class="poi-item" wx:for="{{poiList}}" wx:key="index" bindtap="selectPoi" data-item="{{item}}">
+                <view class="poi-item-title">{{item.title}}</view>
+                <view class="poi-item-desc">{{item.address}} </view>
+                <view class="poi-item-distance">{{item._distance}}m</view>
+            </view>
+            <view wx:if="{{!poiList.length}}">附近没有相关门店</view>
+        </scroll-view>
+    </view>
+</page-container>
+<view wx:if="{{showStoreSelector}}" class="store-selector-mask" catchtouchmove="noop" catchtap="closeStoreSelector">
+    <view class="store-selector" catchtap="noop">
+        <view class="selector-header">
+            <view class="selector-cancel" bindtap="closeStoreSelector">取消</view>
+            <view class="selector-title">选择店铺</view>
+            <view class="selector-confirm" bindtap="closeStoreSelector">确定</view>
+        </view>
+        <scroll-view class="selector-list" scroll-y="true">
+            <view wx:for="{{filteredStoreOptions}}" wx:key="index" data-index="{{index}}" bindtap="selectStoreOption" class="selector-store-item {{item.clockStatus}}">
+                <view class="selector-store-name">{{item.storeName}}</view>
+                <view class="selector-store-meta">
+                    <text>{{item.chainName || '未设置连锁'}}</text>
+                    <text class="selector-status">{{item.clockStatusText}}</text>
+                </view>
+            </view>
+            <view class="selector-empty" wx:if="{{!filteredStoreOptions.length}}">暂无可选店铺</view>
+        </scroll-view>
+    </view>
+</view>

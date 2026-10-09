@@ -1,0 +1,35 @@
+<view class="store-list-page">
+<view class="store-toolbar">
+    <view class="toolbar-row">
+        <view class="search-box">
+            <input value="{{search.keyword}}" bindinput="setKeyword" confirm-type="search" bindconfirm="onSearchConfirm" placeholder="输入门店名称查询" />
+            <view class="search-action" bindtap="onSearchConfirm">查询</view>
+        </view>
+    </view>
+    <view class="toolbar-row split">
+        <picker class="region" mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+            <view class="picker">
+                {{region[0]}}-{{region[1]}}-{{region[2]}}
+            </view>
+        </picker>
+        <button class="create-button" bindtap="goCreateStore">新建门店</button>
+    </view>
+</view>
+<view class="weui-panel__bd">
+    <view class="store-card" wx:for="{{list}}" wx:key="index" bindtap="selectItem" data-item="{{item}}">
+        <view class="store-card-title">{{item.storeName}}</view>
+        <view class="store-card-desc">{{item.cityName}}{{item.districtName}}{{item.townName}}{{item.address}}</view>
+        <view class="store-card-actions">
+            <view catchtap="toggleStoreVisible" data-index="{{index}}" class="state-button {{item.isVisible ? 'active' : ''}}">
+                {{item.visibleLabel}}
+            </view>
+            <view catchtap="toggleStoreDeleted" data-index="{{index}}" class="state-button danger {{item.deleted ? 'active' : ''}} {{item.hasClockRecords ? 'disabled' : ''}}">
+                {{item.deletedLabel}}
+            </view>
+        </view>
+        <view class="iconfont icon-weizhi"></view>
+    </view>
+</view>
+<view class="list-item-msg" wx:if="{{!list.length}}">暂无记录</view>
+<view class="list-item-msg" wx:if="{{list.length&&list.length>=total}}">没有更多了</view>
+</view>

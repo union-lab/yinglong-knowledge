@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "mp-actionSheet": "weui-miniprogram/actionsheet/actionsheet"
+    },
+    "navigationBarTitleText": "门店地图"
+}

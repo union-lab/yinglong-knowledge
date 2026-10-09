@@ -1,0 +1,13 @@
+<view class="select-page">
+    <view class="select-hero">
+        <view class="select-kicker">门店画像</view>
+        <view class="select-title">选择门店级别</view>
+    </view>
+    <view class="chainlev-list">
+        <view class="chainlev-item" wx:for="{{chainlevList}}" wx:key="index" bindtap="confirmChainLev" data-item="{{item}}">
+            <view class="chainlev-item-title">{{item.name}}</view>
+            <view class="select-arrow">›</view>
+        </view>
+        <view class="text-center" wx:if="{{!chainlevList.length}}">暂无数据</view>
+    </view>
+</view>

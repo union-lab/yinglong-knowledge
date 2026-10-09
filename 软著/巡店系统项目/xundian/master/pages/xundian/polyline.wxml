@@ -1,0 +1,52 @@
+<map id="mapId" class="map" latitude="{{latitude}}" longitude="{{longitude}}" polyline="{{polyline}}" markers="{{markers}}" include-points="{{points}}" bindcallouttap="onPreview1">
+    <cover-view slot="callout">
+        <cover-view class="callout-item" marker-id="{{item.id}}" wx:for="{{markers}}" wx:key="index">
+           <image class="callout-img" src="{{item.calloutImg}}" mode="center"></image>
+           <!-- <cover-view class="callout-name">{{item.calloutName}}</cover-view> -->
+        </cover-view>
+    </cover-view>
+</map>
+<view class="head-picker">
+    <picker mode="date" value="{{date}}" bindchange="selectDate">
+        <view class="date-picker">
+            {{date}}<view class="iconfont icon-arrow-down"></view>
+        </view>
+    </picker>
+</view>
+<view class="detail">
+    <view class="detail-top-bar"></view>
+    <view class="detail-title">线路详情</view>
+    <view class="detail-info">
+        <view class="detail-item">
+            <view class="text-info">地点数</view>
+            <view class="detail-item-number">{{list.length}}</view>
+        </view>
+        <view class="detail-item">
+            <view class="text-info">公里数</view>
+            <view class="detail-item-number">暂无</view>
+        </view>
+        <view class="detail-item">
+            <view class="text-info">拍照停留</view>
+            <view class="detail-item-number">{{totalResidenceTime}}</view>
+        </view>
+    </view>
+    <view class="timeline">
+        <view class="timeline-item" wx:for="{{list}}" wx:key="index">
+            <view class="time">
+                <text>{{item.time}}</text>
+                <view class="number">{{index+1}}</view>
+            </view>
+            <view class="content">
+                <view>
+                    {{item.storeName}}
+                </view>
+                <view class="detail-note" wx:if="{{item.residenceTime}}"><text class="text-info">停留时间：</text> {{item.residenceTime}}</view>
+                <view class="detail-note" wx:if="{{item.prevTime}}"><text class="text-info">距上次打卡：</text>{{item.prevTime}}</view>
+                <view class="detail-note" wx:if="{{item.prevDistance}}"><text class="text-info">距上次打卡距离：</text>{{item.prevDistance}}</view>
+                <view>
+                    <image wx:for="{{item.detailList}}" wx:key="index" wx:for-item="detail" wx:for-index="detailindex" src="{{detail.image}}" bindtap="onPreview" data-detailindex="{{detailindex}}"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

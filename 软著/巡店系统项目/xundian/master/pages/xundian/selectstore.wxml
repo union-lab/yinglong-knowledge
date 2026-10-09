@@ -1,0 +1,20 @@
+<view class="store-page">
+    <view class="store-hero">
+        <view class="store-kicker">门店定位</view>
+        <view class="store-title">选择巡查门店</view>
+    </view>
+    <view class="search-card">
+        <view class="search-label">店名</view>
+        <input bindinput="setStoreName" value="{{storeName}}" class="search-input" placeholder="请填写店铺名称" />
+        <button class="search-confirm" size="mini" type="primary" bindtap="confirmStore">确定</button>
+    </view>
+    <view class="list-title">附近门店</view>
+    <view class="store-list">
+        <view class="store-item" wx:for="{{storeList}}" wx:key="index" bindtap="confirmStore" data-item="{{item}}">
+            <view class="store-item-title"><text class="chain-badge">{{item.chainName}}</text>{{item.storeName}}</view>
+            <view class="store-item-desc">{{item.address}} </view>
+            <view class="store-item-distance">{{item.distance}}m</view>
+        </view>
+        <view class="text-center" wx:if="{{!storeList.length}}">附近暂无门店</view>
+    </view>
+</view>
